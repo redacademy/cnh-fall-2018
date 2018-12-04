@@ -1,7 +1,7 @@
 /*!
 Theme Name: Collingwood Neighbourhood House
 Theme URI: https://github.com/redacademy/cnh-fall-2018
-Author: RED Academy
+Author: Jen, Mike, Matt, Kyle
 Author URI: http://www.redacademy.com
 Description: A theme for Collingwood Neighborhood House
 Version: 1.0.0
@@ -303,7 +303,7 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
+  color: #222222;
   font-family: sans-serif;
   font-size: 16px;
   font-size: 1rem;
@@ -642,10 +642,6 @@ a {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
-.entry-meta {
-  color: red;
-  font-family: 'Lato-BlackItalic'; }
-
 .sticky {
   display: block; }
 
