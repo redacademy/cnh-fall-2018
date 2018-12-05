@@ -283,8 +283,11 @@ th {
 
 @font-face {
   font-family: 'Lato-Regular';
+<<<<<<< HEAD
   src: url("../fonts/Lato-Regular.eot");
   src: url("../fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("truetype"), url("../fonts/Lato-Regular.svg#Lato-Regular") format("svg");
+=======
+>>>>>>> f2d648a6559176cbc899ae69cd725e12371dc176
   src: url("../../cnh/fonts/Lato-Regular.eot");
   src: url("../../cnh/fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../../cnh/fonts/Lato-Regular.woff2") format("woff2"), url("../../cnh/fonts/Lato-Regular.woff") format("woff"), url("../../cnh/fonts/Lato-Regular.ttf") format("truetype"), url("../../cnh/fonts/Lato-Regular.svg#Lato-Regular") format("svg");
   font-weight: normal;
@@ -777,6 +780,7 @@ footer {
 
 .careers-link {
   margin-top: 1.5rem; }
+<<<<<<< HEAD
 
 @media all and (min-width: 1080px) {
   .widget-area {
@@ -788,6 +792,8 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row; } }
+=======
+>>>>>>> f2d648a6559176cbc899ae69cd725e12371dc176
 
 .program-page {
   text-align: center; }
