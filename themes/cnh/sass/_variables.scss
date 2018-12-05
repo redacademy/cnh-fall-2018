@@ -5,7 +5,6 @@ $base__space-unit: 1.5rem;
 $tablet-width: 600px;
 $desktop-width: 1080px;
 
-
 // Colors
 
 $color__background-body: #fff;
@@ -34,6 +33,9 @@ $font__sidebar: 'Lato-Regular';
 $font__breadcrumb: 'Late-Regular';
 $font__title: 'Lato-Black';
 $font__subtitle: 'Lato-Bold';
+
+$font__code: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
+$font__pre: 'Courier 10 Pitch', Courier, monospace;
 
 $size__body: '1.25rem';
 $size__sidebar: '1.25rem';
