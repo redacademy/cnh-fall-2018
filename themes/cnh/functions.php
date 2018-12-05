@@ -56,7 +56,7 @@ add_action( 'after_setup_theme', 'red_starter_content_width', 0 );
  */
 function red_starter_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html( 'Sidebar' ),
+		'name'          => esc_html( 'footer' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -64,6 +64,8 @@ function red_starter_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+	
 }
 add_action( 'widgets_init', 'red_starter_widgets_init' );
 

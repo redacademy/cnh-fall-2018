@@ -740,3 +740,5 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+footer {
+  background-color: black; }
