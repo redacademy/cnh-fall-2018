@@ -283,8 +283,8 @@ th {
 
 @font-face {
   font-family: 'Lato-Regular';
-  src: url("../cnh/fonts/Lato-Regular.eot");
-  src: url("../cnh/fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../cnh/fonts/Lato-Regular.woff2") format("woff2"), url("../cnh/fonts/Lato-Regular.woff") format("woff"), url("../cnh/fonts/Lato-Regular.ttf") format("truetype"), url("../cnh/fonts/Lato-Regular.svg#Lato-Regular") format("svg");
+  src: url("../fonts/Lato-Regular.eot");
+  src: url("../fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("truetype"), url("../fonts/Lato-Regular.svg#Lato-Regular") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -741,4 +741,32 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 footer {
-  background-color: black; }
+  background-color: #222222;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  font-family: 'Lato-Regular'; }
+  footer p {
+    margin: 0; }
+
+.widget_text {
+  margin-bottom: .5rem; }
+
+.alignnone {
+  width: 40px;
+  margin: .5rem;
+  margin-bottom: 0rem; }
+
+.widget-title {
+  margin: .5rem; }
+
+.joyce-phonenumber, .annex-phonenumber {
+  margin-bottom: 1rem; }
+
+.careers-link {
+  margin-top: 1.5rem; }
