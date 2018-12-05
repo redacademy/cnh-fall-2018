@@ -283,8 +283,13 @@ th {
 
 @font-face {
   font-family: 'Lato-Regular';
+<<<<<<< HEAD
+  src: url("../fonts/Lato-Regular.eot");
+  src: url("../fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("truetype"), url("../fonts/Lato-Regular.svg#Lato-Regular") format("svg");
+=======
   src: url("../../cnh/fonts/Lato-Regular.eot");
   src: url("../../cnh/fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../../cnh/fonts/Lato-Regular.woff2") format("woff2"), url("../../cnh/fonts/Lato-Regular.woff") format("woff"), url("../../cnh/fonts/Lato-Regular.ttf") format("truetype"), url("../../cnh/fonts/Lato-Regular.svg#Lato-Regular") format("svg");
+>>>>>>> 0316f796a0cf500e01ea16ef31a7b467d527306a
   font-weight: normal;
   font-style: normal; }
 
