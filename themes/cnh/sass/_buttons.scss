@@ -1,18 +1,33 @@
 .button-yellow{
     background-color: $color__button;
-    border-radius: 1rem;
-    margin: 0.5rem;
-    font-size: 2rem;
-    font-family: 'Lato-Bold';
-    text-decoration: none;
-    
 }
 
 .button-pink{
     background-color: $color__highlight; 
+}
+
+.all-button{
     border-radius: 1rem;
     margin: 0.5rem;
-    font-size: 2rem;
-    font-family: 'Lato-Black';
+    font-size: 1.67rem;
+    height: 5.67rem;
+    text-align: center;
+    font-family: 'Lato-Bold';
     text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+        opacity: 0.5;
+    }
+    @include desktop{
+        width:357px;
+        height:238px;
+        border-radius: 8px;
+       a{
+           font-size: 30px;
+           line-height: 36px;
+       }
+    }
 }
