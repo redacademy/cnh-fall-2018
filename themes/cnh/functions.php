@@ -35,7 +35,10 @@ function red_starter_setup() {
 		'caption',
 	) );
 
+	// Allow custom headers in the theme.
+	add_theme_support( 'custom-header' );
 }
+
 endif; // red_starter_setup
 add_action( 'after_setup_theme', 'red_starter_setup' );
 
@@ -105,3 +108,8 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+/**
+ * Add breadcrumbs.
+ */
+add_theme_support( 'yoast-seo-breadcrumbs' );
