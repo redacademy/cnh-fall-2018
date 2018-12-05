@@ -746,37 +746,6 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 footer {
-<<<<<<< HEAD
-  background-color: #222222;
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  font-family: 'Lato-Regular'; }
-  footer p {
-    margin: 0; }
-
-.widget_text {
-  margin-bottom: .5rem; }
-
-.alignnone {
-  width: 40px;
-  margin: .5rem;
-  margin-bottom: 0rem; }
-
-.widget-title {
-  margin: .5rem; }
-
-.joyce-phonenumber, .annex-phonenumber {
-  margin-bottom: 1rem; }
-
-.careers-link {
-  margin-top: 1.5rem; }
-=======
   background-color: black; }
 
 .program-page {
@@ -1872,4 +1841,3 @@ footer {
     bottom: 0;
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg); }
->>>>>>> 0316f796a0cf500e01ea16ef31a7b467d527306a
