@@ -16,9 +16,3 @@
 	display: none;
 }
 
-.widget-area{
-	display: none;
-	@include desktop {
-		display: block;
-	}
-}
