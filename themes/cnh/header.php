@@ -29,13 +29,99 @@
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
-          <button class="hamburger hamburger--elastic is-active" type="button">
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-            </span>
-          </button>
+          <span class="open-slide">
+            <a href="#" onclick="openSideMenu()">
+              <svg width="30" height="30">
+                  <path d="M0,5 30,5" stroke="#000" stroke-width="5"></path>
+                  <path d="M0,14 30,14" stroke="#000" stroke-width="5"></path>
+                  <path d="M0,23 30,23" stroke="#000" stroke-width="5"></path>
+              </svg>
+            </a>
+          </span>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
+        <div id="side-menu" class="side-nav" style="width: 0px;">
+          <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+          <ul class="side-navbar">
+            <li class="side-item">
+              <a href="#">Home</a>
+            </li>
+            <li class="side-item">
+              <a href="#">About Us</a>
+              <ul class="side-navbar-nest">
+                <li class="nest-item">
+                  <a href="#">Who We Are</a>
+                </li>
+                <li class="nest-item">
+                  <a href="#">Contact Us</a>
+                </li>
+                <li class="nest-item">
+                  <a href="#">Careers</a>
+                </li>
+              </ul>
+            </li>
+            <li class="side-item">
+              <a href="#">Programs</a>
+              <ul class="side-navbar-nest">
+                <li class="nest-item">
+                  <a href="#">Children/Youth</a>
+                </li>
+                <li class="nest-item">
+                  <a href="#">Family</a>
+                </li>
+                <li class="nest-item">
+                  <a href="#">Senior</a>
+                </li>
+                <li class="nest-item">
+                  <a href="#">Adult</a>
+                </li>
+                <li class="nest-item">
+                  <a href="#">Community Development</a>
+                </li>
+              </ul>
+            </li>
+            <li class="side-item">
+              <a href="#">Services</a>
+              <ul class="side-navbar-nest">
+                <li class="nest-item">
+                  <a href="#">Childcare</a>
+                </li>
+                <li class="nest-item">
+                  <a href="#">Immigrant Services</a>
+                </li>
+                <li class="nest-item">
+                  <a href="#">Family</a>
+                </li>
+                <li class="nest-item">
+                  <a href="#">Youth</a>
+                </li>
+                <li class="nest-item">
+                  <a href="#">Seniors</a>
+                </li>
+                <li class="nest-item">
+                  <a href="#">Rentals</a>
+                </li>
+              </ul>
+            </li>
+            <li class="side-item">
+              <a href="#">Get Involved</a>
+              <ul class="side-navbar-nest">
+                <li class="nest-item">
+                  <a href="#">Become a Member</a>
+                </li>
+                <li class="nest-item">
+                  <a href="#">Donate</a>
+                </li>
+                <li class="nest-item">
+                  <a href="#">Volunteer</a>
+                </li>
+              </ul>
+            </li>
+            <li class="side-item">
+              <a href="#">Events</a>
+            </li>
+          </ul>
+        </div>
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">
