@@ -1,0 +1,18 @@
+.button-yellow{
+    background-color: $color__button;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    font-size: 2rem;
+    font-family: 'Lato-Bold';
+    text-decoration: none;
+    
+}
+
+.button-pink{
+    background-color: $color__highlight; 
+    border-radius: 1rem;
+    margin: 0.5rem;
+    font-size: 2rem;
+    font-family: 'Lato-Black';
+    text-decoration: none;
+}
