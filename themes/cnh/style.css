@@ -753,6 +753,9 @@ footer {
   font-family: 'Lato-Regular'; }
   footer p {
     margin: 0; }
+  footer ul {
+    padding-left: 0;
+    margin-left: 0; }
   footer li {
     list-style: none; }
   footer a {
@@ -778,7 +781,7 @@ footer {
 .careers-link {
   margin-top: 1.5rem; }
 
-#custom_html-8 {
+#custom_html-5 {
   display: none; }
 
 @media all and (min-width: 1080px) {
@@ -831,9 +834,9 @@ footer {
     width: 1170px;
     margin-top: 2.0625rem;
     margin-bottom: 1.4375rem; }
-  #custom_html-8 {
+  #custom_html-5 {
     display: inherit; }
-  #custom_html-2, #custom_html-3 {
+  #custom_html-4, #custom_html-3 {
     display: none; } }
 
 .program-page {
@@ -856,11 +859,21 @@ footer {
     color: #282460; }
     @media all and (min-width: 1080px) {
       .page-template-programs-php .entry-content p {
-        text-align: left; } }
+        text-align: left;
+        font-size: 20px;
+        line-height: 26px; } }
 
 @media all and (min-width: 1080px) {
   .page-template-programs-php .wp-block-image {
     display: none; } }
+
+@media all and (min-width: 1080px) {
+  .has-3-columns {
+    margin: auto; } }
+
+@media all and (min-width: 1080px) {
+  .has-2-columns {
+    margin: auto; } }
 
 .button-yellow {
   background-color: #fab568; }
@@ -892,17 +905,10 @@ footer {
     .all-button {
       width: 357px;
       height: 238px;
-      border-radius: 8px;
-      font-size: 30px; } }
-
-.flex-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+      border-radius: 8px; }
+      .all-button a {
+        font-size: 30px;
+        line-height: 36px; } }
 
 /*!
  * Hamburgers

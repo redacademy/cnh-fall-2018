@@ -14,16 +14,29 @@
     margin: 0 2.4rem;
     p{
         color:$color__main;
-        
+
         @include desktop{
             text-align: left;
+            font-size: 20px;
+            line-height: 26px;
         }
     }
-  
 }
 
 .page-template-programs-php .wp-block-image{
     @include desktop{
         display: none;
+    }
+}
+
+.has-3-columns{
+    @include desktop{
+        margin:auto;
+    }
+}
+
+.has-2-columns{
+    @include desktop{
+        margin:auto;
     }
 }

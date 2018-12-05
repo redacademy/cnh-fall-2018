@@ -25,11 +25,9 @@
         width:357px;
         height:238px;
         border-radius: 8px;
-        font-size: 30px;
+       a{
+           font-size: 30px;
+           line-height: 36px;
+       }
     }
-}
-
-.flex-button{
-    display: flex;
-    flex-direction: column;
 }
