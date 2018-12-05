@@ -9,6 +9,10 @@ footer {
         p {
                 margin: 0;
             }
+            ul {
+                padding-left: 0;
+                margin-left: 0;
+            }
         li {
             list-style: none;
         }
@@ -37,7 +41,7 @@ footer {
 .careers-link {
     margin-top: 1.5rem;
 }
-#custom_html-8 {
+#custom_html-5 {
     display: none;
 }
 @include desktop {
@@ -89,10 +93,10 @@ footer {
     margin-top: 2.0625rem;
     margin-bottom: 1.4375rem;
 }
-#custom_html-8 {
+#custom_html-5 {
     display: inherit;
 }
-#custom_html-2, #custom_html-3 {
+#custom_html-4, #custom_html-3 {
     display: none;
 }
 }
