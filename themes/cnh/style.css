@@ -638,6 +638,12 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+.widget-area {
+  display: none; }
+  @media all and (min-width: 1080px) {
+    .widget-area {
+      display: block; } }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
