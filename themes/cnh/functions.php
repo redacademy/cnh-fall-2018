@@ -35,7 +35,10 @@ function red_starter_setup() {
 		'caption',
 	) );
 
+	// Allow custom headers in the theme.
+	add_theme_support( 'custom-header' );
 }
+
 endif; // red_starter_setup
 add_action( 'after_setup_theme', 'red_starter_setup' );
 
