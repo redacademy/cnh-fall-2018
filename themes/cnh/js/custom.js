@@ -1,22 +1,33 @@
 (function ($) {
   $(function () {
 
-    $('#open-slide').on('click', function (event) {
+    const $sideMenu = $('#side-menu');
+
+    $('.btn-open').on('click', function (event) {
       event.preventDefault();
 
       console.log('working');
 
       openSideMenu();
+    });
+
+    $('.btn-close').on('click', function (event) {
+      event.preventDefault();
+
+      console.log('working it!');
+
       closeSideMenu();
     });
 
     function openSideMenu() {
-      document.getElementById('side-menu').style.width = '250px';
+      $sideMenu.css('width', '100%');
+      // document.getElementById('side-menu').style.width = '250px';
       // document.getElementById('main').style.marginLeft = '250px';
     }
 
     function closeSideMenu() {
-      document.getElementById('side-menu').style.width = '0';
+      $sideMenu.css('width', '0');
+      // document.getElementById('side-menu').style.width = '0';
       // document.getElementById('main').style.marginLeft = '0';
     }
   }); // end of doc ready

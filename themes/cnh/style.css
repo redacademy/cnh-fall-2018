@@ -343,7 +343,7 @@ code, kbd, tt, var {
   font-size: 0.9375rem; }
 
 abbr, acronym {
-  border-bottom: 1px dotted #666;
+  border-bottom: 1px dotted #555;
   cursor: help; }
 
 mark, ins {
@@ -503,9 +503,14 @@ a {
 /* Menus */
 .main-navigation {
   clear: both;
-  display: block;
-  float: left;
-  width: 100%; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  padding: 0 1.5rem; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -755,8 +760,12 @@ footer {
     margin: 0; }
   footer ul {
     padding-left: 0;
+<<<<<<< HEAD
     margin-left: 0;
     margin-top: 1.0625rem; }
+=======
+    margin-left: 0; }
+>>>>>>> ef37c838d8a28daa9f6e2555e3c6a253a1ed2967
   footer li {
     list-style: none; }
   footer a {
@@ -781,9 +790,12 @@ footer {
 
 .careers-link {
   margin-top: 1.5rem; }
+<<<<<<< HEAD
+=======
 
 #custom_html-5 {
   display: none; }
+>>>>>>> 291752a5a1c2ef7e53b9c9ea70cfad18daafa26c
 
 @media all and (min-width: 1080px) {
   footer ul {
@@ -828,6 +840,9 @@ footer {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
+<<<<<<< HEAD
+            flex-direction: row; } }
+=======
             flex-direction: row;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -839,6 +854,7 @@ footer {
     display: inherit; }
   #custom_html-4, #custom_html-3 {
     display: none; } }
+>>>>>>> 291752a5a1c2ef7e53b9c9ea70cfad18daafa26c
 
 .program-page {
   text-align: center; }
@@ -860,11 +876,21 @@ footer {
     color: #282460; }
     @media all and (min-width: 1080px) {
       .page-template-programs-php .entry-content p {
-        text-align: left; } }
+        text-align: left;
+        font-size: 20px;
+        line-height: 26px; } }
 
 @media all and (min-width: 1080px) {
   .page-template-programs-php .wp-block-image {
     display: none; } }
+
+@media all and (min-width: 1080px) {
+  .has-3-columns {
+    margin: auto; } }
+
+@media all and (min-width: 1080px) {
+  .has-2-columns {
+    margin: auto; } }
 
 .button-yellow {
   background-color: #fab568; }
@@ -875,6 +901,11 @@ footer {
 .all-button {
   border-radius: 1rem;
   margin: 0.5rem;
+<<<<<<< HEAD
+  font-size: 2rem;
+  font-family: 'Lato-Black';
+  text-decoration: none; }
+=======
   font-size: 1.67rem;
   height: 5.67rem;
   text-align: center;
@@ -896,6 +927,12 @@ footer {
     .all-button {
       width: 357px;
       height: 238px;
+<<<<<<< HEAD
+      border-radius: 8px; }
+      .all-button a {
+        font-size: 30px;
+        line-height: 36px; } }
+=======
       border-radius: 8px;
       font-size: 30px; } }
 
@@ -907,6 +944,8 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+>>>>>>> 291752a5a1c2ef7e53b9c9ea70cfad18daafa26c
+>>>>>>> ac1add5893b37d3b6b75f1dec31d7aadf4380757
 
 /*!
  * Hamburgers
@@ -1974,6 +2013,7 @@ footer {
 /*--------------------------------------------------------------
 # Side Menu
 --------------------------------------------------------------*/
+<<<<<<< HEAD
 img.background-wave {
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1); }
@@ -1988,3 +2028,35 @@ a {
   text-decoration: none; }
   a:hover {
     color: #fab0bc; }
+=======
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: #fff;
+  overflow-x: hidden;
+  padding-top: 6rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
+  .side-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 99%;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    .side-nav ul .side-item {
+      border-bottom: 1px solid #ddd;
+      padding: 0.75rem; }
+  .side-nav a {
+    text-decoration: none; }
+  .side-nav .btn-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 2.5rem;
+    color: #282460; }
+>>>>>>> ef37c838d8a28daa9f6e2555e3c6a253a1ed2967
