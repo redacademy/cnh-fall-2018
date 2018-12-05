@@ -35,20 +35,21 @@
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
+          <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
+          <?php get_search_form(); ?>
           <span class="open-slide">
-            <a href="#" onclick="openSideMenu()">
+            <a href="#" class="btn-open">
               <svg width="30" height="30">
-                  <path d="M0,5 30,5" stroke="#000" stroke-width="5"></path>
-                  <path d="M0,14 30,14" stroke="#000" stroke-width="5"></path>
-                  <path d="M0,23 30,23" stroke="#000" stroke-width="5"></path>
+                  <path d="M0,5 30,5" stroke="#282460" stroke-width="2"></path>
+                  <path d="M0,14 30,14" stroke="#282460" stroke-width="2"></path>
+                  <path d="M0,23 30,23" stroke="#282460" stroke-width="2"></path>
               </svg>
             </a>
           </span>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+          <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
         <div id="side-menu" class="side-nav" style="width: 0px;">
-          <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+          <a href="#" class="btn-close">&times;</a>
           <ul class="side-navbar">
             <li class="side-item">
               <a href="#">Home</a>
