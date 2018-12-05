@@ -1,13 +1,13 @@
 <?php
  /**
  *
- * @package   Collingwood Neighborhood House Functionality
+ * @package   Collingwood Neighbourhood House Functionality
  * @author    Jen, Mike, Matt, Kyle
  * @license   GPL-2.0+
  * @copyright 2015 Your Name or Company
  *
  * @wordpress-plugin
- * Plugin Name: Collingwood Neighborhood House Functionality
+ * Plugin Name: Collingwood Neighbourhood House Functionality
  * Description: This very important plugin contains all of the core functionality for this website so that it remains theme-independent.
  * Version:     1.0.0
  * Author:      Jen, Mike, Matt, Kyle
