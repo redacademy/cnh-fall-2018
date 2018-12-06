@@ -15,7 +15,7 @@ get_header(); ?>
         yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
       }
 	  ?>
-	 	 	<div class="program-page">
+	 	 	<div class="center-page">
 
 				<?php while ( have_posts() ) : the_post(); ?>
 

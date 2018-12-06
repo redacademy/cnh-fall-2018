@@ -11,7 +11,11 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
-				<?php get_sidebar(); ?>
+
+					<div  class="widget-area">
+						<?php dynamic_sidebar( 'sidebar-1' ); ?>
+					</div><!-- #secondary -->						
+				
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->

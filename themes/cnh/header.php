@@ -12,7 +12,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-    <link href="dist/hamburgers.css" rel="stylesheet">
 
 	<?php wp_head(); ?>
 	</head>
@@ -24,7 +23,10 @@
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<p class="site-description"><?php ?></p>
+          <p class="site-description"><?php ?></p>
+          <a href="<?php echo esc_url( home_url() ); ?>">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Logo_CNH.svg" alt="CNH Logo" class="header-logo"/>
+          </a>
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
@@ -48,81 +50,81 @@
           </div>
           <ul class="side-navbar">
             <li class="side-item">
-              <a href="#">Home</a>
+              <a href="#" class="side-link">Home</a>
             </li>
-            <li class="side-item">
-              <a href="#">About Us</a>
-              <ul class="side-navbar-nest">
-                <li class="nest-item">
+            <li class="side-item accordion-toggle">
+              <a href="#" class="side-link">About Us</a>
+            </li>
+            <ul class="side-navbar-sub accordion-content">
+                <li class="sub-item">
                   <a href="#">Who We Are</a>
                 </li>
-                <li class="nest-item">
+                <li class="sub-item">
                   <a href="#">Contact Us</a>
                 </li>
-                <li class="nest-item">
+                <li class="sub-item">
                   <a href="#">Careers</a>
                 </li>
               </ul>
+            <li class="side-item accordion-toggle">
+              <a href="#" class="side-link">Programs</a>
             </li>
-            <li class="side-item">
-              <a href="#">Programs</a>
-              <ul class="side-navbar-nest">
-                <li class="nest-item">
-                  <a href="#">Children/Youth</a>
-                </li>
-                <li class="nest-item">
-                  <a href="#">Family</a>
-                </li>
-                <li class="nest-item">
-                  <a href="#">Senior</a>
-                </li>
-                <li class="nest-item">
-                  <a href="#">Adult</a>
-                </li>
-                <li class="nest-item">
-                  <a href="#">Community Development</a>
-                </li>
-              </ul>
+            <ul class="side-navbar-sub accordion-content">
+              <li class="sub-item">
+                <a href="#">Children/Youth</a>
+              </li>
+              <li class="sub-item">
+                <a href="#">Family</a>
+              </li>
+              <li class="sub-item">
+                <a href="#">Senior</a>
+              </li>
+              <li class="sub-item">
+                <a href="#">Adult</a>
+              </li>
+              <li class="sub-item">
+                <a href="#">Community Development</a>
+              </li>
+            </ul>
+            <li class="side-item accordion-toggle">
+              <a href="#" class="side-link">Services</a>
             </li>
-            <li class="side-item">
-              <a href="#">Services</a>
-              <ul class="side-navbar-nest">
-                <li class="nest-item">
-                  <a href="#">Childcare</a>
-                </li>
-                <li class="nest-item">
-                  <a href="#">Immigrant Services</a>
-                </li>
-                <li class="nest-item">
-                  <a href="#">Family</a>
-                </li>
-                <li class="nest-item">
-                  <a href="#">Youth</a>
-                </li>
-                <li class="nest-item">
-                  <a href="#">Seniors</a>
-                </li>
-                <li class="nest-item">
-                  <a href="#">Rentals</a>
-                </li>
-              </ul>
+            <ul class="side-navbar-sub accordion-content">
+              <li class="sub-item">
+                <a href="#">Childcare</a>
+              </li>
+              <li class="sub-item">
+                <a href="#">Immigrant Services</a>
+              </li>
+              <li class="sub-item">
+                <a href="#">Family</a>
+              </li>
+              <li class="sub-item">
+                <a href="#">Youth</a>
+              </li>
+              <li class="sub-item">
+                <a href="#">Seniors</a>
+              </li>
+              <li class="sub-item">
+                <a href="#">Rentals</a>
+              </li>
+            </ul>
+            <li class="side-item accordion-toggle">
+              <a href="#" class="side-link">Get Involved</a>
             </li>
+            <ul class="side-navbar-sub accordion-content">
+              <li class="sub-item">
+                <a href="#">Become a Member</a>
+              </li>
+              <li class="sub-item">
+                <a href="#">Donate</a>
+              </li>
+              <li class="sub-item">
+                <a href="#">Volunteer</a>
+              </li>
+            </ul>
             <li class="side-item">
-              <a href="#">Get Involved</a>
-              <ul class="side-navbar-nest">
-                <li class="nest-item">
-                  <a href="#">Become a Member</a>
-                </li>
-                <li class="nest-item">
-                  <a href="#">Donate</a>
-                </li>
-                <li class="nest-item">
-                  <a href="#">Volunteer</a>
-                </li>
-              </ul>
-            </li>
-            <li class="side-item">
-              <a href="#">Events</a>
+              <a href="#" class="side-link">Events</a>
             </li>
           </ul>
         </div>
