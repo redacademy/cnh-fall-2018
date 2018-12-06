@@ -34,9 +34,6 @@ function cnh_setup() {
 		'gallery',
 		'caption',
 	) );
-
-	// Allow custom headers in the theme.
-	add_theme_support( 'custom-header' );
 }
 
 endif; // red_starter_setup
