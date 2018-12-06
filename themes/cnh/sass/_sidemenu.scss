@@ -2,47 +2,7 @@
 # Side Menu
 --------------------------------------------------------------*/
 
-// .side-nav {
-//   height: 100%;
-//   width: 0;
-//   position: fixed;
-//   z-index: 1;
-//   top: 0;
-//   right: 0;
-//   background-color: #111;
-//   opacity: 0.9;
-//   overflow-x: hidden;
-//   padding-top: 60px;
-//   transition: 0.5s;
-// }
-
-// .side-nav a {
-//   padding: 10px 10px 10px 30px;
-//   text-decoration: none;
-//   font-size: 22px;
-//   color: #ccc;
-//   display: block;
-//   transition: 0.3s;
-// }
-
-// .side-nav a:hover {
-//   color: #fff;
-// }
-
-// .side-nav .btn-close {
-//   position: absolute;
-//   top: 0;
-//   right: 22px;
-//   font-size: 36px;
-//   margin-left: 50px;
-// }
-
 .side-nav {
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // text-align: center;
-
   height: 100%;
   width: 0;
   position: fixed;
@@ -50,30 +10,58 @@
   top: 0;
   left: 0;
   background: $color__background-body;
-  overflow-x: hidden; // prevents scrolling
-  padding-top: $base__space-unit * 4;
+  overflow-x: hidden; // hides scroll bar
+  padding-top: $base__space-unit;
   transition: 0.5s;
 
   ul {
     list-style: none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    width: 99%;
+    width: 98%;
     transition: 0.3s;
 
     display: flex;
     flex-direction: column;
     text-align: center;
 
+    .side-navbar-sub {
+      display: none;
+    }
+
     .side-item {
-      border-bottom: $border__solid;
+      border-top: $border__solid;
       padding: $base__space-unit / 2;
+
+      &:first-child {
+        border: 0;
+      }
+
+      &:last-child {
+        border-bottom: $border__solid;
+      }
+    }
+
+    .sub-item {
+      padding: $base__space-unit / 3;
+
+      &:first-child {
+        border-top: $border__solid;
+      }
+
+      & a {
+        font-family: $font__main;
+        font-size: $size__body / 1.25;
+      }
+
     }
   }
 
   a {
     text-decoration: none;
     color: $color__main;
+    font-size: $size__body;
+    font-family: $font__subtitle;
 
     &:hover {
       color: $color__highlight;
@@ -100,4 +88,51 @@
     font-size: $size__body * 2;
     color: $color__main;
   }
+}
+
+// 
+.accordion-toggle,
+.accordion-content {
+  cursor: pointer;
+  position: relative;
+  // letter-spacing: 1px;
+}
+
+.accordion-content {
+  display: none;
+}
+
+.accordion-toggle a:before,
+.accordion-toggle a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  width: 15px;
+  height: 2px;
+  margin-top: -1px;
+  background-color: $color__text-main;
+  transform-origin: 50% 50%;
+  transition: all 0.3s ease-out;
+}
+
+.accordion-toggle a:before {
+  transform: rotate(-90deg);
+  opacity: 1;
+  z-index: 2;
+}
+
+.accordion-toggle.active-tab {
+  background: $color__highlight;
+  transition: all 0.3s ease;
+}
+
+.accordion-toggle a.active:before {
+  transform: rotate(0deg);
+}
+
+.accordion-toggle a.active:after {
+  transform: rotate(180deg);
+  // opacity: 0;
 }
