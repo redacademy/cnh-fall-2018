@@ -917,10 +917,12 @@ footer {
       width: 456px;
       height: 456px; }
     .instalame-container .photo:last-child {
-      display: initial; }
+      display: initial;
+      margin-left: 2rem; }
     .instalame-container img {
       width: 100%;
-      height: 100%; } }
+      height: 100%;
+      border-radius: 2%; } }
 
 .center-page {
   text-align: center; }
