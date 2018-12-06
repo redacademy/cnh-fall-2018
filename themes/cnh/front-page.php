@@ -10,7 +10,10 @@ get_header(); ?>
 
 		<main id="main" class="site-main" role="main">
 			<div class="instalame-container">
-</div>
+			</div>
+
+			<div class="frontpage-buttons">
+			</div>
 		<?php if ( have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
