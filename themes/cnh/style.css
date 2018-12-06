@@ -1059,6 +1059,9 @@ footer {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
 
+.accordion-toggle a:hover.active {
+  color: #fff; }
+
 .accordion-toggle a.active:before {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg); }
