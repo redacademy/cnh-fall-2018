@@ -23,3 +23,15 @@
       }
     }
 }
+
+.menu-item{
+    display: block;
+    position: relative;
+    &::after{
+    content: '';
+    background: url('../../assets/icons/side-nav-arrow.png');
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    }
+}
