@@ -48,81 +48,81 @@
           </div>
           <ul class="side-navbar">
             <li class="side-item">
-              <a href="#">Home</a>
+              <a href="#" class="side-link">Home</a>
             </li>
-            <li class="side-item">
-              <a href="#">About Us</a>
-              <ul class="side-navbar-nest">
-                <li class="nest-item">
+            <li class="side-item accordion-toggle">
+              <a href="#" class="side-link">About Us</a>
+            </li>
+            <ul class="side-navbar-sub accordion-content">
+                <li class="sub-item">
                   <a href="#">Who We Are</a>
                 </li>
-                <li class="nest-item">
+                <li class="sub-item">
                   <a href="#">Contact Us</a>
                 </li>
-                <li class="nest-item">
+                <li class="sub-item">
                   <a href="#">Careers</a>
                 </li>
               </ul>
+            <li class="side-item accordion-toggle">
+              <a href="#" class="side-link">Programs</a>
             </li>
-            <li class="side-item">
-              <a href="#">Programs</a>
-              <ul class="side-navbar-nest">
-                <li class="nest-item">
-                  <a href="#">Children/Youth</a>
-                </li>
-                <li class="nest-item">
-                  <a href="#">Family</a>
-                </li>
-                <li class="nest-item">
-                  <a href="#">Senior</a>
-                </li>
-                <li class="nest-item">
-                  <a href="#">Adult</a>
-                </li>
-                <li class="nest-item">
-                  <a href="#">Community Development</a>
-                </li>
-              </ul>
+            <ul class="side-navbar-sub accordion-content">
+              <li class="sub-item">
+                <a href="#">Children/Youth</a>
+              </li>
+              <li class="sub-item">
+                <a href="#">Family</a>
+              </li>
+              <li class="sub-item">
+                <a href="#">Senior</a>
+              </li>
+              <li class="sub-item">
+                <a href="#">Adult</a>
+              </li>
+              <li class="sub-item">
+                <a href="#">Community Development</a>
+              </li>
+            </ul>
+            <li class="side-item accordion-toggle">
+              <a href="#" class="side-link">Services</a>
             </li>
-            <li class="side-item">
-              <a href="#">Services</a>
-              <ul class="side-navbar-nest">
-                <li class="nest-item">
-                  <a href="#">Childcare</a>
-                </li>
-                <li class="nest-item">
-                  <a href="#">Immigrant Services</a>
-                </li>
-                <li class="nest-item">
-                  <a href="#">Family</a>
-                </li>
-                <li class="nest-item">
-                  <a href="#">Youth</a>
-                </li>
-                <li class="nest-item">
-                  <a href="#">Seniors</a>
-                </li>
-                <li class="nest-item">
-                  <a href="#">Rentals</a>
-                </li>
-              </ul>
+            <ul class="side-navbar-sub accordion-content">
+              <li class="sub-item">
+                <a href="#">Childcare</a>
+              </li>
+              <li class="sub-item">
+                <a href="#">Immigrant Services</a>
+              </li>
+              <li class="sub-item">
+                <a href="#">Family</a>
+              </li>
+              <li class="sub-item">
+                <a href="#">Youth</a>
+              </li>
+              <li class="sub-item">
+                <a href="#">Seniors</a>
+              </li>
+              <li class="sub-item">
+                <a href="#">Rentals</a>
+              </li>
+            </ul>
+            <li class="side-item accordion-toggle">
+              <a href="#" class="side-link">Get Involved</a>
             </li>
+            <ul class="side-navbar-sub accordion-content">
+              <li class="sub-item">
+                <a href="#">Become a Member</a>
+              </li>
+              <li class="sub-item">
+                <a href="#">Donate</a>
+              </li>
+              <li class="sub-item">
+                <a href="#">Volunteer</a>
+              </li>
+            </ul>
             <li class="side-item">
-              <a href="#">Get Involved</a>
-              <ul class="side-navbar-nest">
-                <li class="nest-item">
-                  <a href="#">Become a Member</a>
-                </li>
-                <li class="nest-item">
-                  <a href="#">Donate</a>
-                </li>
-                <li class="nest-item">
-                  <a href="#">Volunteer</a>
-                </li>
-              </ul>
-            </li>
-            <li class="side-item">
-              <a href="#">Events</a>
+              <a href="#" class="side-link">Events</a>
             </li>
           </ul>
         </div>
