@@ -31,3 +31,23 @@
        }
     }
 }
+
+.has-3-columns{
+    a{
+        text-transform: uppercase;
+    }
+    @include desktop{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 30px;
+    }
+}
+
+.has-2-columns{
+    a{
+        text-transform: uppercase;
+    }
+    @include desktop{
+        margin:auto;
+    }
+}

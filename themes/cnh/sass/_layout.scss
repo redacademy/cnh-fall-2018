@@ -1,7 +1,9 @@
 .site-content {
-    width: 1170px;
     margin: 0 auto;
     margin-bottom: 2.9375rem;
+    @include desktop{
+        width: 1170px;
+    }
 }
 img.background-wave {
     transform: scaleX(-1)
