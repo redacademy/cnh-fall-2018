@@ -826,7 +826,10 @@ footer {
   margin-bottom: 0rem; }
 
 .widget-title {
-  margin: .5rem; }
+  margin: .5rem;
+  font-size: 1.25rem;
+  font-family: "Lato-Regular";
+  color: #fff; }
 
 .joyce-phonenumber, .annex-phonenumber {
   margin-bottom: 1rem; }
@@ -893,6 +896,35 @@ footer {
   #custom_html-4, #custom_html-3 {
     display: none; } }
 
+<<<<<<< HEAD
+.instalame-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw; }
+  .instalame-container .photo {
+    width: 280px;
+    height: auto; }
+  .instalame-container .photo:last-child {
+    display: none; }
+
+@media all and (min-width: 1080px) {
+  .instalame-container {
+    width: 1094px; }
+    .instalame-container .photo {
+      width: 456px;
+      height: 456px; }
+    .instalame-container .photo:last-child {
+      display: initial; }
+    .instalame-container img {
+      width: 100%;
+      height: 100%; } }
+
+=======
+>>>>>>> ea9277928dec64ddb4d77fba410c8560894c5508
 .center-page {
   text-align: center; }
 
@@ -958,6 +990,19 @@ footer {
       .all-button a {
         font-size: 30px;
         line-height: 36px; } }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> b2f7a075aa6156267415b0e4fe865eafc0660752
+>>>>>>> ea9277928dec64ddb4d77fba410c8560894c5508
+>>>>>>> e7429d28920f21e4bb4db6f74a5d6a9e7cb207b1
 
 .has-3-columns a {
   text-transform: uppercase; }
@@ -977,6 +1022,17 @@ footer {
 @media all and (min-width: 1080px) {
   .has-2-columns {
     margin: auto; } }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> d466fb2894bbb0fb042293f2a8b2f0620bba237e
+>>>>>>> c548a224cd247f0848ef2e62c645125e3eeac9cf
+>>>>>>> b2f7a075aa6156267415b0e4fe865eafc0660752
+>>>>>>> ea9277928dec64ddb4d77fba410c8560894c5508
+>>>>>>> e7429d28920f21e4bb4db6f74a5d6a9e7cb207b1
 
 /*--------------------------------------------------------------
 # Side Menu
@@ -1052,6 +1108,35 @@ footer {
     font-size: 2.5rem;
     color: #282460; }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+.site-main {
+  width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 2.9375rem; }
+
+.content-area {
+  background-image: url(../../images/Wave_Background.png); }
+
+img.background-wave {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  width: 100vw; }
+=======
+<<<<<<< HEAD
+.site-content {
+  width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 2.9375rem; }
+=======
+>>>>>>> b2f7a075aa6156267415b0e4fe865eafc0660752
+>>>>>>> ea9277928dec64ddb4d77fba410c8560894c5508
+>>>>>>> e7429d28920f21e4bb4db6f74a5d6a9e7cb207b1
 .accordion-toggle,
 .accordion-content {
   cursor: pointer;
@@ -1087,6 +1172,9 @@ footer {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
 
+.accordion-toggle a:hover.active {
+  color: #fff; }
+
 .accordion-toggle a.active:before {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg); }
@@ -1102,6 +1190,10 @@ footer {
     .site-content {
       width: 1170px; } }
 
+<<<<<<< HEAD
+.content-area {
+  background-image: url(../../images/Wave_Background.png); }
+=======
 img.background-wave {
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1); }
@@ -1126,6 +1218,48 @@ a {
 .menut-item:active {
   border-bottom: 5px #fab0bc solid; }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+.site-content {
+  margin: 0 auto;
+  margin-bottom: 2.9375rem; }
+  @media all and (min-width: 1080px) {
+    .site-content {
+      width: 1170px; } }
+>>>>>>> d466fb2894bbb0fb042293f2a8b2f0620bba237e
+
+img.background-wave {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1); }
+>>>>>>> c548a224cd247f0848ef2e62c645125e3eeac9cf
+>>>>>>> ea9277928dec64ddb4d77fba410c8560894c5508
+
+h2 {
+  color: #282460;
+  font-family: 'Lato-Black';
+  font-size: 2.8125rem; }
+
+li {
+  list-style: none; }
+
+a {
+  color: #282460;
+  text-decoration: none; }
+  a:hover {
+    color: #fab0bc; }
+  a:visited {
+    color: inherit; }
+
+.wp-block-button:hover {
+  opacity: .5; }
+
+.menut-item:active {
+  border-bottom: 5px #fab0bc solid; }
+
+>>>>>>> b2f7a075aa6156267415b0e4fe865eafc0660752
+>>>>>>> e7429d28920f21e4bb4db6f74a5d6a9e7cb207b1
 .page-template-services-php .entry-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1197,6 +1331,29 @@ a {
 .page-template-about-php .has-2-columns {
   padding-top: 30px; }
 
+#sidebar-2 {
+  display: none; }
+  @media all and (min-width: 1080px) {
+    #sidebar-2 {
+      display: block; } }
+
+<<<<<<< HEAD
+=======
+@media all and (min-width: 1080px) {
+  .widget-sidebar {
+    border-right: 1px solid black;
+    width: 14.44rem;
+    height: auto; }
+    .widget-sidebar ul {
+      text-align: left; } }
+  @media all and (min-width: 1080px) and (min-width: 1080px) {
+    .widget-sidebar a {
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+      font-family: "Lato-Regular";
+      font-weight: 600; } }
+
+>>>>>>> ea9277928dec64ddb4d77fba410c8560894c5508
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -1223,3 +1380,14 @@ a {
     display: none; }
   .site-header nav .search-form {
     display: none; }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> d466fb2894bbb0fb042293f2a8b2f0620bba237e
+>>>>>>> c548a224cd247f0848ef2e62c645125e3eeac9cf
+>>>>>>> b2f7a075aa6156267415b0e4fe865eafc0660752
+>>>>>>> ea9277928dec64ddb4d77fba410c8560894c5508
+>>>>>>> e7429d28920f21e4bb4db6f74a5d6a9e7cb207b1

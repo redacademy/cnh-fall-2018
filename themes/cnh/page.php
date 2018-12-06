@@ -28,7 +28,6 @@ get_header(); ?>
 
 		</main><!-- #main -->
 
-		<img class="background-wave" src="<?php echo get_template_directory_uri() . '../images/Wave_Background.png';?>" alt="background-wave" > </a>
 
 	</div><!-- #primary -->
 

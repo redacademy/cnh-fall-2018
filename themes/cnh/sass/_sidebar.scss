@@ -1,0 +1,25 @@
+#sidebar-2{
+    display:none;
+    @include desktop{
+        display:block;
+    }
+}
+
+.widget-sidebar{
+    @include desktop{
+    border-right: 1px solid black;
+    width:14.44rem;
+    height: auto;
+    ul{
+        text-align: left;
+    }
+    a{
+        @include desktop{
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        font-family: $font__sidebar;
+        font-weight: 600;
+        }
+      }
+    }
+}
