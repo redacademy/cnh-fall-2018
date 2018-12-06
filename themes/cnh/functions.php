@@ -89,6 +89,9 @@ add_filter( 'stylesheet_uri', 'cnh_minified_css', 10, 2 );
  */
 function cnh_scripts() {
   wp_enqueue_style( 'cnh-style', get_stylesheet_uri() );
+
+  // to link font awesome
+  wp_enqueue_style('inhabitent-fontawesome','https://use.fontawesome.com/releases/v5.5.0/css/all.css');
   
   // to queue jquery
   wp_enqueue_script('jquery');
