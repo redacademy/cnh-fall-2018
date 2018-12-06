@@ -92,7 +92,7 @@ function cnh_scripts() {
   
   // to queue jquery
   wp_enqueue_script('jquery');
-
+  wp_enqueue_script('spectragram.js', get_template_directory_uri() . '/build/js/spectragram.min.js', array(), '20181206', true);
 	wp_enqueue_script( 'cnh-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
   wp_enqueue_script( 'cnh-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
   
