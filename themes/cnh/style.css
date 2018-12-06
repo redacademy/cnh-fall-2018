@@ -778,7 +778,19 @@ object {
         color: #282460;
         text-transform: uppercase;
         text-align: center;
-        letter-spacing: 3px; }
+        letter-spacing: 2px; }
+      .page-template-default .site .site-content .content-area .site-main .type-page .entry-content h3 {
+        font-family: "Lato-Regular";
+        font-size: 1.25rem;
+        color: #282460;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 2px; }
+      .page-template-default .site .site-content .content-area .site-main .type-page .entry-content p {
+        font-family: "Lato-Regular";
+        font-size: 1.25rem;
+        color: #222222;
+        text-align: center; }
 
 footer {
   background-color: #393947;
