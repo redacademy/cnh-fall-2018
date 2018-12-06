@@ -32,6 +32,7 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
           <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
           <?php get_search_form(); ?>
+          <?php echo do_shortcode('[google-translator]'); ?>
           <span class="open-slide">
             <a href="#" class="btn-open">
               <svg width="30" height="30">

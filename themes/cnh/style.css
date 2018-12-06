@@ -946,8 +946,6 @@ footer {
       .all-button a {
         font-size: 30px;
         line-height: 36px; } }
-<<<<<<< HEAD
-=======
 
 .has-3-columns a {
   text-transform: uppercase; }
@@ -967,7 +965,6 @@ footer {
 @media all and (min-width: 1080px) {
   .has-2-columns {
     margin: auto; } }
->>>>>>> d466fb2894bbb0fb042293f2a8b2f0620bba237e
 
 /*--------------------------------------------------------------
 # Side Menu
@@ -1043,12 +1040,6 @@ footer {
     font-size: 2.5rem;
     color: #282460; }
 
-<<<<<<< HEAD
-.site-content {
-  width: 1170px;
-  margin: 0 auto;
-  margin-bottom: 2.9375rem; }
-=======
 .accordion-toggle,
 .accordion-content {
   cursor: pointer;
@@ -1126,40 +1117,6 @@ a {
 .menut-item:active {
   border-bottom: 5px #fab0bc solid; }
 
-.site-content {
-  margin: 0 auto;
-  margin-bottom: 2.9375rem; }
-  @media all and (min-width: 1080px) {
-    .site-content {
-      width: 1170px; } }
->>>>>>> d466fb2894bbb0fb042293f2a8b2f0620bba237e
-
-img.background-wave {
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1); }
-
-h2 {
-  color: #282460;
-  font-family: 'Lato-Black';
-  font-size: 2.8125rem; }
-
-li {
-  list-style: none; }
-
-a {
-  color: #282460;
-  text-decoration: none; }
-  a:hover {
-    color: #fab0bc; }
-
-.wp-block-button:hover {
-  opacity: .5; }
-
-.menut-item:active {
-  border-bottom: 5px #fab0bc solid; }
-<<<<<<< HEAD
-=======
-
 .page-template-services-php .entry-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1231,6 +1188,12 @@ a {
 .page-template-about-php .has-2-columns {
   padding-top: 30px; }
 
+#sidebar-2 {
+  display: none; }
+  @media all and (min-width: 1080px) {
+    #sidebar-2 {
+      display: block; } }
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -1257,4 +1220,3 @@ a {
     display: none; }
   .site-header nav .search-form {
     display: none; }
->>>>>>> d466fb2894bbb0fb042293f2a8b2f0620bba237e
