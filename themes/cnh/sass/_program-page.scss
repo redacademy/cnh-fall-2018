@@ -1,7 +1,6 @@
-.program-page{
+.center-page{
    text-align: center;
 }
-
 
 .page-template-programs-php .entry-content{
     display: flex;
@@ -33,14 +32,3 @@
     }
 }
 
-.has-3-columns{
-    @include desktop{
-        margin:auto;
-    }
-}
-
-.has-2-columns{
-    @include desktop{
-        margin:auto;
-    }
-}

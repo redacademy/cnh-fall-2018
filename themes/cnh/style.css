@@ -846,7 +846,7 @@ footer {
   #custom_html-4, #custom_html-3 {
     display: none; } }
 
-.program-page {
+.center-page {
   text-align: center; }
 
 .page-template-programs-php .entry-content {
@@ -876,14 +876,6 @@ footer {
   .page-template-programs-php .entry-title,
   .page-template-programs-php .wp-block-image {
     display: none; } }
-
-@media all and (min-width: 1080px) {
-  .has-3-columns {
-    margin: auto; } }
-
-@media all and (min-width: 1080px) {
-  .has-2-columns {
-    margin: auto; } }
 
 .button-yellow {
   background-color: #fab568; }
@@ -920,6 +912,25 @@ footer {
         font-size: 30px;
         line-height: 36px; } }
 
+.has-3-columns a {
+  text-transform: uppercase; }
+
+@media all and (min-width: 1080px) {
+  .has-3-columns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-top: 30px; } }
+
+.has-2-columns a {
+  text-transform: uppercase; }
+
+@media all and (min-width: 1080px) {
+  .has-2-columns {
+    margin: auto; } }
+
 /*--------------------------------------------------------------
 # Side Menu
 --------------------------------------------------------------*/
@@ -954,10 +965,12 @@ footer {
     font-size: 2.5rem;
     color: #282460; }
 
-body {
-  width: 1170px;
+.site-content {
   margin: 0 auto;
   margin-bottom: 2.9375rem; }
+  @media all and (min-width: 1080px) {
+    .site-content {
+      width: 1170px; } }
 
 img.background-wave {
   -webkit-transform: scaleX(-1);
@@ -982,3 +995,30 @@ a {
 
 .menut-item:active {
   border-bottom: 5px #fab0bc solid; }
+
+.page-template-services-php .entry-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 2.4rem; }
+  .page-template-services-php .entry-content p {
+    color: #282460; }
+    @media all and (min-width: 1080px) {
+      .page-template-services-php .entry-content p {
+        text-align: center;
+        width: 553px;
+        height: 105px;
+        font-size: 20px;
+        line-height: 24px;
+        margin: auto; } }
+
+@media all and (min-width: 1080px) {
+  .page-template-services-php .entry-title {
+    font-family: "Lato-Black";
+    color: #282460;
+    font-size: 65px;
+    line-height: 78px; } }
