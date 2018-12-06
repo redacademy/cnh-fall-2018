@@ -1,0 +1,6 @@
+#sidebar-2{
+    display:none;
+    @include desktop{
+        display:block;
+    }
+}

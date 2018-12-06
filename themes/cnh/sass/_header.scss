@@ -1,0 +1,26 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+.site-header {
+  padding: $base__space-unit;
+  @include flex(row, center, center);
+
+  p {
+    margin: 0;
+  }
+
+  .header-logo {
+    width: 53px;
+  }
+
+  nav {
+    button {
+      display: none;
+    }
+
+    .search-form {
+      display: none;
+    }
+  }
+}

@@ -6,15 +6,11 @@
     $('.btn-open').on('click', function (event) {
       event.preventDefault();
 
-      console.log('working');
-
       openSideMenu();
     });
 
     $('.btn-close').on('click', function (event) {
       event.preventDefault();
-
-      console.log('working it!');
 
       closeSideMenu();
     });
@@ -30,6 +26,7 @@
       // document.getElementById('side-menu').style.width = '0';
       // document.getElementById('main').style.marginLeft = '0';
     }
+<<<<<<< HEAD
   // start of spectagram
   // var spectragramComplete = function () {
   var spectra = {
@@ -52,6 +49,16 @@
  }
 }
 spectra.init();
+=======
+
+    $('.side-navbar').find('.accordion-toggle').click(function () {
+      $(this).next().toggleClass('open').slideToggle('fast');
+      $(this).toggleClass('active-tab').find('.side-link').toggleClass('active');
+
+      $('.side-navbar .accordion-content').not($(this).next()).slideUp('fast').removeClass('open');
+      $('.side-navbar .accordion-toggle').not(jQuery(this)).removeClass('active-tab').find('.side-link').removeClass('active');
+    });
+>>>>>>> c548a224cd247f0848ef2e62c645125e3eeac9cf
 
   }); // end of doc ready
 })(jQuery);
