@@ -1,0 +1,30 @@
+.instalame-container {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    .photo {
+        width: 280px;
+        height: auto;
+    } 
+    .photo:last-child {
+        display: none;
+    }
+
+}
+@include desktop {
+    .instalame-container {
+        width: 1094px;
+        .photo {
+            width: 456px;
+            height: 456px;
+        }
+        .photo:last-child {
+            display: initial;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    
+    }
+}

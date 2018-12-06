@@ -778,7 +778,19 @@ object {
         color: #282460;
         text-transform: uppercase;
         text-align: center;
-        letter-spacing: 3px; }
+        letter-spacing: 2px; }
+      .page-template-default .site .site-content .content-area .site-main .type-page .entry-content h3 {
+        font-family: "Lato-Regular";
+        font-size: 1.25rem;
+        color: #282460;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 2px; }
+      .page-template-default .site .site-content .content-area .site-main .type-page .entry-content p {
+        font-family: "Lato-Regular";
+        font-size: 1.25rem;
+        color: #222222;
+        text-align: center; }
 
 footer {
   background-color: #393947;
@@ -814,7 +826,10 @@ footer {
   margin-bottom: 0rem; }
 
 .widget-title {
-  margin: .5rem; }
+  margin: .5rem;
+  font-size: 1.25rem;
+  font-family: "Lato-Regular";
+  color: #fff; }
 
 .joyce-phonenumber, .annex-phonenumber {
   margin-bottom: 1rem; }
@@ -880,6 +895,32 @@ footer {
     display: inherit; }
   #custom_html-4, #custom_html-3 {
     display: none; } }
+
+.instalame-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw; }
+  .instalame-container .photo {
+    width: 280px;
+    height: auto; }
+  .instalame-container .photo:last-child {
+    display: none; }
+
+@media all and (min-width: 1080px) {
+  .instalame-container {
+    width: 1094px; }
+    .instalame-container .photo {
+      width: 456px;
+      height: 456px; }
+    .instalame-container .photo:last-child {
+      display: initial; }
+    .instalame-container img {
+      width: 100%;
+      height: 100%; } }
 
 .center-page {
   text-align: center; }
@@ -1086,16 +1127,15 @@ footer {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg); }
 
-.site-content {
+.site-main {
   margin: 0 auto;
   margin-bottom: 2.9375rem; }
   @media all and (min-width: 1080px) {
-    .site-content {
+    .site-main {
       width: 1170px; } }
 
-img.background-wave {
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1); }
+.content-area {
+  background-image: url(../../images/Wave_Background.png); }
 
 h2 {
   color: #282460;
@@ -1110,6 +1150,8 @@ a {
   text-decoration: none; }
   a:hover {
     color: #fab0bc; }
+  a:visited {
+    color: inherit; }
 
 .wp-block-button:hover {
   opacity: .5; }
@@ -1193,6 +1235,20 @@ a {
   @media all and (min-width: 1080px) {
     #sidebar-2 {
       display: block; } }
+
+@media all and (min-width: 1080px) {
+  .widget-sidebar {
+    border-right: 1px solid black;
+    width: 14.44rem;
+    height: auto; }
+    .widget-sidebar ul {
+      text-align: left; } }
+  @media all and (min-width: 1080px) and (min-width: 1080px) {
+    .widget-sidebar a {
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+      font-family: "Lato-Regular";
+      font-weight: 600; } }
 
 /*--------------------------------------------------------------
 # Header
