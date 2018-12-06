@@ -15,12 +15,16 @@
             margin: 5px;
         }
     }
+    .subtitle{
+        font-family: $font__subtitle;
+        @include desktop{
+        font-size: 30px;
+        }
+    }
 }
 
-.subtitle{
-    font-family: $font__subtitle;
-    font-size: 30px;
-}
+
+
 
 .page-template-about-php .entry-header{
     text-align: center;
