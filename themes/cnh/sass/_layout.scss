@@ -5,8 +5,13 @@
         width: 1170px;
     }
 }
+.content-area {
+    background-image: url(../../images/Wave_Background.png);
+}
 img.background-wave {
-    transform: scaleX(-1)
+    transform: scaleX(-1);
+    width: 100vw;
+
 }
 h2 {
     color: #282460;
@@ -22,6 +27,9 @@ a {
     text-decoration: none;
     &:hover {
         color: #fab0bc;
+    }
+    &:visited {
+        color: inherit;
     }
 }
 .wp-block-button:hover {
