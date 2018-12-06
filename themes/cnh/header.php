@@ -23,7 +23,10 @@
 			<header id="masthead" class="site-header" role="banner">
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<p class="site-description"><?php ?></p>
+          <p class="site-description"><?php ?></p>
+          <a href="<?php echo esc_url( home_url() ); ?>">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Logo_CNH.svg" alt="CNH Logo" class="header-logo"/>
+          </a>
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">

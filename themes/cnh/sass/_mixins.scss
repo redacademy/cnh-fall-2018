@@ -1,26 +1,33 @@
+// Media Queries
+@mixin tablet {
+  @media all and (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media all and (min-width: $desktop-width) {
+    @content;
+  }
+}
+
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1) {
-	font-size: ($sizeValue * 16) * 1px;
-	font-size: $sizeValue * 1rem;
+  font-size: ($sizeValue * 16) * 1px;
+  font-size: $sizeValue * 1rem;
 }
 
 // Center block
 @mixin center-block {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-// Media Queries
-@mixin tablet {
-	@media all and (min-width: $tablet-width) {
-		@content;
-	}	
+// Display flex
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
 }
-
-@mixin desktop {
-	@media all and (min-width: $desktop-width) {
-		@content;
-	}	
-}
-
