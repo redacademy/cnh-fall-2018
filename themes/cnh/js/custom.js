@@ -30,5 +30,7 @@
       // document.getElementById('side-menu').style.width = '0';
       // document.getElementById('main').style.marginLeft = '0';
     }
+
+
   }); // end of doc ready
 })(jQuery);

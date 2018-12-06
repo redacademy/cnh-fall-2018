@@ -23,6 +23,9 @@ get_header(); ?>
 			<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
+
+		<img class="background-wave" src="<?php echo get_template_directory_uri() . '../images/Wave_Background.png';?>" alt="background-wave" > </a>
+
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
