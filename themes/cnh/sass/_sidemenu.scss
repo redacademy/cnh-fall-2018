@@ -61,6 +61,10 @@
     width: 99%;
     transition: 0.3s;
 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
     .side-item {
       border-bottom: $border__solid;
       padding: $base__space-unit / 2;
@@ -69,12 +73,30 @@
 
   a {
     text-decoration: none;
+    color: $color__main;
+
+    &:hover {
+      color: $color__highlight;
+    }
+  }
+
+  .side-menu-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    fieldset {
+      border-color: $color__background-pre;
+      border-radius: $size__body / 1.5;
+      background: $color__background-pre;
+    }
   }
 
   .btn-close {
-    position: absolute;
-    top: $base__space-unit;
-    right: $base__space-unit;
+    // position: absolute;
+    // top: $base__space-unit;
+    // right: $base__space-unit;
     font-size: $size__body * 2;
     color: $color__main;
   }

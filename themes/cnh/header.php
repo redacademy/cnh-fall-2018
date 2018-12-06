@@ -49,7 +49,10 @@
           <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
         <div id="side-menu" class="side-nav" style="width: 0px;">
-          <a href="#" class="btn-close">&times;</a>
+          <div class="side-menu-top">
+            <?php get_search_form(); ?>
+            <a href="#" class="btn-close">&times;</a>
+          </div>
           <ul class="side-navbar">
             <li class="side-item">
               <a href="#">Home</a>
