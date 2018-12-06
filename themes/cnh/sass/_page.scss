@@ -1,0 +1,34 @@
+// Styling for page.php template
+
+.page-template-default {
+  max-width: 100vw;
+
+  .site {
+    max-width: 100vw;
+
+    .custom-header {
+      display: none;
+    }
+
+    .site-content {
+      max-width: 100vw;
+
+      .content-area {
+        .site-main {
+          .type-page {
+            .entry-header {
+              .entry-title {
+                font-family: $font__title;
+                font-size: $size__subtitle;
+                color: $color__main;
+                text-transform: uppercase;
+                text-align: center;
+                letter-spacing: 3px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

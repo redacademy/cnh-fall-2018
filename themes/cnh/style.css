@@ -529,8 +529,7 @@ a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 100%;
-  padding: 0 1.5rem; }
+  width: 100%; }
   .main-navigation ul {
     display: none;
     list-style: none;
@@ -765,6 +764,22 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.page-template-default {
+  max-width: 100vw; }
+  .page-template-default .site {
+    max-width: 100vw; }
+    .page-template-default .site .custom-header {
+      display: none; }
+    .page-template-default .site .site-content {
+      max-width: 100vw; }
+      .page-template-default .site .site-content .content-area .site-main .type-page .entry-header .entry-title {
+        font-family: "Lato-Black";
+        font-size: 1.875rem;
+        color: #282460;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 3px; }
+
 footer {
   background-color: #393947;
   color: white;
@@ -931,6 +946,8 @@ footer {
       .all-button a {
         font-size: 30px;
         line-height: 36px; } }
+<<<<<<< HEAD
+=======
 
 .has-3-columns a {
   text-transform: uppercase; }
@@ -950,6 +967,7 @@ footer {
 @media all and (min-width: 1080px) {
   .has-2-columns {
     margin: auto; } }
+>>>>>>> d466fb2894bbb0fb042293f2a8b2f0620bba237e
 
 /*--------------------------------------------------------------
 # Side Menu
@@ -1025,6 +1043,12 @@ footer {
     font-size: 2.5rem;
     color: #282460; }
 
+<<<<<<< HEAD
+.site-content {
+  width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 2.9375rem; }
+=======
 .accordion-toggle,
 .accordion-content {
   cursor: pointer;
@@ -1105,6 +1129,7 @@ a {
   @media all and (min-width: 1080px) {
     .site-content {
       width: 1170px; } }
+>>>>>>> d466fb2894bbb0fb042293f2a8b2f0620bba237e
 
 img.background-wave {
   -webkit-transform: scaleX(-1);
@@ -1129,6 +1154,8 @@ a {
 
 .menut-item:active {
   border-bottom: 5px #fab0bc solid; }
+<<<<<<< HEAD
+=======
 
 .page-template-services-php .entry-content {
   display: -webkit-box;
@@ -1200,3 +1227,31 @@ a {
 
 .page-template-about-php .has-2-columns {
   padding-top: 30px; }
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.site-header {
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .site-header p {
+    margin: 0; }
+  .site-header .header-logo {
+    width: 53px; }
+  .site-header nav button {
+    display: none; }
+  .site-header nav .search-form {
+    display: none; }
+>>>>>>> d466fb2894bbb0fb042293f2a8b2f0620bba237e
