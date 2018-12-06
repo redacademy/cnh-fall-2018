@@ -7,11 +7,9 @@
 
         @include desktop{ 
             text-align: center;
-            width:553px;
-            height: 105px;
             font-size: 20px;
             line-height: 24px;
-            margin:auto;
+            margin:0 auto;
         }
     }
 }
@@ -23,4 +21,9 @@
         font-size: 65px;
         line-height: 78px;
     }
+}
+
+.service-description{
+    height: 105px;
+    width: 537px
 }
