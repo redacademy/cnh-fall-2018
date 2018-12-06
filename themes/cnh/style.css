@@ -1158,3 +1158,44 @@ a {
 .service-description {
   height: 105px;
   width: 537px; }
+
+.page-template-about-php .entry-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 2.4rem; }
+  @media all and (min-width: 1080px) {
+    .page-template-about-php .entry-content {
+      text-align: left;
+      margin: 0 300px; } }
+  .page-template-about-php .entry-content p {
+    color: #282460; }
+    @media all and (min-width: 1080px) {
+      .page-template-about-php .entry-content p {
+        font-size: 20px;
+        line-height: 24px;
+        margin: 5px; } }
+
+.subtitle {
+  font-family: "Lato-Bold";
+  font-size: 30px; }
+
+.page-template-about-php .entry-header {
+  text-align: center;
+  font-family: "Lato-Black"; }
+
+@media all and (min-width: 1080px) {
+  .page-template-about-php .all-button {
+    height: 54px;
+    width: 198px; } }
+
+.page-template-about-php .all-button a {
+  font-size: 1rem;
+  line-height: 19px; }
+
+.page-template-about-php .has-2-columns {
+  padding-top: 30px; }
