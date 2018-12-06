@@ -1,3 +1,8 @@
+body {
+    width: 1170px;
+    margin: 0 auto;
+    margin-bottom: 2.9375rem;
+}
 img.background-wave {
     transform: scaleX(-1)
 }
@@ -7,10 +12,19 @@ h2 {
     font-size: 2.8125rem;
 
 }
+li {
+    list-style: none;
+}
 a {
     color: #282460;
     text-decoration: none;
     &:hover {
         color: #fab0bc;
     }
+}
+.wp-block-button:hover {
+    opacity: .5;
+}
+.menut-item:active {
+    border-bottom: 5px #fab0bc solid;
 }
