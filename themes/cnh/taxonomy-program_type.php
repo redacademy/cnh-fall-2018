@@ -37,10 +37,10 @@ get_header(); ?>
             <?php the_title(); ?>
             <div class="ellipsis"></div>
           </p>
-          
-          <p class="price">
-            <?php echo '$' . CFS()->get( 'price' ); ?>
-          </p>
+
+          <div class="entry-content">
+	          	<?php the_content(); ?>
+	      </div><!-- .entry-content -->
         </div><!-- .archive-product-info -->
     </div><!-- .archive-products-wrapper -->
     <?php endwhile; // end of the loop. ?>
@@ -51,5 +51,5 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
