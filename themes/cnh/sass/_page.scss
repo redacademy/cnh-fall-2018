@@ -45,6 +45,24 @@
               }
             }
           }
+
+          p {
+            span {
+              span {
+                a {
+                  margin-right: 0.25rem;
+                }
+              }
+
+              span {
+                margin: 0 0.25rem;
+
+                .breadcrumb_last {
+                  color: $color__highlight;
+                }
+              }
+            }
+          }
         }
       }
     }
