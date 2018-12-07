@@ -112,7 +112,7 @@ function cnh_scripts() {
   wp_enqueue_style('cnh-fontawesome','https://use.fontawesome.com/releases/v5.5.0/css/all.css');
 
   // to link material icons
-  wp_enqueue_style('cnh-materialicons','https://use.fontawesome.com/releases/v5.5.0/css/all.css');
+  wp_enqueue_style('cnh-materialicons','https://fonts.googleapis.com/icon?family=Material+Icons');
 
   // to queue jquery
   wp_enqueue_script('jquery');

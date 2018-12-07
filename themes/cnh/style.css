@@ -1284,17 +1284,6 @@ li .menu-item a {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
 
-.menu-item {
-  display: block;
-  position: relative; }
-  .menu-item::after {
-    content: '';
-    background: url("../../assets/icons/side-nav-arrow.png");
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
-
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -1323,6 +1312,12 @@ li .menu-item a {
     display: none; }
   .site-header nav .btn-open {
     padding-left: 0.75rem; }
+    .site-header nav .btn-open:before {
+      font-family: 'Material Icons';
+      content: "\E927";
+      margin-right: 16px;
+      font-size: 2rem;
+      vertical-align: -10px; }
 
 .goog-te-combo {
   color: pink !important; }

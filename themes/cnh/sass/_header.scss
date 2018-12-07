@@ -25,6 +25,15 @@
 
     .btn-open {
       padding-left: $base__space-unit /2;
+
+      &:before {
+        font-family: 'Material Icons';
+        content: "\E927";
+        margin-right: 16px;
+        font-size: 2rem;
+        vertical-align: -10px;
+        // width:32px!important;
+      }
     }
   }
 }
