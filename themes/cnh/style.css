@@ -791,6 +791,12 @@ object {
         font-size: 1.25rem;
         color: #222222;
         text-align: center; }
+      .page-template-default .site .site-content .content-area .site-main p span span a {
+        margin-right: 0.25rem; }
+      .page-template-default .site .site-content .content-area .site-main p span span {
+        margin: 0 0.25rem; }
+        .page-template-default .site .site-content .content-area .site-main p span span .breadcrumb_last {
+          color: #fab0bc; }
 
 footer {
   background-color: #393947;
