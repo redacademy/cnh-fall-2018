@@ -1322,3 +1322,27 @@ li .menu-item a {
     display: none; }
   .site-header nav .search-form {
     display: none; }
+  .site-header nav .btn-open {
+    padding-left: 0.75rem; }
+    .site-header nav .btn-open:before {
+      font-family: 'Material Icons';
+      content: "\E927";
+      margin-right: 16px;
+      font-size: 2rem;
+      vertical-align: -10px; }
+
+.goog-te-combo {
+  color: pink !important; }
+  .goog-te-combo:before {
+    font-family: 'Material Icons';
+    content: "\E927";
+    margin-right: 16px;
+    font-size: 2rem;
+    vertical-align: -10px; }
+
+.goog-te-menu-value:before {
+  font-family: 'Material Icons';
+  content: "\E927";
+  margin-right: 16px;
+  font-size: 2rem;
+  vertical-align: -10px; }
