@@ -1247,8 +1247,9 @@ a {
 @media all and (min-width: 1080px) {
   .widget-sidebar {
     border-right: 1px solid black;
-    width: 16rem;
-    height: auto; }
+    width: 18rem;
+    height: 100vh;
+    margin-bottom: 10px; }
     .widget-sidebar ul {
       text-align: left; } }
   @media all and (min-width: 1080px) and (min-width: 1080px) {
@@ -1256,8 +1257,11 @@ a {
       font-size: 1.25rem;
       line-height: 1.5rem;
       font-family: "Lato-Regular";
+      font-weight: 600;
       display: block;
-      position: relative; }
+      position: relative;
+      padding: 0.4rem 2.3rem 0.4rem 0;
+      text-transform: uppercase; }
       .widget-sidebar a::after {
         content: '';
         position: absolute;
