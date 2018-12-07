@@ -1308,22 +1308,26 @@ li .menu-item a {
     width: 53px; }
   .site-header nav button {
     display: none; }
+  .site-header nav .translate-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #282460; }
+  .site-header nav #google_language_translator {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px; }
   .site-header nav .search-form {
     display: none; }
   .site-header nav .btn-open {
-    padding-left: 0.75rem; }
-    .site-header nav .btn-open:before {
-      font-family: 'Material Icons';
-      content: "\E927";
-      margin-right: 16px;
-      font-size: 2rem;
-      vertical-align: -10px; }
+    margin-left: 0.75rem; }
 
 .goog-te-combo {
   color: pink !important; }
   .goog-te-combo:before {
     font-family: 'Material Icons';
-    content: "\E927";
+    content: "\E927" !important;
     margin-right: 16px;
     font-size: 2rem;
     vertical-align: -10px; }

@@ -19,24 +19,43 @@
       display: none;
     }
 
+    .translate-icon {
+      display: flex;
+      color: $color__main;
+    }
+
+    #google_language_translator {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+    }
+
     .search-form {
       display: none;
     }
 
     .btn-open {
-      padding-left: $base__space-unit /2;
-
-      &:before {
-        font-family: 'Material Icons';
-        content: "\E927";
-        margin-right: 16px;
-        font-size: 2rem;
-        vertical-align: -10px;
-        // width:32px!important;
-      }
+      margin-left: $base__space-unit / 2;
     }
   }
 }
+
+
+
+// .open-slide {
+//   line-height: 1;
+//   display: flex;
+//   align-items: center;
+
+// &:before {
+//   font-family: 'Material Icons';
+//   content: "\e894";
+//   margin-right: $base__space-unit / 2;
+//   font-size: 1.5rem;
+//   color: $color__main;
+// }
+// }
 
 
 .goog-te-combo {
@@ -44,7 +63,7 @@
 
   &:before {
     font-family: 'Material Icons';
-    content: "\E927";
+    content: "\E927" !important;
     margin-right: 16px;
     font-size: 2rem;
     vertical-align: -10px;
