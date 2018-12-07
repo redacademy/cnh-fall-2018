@@ -1252,6 +1252,17 @@ a {
       font-family: "Lato-Regular";
       font-weight: 600; } }
 
+.menu-item {
+  display: block;
+  position: relative; }
+  .menu-item::after {
+    content: '';
+    background: url("../../assets/icons/side-nav-arrow.png");
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -1278,3 +1289,21 @@ a {
     display: none; }
   .site-header nav .search-form {
     display: none; }
+  .site-header nav .btn-open {
+    padding-left: 0.75rem; }
+
+.goog-te-combo {
+  color: pink !important; }
+  .goog-te-combo:before {
+    font-family: 'Material Icons';
+    content: "\E927";
+    margin-right: 16px;
+    font-size: 2rem;
+    vertical-align: -10px; }
+
+.goog-te-menu-value:before {
+  font-family: 'Material Icons';
+  content: "\E927";
+  margin-right: 16px;
+  font-size: 2rem;
+  vertical-align: -10px; }
