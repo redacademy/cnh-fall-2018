@@ -19,8 +19,78 @@
       display: none;
     }
 
+    .translate-icon {
+      display: flex;
+      color: $color__main;
+    }
+
+    #google_language_translator {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+    }
+
     .search-form {
       display: none;
     }
+
+    .btn-open {
+      margin-left: $base__space-unit / 2;
+    }
   }
 }
+
+
+
+// .open-slide {
+//   line-height: 1;
+//   display: flex;
+//   align-items: center;
+
+// &:before {
+//   font-family: 'Material Icons';
+//   content: "\e894";
+//   margin-right: $base__space-unit / 2;
+//   font-size: 1.5rem;
+//   color: $color__main;
+// }
+// }
+
+
+.goog-te-combo {
+  color: pink !important;
+
+  &:before {
+    font-family: 'Material Icons';
+    content: "\E927" !important;
+    margin-right: 16px;
+    font-size: 2rem;
+    vertical-align: -10px;
+    // width:32px!important;
+  }
+}
+
+.goog-te-menu-value {
+
+  // color: #fff !important;
+  &:before {
+    font-family: 'Material Icons';
+    content: "\E927";
+    margin-right: 16px;
+    font-size: 2rem;
+    vertical-align: -10px;
+    // width:32px!important;
+  }
+}
+
+
+// #google_language_translator select.goog-te-combo {
+//   width: 143px;
+//   background: red;
+//   box-shadow: none !important;
+//   padding: 3px !important;
+//   height: auto !important;
+//   border: 1px solid lightgray !important;
+//   border-radius: 0px !important;
+// }

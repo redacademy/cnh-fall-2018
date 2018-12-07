@@ -44,10 +44,21 @@
 }
 
 .has-2-columns{
+    .wp-block-column{
+        margin: 0;
+    }
     a{
         text-transform: uppercase;
     }
     @include desktop{
         margin:auto;
+    }
+}
+
+.sidebar-button{
+    display: none;
+    @include desktop{
+        display: flex;
+        text-align: center;
     }
 }
