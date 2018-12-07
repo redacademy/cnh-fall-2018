@@ -247,7 +247,7 @@ th {
   font-style: italic; }
 
 @font-face {
-  font-family: 'Lato Hairline';
+  font-family: 'Lato-Hairline';
   src: url("../../assets/fonts/Lato-Hairline.eot");
   src: url("../../assets/fonts/Lato-Hairline.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Lato-Hairline.woff2") format("woff2"), url("../../assets/fonts/Lato-Hairline.woff") format("woff"), url("../../assets/fonts/Lato-Hairline.ttf") format("truetype"), url("../../assets/fonts/Lato-Hairline.svg#Lato-Hairline") format("svg");
   font-weight: 300;
@@ -1241,7 +1241,7 @@ a {
 @media all and (min-width: 1080px) {
   .widget-sidebar {
     border-right: 1px solid black;
-    width: 14.44rem;
+    width: 16rem;
     height: auto; }
     .widget-sidebar ul {
       text-align: left; } }
@@ -1250,7 +1250,29 @@ a {
       font-size: 1.25rem;
       line-height: 1.5rem;
       font-family: "Lato-Regular";
-      font-weight: 600; } }
+      display: block;
+      position: relative; }
+      .widget-sidebar a::after {
+        content: '';
+        position: absolute;
+        background: url("../../assets/icons/side-nav-arrow.png") no-repeat;
+        width: 1rem;
+        height: 1rem;
+        right: 2px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%); } }
+
+li .menu-item a {
+  display: block;
+  position: relative; }
+  li .menu-item a::after {
+    content: '';
+    background: url("../../assets/icons/side-nav-arrow.png");
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
 
 /*--------------------------------------------------------------
 # Header
