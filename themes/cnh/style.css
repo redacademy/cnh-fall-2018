@@ -1008,12 +1008,24 @@ footer {
         justify-content: space-around;
     padding-top: 30px; } }
 
+.has-2-columns .wp-block-column {
+  margin: 0; }
+
 .has-2-columns a {
   text-transform: uppercase; }
 
 @media all and (min-width: 1080px) {
   .has-2-columns {
     margin: auto; } }
+
+.sidebar-button {
+  display: none; }
+  @media all and (min-width: 1080px) {
+    .sidebar-button {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      text-align: center; } }
 
 /*--------------------------------------------------------------
 # Side Menu
