@@ -8,6 +8,8 @@
 get_header(); ?>    
 	<div id="primary" class="content-area">
 
+		<?php dynamic_sidebar( 'sidebar-3' ); ?>
+
 		<main id="main" class="site-main" role="main">
 				<div class="instalame-container">
 				</div>
