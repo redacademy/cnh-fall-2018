@@ -1324,7 +1324,17 @@ li .menu-item a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: #282460; }
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    color: #282460;
+    cursor: pointer; }
+    .site-header nav .translate-icon i {
+      padding: 0 2px; }
   .site-header nav #google_language_translator {
     display: none;
     position: absolute;
@@ -1334,19 +1344,3 @@ li .menu-item a {
     display: none; }
   .site-header nav .btn-open {
     margin-left: 0.75rem; }
-
-.goog-te-combo {
-  color: pink !important; }
-  .goog-te-combo:before {
-    font-family: 'Material Icons';
-    content: "\E927" !important;
-    margin-right: 16px;
-    font-size: 2rem;
-    vertical-align: -10px; }
-
-.goog-te-menu-value:before {
-  font-family: 'Material Icons';
-  content: "\E927";
-  margin-right: 16px;
-  font-size: 2rem;
-  vertical-align: -10px; }

@@ -33,7 +33,8 @@
           <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
           <div class="translate-icon">
             <i class="material-icons">language</i>
-            <span class="translate-lang">EN</span>
+            <!-- <span class="translate-lang">LANG</span> -->
+            <i class="fas fa-language fa-lg"></i>
           </div>
           <?php echo do_shortcode('[google-translator]'); ?>
           <?php get_search_form(); ?>
