@@ -1310,17 +1310,6 @@ li .menu-item a {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
 
-.menu-item {
-  display: block;
-  position: relative; }
-  .menu-item::after {
-    content: '';
-    background: url("../../assets/icons/side-nav-arrow.png");
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
-
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
