@@ -39,7 +39,9 @@ get_header(); ?>
           </p>
 
           <div class="entry-content">
-	          	<?php the_content(); ?>
+              <img class="opening-wave" src="<?php echo get_template_directory_uri() . '/images/Wave_Background.png' ?>">
+              <?php the_content(); ?>
+              <img class="closing-wave" src="<?php echo get_template_directory_uri() . '/images/Wave_Background.png' ?>">
 	      </div><!-- .entry-content -->
         </div><!-- .archive-product-info -->
     </div><!-- .archive-products-wrapper -->

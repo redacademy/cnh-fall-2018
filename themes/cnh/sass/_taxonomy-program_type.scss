@@ -1,0 +1,32 @@
+.page-template-taxonomy-program_type {
+  .site-content {
+    .content-area {
+      background-image: none;
+
+      .site-main {
+        .archive-product-wrapper {
+          .product-entry {
+            a {
+              .wp-post-image {
+                width: 100vw;
+              }
+            }
+
+            .archive-product-info {
+              .entry-content {
+                .opening-wave {
+                  transform: scaleY(-1);
+                }
+
+                p:nth-child(4) {
+                  background: $color__main;
+                  color: $color__background-body;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

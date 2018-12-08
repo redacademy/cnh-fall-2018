@@ -772,6 +772,8 @@ object {
       display: none; }
     .page-template-default .site .site-content {
       max-width: 100vw; }
+      .page-template-default .site .site-content .content-area .site-main .wp-post-image {
+        width: 100vw; }
       .page-template-default .site .site-content .content-area .site-main .type-page .entry-header .entry-title {
         font-family: "Lato-Black";
         font-size: 1.875rem;
@@ -796,7 +798,8 @@ object {
       .page-template-default .site .site-content .content-area .site-main p span span {
         margin: 0 0.25rem; }
         .page-template-default .site .site-content .content-area .site-main p span span .breadcrumb_last {
-          color: #fab0bc; }
+          color: #fab0bc;
+          font-weight: 600; }
 
 footer {
   background-color: #393947;
@@ -960,6 +963,17 @@ footer {
   .page-template-programs-php .entry-title,
   .page-template-programs-php .wp-block-image {
     display: none; } }
+
+.page-template-taxonomy-program_type .site-content .content-area {
+  background-image: none; }
+  .page-template-taxonomy-program_type .site-content .content-area .site-main .archive-product-wrapper .product-entry a .wp-post-image {
+    width: 100vw; }
+  .page-template-taxonomy-program_type .site-content .content-area .site-main .archive-product-wrapper .product-entry .archive-product-info .entry-content .opening-wave {
+    -webkit-transform: scaleY(-1);
+            transform: scaleY(-1); }
+  .page-template-taxonomy-program_type .site-content .content-area .site-main .archive-product-wrapper .product-entry .archive-product-info .entry-content p:nth-child(4) {
+    background: #282460;
+    color: #fff; }
 
 .button-yellow {
   background-color: #fab568; }
@@ -1289,6 +1303,17 @@ li .menu-item a {
   display: block;
   position: relative; }
   li .menu-item a::after {
+    content: '';
+    background: url("../../assets/icons/side-nav-arrow.png");
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+
+.menu-item {
+  display: block;
+  position: relative; }
+  .menu-item::after {
     content: '';
     background: url("../../assets/icons/side-nav-arrow.png");
     position: absolute;

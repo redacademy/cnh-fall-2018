@@ -15,6 +15,10 @@
 
       .content-area {
         .site-main {
+          .wp-post-image {
+            width: 100vw;
+          }
+
           .type-page {
             .entry-header {
               .entry-title {
@@ -59,6 +63,7 @@
 
                 .breadcrumb_last {
                   color: $color__highlight;
+                  font-weight: 600;
                 }
               }
             }
