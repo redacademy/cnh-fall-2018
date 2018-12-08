@@ -1049,6 +1049,34 @@ footer {
       display: flex;
       text-align: center; } }
 
+.button-404 {
+  border-radius: 1rem;
+  margin: 0.5rem;
+  font-size: 1.75rem;
+  height: 3.44rem;
+  width: 17rem;
+  text-align: center;
+  font-family: 'Lato-Bold';
+  text-decoration: none;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .button-404 a:hover {
+    color: #282460; }
+  @media all and (min-width: 1080px) {
+    .button-404 {
+      height: 3.5rem;
+      width: 12rem;
+      margin-bottom: 25vh;
+      font-size: 1.25rem; } }
+
 /*--------------------------------------------------------------
 # Side Menu
 --------------------------------------------------------------*/
@@ -1366,3 +1394,48 @@ li .menu-item a {
     display: none; }
   .site-header nav .btn-open {
     margin-left: 0.75rem; }
+<<<<<<< HEAD
+
+.goog-te-combo {
+  color: pink !important; }
+  .goog-te-combo:before {
+    font-family: 'Material Icons';
+    content: "\E927" !important;
+    margin-right: 16px;
+    font-size: 2rem;
+    vertical-align: -10px; }
+
+.goog-te-menu-value:before {
+  font-family: 'Material Icons';
+  content: "\E927";
+  margin-right: 16px;
+  font-size: 2rem;
+  vertical-align: -10px; }
+
+.error-404 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem; }
+  @media all and (min-width: 1080px) {
+    .error-404 {
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; } }
+
+.title-404 {
+  text-transform: uppercase;
+  font-family: "Lato-Black";
+  font-size: 2rem; }
+=======
+>>>>>>> 4ab6a10fc791088d7375971ad6ee33b8acf0ba19
