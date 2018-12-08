@@ -916,6 +916,14 @@ footer {
   .instalame-container .photo:last-child {
     display: none; }
 
+.events-widget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 @media all and (min-width: 1080px) {
   .instalame-container {
     width: 1094px; }

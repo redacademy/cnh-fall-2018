@@ -11,6 +11,10 @@
     }
 
 }
+.events-widget {
+    display: flex;
+    justify-content: center;
+}
 @include desktop {
     .instalame-container {
         width: 1094px;
