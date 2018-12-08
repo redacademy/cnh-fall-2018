@@ -20,8 +20,17 @@
     }
 
     .translate-icon {
-      display: flex;
+      @include flex(row, null, baseline);
       color: $color__main;
+      cursor: pointer;
+
+      i {
+        padding: 0 2px;
+      }
+
+      .material-icons {
+        // font-size: $size__body * 1.5;
+      }
     }
 
     #google_language_translator {
@@ -59,30 +68,30 @@
 
 
 .goog-te-combo {
-  color: pink !important;
+  // color: pink !important;
 
-  &:before {
-    font-family: 'Material Icons';
-    content: "\E927" !important;
-    margin-right: 16px;
-    font-size: 2rem;
-    vertical-align: -10px;
-    // width:32px!important;
-  }
+  // &:before {
+  //   font-family: 'Material Icons';
+  //   content: "\E927" !important;
+  //   margin-right: 16px;
+  //   font-size: 2rem;
+  //   vertical-align: -10px;
+  //   // width:32px!important;
+  // }
 }
 
-.goog-te-menu-value {
+// .goog-te-menu-value {
 
-  // color: #fff !important;
-  &:before {
-    font-family: 'Material Icons';
-    content: "\E927";
-    margin-right: 16px;
-    font-size: 2rem;
-    vertical-align: -10px;
-    // width:32px!important;
-  }
-}
+//   // color: #fff !important;
+//   &:before {
+//     font-family: 'Material Icons';
+//     content: "\E927";
+//     margin-right: 16px;
+//     font-size: 2rem;
+//     vertical-align: -10px;
+//     // width:32px!important;
+//   }
+// }
 
 
 // #google_language_translator select.goog-te-combo {

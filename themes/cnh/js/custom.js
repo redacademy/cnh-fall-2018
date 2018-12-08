@@ -54,7 +54,27 @@
     }); // end of side menu
 
     // start of Google Translate changes
-    $('.goog-te-combo option').css('color', 'red');
+    $('.translate-icon').on('click', function () {
+      // $('#google_language_translator').fadeToggle();
+      $('#google_language_translator').toggle(1000);
+    }); // end of show translator
+
+    // $('body').click(function () {
+    //   // The code to close the dropdown
+    //   $('#google_language_translator').hide();
+    // });
+
+    $('.goog-te-combo').click(function () {
+      // get select value
+      const sectionOpt = $(this).val();
+      hideTranslate(sectionOpt);
+      console.log('working it!');
+    });
+
+    // start of hide google translator
+    // function hideTranslate() {
+    //   $('#google_language_translator').hide();
+    // };
 
     // start of spectagram
     // var spectragramComplete = function () {

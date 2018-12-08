@@ -919,6 +919,14 @@ footer {
   .instalame-container .photo:last-child {
     display: none; }
 
+.events-widget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
 @media all and (min-width: 1080px) {
   .instalame-container {
     width: 1094px; }
@@ -1366,7 +1374,17 @@ li .menu-item a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    color: #282460; }
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    color: #282460;
+    cursor: pointer; }
+    .site-header nav .translate-icon i {
+      padding: 0 2px; }
   .site-header nav #google_language_translator {
     display: none;
     position: absolute;
@@ -1376,6 +1394,7 @@ li .menu-item a {
     display: none; }
   .site-header nav .btn-open {
     margin-left: 0.75rem; }
+<<<<<<< HEAD
 
 .goog-te-combo {
   color: pink !important; }
@@ -1418,3 +1437,5 @@ li .menu-item a {
   text-transform: uppercase;
   font-family: "Lato-Black";
   font-size: 2rem; }
+=======
+>>>>>>> 4ab6a10fc791088d7375971ad6ee33b8acf0ba19
