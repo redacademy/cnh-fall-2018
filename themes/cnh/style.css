@@ -1394,23 +1394,6 @@ li .menu-item a {
     display: none; }
   .site-header nav .btn-open {
     margin-left: 0.75rem; }
-<<<<<<< HEAD
-
-.goog-te-combo {
-  color: pink !important; }
-  .goog-te-combo:before {
-    font-family: 'Material Icons';
-    content: "\E927" !important;
-    margin-right: 16px;
-    font-size: 2rem;
-    vertical-align: -10px; }
-
-.goog-te-menu-value:before {
-  font-family: 'Material Icons';
-  content: "\E927";
-  margin-right: 16px;
-  font-size: 2rem;
-  vertical-align: -10px; }
 
 .error-404 {
   display: -webkit-box;
@@ -1437,5 +1420,3 @@ li .menu-item a {
   text-transform: uppercase;
   font-family: "Lato-Black";
   font-size: 2rem; }
-=======
->>>>>>> 4ab6a10fc791088d7375971ad6ee33b8acf0ba19
