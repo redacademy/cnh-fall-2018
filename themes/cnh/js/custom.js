@@ -67,7 +67,7 @@
     $('.goog-te-combo').click(function () {
       // get select value
       const sectionOpt = $(this).val();
-      hideTranslate(sectionOpt);
+      // hideTranslate(sectionOpt);
       console.log('working it!');
     });
 

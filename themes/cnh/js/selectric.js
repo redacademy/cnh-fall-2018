@@ -1,6 +1,5 @@
 (function ($) {
-$(function () {
-  $('select').selectric();
-});
+  $(function () {
+    $('select').selectric();
+  });
 }); // end of doc ready
-})(jQuery);
