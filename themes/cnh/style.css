@@ -1436,60 +1436,6 @@ li .menu-item a {
   font-family: "Lato-Black";
   font-size: 2rem; }
 
-<<<<<<< HEAD
-iframe.maps {
-  width: 400px;
-  height: 300px;
-  overflow: hidden;
-  border-radius: 2rem;
-  border: 2px solid #282460; }
-
-.page-template-contact .site-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center; }
-  .page-template-contact .site-main .entry-title {
-    text-align: center;
-    font-size: 4.063rem;
-    color: #282460; }
-  .page-template-contact .site-main h3 {
-    text-align: center;
-    font-size: 1.875rem;
-    text-transform: uppercase;
-    color: #282460; }
-
-.site-location {
-  overflow: hidden; }
-  @media all and (min-width: 1080px) {
-    .site-location .wp-block-column {
-      padding-right: 1rem; } }
-  @media all and (min-width: 1080px) {
-    .site-location:last-child {
-      padding-left: 1rem; } }
-
-.location-hours {
-  color: #ffffff;
-  background: #282460;
-  border-radius: 0.6rem;
-  font-size: 1.25rem;
-  padding: 0.6rem;
-  width: 350px;
-  margin: auto; }
-
-.location-name {
-  font-size: 1.25rem; }
-=======
 /*======================================
   Selectric
 ======================================*/
@@ -1555,7 +1501,7 @@ iframe.maps {
   border-color: #e6e6e6; }
 
 .selectric-hover .selectric .button {
-  color: #e6e6e6; }
+  color: #fab0bc; }
 
 .selectric-hover .selectric .button:after {
   border-top-color: #e6e6e6; }
@@ -1658,10 +1604,10 @@ iframe.maps {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
@@ -1714,4 +1660,56 @@ iframe.maps {
 
 .selectric-items .selectric-group li {
   padding-left: 25px; }
->>>>>>> 483ee106a1037be6ab5c8cb5e226e5114ab0d099
+
+iframe.maps {
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 2rem;
+  border: 2px solid #282460; }
+
+.page-template-contact .site-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center; }
+  .page-template-contact .site-main .entry-title {
+    text-align: center;
+    font-size: 4.063rem;
+    color: #282460; }
+  .page-template-contact .site-main h3 {
+    text-align: center;
+    font-size: 1.875rem;
+    text-transform: uppercase;
+    color: #282460; }
+
+.site-location {
+  overflow: hidden; }
+  @media all and (min-width: 1080px) {
+    .site-location .wp-block-column {
+      padding-right: 1rem; } }
+  @media all and (min-width: 1080px) {
+    .site-location:last-child {
+      padding-left: 1rem; } }
+
+.location-hours {
+  color: #ffffff;
+  background: #282460;
+  border-radius: 0.6rem;
+  font-size: 1.25rem;
+  padding: 0.6rem;
+  width: 350px;
+  margin: auto; }
+
+.location-name {
+  font-size: 1.25rem; }
