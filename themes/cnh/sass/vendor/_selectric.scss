@@ -27,6 +27,7 @@
   line-height: 40px;
   color: #282460;
   height: 40px;
+  background-color: $color__background-body !important;
 }
 
 .selectric .button {
@@ -41,6 +42,7 @@
   width: 34px;
   height: 34px;
   color: #282460;
+  background-color: $color__background-body !important;
   text-align: center;
   font: 0/0 a;
   *font: 34px/34px Lucida Sans Unicode, Arial Unicode MS, Arial;
@@ -70,7 +72,7 @@
 }
 
 .selectric-hover .selectric .button {
-  color: #e6e6e6;
+  color: $color__highlight;
 }
 
 .selectric-hover .selectric .button:after {
@@ -83,7 +85,7 @@
 
 .selectric-open .selectric {
   border-color: #e6e6e6;
-  background: #e6e6e6;
+  background: $color__background-body;
 }
 
 .selectric-open .selectric-items {
@@ -161,7 +163,7 @@
   top: 100%;
   left: 0;
   background: #F8F8F8;
-  border: 1px solid #C4C4C4;
+  // border: 1px solid #C4C4C4;
   z-index: -1;
   box-shadow: 0 0 10px -6px;
 }
@@ -184,6 +186,7 @@
   font-size: 12px;
   line-height: 20px;
   min-height: 20px;
+  @include flex(column, null, center);
 }
 
 .selectric-items li {
@@ -197,16 +200,16 @@
 
 .selectric-items li.selected {
   background: #EFEFEF;
-  color: #444;
+  color: $color__main;
 }
 
 .selectric-items li.highlighted {
   background: #D0D0D0;
-  color: #444;
+  color: $color__main;
 }
 
 .selectric-items li:hover {
-  background: #F0F0F0;
+  background: $color__highlight;
   color: #444;
 }
 

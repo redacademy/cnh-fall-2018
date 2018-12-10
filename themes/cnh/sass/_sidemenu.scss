@@ -14,6 +14,10 @@
   padding-top: $base__space-unit;
   transition: 0.5s;
 
+  @include tablet {
+    box-shadow: -8px 0 10px -6px $color__border;
+  }
+
   ul {
     list-style: none;
     margin: 0 auto;

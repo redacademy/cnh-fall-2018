@@ -519,7 +519,7 @@ a {
   a:visited {
     color: purple; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #fab0bc; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -1097,6 +1097,10 @@ footer {
   padding-top: 1.5rem;
   -webkit-transition: 0.5s;
   transition: 0.5s; }
+  @media all and (min-width: 600px) {
+    .side-nav {
+      -webkit-box-shadow: -8px 0 10px -6px #ddd;
+              box-shadow: -8px 0 10px -6px #ddd; } }
   .side-nav ul {
     list-style: none;
     margin: 0 auto;
@@ -1457,7 +1461,8 @@ li .menu-item a {
   font-size: 12px;
   line-height: 40px;
   color: #282460;
-  height: 40px; }
+  height: 40px;
+  background-color: #fff !important; }
 
 .selectric .button {
   border-radius: 0px;
@@ -1470,6 +1475,7 @@ li .menu-item a {
   width: 34px;
   height: 34px;
   color: #282460;
+  background-color: #fff !important;
   text-align: center;
   font: 0/0 a;
   *font: 34px/34px Lucida Sans Unicode, Arial Unicode MS, Arial; }
@@ -1505,7 +1511,7 @@ li .menu-item a {
 
 .selectric-open .selectric {
   border-color: #e6e6e6;
-  background: #e6e6e6; }
+  background: #fff; }
 
 .selectric-open .selectric-items {
   display: block; }
@@ -1575,7 +1581,6 @@ li .menu-item a {
   top: 100%;
   left: 0;
   background: #F8F8F8;
-  border: 1px solid #C4C4C4;
   z-index: -1;
   -webkit-box-shadow: 0 0 10px -6px;
           box-shadow: 0 0 10px -6px; }
@@ -1595,7 +1600,17 @@ li .menu-item a {
   margin: 0;
   font-size: 12px;
   line-height: 20px;
-  min-height: 20px; }
+  min-height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .selectric-items li {
   display: block;
@@ -1607,14 +1622,14 @@ li .menu-item a {
 
 .selectric-items li.selected {
   background: #EFEFEF;
-  color: #444; }
+  color: #282460; }
 
 .selectric-items li.highlighted {
   background: #D0D0D0;
-  color: #444; }
+  color: #282460; }
 
 .selectric-items li:hover {
-  background: #F0F0F0;
+  background: #fab0bc;
   color: #444; }
 
 .selectric-items .disabled {
