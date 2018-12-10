@@ -12,6 +12,10 @@
 
   .header-logo {
     width: 53px;
+
+    @include tablet {
+      width: 63px;
+    }
   }
 
   nav {

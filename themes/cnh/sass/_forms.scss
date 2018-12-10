@@ -63,7 +63,7 @@ textarea {
 
 /* Search Form */
 .site-header .search-form {
-  width: 300px;
+  // width: 300px;
 
   .search-field {
     margin-top: 0;
@@ -77,11 +77,19 @@ textarea {
     // display: none;
     text-decoration: none;
 
+    @include tablet {
+      width: 200px;
+    }
+
     &:focus {
       border: none;
       cursor: text;
       outline: 0;
-      width: 175px;
+      width: 250px;
+
+      @include tablet {
+        width: 200px;
+      }
     }
   }
 
