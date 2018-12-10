@@ -16,7 +16,15 @@
     });
 
     function openSideMenu() {
-      $sideMenu.css('width', '100%');
+      if ($(document).width() < 600) {
+        $sideMenu.css('width', '100%');
+      } else {
+        $sideMenu.css({
+          'width': '50%',
+          'left': 'auto',
+          'right': 0
+        });
+      }
     }
 
     function closeSideMenu() {
@@ -64,12 +72,16 @@
     //   $('#google_language_translator').hide();
     // });
 
-    $('.goog-te-combo').click(function () {
-      // get select value
-      const sectionOpt = $(this).val();
-      // hideTranslate(sectionOpt);
-      console.log('working it!');
-    });
+    // $('.goog-te-combo').click(function () {
+    //   // get select value
+    //   const sectionOpt = $(this).val();
+    //   // hideTranslate(sectionOpt);
+    //   console.log('working it!');
+    // });
+    setTimeout(function () {
+      $('.goog-te-combo').selectric();
+    }, 1000);
+
 
     // start of hide google translator
     // function hideTranslate() {
@@ -98,7 +110,7 @@
       }).appendTo(".entry-title select");
     }); // end of dropdown nav
 
-
+    $('.entry-header select').selectric();
 
 
   }); // end of doc ready
