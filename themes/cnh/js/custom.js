@@ -83,8 +83,7 @@
           // complete : spectragramComplete(),
           max: 2,
           size: 'medium',
-          wrapEachWith: '<div class='
-          photo '>'
+          wrapEachWith: '<div class="photo">'
         });
       }
     }
