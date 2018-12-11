@@ -44,5 +44,9 @@ a {
 }
 
 .container {
-  width: $container-width;
+  width: 100%;
+
+  @include desktop {
+    width: $container-width;
+  }
 }

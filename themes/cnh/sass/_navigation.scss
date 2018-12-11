@@ -38,6 +38,10 @@ a {
   font-size: $size__body;
   // padding: 0 $base__space-unit;
 
+  @include desktop {
+    justify-content: space-around;
+  }
+
   .nav-menu {
     display: none;
     list-style: none;

@@ -427,13 +427,14 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   border-radius: 0.5rem;
+  border-color: #fab568;
   background: #fab568;
   font-family: "Lato-Bold";
   text-transform: uppercase;
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
-  padding: .6rem 1rem .4rem; }
+  padding: 0.6rem; }
   button:hover, button:active, button:focus,
   input[type="button"]:hover,
   input[type="button"]:active,
@@ -537,6 +538,10 @@ a {
   width: 100%;
   color: #282460;
   font-size: 1.25rem; }
+  @media all and (min-width: 1080px) {
+    .main-navigation {
+      -ms-flex-pack: distribute;
+          justify-content: space-around; } }
   .main-navigation .nav-menu {
     display: none;
     list-style: none;
@@ -950,6 +955,29 @@ footer {
 .center-page {
   text-align: center; }
 
+.page-template-programs-php .site-main .center-page .attachment-large {
+  width: 100vw; }
+
+.page-template-programs-php .site-main .center-page .flower-icon {
+  width: 20vw; }
+
+.page-template-programs-php .site-main .center-page .post-122 .entry-title {
+  font-family: "Lato-Black";
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: #282460;
+  letter-spacing: 1px; }
+
+.page-template-programs-php .site-main .center-page .post-122 .entry-content h3 {
+  font-family: "Lato-Regular";
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+  color: #282460;
+  letter-spacing: 1px; }
+
+.page-template-programs-php .site-main .center-page .post-122 .entry-content p {
+  color: #222222; }
+
 .page-template-programs-php .entry-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -984,10 +1012,29 @@ footer {
     width: 100vw; }
   .page-template-taxonomy-program_type .site-content .content-area .site-main .archive-product-wrapper .product-entry .archive-product-info .entry-content .opening-wave {
     -webkit-transform: scaleY(-1);
-            transform: scaleY(-1); }
+            transform: scaleY(-1);
+    position: relative; }
+  .page-template-taxonomy-program_type .site-content .content-area .site-main .archive-product-wrapper .product-entry .archive-product-info .entry-content p {
+    font-size: 0.9375rem;
+    padding: 0 2rem; }
+  .page-template-taxonomy-program_type .site-content .content-area .site-main .archive-product-wrapper .product-entry .archive-product-info .entry-content p:nth-child(2) {
+    font-family: "Lato-Black";
+    font-size: 1.25rem;
+    color: #282460;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center; }
   .page-template-taxonomy-program_type .site-content .content-area .site-main .archive-product-wrapper .product-entry .archive-product-info .entry-content p:nth-child(4) {
     background: #282460;
-    color: #fff; }
+    color: #fff;
+    padding: 2rem; }
+  .page-template-taxonomy-program_type .site-content .content-area .site-main .archive-product-wrapper .product-entry .archive-product-info .entry-content h4 {
+    font-family: "Lato-Regular";
+    font-size: 0.9375rem;
+    color: #282460;
+    padding: 0 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
 
 .button-yellow {
   background-color: #fab568; }
@@ -1243,7 +1290,10 @@ a {
   border-bottom: 5px #fab0bc solid; }
 
 .container {
-  width: 1170px; }
+  width: 100%; }
+  @media all and (min-width: 1080px) {
+    .container {
+      width: 1170px; } }
 
 .page-template-services-php .entry-content {
   display: -webkit-box;
@@ -1299,6 +1349,15 @@ a {
     @media all and (min-width: 1080px) {
       .page-template-about-php .entry-content .subtitle {
         font-size: 30px; } }
+
+.page-template-about-php .site-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 .page-template-about-php .entry-header {
   text-align: center;
@@ -1400,9 +1459,7 @@ li .menu-item a {
     display: none; }
   @media all and (min-width: 1080px) {
     .site-header nav .search-btn {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; } }
+      display: block; } }
   .site-header nav .translate-icon {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1437,8 +1494,8 @@ li .menu-item a {
         display: -webkit-inline-box;
         display: -ms-inline-flexbox;
         display: inline-flex;
-        position: relative;
-        top: 3rem; } }
+        position: absolute;
+        top: 6rem; } }
   .site-header nav .btn-open {
     margin-left: 0.75rem; }
     @media all and (min-width: 1080px) {
