@@ -9,11 +9,73 @@
     .photo:last-child {
         display: none;
     }
-
 }
-.events-widget {
+.upcoming-events {
+    width: 275px;
+    margin: auto;  
+}
+.date {
+    background-color: #282460;
+    border-radius: 10px 0 0 10px;
+    width: 40%;
+    color: white;
+    flex-shrink: 0;
     display: flex;
     justify-content: center;
+    text-transform: uppercase;
+    .date-text-container {
+        display: flex;
+        justify-content: center;
+    }
+    .day {
+        display: none;
+    }
+    p {
+        margin-bottom: 1.5rem;
+        margin: auto;
+        width: 40%;
+        font-weight: 900;
+        font-family: 'Lato-Black';
+        text-align: center;
+    }
+}
+.eventimg {
+    line-height: 0;
+    img {
+        height: 100%;
+        border-radius: 0 10px 10px 0;
+    }
+}
+
+.singular-event {
+    display: flex;
+    height: 105px;
+    margin-top: 1.375rem;
+    
+}
+.location-box {
+    height: 30px;
+    position: relative;
+    bottom: 28.5%;
+    justify-content: center;
+    display: flex;
+    color: white;
+    background-color: #282460b9;
+    border-radius: 0 0 10px 0;
+
+    a {
+        position: relative;
+        top: 15px;
+        color: white;
+    }
+}
+.hover-details {
+    display: none;
+    padding: 2rem;
+    border: 1px solid #282460;
+    border-radius: 0 10px 10px 0;
+    margin-left: 0;
+    background-color: #ffffff98;
 }
 @include desktop {
     .instalame-container {
@@ -31,6 +93,78 @@
             height: 100%;
             border-radius: 2%;
         }
-    
+        
     }
+    .upcoming-events {
+            width: 1170px;
+            display: flex;
+        }
+        .hover-details {
+            margin-left: 2rem;
+            font-size: 1.25rem;
+            .hover-title {
+                font-weight: bold;
+            }
+        }
+        .singular-event {
+            height: 258px;
+            width: 555px;
+            &:first-of-type {
+                margin-right: 2rem;
+                &:hover {
+                    .eventimg {
+                        display: none
+                    }
+                    .hover-details {
+                        display: block;
+                    }
+                }
+            }
+            &:last-of-type {
+                margin-right: 2rem;
+                &:hover {
+                    .eventimg {
+                        display: none
+                    }
+                    .hover-details {
+                        display: block;
+                    }
+                }
+            }
+        }
+        .date {
+            width: 30%;
+            font-size: 2.5rem;
+            p {
+                width: 60%
+            }
+            .date-text-container {
+                margin-top: 3.5rem;
+                display: block;
+            }
+            .date-text {
+                line-height: 3rem;
+                letter-spacing: 2.25px;
+            }
+            .day {
+                display: flex;
+                font-size: .9375rem;
+                font-family: 'Lato-Regular';
+                font-weight: 500;
+                justify-content: center;
+                margin-bottom: .5rem;
+                letter-spacing: 1px;
+            }
+        }
+        .location-box {
+            height: 65px;
+            bottom: 65px;
+            font-size: 1.75rem;
+            a {
+                position: initial;
+                margin: auto;
+            }
+        }
+        
+    
 }
