@@ -14,7 +14,7 @@ get_header(); ?>
         if ( function_exists('yoast_breadcrumb') ) {
             yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
         }
-    ?>
+      ?>
 
     <?php while ( have_posts() ) : the_post(); ?>
 

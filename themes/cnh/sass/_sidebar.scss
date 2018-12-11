@@ -41,6 +41,10 @@
           transform: translateY(-50%);
           padding-right: $base__space-unit * 1.5;
         }
+
+        &:hover {
+          background: $color__highlight;
+        }
       }
     }
   }
