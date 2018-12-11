@@ -109,8 +109,10 @@ function cnh_scripts() {
   wp_enqueue_script('spectragram.js', get_template_directory_uri() . '/build/js/spectragram.min.js', array(), '20181206', true);
 	wp_enqueue_script( 'cnh-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
   wp_enqueue_script( 'cnh-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
+
+  wp_enqueue_script('cnh-selectric-js', 'https://cdn.jsdelivr.net/npm/selectric@1.13.0/public/jquery.selectric.min.js', array('jquery'), '20181206', true);
   
-  wp_enqueue_script( 'cnh-custom-js', get_template_directory_uri() . '/build/js/custom.min.js', array('jquery'), '20181205', true );
+  wp_enqueue_script( 'cnh-custom-js', get_template_directory_uri() . '/build/js/custom.min.js', array('jquery','cnh-selectric-js'), '20181205', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

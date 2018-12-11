@@ -16,7 +16,15 @@
     });
 
     function openSideMenu() {
-      $sideMenu.css('width', '100%');
+      if ($(document).width() < 600) {
+        $sideMenu.css('width', '100%');
+      } else {
+        $sideMenu.css({
+          'width': '50%',
+          'left': 'auto',
+          'right': 0
+        });
+      }
     }
 
     function closeSideMenu() {
@@ -54,30 +62,34 @@
     }); // end of side menu
 
     // start of Google Translate changes
-    $('.goog-te-combo option').css('color', 'red');
+    $('.translate-icon').on('click', function () {
+      // $('#google_language_translator').fadeToggle();
+      $('#google_language_translator').toggle(1000);
+    }); // end of show translator
+
+    // $('body').click(function () {
+    //   // The code to close the dropdown
+    //   $('#google_language_translator').hide();
+    // });
+
+    // $('.goog-te-combo').click(function () {
+    //   // get select value
+    //   const sectionOpt = $(this).val();
+    //   // hideTranslate(sectionOpt);
+    //   console.log('working it!');
+    // });
+    setTimeout(function () {
+      $('.goog-te-combo').selectric();
+    }, 1000);
+
+
+    // start of hide google translator
+    // function hideTranslate() {
+    //   $('#google_language_translator').hide();
+    // };
 
     // start of spectagram
     // var spectragramComplete = function () {
-    var spectra = {
-      instaToken: '9448460219.0d61304.de737249603f46ec9356ff60f0aabdcf',
-      instaID: '0d61304f0d4242a9b55e5c1378ba869e',
-
-
-      init: function () {
-        $.fn.spectragram.accessData = {
-          accessToken: this.instaToken,
-          clientID: this.instaID
-        };
-
-        $('.instalame-container').spectragram('getUserFeed', {
-          // complete : spectragramComplete(),
-          max: 2,
-          size: "medium",
-          wrapEachWith: '<div class="photo">'
-        });
-      }
-    }
-    spectra.init();
 
     // Create the dropdown base
     $("<select />").appendTo(".entry-title");
@@ -98,7 +110,7 @@
       }).appendTo(".entry-title select");
     }); // end of dropdown nav
 
-
+    $('.entry-header select').selectric();
 
 
   }); // end of doc ready
