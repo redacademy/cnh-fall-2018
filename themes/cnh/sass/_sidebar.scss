@@ -6,7 +6,9 @@
 }
 
 .widget-sidebar{
+    display: none;
     @include desktop{
+    display: flex;
     border-right: 1px solid black;
     width: 18rem;
     height: 100vh;

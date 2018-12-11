@@ -1318,14 +1318,19 @@ a {
     #sidebar-2 {
       display: block; } }
 
-@media all and (min-width: 1080px) {
-  .widget-sidebar {
-    border-right: 1px solid black;
-    width: 18rem;
-    height: 100vh;
-    margin-bottom: 10px; }
-    .widget-sidebar ul {
-      text-align: left; } }
+.widget-sidebar {
+  display: none; }
+  @media all and (min-width: 1080px) {
+    .widget-sidebar {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      border-right: 1px solid black;
+      width: 18rem;
+      height: 100vh;
+      margin-bottom: 10px; }
+      .widget-sidebar ul {
+        text-align: left; } }
   @media all and (min-width: 1080px) and (min-width: 1080px) {
     .widget-sidebar a {
       font-size: 1.25rem;

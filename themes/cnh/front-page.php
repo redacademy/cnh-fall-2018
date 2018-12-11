@@ -26,7 +26,7 @@ get_header(); ?>
  
         <td class="eventimg"><a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) the_post_thumbnail('small-list-thumbnail'); ?></a></td >
         <td class="date"><?php echo tribe_get_start_date( null, false, 'F j' ); ?> </span>
-        <td class="event">      <?php the_title('<a href="' . tribe_get_event_link() . '" title="' . the_title_attribute('echo=0') . '" rel="bookmark">', '</a>'); ?> </td >
+        <td class="event"><?php the_title('<a href="' . tribe_get_event_link() . '" title="' . the_title_attribute('echo=0') . '" rel="bookmark">', '</a>'); ?> </td >
        </tr>
    
 <?php endwhile; ?>
