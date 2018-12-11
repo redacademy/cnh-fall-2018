@@ -936,6 +936,29 @@ footer {
 .center-page {
   text-align: center; }
 
+.page-template-programs-php .site-main .center-page .attachment-large {
+  width: 100vw; }
+
+.page-template-programs-php .site-main .center-page .flower-icon {
+  width: 20vw; }
+
+.page-template-programs-php .site-main .center-page .post-122 .entry-title {
+  font-family: "Lato-Black";
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: #282460;
+  letter-spacing: 1px; }
+
+.page-template-programs-php .site-main .center-page .post-122 .entry-content h3 {
+  font-family: "Lato-Regular";
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+  color: #282460;
+  letter-spacing: 1px; }
+
+.page-template-programs-php .site-main .center-page .post-122 .entry-content p {
+  color: #222222; }
+
 .page-template-programs-php .entry-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -970,10 +993,29 @@ footer {
     width: 100vw; }
   .page-template-taxonomy-program_type .site-content .content-area .site-main .archive-product-wrapper .product-entry .archive-product-info .entry-content .opening-wave {
     -webkit-transform: scaleY(-1);
-            transform: scaleY(-1); }
+            transform: scaleY(-1);
+    position: relative; }
+  .page-template-taxonomy-program_type .site-content .content-area .site-main .archive-product-wrapper .product-entry .archive-product-info .entry-content p {
+    font-size: 0.9375rem;
+    padding: 0 2rem; }
+  .page-template-taxonomy-program_type .site-content .content-area .site-main .archive-product-wrapper .product-entry .archive-product-info .entry-content p:nth-child(2) {
+    font-family: "Lato-Black";
+    font-size: 1.25rem;
+    color: #282460;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center; }
   .page-template-taxonomy-program_type .site-content .content-area .site-main .archive-product-wrapper .product-entry .archive-product-info .entry-content p:nth-child(4) {
     background: #282460;
-    color: #fff; }
+    color: #fff;
+    padding: 2rem; }
+  .page-template-taxonomy-program_type .site-content .content-area .site-main .archive-product-wrapper .product-entry .archive-product-info .entry-content h4 {
+    font-family: "Lato-Regular";
+    font-size: 0.9375rem;
+    color: #282460;
+    padding: 0 2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
 
 .button-yellow {
   background-color: #fab568; }
@@ -1248,6 +1290,15 @@ a {
       .page-template-about-php .entry-content .subtitle {
         font-size: 30px; } }
 
+.page-template-about-php .site-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
 .page-template-about-php .entry-header {
   text-align: center;
   font-family: "Lato-Black"; }
@@ -1303,17 +1354,6 @@ li .menu-item a {
   display: block;
   position: relative; }
   li .menu-item a::after {
-    content: '';
-    background: url("../../assets/icons/side-nav-arrow.png");
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
-
-.menu-item {
-  display: block;
-  position: relative; }
-  .menu-item::after {
     content: '';
     background: url("../../assets/icons/side-nav-arrow.png");
     position: absolute;
