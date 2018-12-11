@@ -2,4 +2,90 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* Front page */
+/* Program Type page */
+.page-template-taxonomy-program_type,
+.page-template-taxonomy-service_type {
+  .site-content {
+    display: flex;
+    flex-wrap: wrap;
+
+    .page-header {
+      order: 1;
+      flex: 2 0 100%;
+      max-width: 100%;
+
+      // breadcrumbs
+      p {
+        display: none;
+        margin-left: $base__space-unit;
+
+        @include tablet {
+          display: block;
+        }
+
+        span {
+          span {
+            a {
+              margin-right: 0.25rem;
+
+              &:hover {
+                color: $color__highlight;
+              }
+            }
+          }
+
+          span {
+            margin: 0 0.25rem 0 0;
+            // margin: 0 $base__space-unit;
+
+            .breadcrumb_last {
+              color: $color__highlight;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+
+    .content-area {
+      order: 3;
+      flex: 2 0 100%;
+      max-width: 100%;
+      margin-bottom: $base__space-unit * 2;
+      padding: 0 $base__space-unit;
+
+      @include tablet {
+        // flex: 2 0 75%;
+        // max-width: 75%;
+      }
+
+      @include desktop {
+        flex: 2 0 75%;
+        max-width: 75%;
+        border-left: $border__solid;
+        border-color: $color__main;
+      }
+
+      h2 {
+        margin-top: 0;
+      }
+    }
+
+    .widget-sidebar {
+      order: 2;
+      display: none;
+      padding: 0 $base__space-unit;
+
+      @include tablet {
+        display: block;
+        flex: 1 0 25%;
+        max-width: 25%;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}

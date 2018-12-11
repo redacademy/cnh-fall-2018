@@ -3,7 +3,6 @@
 --------------------------------------------------------------*/
 
 .site-header {
-  margin: 0 auto;
   padding: $base__space-unit;
   @include flex(row, center, center);
 

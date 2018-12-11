@@ -7,50 +7,46 @@
  */
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<header class="page-header">    
+  <!-- service thumbnail -->
+  <a href="<?php echo get_permalink(); ?>"><?php if ( has_post_thumbnail() ) : ?>
+    <?php the_post_thumbnail( 'full' ); ?>
+    <?php endif; ?>
+    </a>
+    <?php 
+      if ( function_exists('yoast_breadcrumb') ) {
+        yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+      }
+    ?>
+</header><!-- .page-header -->
 
-			<header class="page-header">
-        <h2 class="page-title">
-          <?php single_term_title(); ?>
-        </h2>
-        <div class="taxonomy-description">
-          <?php the_archive_description(); ?>
-        <div>
-			</header><!-- .page-header -->
-
-			<?php /* Start the Loop */ ?>
-    <div class="archive-product-wrapper">
+<div id="primary" class="content-area">
+  <main id="main" class="site-main" role="main">
+    <?php /* Start the Loop */ ?>
+    <div class="service-wrapper">
     <?php 
     /**
-     * Get the product entries 
+     * Get the service entries 
      */ 
     while ( have_posts() ) : the_post(); ?>
-      <div class="product-entry">
-        <!-- product thumbnail -->
-        <a href="<?php echo get_permalink(); ?>"><?php if ( has_post_thumbnail() ) : ?>
-        <?php the_post_thumbnail( 'medium' ); ?>
-        <?php endif; ?>
-        </a>
-        <div class="archive-product-info">
-          <p class="entry-title">
+      <div class="service-entry">
+        <div class="service-info">
+          <h2 class="entry-title">
             <?php the_title(); ?>
-            <div class="ellipsis"></div>
-          </p>
+            <!-- <?php single_term_title(); ?> -->
+          </h2>
 
           <div class="entry-content">
-	          	<?php the_content(); ?>
-	        </div><!-- .entry-content -->
-
-        </div><!-- .archive-product-info -->
-    </div><!-- .archive-products-wrapper -->
+              <!-- <img class="opening-wave" src="<?php echo get_template_directory_uri() . '/images/Wave_Background.png' ?>"> -->
+              <?php the_content(); ?>
+          </div><!-- .entry-content -->
+        </div><!-- .service-info -->
+      </div><!-- .service-entry -->
     <?php endwhile; // end of the loop. ?>
+    </div><!-- .service-wrapper -->
 
-    </div><!-- #content -->
+  </main><!-- #main -->
+</div><!-- #primary -->
 
-
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
