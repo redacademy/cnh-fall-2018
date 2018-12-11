@@ -20,7 +20,7 @@
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
-			<header id="masthead" class="site-header" role="banner">
+			<header id="masthead" class="site-header container" role="banner">
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
           <p class="site-description"><?php ?></p>
@@ -31,12 +31,16 @@
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
           <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
+          <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
           <div class="translate-icon">
             <i class="material-icons">language</i>
             <!-- <span class="translate-lang">LANG</span> -->
             <i class="fas fa-language fa-lg"></i>
           </div>
           <?php echo do_shortcode('[google-translator]'); ?>
+          <span class="search-btn" aria-hidden="true">
+            <i class="fa fa-search fa-md"></i>
+          </span>
           <?php get_search_form(); ?>
           <span class="open-slide">
             <a href="#" class="btn-open">
@@ -47,7 +51,6 @@
               </svg>
             </a>
           </span>
-          <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
         <div id="side-menu" class="side-nav" style="width: 0px;">
           <div class="side-menu-top">
