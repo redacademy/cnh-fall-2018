@@ -30,7 +30,7 @@
 
     .search-btn {
       @include desktop {
-        display: flex;
+        display: block;
 
       }
     }
@@ -70,8 +70,8 @@
 
       @include desktop {
         display: inline-flex;
-        position: relative;
-        top: $base__space-unit * 2;
+        position: absolute;
+        top: $base__space-unit * 4;
       }
     }
 
