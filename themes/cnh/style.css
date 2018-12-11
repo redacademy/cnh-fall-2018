@@ -1429,7 +1429,8 @@ footer {
 h2 {
   color: #282460;
   font-family: 'Lato-Black';
-  font-size: 2.8125rem; }
+  font-size: 2.8125rem;
+  text-transform: uppercase; }
 
 li {
   list-style: none; }
@@ -1438,7 +1439,6 @@ a {
   color: #282460;
   text-decoration: none; }
   a:hover {
-    background: #fab0bc;
     color: #282460; }
   a:visited {
     color: #282460; }
@@ -1569,7 +1569,9 @@ a {
         top: 50%;
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
-        padding-right: 2.25rem; } }
+        padding-right: 2.25rem; }
+      .widget-sidebar a:hover {
+        background: #fab0bc; } }
 
 li .menu-item a {
   display: block;
