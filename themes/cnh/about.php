@@ -8,23 +8,23 @@
 get_header(); ?>
 
 <div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+  <main id="main" class="site-main" role="main">
 
-				<?php 
-    			if ( function_exists('yoast_breadcrumb') ) {
-     			   yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
-    			}
-			?>
+      <?php 
+        if ( function_exists('yoast_breadcrumb') ) {
+            yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
+        }
+    ?>
 
-			<?php while ( have_posts() ) : the_post(); ?>
+    <?php while ( have_posts() ) : the_post(); ?>
 
-			<img class="services-icon" src="<?php echo get_template_directory_uri() . '/assets/icons/landing-page-view-services.svg' ?>">
+    <img class="services-icon" src="<?php echo get_template_directory_uri() . '/assets/icons/landing-page-view-services.svg' ?>">
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+      <?php get_template_part( 'template-parts/content', 'page' ); ?>
 
-			<?php endwhile; // End of the loop. ?>
+    <?php endwhile; // End of the loop. ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+  </main><!-- #main -->
+</div><!-- #primary -->
 
 <?php get_footer(); ?>

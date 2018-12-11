@@ -2,13 +2,26 @@
   margin: 0 auto;
   margin-bottom: 2.9375rem;
 
-  @include desktop {
-    width: 1170px;
-  }
+  // @include desktop {
+  //   width: 1170px;
+  // }
 }
 
-.content-area {
-  background-image: url(../../images/Wave_Background.png);
+// .content-area {
+//   background: url('../../assets/images/Wave_Background.png');
+// }
+
+.hfeed {
+  background: no-repeat bottom url('../../assets/images/Wave_Background.png');
+  background-size: 100% 40%;
+
+  @include tablet {
+    background-size: 100% 50%;
+  }
+
+  @include desktop {
+    background-size: 100% 35%;
+  }
 }
 
 h2 {
@@ -23,7 +36,7 @@ li {
 }
 
 a {
-  color: #282460;
+  color: $color__main;
   text-decoration: none;
 
   &:hover {
@@ -31,7 +44,7 @@ a {
   }
 
   &:visited {
-    color: inherit;
+    color: $color__main;
   }
 }
 
@@ -45,6 +58,7 @@ a {
 
 .container {
   width: 100%;
+  margin: 0 auto;
 
   @include desktop {
     width: $container-width;

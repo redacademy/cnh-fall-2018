@@ -7,51 +7,15 @@
  */
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<?php get_template_part( 'template-parts/breadcrumbs', 'breadcrumbs' ); ?>
 
-			<header class="page-header">
-        <h2 class="page-title">
-          <?php single_term_title(); ?>
-        </h2>
-        <div class="taxonomy-description">
-          <?php the_archive_description(); ?>
-        <div>
-			</header><!-- .page-header -->
+<div id="primary" class="content-area">
+  <main id="main" class="site-main" role="main">
+    
+    <?php get_template_part( 'template-parts/program', 'type' ); ?>
 
-			<?php /* Start the Loop */ ?>
-    <div class="archive-product-wrapper">
-    <?php 
-    /**
-     * Get the product entries 
-     */ 
-    while ( have_posts() ) : the_post(); ?>
-      <div class="product-entry">
-        <!-- product thumbnail -->
-        <a href="<?php echo get_permalink(); ?>"><?php if ( has_post_thumbnail() ) : ?>
-        <?php the_post_thumbnail( 'medium' ); ?>
-        <?php endif; ?>
-        </a>
-        <div class="archive-product-info">
-          <p class="entry-title">
-            <?php the_title(); ?>
-            <div class="ellipsis"></div>
-          </p>
+  </main><!-- #main -->
+</div><!-- #primary -->
 
-          <div class="entry-content">
-              <img class="opening-wave" src="<?php echo get_template_directory_uri() . '/images/Wave_Background.png' ?>">
-              <?php the_content(); ?>
-              <img class="closing-wave" src="<?php echo get_template_directory_uri() . '/images/Wave_Background.png' ?>">
-	      </div><!-- .entry-content -->
-        </div><!-- .archive-product-info -->
-    </div><!-- .archive-products-wrapper -->
-    <?php endwhile; // end of the loop. ?>
-
-    </div><!-- #content -->
-
-
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

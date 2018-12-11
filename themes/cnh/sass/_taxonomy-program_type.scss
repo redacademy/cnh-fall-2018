@@ -1,56 +1,54 @@
 .page-template-taxonomy-program_type {
-  .site-content {
-    .content-area {
-      background-image: none;
+  .site-main {
+    .program-wrapper {
+      .program-entry {
 
-      .site-main {
-        .archive-product-wrapper {
-          .product-entry {
-            a {
-              .wp-post-image {
-                width: 100vw;
-              }
-            }
+        // breadcrumbs
+        // p {
+        //   display: none;
 
-            .archive-product-info {
-              .entry-content {
-                // position: absolute;
+        //   @include tablet {
+        //     display: block;
+        //   }
+        // }
 
-                .opening-wave {
-                  transform: scaleY(-1);
-                  position: relative;
-                }
+        .program-info {
+          .entry-content {
+            // position: absolute;
 
-                p {
-                  font-size: $size__breadcrumb;
-                  padding: 0 2rem;
-                }
+            // .opening-wave {
+            //   transform: scaleY(-1);
+            //   position: relative;
+            // }
 
-                p:nth-child(2) {
-                  font-family: $font__title;
-                  font-size: $size__body;
-                  color: $color__main;
-                  letter-spacing: 2px;
-                  text-transform: uppercase;
-                  text-align: center;
-                }
+            // p {
+            //   font-size: $size__breadcrumb;
+            //   padding: 0 2rem;
+            // }
 
-                p:nth-child(4) {
-                  background: $color__main;
-                  color: $color__background-body;
-                  padding: 2rem;
-                }
+            // p:nth-child(2) {
+            //   font-family: $font__title;
+            //   font-size: $size__body;
+            //   color: $color__main;
+            //   letter-spacing: 2px;
+            //   text-transform: uppercase;
+            //   text-align: center;
+            // }
 
-                h4 {
-                  font-family: $font__body;
-                  font-size: $size__breadcrumb;
-                  color: $color__main;
-                  padding: 0 2rem;
-                  letter-spacing: 2px;
-                  text-transform: uppercase;
-                }
-              }
-            }
+            // p:nth-child(4) {
+            //   background: $color__main;
+            //   color: $color__background-body;
+            //   padding: 2rem;
+            // }
+
+            // h4 {
+            //   font-family: $font__body;
+            //   font-size: $size__breadcrumb;
+            //   color: $color__main;
+            //   padding: 0 2rem;
+            //   letter-spacing: 2px;
+            //   text-transform: uppercase;
+            // }
           }
         }
       }
