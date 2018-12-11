@@ -25,7 +25,9 @@
         font-weight: 600;
         display: block;
         position: relative;
-        padding: 0.4rem 2.3rem 0.4rem 0;
+        // padding: 0.4rem 2.3rem 0.4rem 0;
+        padding: $base__space-unit / 3 $base__space-unit;
+        margin: 0.5rem 0;
         text-transform: uppercase;
 
         &::after {
@@ -37,6 +39,7 @@
           right: 2px;
           top: 50%;
           transform: translateY(-50%);
+          padding-right: $base__space-unit * 1.5;
         }
       }
     }

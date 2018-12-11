@@ -18,7 +18,7 @@ get_header(); ?>
     /** 
      * Get the program entries
      */ 
-      $args = array( 'post_type' => 'service', 'order' => 'ASC', 'posts_per_page' => 99, 'service_type' => 'infants-toddlers');
+      $args = array( 'post_type' => 'service', 'order' => 'ASC', 'posts_per_page' => 6, 'service_type' => 'infants-toddlers');
       
       $service_posts = get_posts( $args ); ?>
     <div class="service-wrapper">
