@@ -375,7 +375,7 @@ body {
 
 blockquote,
 q {
-  quotes: '' ''; }
+  quotes: "" ""; }
   blockquote:before, blockquote:after,
   q:before,
   q:after {
@@ -411,7 +411,7 @@ dd {
 img {
   height: auto;
   /* Make sure images are scaled correctly. */
-  max-width: 100%;
+  width: 100%;
   /* Adhere to container width. */ }
 
 table {
@@ -797,14 +797,13 @@ object {
         .page-template .site-content .page-header p {
           display: block; } }
       .page-template .site-content .page-header p span span a {
-        margin-right: 0.25rem; }
+        margin: 0 0.25rem; }
         .page-template .site-content .page-header p span span a:hover {
           color: #fab0bc; }
-      .page-template .site-content .page-header p span span {
-        margin: 0 0.25rem 0 0; }
-        .page-template .site-content .page-header p span span .breadcrumb_last {
-          color: #fab0bc;
-          font-weight: 600; }
+      .page-template .site-content .page-header p span span .breadcrumb_last {
+        color: #fab0bc;
+        font-weight: 600;
+        margin: 0 0.25rem; }
   .page-template .site-content .content-area {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;

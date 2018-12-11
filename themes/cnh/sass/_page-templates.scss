@@ -26,7 +26,7 @@
         span {
           span {
             a {
-              margin-right: 0.25rem;
+              margin: 0 0.25rem;
 
               &:hover {
                 color: $color__highlight;
@@ -35,12 +35,13 @@
           }
 
           span {
-            margin: 0 0.25rem 0 0;
+            // margin: 0 0.25rem 0 0;
             // margin: 0 $base__space-unit;
 
             .breadcrumb_last {
               color: $color__highlight;
               font-weight: 600;
+              margin: 0 0.25rem;
             }
           }
         }
