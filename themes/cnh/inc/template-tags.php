@@ -8,7 +8,7 @@
  /**
   * Prints HTML with meta information for the current post-date/time.
   */
- function red_starter_posted_on() {
+ function cnh_posted_on() {
  	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
  	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
  		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
@@ -30,7 +30,7 @@
  /**
   * Prints HTML with meta information for the post author.
   */
- function red_starter_posted_by() {
+ function cnh_posted_by() {
  	$byline = sprintf(
  		esc_html( 'by %s' ),
  		'<span class="author vcard">' . esc_html( get_the_author() ) . '</span>'
@@ -43,7 +43,7 @@
  /**
   * Prints HTML with meta information for the comments with pop-up link.
   */
- function red_starter_comment_count() {
+ function cnh_comment_count() {
  	if ( is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
  		echo '<span class="comments-link">';
  		comments_popup_link( esc_html( '0 Comments' ), esc_html( '1 Comment' ), esc_html( '% Comments' ) );
@@ -55,7 +55,7 @@
  /**
   * Prints HTML with meta information for the categories and tags.
   */
- function red_starter_entry_footer() {
+ function cnh_entry_footer() {
  	// Hide category and tag text for pages.
  	if ( 'post' === get_post_type() ) {
  		/* translators: used between list items, there is a space after the comma */
@@ -77,7 +77,7 @@
   *
   * @return bool
   */
- function red_starter_categorized_blog() {
+ function cnh_categorized_blog() {
  	if ( false === ( $all_the_cool_cats = get_transient( 'red_starter_categories' ) ) ) {
  		// Create an array of all the categories that are attached to posts.
  		$all_the_cool_cats = get_categories( array(
@@ -106,7 +106,7 @@
  /**
   * Flush out the transients used in red_starter_categorized_blog.
   */
- function red_starter_category_transient_flusher() {
+ function cnh_category_transient_flusher() {
  	if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
  		return;
  	}
@@ -121,7 +121,7 @@
   *
   * Used as a callback by wp_list_comments() for displaying the comments.
   */
- function red_starter_comment_list( $comment, $args, $depth ) {
+ function cnh_comment_list( $comment, $args, $depth ) {
  	$GLOBALS['comment'] = $comment;
  	?>
 
@@ -171,7 +171,7 @@
  /**
   * Display numbered post pagination instead of "Older Posts" and "Next Posts".
   */
- function red_starter_numbered_pagination() {
+ function cnh_numbered_pagination() {
  	global $wp_query;
  	$big = 999999999;
 

@@ -40,7 +40,8 @@ a {
   text-decoration: none;
 
   &:hover {
-    color: #fab0bc;
+    background: #fab0bc;
+    color: $color__main;
   }
 
   &:visited {
