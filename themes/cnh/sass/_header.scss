@@ -3,6 +3,7 @@
 --------------------------------------------------------------*/
 
 .site-header {
+  margin: 0 auto;
   padding: $base__space-unit;
   @include flex(row, center, center);
 
@@ -16,11 +17,22 @@
     @include tablet {
       width: 63px;
     }
+
+    @include desktop {
+      width: 129px;
+    }
   }
 
   nav {
     button {
       display: none;
+    }
+
+    .search-btn {
+      @include desktop {
+        display: flex;
+
+      }
     }
 
     .translate-icon {
@@ -30,6 +42,10 @@
 
       i {
         padding: 0 2px;
+
+        @include desktop {
+          font-size: $size__body * 1.5;
+        }
       }
 
       .material-icons {
@@ -42,68 +58,29 @@
       position: absolute;
       top: 60px;
       right: 20px;
+
+      @include desktop {
+        top: 100px;
+        right: 300px;
+      }
     }
 
     .search-form {
       display: none;
+
+      @include desktop {
+        display: inline-flex;
+        position: relative;
+        top: $base__space-unit * 2;
+      }
     }
 
     .btn-open {
       margin-left: $base__space-unit / 2;
+
+      @include desktop {
+        display: none;
+      }
     }
   }
 }
-
-
-
-// .open-slide {
-//   line-height: 1;
-//   display: flex;
-//   align-items: center;
-
-// &:before {
-//   font-family: 'Material Icons';
-//   content: "\e894";
-//   margin-right: $base__space-unit / 2;
-//   font-size: 1.5rem;
-//   color: $color__main;
-// }
-// }
-
-
-.goog-te-combo {
-  // color: pink !important;
-
-  // &:before {
-  //   font-family: 'Material Icons';
-  //   content: "\E927" !important;
-  //   margin-right: 16px;
-  //   font-size: 2rem;
-  //   vertical-align: -10px;
-  //   // width:32px!important;
-  // }
-}
-
-// .goog-te-menu-value {
-
-//   // color: #fff !important;
-//   &:before {
-//     font-family: 'Material Icons';
-//     content: "\E927";
-//     margin-right: 16px;
-//     font-size: 2rem;
-//     vertical-align: -10px;
-//     // width:32px!important;
-//   }
-// }
-
-
-// #google_language_translator select.goog-te-combo {
-//   width: 143px;
-//   background: red;
-//   box-shadow: none !important;
-//   padding: 3px !important;
-//   height: auto !important;
-//   border: 1px solid lightgray !important;
-//   border-radius: 0px !important;
-// }

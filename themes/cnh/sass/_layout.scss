@@ -1,35 +1,48 @@
 .site-main {
-    margin: 0 auto;
-    margin-bottom: 2.9375rem;
-    @include desktop{
-        width: 1170px;
-    }
+  margin: 0 auto;
+  margin-bottom: 2.9375rem;
+
+  @include desktop {
+    width: 1170px;
+  }
 }
+
 .content-area {
-    background-image: url(../../images/Wave_Background.png);
+  background-image: url(../../images/Wave_Background.png);
 }
+
 h2 {
-    color: #282460;
-    font-family: 'Lato-Black';
-    font-size: 2.8125rem;
+  color: #282460;
+  font-family: 'Lato-Black';
+  font-size: 2.8125rem;
 
 }
+
 li {
-    list-style: none;
+  list-style: none;
 }
+
 a {
-    color: #282460;
-    text-decoration: none;
-    &:hover {
-        color: #fab0bc;
-    }
-    &:visited {
-        color: inherit;
-    }
+  color: #282460;
+  text-decoration: none;
+
+  &:hover {
+    color: #fab0bc;
+  }
+
+  &:visited {
+    color: inherit;
+  }
 }
+
 .wp-block-button:hover {
-    opacity: .5;
+  opacity: .5;
 }
+
 .menut-item:active {
-    border-bottom: 5px #fab0bc solid;
+  border-bottom: 5px #fab0bc solid;
+}
+
+.container {
+  width: $container-width;
 }
