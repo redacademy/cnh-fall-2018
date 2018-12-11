@@ -33,7 +33,6 @@ get_header(); ?>
         <div class="program-info">
           <h2 class="entry-title">
             <?php the_title(); ?>
-            <!-- <?php single_term_title(); ?> -->
           </h2>
 
           <div class="entry-content">

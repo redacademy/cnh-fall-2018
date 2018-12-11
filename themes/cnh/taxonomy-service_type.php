@@ -22,6 +22,20 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
   <main id="main" class="site-main" role="main">
+  <div class="service-type-wrapper">
+    <?php
+      // Get the terms for our services.
+      $terms = get_terms(array(
+        'taxonomy' => 'service_type',
+        'hide_empty' => 0, // false, hide
+      ));
+      foreach($terms as $term): ?>
+    <div class="service-term">
+      <!-- <h1><?php echo $term->name; ?></h1> -->
+      <h1><?php single_term_title(); ?></h1>
+    </div><!-- .service-term -->
+    <?php endforeach; ?>
+  </div><!-- .service-type-wrapper -->
     <?php /* Start the Loop */ ?>
     <div class="service-wrapper">
     <?php 
@@ -33,7 +47,6 @@ get_header(); ?>
         <div class="service-info">
           <h2 class="entry-title">
             <?php the_title(); ?>
-            <!-- <?php single_term_title(); ?> -->
           </h2>
 
           <div class="entry-content">
