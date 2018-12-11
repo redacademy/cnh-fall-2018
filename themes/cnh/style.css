@@ -775,6 +775,7 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Program Type page */
+.page-template .site-content,
 .page-template-taxonomy-program_type .site-content,
 .page-template-taxonomy-service_type .site-content {
   display: -webkit-box;
@@ -782,6 +783,7 @@ object {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+  .page-template .site-content .page-header,
   .page-template-taxonomy-program_type .site-content .page-header,
   .page-template-taxonomy-service_type .site-content .page-header {
     -webkit-box-ordinal-group: 2;
@@ -791,27 +793,34 @@ object {
         -ms-flex: 2 0 100%;
             flex: 2 0 100%;
     max-width: 100%; }
+    .page-template .site-content .page-header p,
     .page-template-taxonomy-program_type .site-content .page-header p,
     .page-template-taxonomy-service_type .site-content .page-header p {
       display: none;
       margin-left: 1.5rem; }
       @media all and (min-width: 600px) {
+        .page-template .site-content .page-header p,
         .page-template-taxonomy-program_type .site-content .page-header p,
         .page-template-taxonomy-service_type .site-content .page-header p {
           display: block; } }
+      .page-template .site-content .page-header p span span a,
       .page-template-taxonomy-program_type .site-content .page-header p span span a,
       .page-template-taxonomy-service_type .site-content .page-header p span span a {
         margin-right: 0.25rem; }
+        .page-template .site-content .page-header p span span a:hover,
         .page-template-taxonomy-program_type .site-content .page-header p span span a:hover,
         .page-template-taxonomy-service_type .site-content .page-header p span span a:hover {
           color: #fab0bc; }
+      .page-template .site-content .page-header p span span,
       .page-template-taxonomy-program_type .site-content .page-header p span span,
       .page-template-taxonomy-service_type .site-content .page-header p span span {
         margin: 0 0.25rem 0 0; }
+        .page-template .site-content .page-header p span span .breadcrumb_last,
         .page-template-taxonomy-program_type .site-content .page-header p span span .breadcrumb_last,
         .page-template-taxonomy-service_type .site-content .page-header p span span .breadcrumb_last {
           color: #fab0bc;
           font-weight: 600; }
+  .page-template .site-content .content-area,
   .page-template-taxonomy-program_type .site-content .content-area,
   .page-template-taxonomy-service_type .site-content .content-area {
     -webkit-box-ordinal-group: 4;
@@ -824,6 +833,7 @@ object {
     margin-bottom: 3rem;
     padding: 0 1.5rem; }
     @media all and (min-width: 1080px) {
+      .page-template .site-content .content-area,
       .page-template-taxonomy-program_type .site-content .content-area,
       .page-template-taxonomy-service_type .site-content .content-area {
         -webkit-box-flex: 2;
@@ -832,9 +842,11 @@ object {
         max-width: 75%;
         border-left: 1px solid #ddd;
         border-color: #282460; } }
+    .page-template .site-content .content-area h2,
     .page-template-taxonomy-program_type .site-content .content-area h2,
     .page-template-taxonomy-service_type .site-content .content-area h2 {
       margin-top: 0; }
+  .page-template .site-content .widget-sidebar,
   .page-template-taxonomy-program_type .site-content .widget-sidebar,
   .page-template-taxonomy-service_type .site-content .widget-sidebar {
     -webkit-box-ordinal-group: 3;
@@ -843,6 +855,7 @@ object {
     display: none;
     padding: 0 1.5rem; }
     @media all and (min-width: 600px) {
+      .page-template .site-content .widget-sidebar,
       .page-template-taxonomy-program_type .site-content .widget-sidebar,
       .page-template-taxonomy-service_type .site-content .widget-sidebar {
         display: block;
@@ -850,6 +863,7 @@ object {
             -ms-flex: 1 0 25%;
                 flex: 1 0 25%;
         max-width: 25%; } }
+    .page-template .site-content .widget-sidebar ul,
     .page-template-taxonomy-program_type .site-content .widget-sidebar ul,
     .page-template-taxonomy-service_type .site-content .widget-sidebar ul {
       margin: 0;
