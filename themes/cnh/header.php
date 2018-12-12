@@ -32,11 +32,13 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
           <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
           <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+        </nav><!-- #site-navigation -->
+
+        <div class="header-extras">
           <div class="translate-icon">
             <i class="material-icons">language</i>
-            <!-- <span class="translate-lang">LANG</span> -->
             <i class="fas fa-language fa-lg"></i>
-          </div>
+          </div><!-- .translate-icon -->
           <?php echo do_shortcode('[google-translator]'); ?>
           <span class="search-btn" aria-hidden="true">
             <i class="fa fa-search fa-md"></i>
@@ -51,7 +53,8 @@
               </svg>
             </a>
           </span>
-				</nav><!-- #site-navigation -->
+        </div><!-- .header-extras -->
+        
         <div id="side-menu" class="side-nav" style="width: 0px;">
           <div class="side-menu-top">
             <?php get_search_form(); ?>
@@ -136,7 +139,8 @@
               <a href="#" class="side-link">Events</a>
             </li>
           </ul>
-        </div>
+        </div><!-- .side-menu -->
+
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content container">

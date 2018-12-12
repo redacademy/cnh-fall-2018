@@ -1,9 +1,9 @@
 <?php
 /**
- * The template for displaying all infants & toddlers services.
+ * The template for displaying all immigrant - personalized services.
  *
  * @package based on RED_Starter_Theme
- * Template Name: Infants & Toddlers Template
+ * Template Name: Immigrant - Personalized Support Services Template
  */
 get_header(); ?>
 
@@ -18,7 +18,7 @@ get_header(); ?>
     /** 
      * Get the program entries
      */ 
-      $args = array( 'post_type' => 'service', 'order' => 'ASC', 'posts_per_page' => 6, 'service_type' => 'infants-toddlers');
+      $args = array( 'post_type' => 'service', 'order' => 'ASC', 'posts_per_page' => 6, 'service_type' => 'personalized-support');
       
       $service_posts = get_posts( $args ); ?>
     <div class="service-wrapper">
