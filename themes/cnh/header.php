@@ -40,9 +40,9 @@
             <i class="fas fa-language fa-lg"></i>
           </div><!-- .translate-icon -->
           <?php echo do_shortcode('[google-translator]'); ?>
-          <span class="search-btn" aria-hidden="true">
+          <div class="search-btn" aria-hidden="true">
             <i class="fa fa-search fa-md"></i>
-          </span>
+          </div>
           <?php get_search_form(); ?>
           <span class="open-slide">
             <a href="#" class="btn-open">

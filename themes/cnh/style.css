@@ -1666,6 +1666,8 @@ li .menu-item a {
   @media all and (min-width: 1080px) {
     .header-extras .search-btn {
       display: block; } }
+  .header-extras .search-form {
+    display: none; }
   .header-extras .translate-icon {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1693,10 +1695,10 @@ li .menu-item a {
       .header-extras #google_language_translator {
         top: 100px;
         right: 300px; } }
-  .header-extras .search-form {
+  .header-extras .side-menu .search-form {
     display: none; }
     @media all and (min-width: 1080px) {
-      .header-extras .search-form {
+      .header-extras .side-menu .search-form {
         display: -webkit-inline-box;
         display: -ms-inline-flexbox;
         display: inline-flex;
