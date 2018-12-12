@@ -2,9 +2,12 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+/* Page Template */
+/* Page Template Default */
 /* Program Type page */
 /* Service Type page */
-.page-template {
+.page-template,
+.page-template-default {
   .site-content {
     display: flex;
     flex-wrap: wrap;

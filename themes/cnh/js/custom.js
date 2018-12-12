@@ -1,9 +1,8 @@
 (function ($) {
   $(function () {
-
     const $sideMenu = $('#side-menu');
 
-    /** 
+    /**
      * start of side menu
      */
     $('.btn-open').on('click', function (event) {
@@ -21,9 +20,9 @@
         $sideMenu.css('width', '100%');
       } else {
         $sideMenu.css({
-          'width': '50%',
-          'left': 'auto',
-          'right': 0
+          width: '50%',
+          left: 'auto',
+          right: 0
         });
       }
     }
@@ -32,26 +31,41 @@
       $sideMenu.css('width', '0');
     }
 
-    $('.side-navbar').find('.accordion-toggle').click(function () {
-      $(this).next().toggleClass('open').slideToggle('fast');
-      $(this).toggleClass('active-tab').find('.side-link').toggleClass('active');
+    $('.side-navbar')
+      .find('.accordion-toggle')
+      .click(function () {
+        $(this)
+          .next()
+          .toggleClass('open')
+          .slideToggle('fast');
+        $(this)
+          .toggleClass('active-tab')
+          .find('.side-link')
+          .toggleClass('active');
 
-      $('.side-navbar .accordion-content').not($(this).next()).slideUp('fast').removeClass('open');
-      $('.side-navbar .accordion-toggle').not(jQuery(this)).removeClass('active-tab').find('.side-link').removeClass('active');
-    }); // end of side menu
+        $('.side-navbar .accordion-content')
+          .not($(this).next())
+          .slideUp('fast')
+          .removeClass('open');
+        $('.side-navbar .accordion-toggle')
+          .not(jQuery(this))
+          .removeClass('active-tab')
+          .find('.side-link')
+          .removeClass('active');
+      }); // end of side menu
 
     /**
-     * start of Google Translate changes 
+     * start of Google Translate changes
      */
     const $translateBtn = $('.translate-icon');
     const $translator = $('#google_language_translator');
-    const $searchField = $('.site-header .search-field');
+    // const $searchField = $('.site-header .search-field');
 
     // show translator
     $translateBtn.on('click', function () {
       // $('#google_language_translator').fadeToggle();
       $translator.toggle(1000);
-      $searchField.focus();
+      // $searchField.focus();
     }); // end of show translator
 
     // hide translator
@@ -66,6 +80,26 @@
     //   $('.goog-te-combo').selectric();
     // }, 1000);
 
+    /**
+     * start of search form in header
+     */
+    const $searchBtn = $('.search-btn');
+    const $searchForm = $('.header-extras .search-form');
+
+    // show search form
+    $searchBtn.on('click', function () {
+      // $('#google_language_translator').fadeToggle();
+      $searchForm.toggle(1000);
+      $searchForm.focus();
+    }); // end of show search form
+
+    // hide translator
+    $searchForm.on('blur', function () {
+      if ($(this).val === '') {
+        $searchForm.toggle(1000);
+      }
+    }); // end of hide search form
+    // end of search form in header
 
     // start of spectagram
     // var spectragramComplete = function () {
@@ -83,33 +117,39 @@
           // complete : spectragramComplete(),
           max: 2,
           size: 'medium',
-          wrapEachWith: '<div class='
-          photo '>'
+          wrapEachWith: '<div class="photo">'
         });
       }
-    }
+    };
     spectra.init();
 
     // Create the dropdown base
-    $("<select />").appendTo(".entry-title");
+    if ($('.widget_nav_menu').length) {
+      $('<select />').appendTo('.entry-title');
 
-    // Create default option "Go to..."
-    $("<option />", {
-      "selected": "selected",
-      "value": "",
-      "text": "Go to..."
-    }).appendTo(".entry-title select");
+      // Create default option "Go to..."
+      $('<option />', {
+        selected: 'selected',
+        value: '',
+        text: 'Go to...'
+      }).appendTo('.entry-title select');
 
-    // Populate dropdown with menu items
-    $(".widget-sidebar a").each(function () {
-      var el = $(this);
-      $("<option />", {
-        "value": el.attr("href"),
-        "text": el.text()
-      }).appendTo(".entry-title select");
-    }); // end of dropdown nav
+      // Populate dropdown with menu items
+      $('.widget-sidebar a').each(function () {
+        var el = $(this);
+        $('<option />', {
+          value: el.attr('href'),
+          text: el.text()
+        }).appendTo('.entry-title select');
+      }); // end of dropdown nav
 
-    $('.entry-header select').selectric();
+      $('.entry-title select').selectric();
 
+      $('.entry-title select').on('change', function () {
+        let selected = $(this).val();
+
+        window.location.replace(selected);
+      });
+    } //end of if statement
   }); // end of doc ready
 })(jQuery);

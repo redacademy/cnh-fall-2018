@@ -1,9 +1,9 @@
 <?php
 /**
- * The template for displaying all arts, music & dance programs.
+ * The template for displaying all about child pages.
  *
  * @package based on RED_Starter_Theme
- * Template Name: Arts, Music & Dance Template
+ * Template Name: About Page Children Template
  */
 get_header(); ?>
 
@@ -11,28 +11,13 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
   <main id="main" class="site-main" role="main">
-    
-    <?php get_template_part( 'template-parts/program', 'type' ); ?>
-          
-    <?php 
-    /** 
-     * Get the program entries
-     */ 
-      $args = array( 'post_type' => 'program', 'order' => 'ASC', 'posts_per_page' => 6, 'program_type' => 'arts-music-dance');
-      
-      $program_posts = get_posts( $args ); ?>
-    <div class="program-wrapper">
-    <?php foreach ( $program_posts as $post ) : setup_postdata( $post ); ?>
-      <article class="program-entry">
-        <div class="program-entry-info">
-          <h4><?php the_title(); ?></h4>
-          <p><?php the_content(); ?></p>
-        </div><!-- .program-entry-info -->
-      </article><!-- .program-entry -->
-    <?php endforeach; wp_reset_postdata(); ?>
-    </div><!-- .program-wrapper -->
 
-  <?php cnh_numbered_pagination(); ?>
+    <?php while ( have_posts() ) : the_post(); ?>
+
+      <?php get_template_part( 'template-parts/content', 'page' ); ?>
+
+    <?php endwhile; // End of the loop. ?>
+
   </main><!-- #main -->
 </div><!-- #primary -->
 

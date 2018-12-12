@@ -7,14 +7,10 @@
  */
 get_header(); ?>
 
+<?php get_template_part( 'template-parts/breadcrumbs', 'breadcrumbs' ); ?>
+
 <div id="primary" class="content-area">
   <main id="main" class="site-main" role="main">
-
-      <?php 
-        if ( function_exists('yoast_breadcrumb') ) {
-            yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
-        }
-      ?>
 
     <?php while ( have_posts() ) : the_post(); ?>
 

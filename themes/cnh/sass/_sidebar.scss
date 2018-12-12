@@ -15,6 +15,10 @@
 
     ul {
       text-align: left;
+
+      .current-menu-item {
+        background: $color__highlight;
+      }
     }
 
     a {
@@ -61,4 +65,8 @@ li .menu-item a {
     top: 50%;
     transform: translateY(-50%);
   }
+}
+
+.page-template-programs .selectric-wrapper, .page-template-about .selectric-wrapper, .page-template-contact .selectric-wrapper, .page-template-search .selectric-wrapper, .page-template-services .selectric-wrapper, .page-template-join .selectric-wrapper, .page-template-volunteer .selectric-wrapper{
+  display: none;
 }
