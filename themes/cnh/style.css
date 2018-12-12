@@ -1459,6 +1459,12 @@ footer {
   margin: 0 auto;
   margin-bottom: 2.9375rem; }
 
+.container {
+  margin: 0 auto; }
+  @media all and (min-width: 1080px) {
+    .container {
+      width: 1170px; } }
+
 .hfeed {
   background: no-repeat bottom url("../../assets/images/Wave_Background.png");
   background-size: 100% 40%; }

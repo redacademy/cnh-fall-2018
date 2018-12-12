@@ -59,7 +59,7 @@
      */
     const $translateBtn = $('.translate-icon');
     const $translator = $('#google_language_translator');
-    // const $searchField = $('.site-header .search-field');
+    const $searchField = $('.site-header .search-field');
 
     // show translator
     $translateBtn.on('click', function() {
