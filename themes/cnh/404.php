@@ -22,7 +22,7 @@ get_header(); ?>
 				<div class="page-content content-404">
 
 					<div class="button-yellow button-404">
-						<a href="https://cnh.van.cp.academy.red/">Return Home</a>
+						<a href="<?php echo home_url(); ?>">Return Home</a>
 					</div>
 				
 

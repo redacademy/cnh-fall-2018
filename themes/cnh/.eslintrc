@@ -5,6 +5,7 @@
   },
   "rules": {
     "no-alert": 0,
+    "no-mixed-spaces-and-tabs": [1, "smart-tabs"],
     "no-bitwise": 0,
     "camelcase": 1,
     "curly": 1,
@@ -13,7 +14,7 @@
     "no-eq-null": 0,
     "guard-for-in": 1,
     "no-empty": 1,
-    "quotes": [1, "single"]
+    "quotes": [0, "single"]
   },
   "globals": {
     "jQuery": false,
