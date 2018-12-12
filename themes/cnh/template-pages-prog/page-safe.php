@@ -1,9 +1,9 @@
 <?php
 /**
- * The template for displaying all safe programs.
+ * The template for displaying all family - safe programs.
  *
  * @package based on RED_Starter_Theme
- * Template Name: Safe Program Template
+ * Template Name: Family - Safe Programs Template
  */
 get_header(); ?>
 

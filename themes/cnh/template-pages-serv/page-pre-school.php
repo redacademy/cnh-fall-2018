@@ -1,9 +1,9 @@
 <?php
 /**
- * The template for displaying all childcare - early learning and care services.
+ * The template for displaying all childcare - pre-school services.
  *
  * @package based on RED_Starter_Theme
- * Template Name: Childcare - Early Learning & Care Services Template
+ * Template Name: Childcare - Pre-School Services Template
  */
 get_header(); ?>
 
@@ -18,7 +18,7 @@ get_header(); ?>
     /** 
      * Get the program entries
      */ 
-      $args = array( 'post_type' => 'service', 'order' => 'ASC', 'posts_per_page' => 6, 'service_type' => 'early-learning-care');
+      $args = array( 'post_type' => 'service', 'order' => 'ASC', 'posts_per_page' => 6, 'service_type' => 'pre-school');
       
       $service_posts = get_posts( $args ); ?>
     <div class="service-wrapper">

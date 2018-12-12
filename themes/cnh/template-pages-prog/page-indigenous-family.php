@@ -1,9 +1,9 @@
 <?php
 /**
- * The template for displaying all Family Indigenous programs.
+ * The template for displaying all family - Indigenous programs.
  *
  * @package based on RED_Starter_Theme
- * Template Name: Family Indigenous Program Template
+ * Template Name: Family - Indigenous Programs Template
  */
 get_header(); ?>
 

@@ -1,9 +1,9 @@
 <?php
 /**
- * The template for displaying all community connect programs.
+ * The template for displaying all community - connect programs.
  *
  * @package based on RED_Starter_Theme
- * Template Name: Community Connect Program Template
+ * Template Name: Community - Connect Programs Template
  */
 get_header(); ?>
 

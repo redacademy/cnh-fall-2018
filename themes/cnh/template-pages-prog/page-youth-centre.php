@@ -1,9 +1,9 @@
 <?php
 /**
- * The template for displaying all youth centre programs.
+ * The template for displaying all children and youth - youth centre programs.
  *
  * @package based on RED_Starter_Theme
- * Template Name: Youth Centre Program Template
+ * Template Name: Children & Youth - Youth Centre Programs Template
  */
 get_header(); ?>
 

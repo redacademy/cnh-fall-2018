@@ -1,9 +1,9 @@
 <?php
 /**
- * The template for displaying all peer education programs.
+ * The template for displaying all children and youth - peer education programs.
  *
  * @package based on RED_Starter_Theme
- * Template Name: Peer Education Program Template
+ * Template Name: Children & Youth - Peer Education Programs Template
  */
 get_header(); ?>
 

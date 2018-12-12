@@ -1,9 +1,9 @@
 <?php
 /**
- * The template for displaying all community food programs.
+ * The template for displaying all community - food programs.
  *
  * @package based on RED_Starter_Theme
- * Template Name: Community Food Program Template
+ * Template Name: Community - Food Programs Template
  */
 get_header(); ?>
 

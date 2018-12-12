@@ -1,9 +1,9 @@
 <?php
 /**
- * The template for displaying all sports programs.
+ * The template for displaying all children and youth - sports programs.
  *
  * @package based on RED_Starter_Theme
- * Template Name: Sports Program Template
+ * Template Name: Children & Youth - Sports Programs Template
  */
 get_header(); ?>
 

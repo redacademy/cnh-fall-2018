@@ -1,9 +1,9 @@
 <?php
 /**
- * The template for displaying all Indigenous programs.
+ * The template for displaying all children & youth - Indigenous programs.
  *
  * @package based on RED_Starter_Theme
- * Template Name: Indigenous Program Template
+ * Template Name: Children & Youth - Indigenous Programs Template
  */
 get_header(); ?>
 

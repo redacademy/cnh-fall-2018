@@ -1,9 +1,9 @@
 <?php
 /**
- * The template for displaying all new comers programs.
+ * The template for displaying all children and youth - new comers programs.
  *
  * @package based on RED_Starter_Theme
- * Template Name: New Comers Program Template
+ * Template Name: Children & Youth - New Comers Program Template
  */
 get_header(); ?>
 

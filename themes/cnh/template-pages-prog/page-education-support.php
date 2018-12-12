@@ -1,9 +1,9 @@
 <?php
 /**
- * The template for displaying all education support programs.
+ * The template for displaying all family - education support programs.
  *
  * @package based on RED_Starter_Theme
- * Template Name: Education Support Program Template
+ * Template Name: Family - Education Support Programs Template
  */
 get_header(); ?>
 

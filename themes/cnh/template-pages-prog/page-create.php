@@ -1,9 +1,9 @@
 <?php
 /**
- * The template for displaying all community create programs.
+ * The template for displaying all community - create programs.
  *
  * @package based on RED_Starter_Theme
- * Template Name: Community Create Program Template
+ * Template Name: Community - Create Programs Template
  */
 get_header(); ?>
 

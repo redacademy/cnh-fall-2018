@@ -1,9 +1,9 @@
 <?php
 /**
- * The template for displaying all arts, music & dance programs.
+ * The template for displaying all children and youth - arts, music & dance programs.
  *
  * @package based on RED_Starter_Theme
- * Template Name: Arts, Music & Dance Program Template
+ * Template Name: Children & Youth - Arts, Music & Dance Programs Template
  */
 get_header(); ?>
 

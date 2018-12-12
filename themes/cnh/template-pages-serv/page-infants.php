@@ -1,9 +1,9 @@
 <?php
 /**
- * The template for displaying all infants & toddlers services.
+ * The template for displaying all childcare - infants & toddlers services.
  *
  * @package based on RED_Starter_Theme
- * Template Name: Infants & Toddlers Services Template
+ * Template Name: Childcare - Infants & Toddlers Services Template
  */
 get_header(); ?>
 
