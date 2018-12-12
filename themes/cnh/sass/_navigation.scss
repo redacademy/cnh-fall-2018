@@ -91,8 +91,9 @@ a {
   }
 
   li {
-    float: left;
-    position: relative;
+    // float: left;
+    // position: relative;
+    padding: 0 $base__space-unit / 2;
 
     &:hover>a,
     &.focus>a {}

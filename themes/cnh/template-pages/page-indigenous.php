@@ -1,9 +1,9 @@
 <?php
 /**
- * The template for displaying all arts, music & dance programs.
+ * The template for displaying all Indigenous programs.
  *
  * @package based on RED_Starter_Theme
- * Template Name: Arts, Music & Dance Program Template
+ * Template Name: Indigenous Program Template
  */
 get_header(); ?>
 
@@ -18,7 +18,7 @@ get_header(); ?>
     /** 
      * Get the program entries
      */ 
-      $args = array( 'post_type' => 'program', 'order' => 'ASC', 'posts_per_page' => 6, 'program_type' => 'arts-music-dance');
+      $args = array( 'post_type' => 'program', 'order' => 'ASC', 'posts_per_page' => 6, 'program_type' => 'indigenous');
       
       $program_posts = get_posts( $args ); ?>
     <div class="program-wrapper">

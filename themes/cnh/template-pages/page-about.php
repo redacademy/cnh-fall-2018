@@ -1,9 +1,9 @@
 <?php
 /**
- * The template for displaying all arts, music & dance programs.
+ * The template for displaying all about child pages.
  *
  * @package based on RED_Starter_Theme
- * Template Name: Arts, Music & Dance Template
+ * Template Name: About Child Pg Template
  */
 get_header(); ?>
 

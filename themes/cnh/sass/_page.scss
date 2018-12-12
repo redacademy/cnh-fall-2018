@@ -1,75 +1,74 @@
-// Styling for page.php template
+// // Styling for page.php template
 
-.page-template {
-  // max-width: 100vw;
+// .page-template {
 
-  .site {
-    max-width: 100vw;
+//   .site {
+//     max-width: 100vw;
 
-    .custom-header {
-      display: none;
-    }
+//     .custom-header {
+//       display: none;
+//     }
 
-    .site-content {
-      max-width: 100vw;
+//     .site-content {
+//       max-width: 100vw;
 
-      .content-area {
-        .site-main {
-          .wp-post-image {
-            width: 100vw;
-          }
+//       .content-area {
+//         .site-main {
+//           .wp-post-image {
+//             width: 100vw;
+//           }
 
-          .type-page {
-            .entry-header {
-              .entry-title {
-                font-family: $font__title;
-                font-size: $size__subtitle;
-                color: $color__main;
-                text-transform: uppercase;
-                text-align: center;
-                letter-spacing: 2px;
-              }
-            }
+//           .type-page {
+//             .entry-header {
+//               .entry-title {
+//                 font-family: $font__title;
+//                 font-size: $size__subtitle;
+//                 color: $color__main;
+//                 text-transform: uppercase;
+//                 text-align: center;
+//                 letter-spacing: 2px;
+//               }
+//             }
 
-            .entry-content {
-              h3 {
-                font-family: $font__body;
-                font-size: $size__body;
-                color: $color__main;
-                text-transform: uppercase;
-                text-align: center;
-                letter-spacing: 2px;
-              }
+//             .entry-content {
+//               h3 {
+//                 font-family: $font__body;
+//                 font-size: $size__body;
+//                 color: $color__main;
+//                 text-transform: uppercase;
+//                 text-align: center;
+//                 letter-spacing: 2px;
+//               }
 
-              p {
-                font-family: $font__body;
-                font-size: $size__body;
-                color: $color__text-main;
-                text-align: center;
-              }
-            }
-          }
+//               p {
+//                 font-family: $font__body;
+//                 font-size: $size__body;
+//                 color: $color__text-main;
+//                 text-align: center;
+//               }
+//             }
+//           }
 
-          p {
-            span {
-              span {
-                a {
-                  margin-right: 0.25rem;
-                }
-              }
+//           p {
+//             span {
+//               span {
+//                 a {
+//                   margin-right: 0.25rem;
+//                 }
+//               }
 
-              span {
-                margin: 0 0.25rem;
+//               span {
+//                 margin: 0 0.25rem;
 
-                .breadcrumb_last {
-                  color: $color__highlight;
-                  font-weight: 600;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
+//                 .breadcrumb_last {
+//                   color: $color__highlight;
+//                   font-family: $font__subtitle;
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

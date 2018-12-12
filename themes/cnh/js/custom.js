@@ -45,13 +45,13 @@
      */
     const $translateBtn = $('.translate-icon');
     const $translator = $('#google_language_translator');
-    const $searchField = $('.site-header .search-field');
+    // const $searchField = $('.site-header .search-field');
 
     // show translator
     $translateBtn.on('click', function () {
       // $('#google_language_translator').fadeToggle();
       $translator.toggle(1000);
-      $searchField.focus();
+      // $searchField.focus();
     }); // end of show translator
 
     // hide translator
@@ -65,6 +65,28 @@
     // setTimeout(function () {
     //   $('.goog-te-combo').selectric();
     // }, 1000);
+
+    /**
+     * start of search form in header
+     */
+    const $translateBtn = $('.translate-icon');
+    const $translator = $('#google_language_translator');
+    const $searchField = $('.site-header .search-field');
+
+    // show search form
+    $translateBtn.on('click', function () {
+      // $('#google_language_translator').fadeToggle();
+      $translator.toggle(1000);
+      $searchField.focus();
+    }); // end of show search form
+
+    // hide translator
+    $searchField.on('blur', function () {
+      if ($(this).val === '') {
+        $translator.toggle(1000);
+      }
+    }); // end of hide search form
+    // end of search form in header
 
 
     // start of spectagram
