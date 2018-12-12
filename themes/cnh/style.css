@@ -1600,8 +1600,7 @@ a {
   .widget-sidebar {
     border-right: 1px solid #ddd;
     border-color: #282460;
-    margin-bottom: 3rem;
-    height: 100vw; }
+    margin-bottom: 3rem; }
     .widget-sidebar ul {
       text-align: left; }
       .widget-sidebar ul .current-menu-item {
@@ -1672,6 +1671,14 @@ li .menu-item a {
         width: 129px; } }
   .site-header nav button {
     display: none; }
+  .site-header nav ul li:hover,
+  .site-header nav ul .current-menu-parent {
+    border-bottom: 5px solid #fab0bc; }
+    .site-header nav ul li:hover li:hover,
+    .site-header nav ul li:hover .current-menu-item,
+    .site-header nav ul .current-menu-parent li:hover,
+    .site-header nav ul .current-menu-parent .current-menu-item {
+      background: #fab0bc; }
 
 .header-extras {
   display: -webkit-box;
