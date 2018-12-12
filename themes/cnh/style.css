@@ -1016,6 +1016,17 @@ footer {
   .instalame-container .photo:last-child {
     display: none; }
 
+.upcoming-events-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #282460;
+  font-family: "Lato-Bold";
+  font-size: 1.5rem; }
+
 .upcoming-events {
   width: 275px;
   margin: auto; }
@@ -1502,11 +1513,11 @@ a {
 .menut-item:active {
   border-bottom: 5px #fab0bc solid; }
 
-.container {
+.content-area {
   width: 100%;
   margin: 0 auto; }
   @media all and (min-width: 1080px) {
-    .container {
+    .content-area {
       width: 1170px; } }
 
 .page-template-services-php .entry-content {
