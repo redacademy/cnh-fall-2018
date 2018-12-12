@@ -39,7 +39,6 @@ $event_id = get_the_ID();
 				
                         
 				</div>
-
 </div><!--End main-->
 <div class="main">
 </div>
