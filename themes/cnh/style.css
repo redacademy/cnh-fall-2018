@@ -916,6 +916,29 @@ footer {
   #custom_html-4, #custom_html-3 {
     display: none; } }
 
+.wp-block-column .wp-block-image {
+  width: 280px;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  margin-bottom: 2.5rem; }
+
+.wp-block-column img {
+  width: 56px;
+  margin-right: 1.5rem; }
+
+.wp-block-column figcaption {
+  text-align: left;
+  letter-spacing: .85pt;
+  font-size: 15px;
+  line-height: 18pt;
+  margin-top: 0; }
+
+.we-are-a-place-buttons {
+  display: none !important; }
+
 .instalame-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1005,6 +1028,37 @@ footer {
   background-color: #ffffff98; }
 
 @media all and (min-width: 1080px) {
+  .wp-block-column {
+    height: auto; }
+    .wp-block-column img {
+      width: 140px;
+      margin: auto; }
+    .wp-block-column .wp-block-image {
+      display: inline-block;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      height: auto; }
+    .wp-block-column .wp-block-column img {
+      width: 140px; }
+    .wp-block-column figcaption {
+      text-align: center;
+      margin-bottom: 0; }
+  .we-are-a-place {
+    width: 1170px;
+    margin: auto; }
+  .we-are-a-place-buttons {
+    display: inline !important;
+    position: relative;
+    left: 20%; }
+    .we-are-a-place-buttons .wp-block-button__link {
+      font-size: 16px;
+      width: 195px;
+      border-radius: 10px; }
   .instalame-container {
     width: 1094px; }
     .instalame-container .photo {
