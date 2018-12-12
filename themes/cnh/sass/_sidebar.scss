@@ -63,6 +63,6 @@ li .menu-item a {
   }
 }
 
-// .page-template-programs .page-template-about .page-template-contact{
-
-// }
+.page-template-programs .selectric-wrapper, .page-template-about .selectric-wrapper, .page-template-contact .selectric-wrapper, .page-template-search .selectric-wrapper, .page-template-services .selectric-wrapper, .page-template-join .selectric-wrapper, .page-template-volunteer .selectric-wrapper{
+  display: none;
+}

@@ -1584,6 +1584,9 @@ li .menu-item a {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
 
+.page-template-programs .selectric-wrapper, .page-template-about .selectric-wrapper, .page-template-contact .selectric-wrapper, .page-template-search .selectric-wrapper, .page-template-services .selectric-wrapper, .page-template-join .selectric-wrapper, .page-template-volunteer .selectric-wrapper {
+  display: none; }
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
