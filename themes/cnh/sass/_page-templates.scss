@@ -66,8 +66,6 @@
       @include desktop {
         flex: 2 0 75%;
         max-width: 75%;
-        border-left: $border__solid;
-        border-color: $color__main;
       }
 
       h2 {
@@ -91,5 +89,12 @@
         padding: 0;
       }
     }
+  }
+}
+
+.home .site-content {
+  .content-area {
+    flex: 2 0 100%;
+    max-width: 100%;
   }
 }
