@@ -1579,7 +1579,9 @@ a {
     height: 100vh;
     margin-bottom: 10px; }
     .widget-sidebar ul {
-      text-align: left; } }
+      text-align: left; }
+      .widget-sidebar ul .current-menu-item {
+        background: #fab0bc; } }
   @media all and (min-width: 1080px) and (min-width: 1080px) {
     .widget-sidebar a {
       font-size: 1.25rem;
