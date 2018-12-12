@@ -8,10 +8,13 @@
 
 .widget-sidebar {
   @include desktop {
+    border-right: $border__solid;
+    border-color: $color__main;
+    margin-bottom: $base__space-unit * 2;
     // border-right: 1px solid black;
     // width: 18rem;
     height: 100vh;
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
 
     ul {
       text-align: left;
@@ -67,6 +70,12 @@ li .menu-item a {
   }
 }
 
-.page-template-programs .selectric-wrapper, .page-template-about .selectric-wrapper, .page-template-contact .selectric-wrapper, .page-template-search .selectric-wrapper, .page-template-services .selectric-wrapper, .page-template-join .selectric-wrapper, .page-template-volunteer .selectric-wrapper{
+.page-template-programs .selectric-wrapper,
+.page-template-about .selectric-wrapper,
+.page-template-contact .selectric-wrapper,
+.page-template-search .selectric-wrapper,
+.page-template-services .selectric-wrapper,
+.page-template-join .selectric-wrapper,
+.page-template-volunteer .selectric-wrapper {
   display: none;
 }
