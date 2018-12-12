@@ -130,16 +130,4 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/extras.php';
 
-/**
- * Add breadcrumbs.
- */
-add_theme_support( 'yoast-seo-breadcrumbs' );
 
-/**
- * Remove "Editor" links from sub-menus.
- */
-function cnh_remove_submenus() {
-  remove_submenu_page( 'themes.php', 'theme-editor.php' );
-  remove_submenu_page( 'plugins.php', 'plugin-editor.php' );
-}
-add_action( 'admin_menu', 'cnh_remove_submenus', 110 );
