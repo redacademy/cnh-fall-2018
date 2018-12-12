@@ -1600,7 +1600,7 @@ a {
     border-right: 1px solid #ddd;
     border-color: #282460;
     margin-bottom: 3rem;
-    height: 100vh; }
+    height: 100vw; }
     .widget-sidebar ul {
       text-align: left; }
       .widget-sidebar ul .current-menu-item {
@@ -1640,15 +1640,6 @@ li .menu-item a {
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
-
-.page-template-programs .selectric-wrapper,
-.page-template-about .selectric-wrapper,
-.page-template-contact .selectric-wrapper,
-.page-template-search .selectric-wrapper,
-.page-template-services .selectric-wrapper,
-.page-template-join .selectric-wrapper,
-.page-template-volunteer .selectric-wrapper {
-  display: none; }
 
 /*--------------------------------------------------------------
 # Header

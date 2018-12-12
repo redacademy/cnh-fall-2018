@@ -13,7 +13,7 @@
     margin-bottom: $base__space-unit * 2;
     // border-right: 1px solid black;
     // width: 18rem;
-    height: 100vh;
+    height: 100vw;
     // margin-bottom: 10px;
 
     ul {
@@ -40,7 +40,7 @@
         &::after {
           content: '';
           position: absolute;
-          background: url('../../assets/icons/side-nav-arrow.png')no-repeat;
+          background: url('../../assets/icons/side-nav-arrow.png') no-repeat;
           width: 1rem;
           height: 1rem;
           right: 2px;
@@ -68,14 +68,4 @@ li .menu-item a {
     top: 50%;
     transform: translateY(-50%);
   }
-}
-
-.page-template-programs .selectric-wrapper,
-.page-template-about .selectric-wrapper,
-.page-template-contact .selectric-wrapper,
-.page-template-search .selectric-wrapper,
-.page-template-services .selectric-wrapper,
-.page-template-join .selectric-wrapper,
-.page-template-volunteer .selectric-wrapper {
-  display: none;
 }
