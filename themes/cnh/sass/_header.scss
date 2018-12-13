@@ -21,25 +21,6 @@
       width: 129px;
     }
   }
-
-  nav {
-    button {
-      display: none;
-    }
-
-    ul {
-
-      li:hover,
-      .current-menu-parent {
-        border-bottom: 5px solid $color__highlight;
-
-        li:hover,
-        .current-menu-item {
-          background: $color__highlight;
-        }
-      }
-    }
-  }
 }
 
 .header-extras {
