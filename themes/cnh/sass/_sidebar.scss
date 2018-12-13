@@ -36,13 +36,8 @@
         display: flex;
         position: relative;
         padding: $base__space-unit/3 $base__space-unit * 2 $base__space-unit/3 $base__space-unit;
-        margin: $base__space-unit/6 0;
+        margin-bottom: $base__space-unit/6;
         text-transform: uppercase;
-
-        // TODO remove margin-top from first anchor
-        &:first-of-type {
-          // margin: 0;
-        }
 
         &::after {
           content: '';
