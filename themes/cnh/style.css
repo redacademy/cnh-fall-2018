@@ -1916,7 +1916,7 @@ a {
         background: #fab0bc; } }
   @media all and (min-width: 600px) and (min-width: 600px) {
     .widget-sidebar a {
-      font-size: 1.1rem;
+      font-size: 0.8rem;
       line-height: 1.5rem;
       font-family: "Lato-Bold";
       display: -webkit-box;
@@ -1939,6 +1939,9 @@ a {
         padding-right: 2.25rem; }
       .widget-sidebar a:hover {
         background: #fab0bc; } }
+  @media all and (min-width: 600px) and (min-width: 800px) {
+    .widget-sidebar a {
+      font-size: 1.1rem; } }
   @media all and (min-width: 600px) and (min-width: 1080px) {
     .widget-sidebar a {
       font-size: 1.25rem; } }
