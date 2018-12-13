@@ -1924,11 +1924,7 @@ a {
       display: flex;
       position: relative;
       padding: 0.5rem 3rem 0.5rem 1.5rem;
-<<<<<<< HEAD
-      margin: 0.5rem 0;
-=======
       margin-bottom: 0.25rem;
->>>>>>> afe09051ad7d756a6fe28ae91ae50d1424828570
       text-transform: uppercase; }
       .widget-sidebar a::after {
         content: '';
