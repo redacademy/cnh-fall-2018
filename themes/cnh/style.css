@@ -1729,11 +1729,7 @@ a {
       display: -ms-flexbox;
       display: flex;
       position: relative;
-<<<<<<< HEAD
-      padding: 0.5rem 2.55rem;
-=======
       padding: 0.5rem 3rem 0.5rem 1.5rem;
->>>>>>> f2420c0a14cdac9ffda0b8aa79c70362279f264b
       margin: 0.5rem 0;
       text-transform: uppercase; }
       .widget-sidebar a::after {
@@ -2166,6 +2162,3 @@ iframe.maps {
 
 .location-name {
   font-size: 1.25rem; }
-
-#nav_menu-2 {
-  display: block; }
