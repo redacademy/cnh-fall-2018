@@ -6,8 +6,12 @@
   }
 }
 
+#nav_menu-2 {
+  display: block;
+}
+
 .widget-sidebar {
-  @include desktop {
+  @include tablet {
     border-right: $border__solid;
     border-color: $color__main;
     margin-bottom: $base__space-unit * 2;
@@ -25,14 +29,15 @@
     }
 
     a {
-      @include desktop {
-        font-size: 1.25rem;
+      @include tablet {
+        font-size: 1.1rem;
         line-height: 1.5rem;
         font-family: $font__sidebar;
         font-weight: 600;
         display: flex;
         position: relative;
-        padding: $base__space-unit/3 $base__space-unit*2 $base__space-unit/3 $base__space-unit;
+        padding: $base__space-unit/3 $base__space-unit * 2 $base__space-unit/3
+          $base__space-unit;
         margin: 0.5rem 0;
         text-transform: uppercase;
 
@@ -51,6 +56,9 @@
         &:hover {
           background: $color__highlight;
         }
+      }
+      @include desktop {
+        font-size: 1.25rem;
       }
     }
   }

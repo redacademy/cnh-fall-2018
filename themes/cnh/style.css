@@ -853,6 +853,13 @@ object {
     max-width: 100%;
     margin-bottom: 3rem;
     padding: 0 1.5rem; }
+    @media all and (min-width: 600px) {
+      .page-template .site-content .content-area,
+      .page-template-default .site-content .content-area {
+        -webkit-box-flex: 2;
+            -ms-flex: 2 0 75%;
+                flex: 2 0 75%;
+        max-width: 75%; } }
     @media all and (min-width: 1080px) {
       .page-template .site-content .content-area,
       .page-template-default .site-content .content-area {
@@ -1030,7 +1037,10 @@ footer {
   .instalame-container .photo:last-child {
     display: none; }
 
-.upcoming-events-title {
+.follow-box {
+  display: none; }
+
+.upcoming-events-title, .instagram-updates-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1092,7 +1102,7 @@ footer {
 .location-box {
   height: 30px;
   position: relative;
-  bottom: 28.5%;
+  bottom: 29%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1106,6 +1116,8 @@ footer {
     position: relative;
     top: 15px;
     color: white; }
+    .location-box a:visited {
+      color: inherit; }
 
 .hover-details {
   display: none;
@@ -1114,6 +1126,26 @@ footer {
   border-radius: 0 10px 10px 0;
   margin-left: 0;
   background-color: #ffffff98; }
+
+.view-calendar-container {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.view-calendar {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  background-color: #fab568;
+  color: #282460;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-family: "Lato-Black"; }
 
 @media all and (min-width: 1080px) {
   .wp-block-column {
@@ -1147,8 +1179,10 @@ footer {
       font-size: 16px;
       width: 195px;
       border-radius: 10px; }
+  .upcoming-events-title, .instagram-updates-title {
+    font-size: 2.8125rem; }
   .instalame-container {
-    width: 1094px; }
+    width: 1100px; }
     .instalame-container .photo {
       width: 456px;
       height: 456px; }
@@ -1159,13 +1193,44 @@ footer {
       width: 100%;
       height: 100%;
       border-radius: 2%; }
+  .follow-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1100px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    .follow-box .follow-content {
+      margin-top: 3.25rem;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      height: 64px; }
+      .follow-box .follow-content img {
+        height: 64px;
+        width: 64px;
+        background-color: #fab568;
+        border-radius: 100px;
+        margin-right: 1.5rem; }
+        .follow-box .follow-content img:last-of-type {
+          margin-right: 4.5rem; }
+  .follow-us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #282460;
+    font-family: "Lato-Bold";
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: auto;
+    margin-right: 1.5rem; }
   .upcoming-events {
     width: 1170px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
   .hover-details {
-    margin-left: 2rem;
     font-size: 1.25rem; }
     .hover-details .hover-title {
       font-weight: bold; }
@@ -1213,7 +1278,9 @@ footer {
     font-size: 1.75rem; }
     .location-box a {
       position: initial;
-      margin: auto; } }
+      margin: auto; }
+  .view-calendar-container {
+    display: none; } }
 
 .center-page {
   text-align: center; }
@@ -1268,6 +1335,12 @@ footer {
   .page-template-programs-php .entry-title,
   .page-template-programs-php .wp-block-image {
     display: none; } }
+
+.page-template-programs-php .site-content .content-area {
+  max-width: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%; }
 
 .button-yellow {
   background-color: #fab568; }
@@ -1569,6 +1642,12 @@ a {
   height: 105px;
   width: 537px; }
 
+.page-template-services .site-content .content-area {
+  max-width: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%; }
+
 .page-template-about-php .entry-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1580,8 +1659,7 @@ a {
   margin: 0 2.4rem; }
   @media all and (min-width: 1080px) {
     .page-template-about-php .entry-content {
-      text-align: left;
-      margin: 0 300px; } }
+      text-align: left; } }
   .page-template-about-php .entry-content p {
     color: #282460; }
     @media all and (min-width: 1080px) {
@@ -1626,7 +1704,10 @@ a {
     #sidebar-2 {
       display: block; } }
 
-@media all and (min-width: 1080px) {
+#nav_menu-2 {
+  display: block; }
+
+@media all and (min-width: 600px) {
   .widget-sidebar {
     border-right: 1px solid #ddd;
     border-color: #282460;
@@ -1635,9 +1716,9 @@ a {
       text-align: left; }
       .widget-sidebar ul .current-menu-item {
         background: #fab0bc; } }
-  @media all and (min-width: 1080px) and (min-width: 1080px) {
+  @media all and (min-width: 600px) and (min-width: 600px) {
     .widget-sidebar a {
-      font-size: 1.25rem;
+      font-size: 1.1rem;
       line-height: 1.5rem;
       font-family: "Lato-Regular";
       font-weight: 600;
@@ -1661,6 +1742,9 @@ a {
         padding-right: 2.25rem; }
       .widget-sidebar a:hover {
         background: #fab0bc; } }
+  @media all and (min-width: 600px) and (min-width: 1080px) {
+    .widget-sidebar a {
+      font-size: 1.25rem; } }
 
 li .menu-item a {
   display: block;
@@ -1791,47 +1875,58 @@ li .menu-item a {
 ======================================*/
 .selectric-wrapper {
   position: relative;
-  cursor: pointer; }
+  cursor: pointer;
+  text-align: center;
+  widows: 400px;
+  margin: auto; }
+  @media all and (min-width: 600px) {
+    .selectric-wrapper {
+      display: none; } }
 
 .selectric-responsive {
   width: 100%; }
 
 .selectric {
-  border: 0px solid #Ffffff;
-  background: #FFFFFF;
+  border: 1px solid #282460;
+  background: #ffffff;
   position: relative;
-  border-radius: 0px; }
+  border-radius: 1rem; }
 
 .selectric .label {
   display: block;
   white-space: nowrap;
   overflow: hidden;
+  text-align: center;
   text-overflow: ellipsis;
+  text-transform: uppercase;
   margin: 0 40px 0 10px;
   font-size: 12px;
   line-height: 40px;
   color: #282460;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
   height: 40px;
   background-color: #fff !important; }
 
 .selectric .button {
-  border-radius: 0px;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
   display: block;
   position: absolute;
   right: 0px;
   top: 0;
   bottom: 0;
   margin: auto;
-  width: 34px;
-  height: 34px;
+  width: 40px;
+  height: 40px;
   color: #282460;
-  background-color: #fff !important;
+  background-color: #282460 !important;
   text-align: center;
   font: 0/0 a;
   *font: 34px/34px Lucida Sans Unicode, Arial Unicode MS, Arial; }
 
 .selectric .button:after {
-  content: " ";
+  content: ' ';
   position: absolute;
   top: 0;
   right: 0;
@@ -1840,12 +1935,12 @@ li .menu-item a {
   margin: auto;
   width: 0;
   height: 0;
-  border: 4px solid transparent;
-  border-top-color: #282460;
+  border: 0.75rem solid transparent;
+  border-top-color: #fff;
   border-bottom: none; }
 
 .selectric-focus .selectric {
-  border-color: #AAA; }
+  border-color: #aaa; }
 
 .selectric-hover .selectric {
   border-color: #e6e6e6; }
@@ -1930,7 +2025,7 @@ li .menu-item a {
   position: absolute;
   top: 100%;
   left: 0;
-  background: #F8F8F8;
+  background: #f8f8f8;
   z-index: -1;
   -webkit-box-shadow: 0 0 10px -6px;
           box-shadow: 0 0 10px -6px; }
@@ -1946,6 +2041,7 @@ li .menu-item a {
 .selectric-items ul,
 .selectric-items li {
   list-style: none;
+  text-transform: uppercase;
   padding: 0;
   margin: 0;
   font-size: 12px;
@@ -1965,17 +2061,17 @@ li .menu-item a {
 .selectric-items li {
   display: block;
   padding: 8px;
-  border-top: 1px solid #FFF;
-  border-bottom: 1px solid #EEE;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #eee;
   color: #666;
   cursor: pointer; }
 
 .selectric-items li.selected {
-  background: #EFEFEF;
+  background: #efefef;
   color: #282460; }
 
 .selectric-items li.highlighted {
-  background: #D0D0D0;
+  background: #d0d0d0;
   color: #282460; }
 
 .selectric-items li:hover {
