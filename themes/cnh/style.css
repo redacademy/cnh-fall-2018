@@ -1207,7 +1207,8 @@ footer {
         height: 64px;
         width: 64px;
         background-color: #fab568;
-        border-radius: 100px; }
+        border-radius: 100px;
+        margin-right: 1.5rem; }
         .follow-box .follow-content img:last-of-type {
           margin-right: 4.5rem; }
   .follow-us {
@@ -1218,7 +1219,8 @@ footer {
     font-family: "Lato-Bold";
     font-size: 1.5rem;
     text-transform: uppercase;
-    margin: auto; }
+    margin: auto;
+    margin-right: 1.5rem; }
   .upcoming-events {
     width: 1170px;
     display: -webkit-box;

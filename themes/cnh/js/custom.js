@@ -103,7 +103,6 @@
 
     // start of spectagram
     // var spectragramComplete = function () {
-<<<<<<< HEAD
       var spectra = {
         instaToken: '9448460219.0d61304.de737249603f46ec9356ff60f0aabdcf',
         instaID: '0d61304f0d4242a9b55e5c1378ba869e',
@@ -123,27 +122,6 @@
         }
       };
   spectra.init();
-=======
-    var spectra = {
-      instaToken: '9448460219.0d61304.de737249603f46ec9356ff60f0aabdcf',
-      instaID: '0d61304f0d4242a9b55e5c1378ba869e',
-
-      init: function() {
-        $.fn.spectragram.accessData = {
-          accessToken: this.instaToken,
-          clientID: this.instaID
-        };
-
-        $('.instalame-container').spectragram('getUserFeed', {
-          // complete : spectragramComplete(),
-          max: 2,
-          size: 'medium',
-          wrapEachWith: '<div class="photo">'
-        });
-      }
-    };
-    spectra.init();
->>>>>>> 9996f30d926184d3868edd48ef4e8f835bbd3901
 
     // Create the dropdown base
     if ($('.widget_nav_menu').length) {
