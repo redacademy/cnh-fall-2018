@@ -1,89 +1,105 @@
-.button-yellow{
-    background-color: $color__button;
+.button-yellow {
+  background-color: $color__button;
 }
 
-.button-pink{
-    background-color: $color__highlight; 
+.button-pink {
+  background-color: $color__highlight;
 }
 
-.all-button{
-    border-radius: 1rem;
-    margin: 0.5rem;
-    font-size: 1.67rem;
-    height: 5.67rem;
-    text-align: center;
-    font-family: 'Lato-Bold';
-    text-decoration: none;
-    text-align: center;
+.all-button {
+  border-radius: 1rem;
+  margin: 0.5rem;
+  font-size: 1.67rem;
+  height: 5.67rem;
+  text-align: center;
+  font-family: 'Lato-Bold';
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    opacity: 0.5;
+  }
+  @include desktop {
+    width: 330px;
+    height: 238px;
+    border-radius: 8px;
+    a {
+      font-size: 30px;
+      line-height: 36px;
+    }
+  }
+}
+
+.has-3-columns {
+  a {
+    text-transform: uppercase;
+  }
+  @include desktop {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    &:hover{
-        opacity: 0.5;
-    }
-    @include desktop{
-        width:357px;
-        height:238px;
-        border-radius: 8px;
-       a{
-           font-size: 30px;
-           line-height: 36px;
-       }
-    }
+    justify-content: space-around;
+    padding-top: 30px;
+  }
 }
 
-.has-3-columns{
-    a{
-        text-transform: uppercase;
-    }
-    @include desktop{
-        display: flex;
-        justify-content: space-around;
-        padding-top: 30px;
-    }
+.has-2-columns {
+  .wp-block-column {
+    margin: 0;
+  }
+  a {
+    text-transform: uppercase;
+  }
+  @include desktop {
+    margin: auto;
+  }
 }
 
-.has-2-columns{
-    .wp-block-column{
-        margin: 0;
-    }
-    a{
-        text-transform: uppercase;
-    }
-    @include desktop{
-        margin:auto;
-    }
-}
-
-.sidebar-button{
-    display: none;
-    @include desktop{
-        display: flex;
-        text-align: center;
-    }
-}
-
-.button-404{
-    border-radius: 1rem;
-    margin: 0.5rem;
-    font-size: 1.75rem;
-    height: 3.44rem;
-    width: 17rem;
-    text-align: center;
-    font-family: 'Lato-Bold';
-    text-decoration: none;
-    text-align: center;
+.sidebar-button {
+  display: none;
+  @include desktop {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    a:hover{
-        color: $color__main;
+    text-align: center;
+  }
+}
+
+.button-404 {
+  border-radius: 1rem;
+  margin: 0.5rem;
+  font-size: 1.75rem;
+  height: 3.44rem;
+  width: 17rem;
+  text-align: center;
+  font-family: 'Lato-Bold';
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a:hover {
+    color: $color__main;
+  }
+  @include desktop {
+    height: 3.5rem;
+    width: 12rem;
+    margin-bottom: 25vh;
+    font-size: 1.25rem;
+  }
+}
+
+.btn-stack {
+  @include tablet {
+    flex-direction: column;
+  }
+  @include desktop {
+    flex-direction: row;
+  }
+  .wp-block-column {
+    @include tablet {
+      margin: 0;
     }
-    @include desktop{
-        height: 3.5rem;
-        width: 12rem;
-        margin-bottom: 25vh;
-        font-size: 1.25rem;
-        
+    @include desktop {
+      margin: auto;
     }
+  }
 }

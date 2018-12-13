@@ -1499,11 +1499,11 @@ footer {
 .center-page {
   text-align: center; }
 
+.flower {
+  width: 100px; }
+
 .page-template-programs-php .site-main .center-page .attachment-large {
   width: 100vw; }
-
-.page-template-programs-php .site-main .center-page .flower-icon {
-  width: 20vw; }
 
 .page-template-programs-php .site-main .center-page .post-122 .entry-title {
   font-family: "Lato-Black";
@@ -1543,7 +1543,8 @@ footer {
       font-family: "Lato-Black";
       color: #282460;
       font-size: 45px;
-      line-height: 54px; } }
+      line-height: 54px;
+      text-align: center; } }
 
 @media all and (min-width: 1080px) {
   .page-template-programs-php .entry-title,
@@ -1555,6 +1556,9 @@ footer {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%; }
+
+.page-template-programs-php .wp-block-image img {
+  max-width: 10%; }
 
 .button-yellow {
   background-color: #fab568; }
@@ -1584,7 +1588,7 @@ footer {
     opacity: 0.5; }
   @media all and (min-width: 1080px) {
     .all-button {
-      width: 357px;
+      width: 330px;
       height: 238px;
       border-radius: 8px; }
       .all-button a {
@@ -1649,6 +1653,28 @@ footer {
       width: 12rem;
       margin-bottom: 25vh;
       font-size: 1.25rem; } }
+
+@media all and (min-width: 600px) {
+  .btn-stack {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
+@media all and (min-width: 1080px) {
+  .btn-stack {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; } }
+
+@media all and (min-width: 600px) {
+  .btn-stack .wp-block-column {
+    margin: 0; } }
+
+@media all and (min-width: 1080px) {
+  .btn-stack .wp-block-column {
+    margin: auto; } }
 
 /*--------------------------------------------------------------
 # Side Menu
