@@ -14,8 +14,6 @@ get_header(); ?>
 
     <?php while ( have_posts() ) : the_post(); ?>
 
-    <img class="services-icon" src="<?php echo get_template_directory_uri() . '/assets/icons/landing-page-view-services.svg' ?>">
-
       <?php get_template_part( 'template-parts/content', 'page' ); ?>
 
     <?php endwhile; // End of the loop. ?>
