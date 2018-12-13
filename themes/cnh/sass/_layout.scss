@@ -30,13 +30,6 @@
   }
 }
 
-h2 {
-  color: #282460;
-  font-family: 'Lato-Black';
-  font-size: 2.8125rem;
-  text-transform: uppercase;
-}
-
 li {
   list-style: none;
 }
@@ -58,15 +51,6 @@ a {
   opacity: .5;
 }
 
-.menut-item:active {
-  border-bottom: 5px #fab0bc solid;
-}
-
-.content-area {
-  width: 100%;
-  margin: 0 auto;
-
-  @include desktop {
-    width: $container-width;
-  }
-}
+// .menut-item:active {
+//   border-bottom: 5px #fab0bc solid;
+// }

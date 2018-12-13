@@ -7,7 +7,7 @@
 
 get_header(); ?>    
 		<main id="main" class="site-main" role="main">
-				
+					<div id="primary" class="content-frontpage">
 <div class="main">
 		<?php if ( have_posts() ) : ?>
 		
@@ -35,11 +35,10 @@ get_header(); ?>
 			<?php the_content(); ?>
 
 		<?php endif; ?>
-	<div id="primary" class="content-area">
+
 		<!--Upcoming events-->	
-		
+		<p class="upcoming-events-title"> Upcoming Events</p>
 		<div class='upcoming-events'>
-				
 <?php $loop = new WP_Query( array( 'post_type' => 'tribe_events', 'posts_per_page' => 10, 'orderby' => 'date', 'order' => 'ASC', 'paged' ) ); ?> 
 
 
@@ -61,16 +60,31 @@ $event_id = get_the_ID();
 		<div class="hover-venue"><span>Where: </span><?php echo tribe_get_venue($event_id);?></div>
 		<div class="hover-time"><span>When: </span><?php echo tribe_get_start_time($event_id, 'g A'); ?><span>-</span><?php echo tribe_get_end_time($event_id, 'g A'); ?></div>
 		</div>
+		
 	</div>
+	
 <?php endwhile; ?>
 
-		</div><!--end of upcoming events-->
+		</div>
+		<div class="view-calendar-container">
+		<a class="view-calendar button-yellow">view calendar</a>
+		</div>
+		<!--end of upcoming events-->
 
-	<?php echo CFS()->get( 'instagram_updates' ); ?>
+<!--start of instagram-->
+
+	<p class="instagram-updates-title"> Instagram updates</p>
 				<div class="instalame-container">
 				
                         
 				</div>
+				<div class="follow-box">
+					<div class="follow-content">
+					<p class="follow-us">follow us</p>
+					<img class="facebook-w-o-border" src='http://localhost/cnh/wp-content/uploads/2018/12/facebook-in-orange.png'>
+					<img class="inst-w-o-border" src='http://localhost/cnh/wp-content/uploads/2018/12/instagram-in-orange.png'>
+</div>
+</div>
 			</div><!--End main-->
 </div>
 </div><!--End Container-->

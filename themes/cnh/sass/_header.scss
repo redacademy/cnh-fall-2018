@@ -4,7 +4,7 @@
 
 .site-header {
   padding: $base__space-unit;
-  @include flex(row, center, center);
+  @include flex(row, space-between, center);
 
   p {
     margin: 0;
@@ -19,25 +19,6 @@
 
     @include desktop {
       width: 129px;
-    }
-  }
-
-  nav {
-    button {
-      display: none;
-    }
-
-    ul {
-
-      li:hover,
-      .current-menu-parent {
-        border-bottom: 5px solid $color__highlight;
-
-        li:hover,
-        .current-menu-item {
-          background: $color__highlight;
-        }
-      }
     }
   }
 }
