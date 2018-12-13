@@ -39,6 +39,7 @@
         margin: $base__space-unit/6 0;
         text-transform: uppercase;
 
+        // TODO remove margin-top from first anchor
         &:first-of-type {
           // margin: 0;
         }

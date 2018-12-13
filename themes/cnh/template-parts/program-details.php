@@ -6,7 +6,7 @@
       <p>
         <?php 
         if ( CFS()->get( 'program_date' ) == true):
-          echo '<span class="program-info">When: </span>' . CFS()->get( 'program_date' );
+          echo 'When: ' . CFS()->get( 'program_date' );
         endif;
         ?>
         <?php 

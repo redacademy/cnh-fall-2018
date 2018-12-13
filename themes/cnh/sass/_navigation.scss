@@ -67,7 +67,10 @@ a {
       border-bottom: 5px solid $color__highlight;
 
       li:hover,
-      .current-menu-item {
+      .current-menu-item,
+      .current_page_item,
+      .current-menu-parent,
+      .current-page-ancestor {
         background: $color__highlight;
       }
     }
