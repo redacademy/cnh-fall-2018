@@ -7,6 +7,16 @@
 //   background: url('../../assets/images/Wave_Background.png');
 // }
 
+
+
+.container {
+  margin: 0 auto;
+
+  @include desktop {
+    width: $container-width;
+  }
+}
+
 .hfeed {
   background: no-repeat bottom url('../../assets/images/Wave_Background.png');
   background-size: 100% 40%;

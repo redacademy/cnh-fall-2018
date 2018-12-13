@@ -1,16 +1,16 @@
-(function ($) {
-  $(function () {
+(function($) {
+  $(function() {
     const $sideMenu = $('#side-menu');
 
     /**
      * start of side menu
      */
-    $('.btn-open').on('click', function (event) {
+    $('.btn-open').on('click', function(event) {
       event.preventDefault();
       openSideMenu();
     });
 
-    $('.btn-close').on('click', function (event) {
+    $('.btn-close').on('click', function(event) {
       event.preventDefault();
       closeSideMenu();
     });
@@ -33,7 +33,7 @@
 
     $('.side-navbar')
       .find('.accordion-toggle')
-      .click(function () {
+      .click(function() {
         $(this)
           .next()
           .toggleClass('open')
@@ -69,11 +69,11 @@
 }); // end of show translator
 
     // hide translator
-    $searchField.on('blur', function () {
-      if ($(this).val === '') {
-        $translator.toggle(1000);
-      }
-    }); // end of hide translator
+    // $searchField.on('blur', function () {
+    //   if ($(this).val === '') {
+    //     $translator.toggle(1000);
+    //   }
+    // }); // end of hide translator
     // end of Google Translate changes
 
     // setTimeout(function () {
@@ -87,14 +87,14 @@
     const $searchForm = $('.header-extras .search-form');
 
     // show search form
-    $searchBtn.on('click', function () {
+    $searchBtn.on('click', function() {
       // $('#google_language_translator').fadeToggle();
       $searchForm.toggle(1000);
       $searchForm.focus();
     }); // end of show search form
 
     // hide translator
-    $searchForm.on('blur', function () {
+    $searchForm.on('blur', function() {
       if ($(this).val === '') {
         $searchForm.toggle(1000);
       }
@@ -103,6 +103,7 @@
 
     // start of spectagram
     // var spectragramComplete = function () {
+<<<<<<< HEAD
       var spectra = {
         instaToken: '9448460219.0d61304.de737249603f46ec9356ff60f0aabdcf',
         instaID: '0d61304f0d4242a9b55e5c1378ba869e',
@@ -122,6 +123,27 @@
         }
       };
   spectra.init();
+=======
+    var spectra = {
+      instaToken: '9448460219.0d61304.de737249603f46ec9356ff60f0aabdcf',
+      instaID: '0d61304f0d4242a9b55e5c1378ba869e',
+
+      init: function() {
+        $.fn.spectragram.accessData = {
+          accessToken: this.instaToken,
+          clientID: this.instaID
+        };
+
+        $('.instalame-container').spectragram('getUserFeed', {
+          // complete : spectragramComplete(),
+          max: 2,
+          size: 'medium',
+          wrapEachWith: '<div class="photo">'
+        });
+      }
+    };
+    spectra.init();
+>>>>>>> 9996f30d926184d3868edd48ef4e8f835bbd3901
 
     // Create the dropdown base
     if ($('.widget_nav_menu').length) {
@@ -135,7 +157,7 @@
       }).appendTo('.entry-title select');
 
       // Populate dropdown with menu items
-      $('.widget-sidebar a').each(function () {
+      $('.widget-sidebar a').each(function() {
         var el = $(this);
         $('<option />', {
           value: el.attr('href'),
@@ -145,7 +167,7 @@
 
       $('.entry-title select').selectric();
 
-      $('.entry-title select').on('change', function () {
+      $('.entry-title select').on('change', function() {
         let selected = $(this).val();
 
         window.location.replace(selected);
