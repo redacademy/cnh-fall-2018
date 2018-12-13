@@ -34,12 +34,14 @@ h2 {
 
 h3 {
   font-size: $size__body * 1.5;
+  font-family: $font__subtitle;
 }
 
 /* Copy */
 
 p {
-  margin-bottom: $base__space-unit;
+  // margin-bottom: $base__space-unit;
+  font-style: normal;
 }
 
 dfn,

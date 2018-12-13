@@ -51,15 +51,6 @@ a {
   opacity: .5;
 }
 
-.menut-item:active {
-  border-bottom: 5px #fab0bc solid;
-}
-
-.content-area {
-  width: 100%;
-  margin: 0 auto;
-
-  @include desktop {
-    width: $container-width;
-  }
-}
+// .menut-item:active {
+//   border-bottom: 5px #fab0bc solid;
+// }

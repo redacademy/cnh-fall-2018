@@ -23,12 +23,7 @@ get_header(); ?>
       $program_posts = get_posts( $args ); ?>
     <div class="program-wrapper">
     <?php foreach ( $program_posts as $post ) : setup_postdata( $post ); ?>
-      <article class="program-entry">
-        <div class="program-entry-info">
-          <h4><?php the_title(); ?></h4>
-          <p><?php the_content(); ?></p>
-        </div><!-- .program-entry-info -->
-      </article><!-- .program-entry -->
+      <?php get_template_part( 'template-parts/program', 'details' ); ?>
     <?php endforeach; wp_reset_postdata(); ?>
     </div><!-- .program-wrapper -->
 

@@ -104,20 +104,49 @@
 }
 
 /* programs */
-.page-template-page-arts-music-dance .main {
+.page-template-page-arts-music-dance {
   .program-info {
-    h2 {
-      display: none;
+    .entry-title {
+      display: block;
+
+      @include tablet {
+        display: none;
+      }
     }
 
     div {
-      h2 {}
+      margin-top: 0;
 
-      h3 {}
+      h2 {
+        margin: 0;
+      }
+
+      h3 {
+        margin-top: 0;
+      }
+
+      p:first-of-type {
+        margin-top: $base__space-unit * 2;
+      }
+
+      p:nth-of-type(2) {
+        margin-bottom: $base__space-unit * 2;
+      }
+    }
+  }
+
+  .program-wrapper {
+    article {
+      div {
+        div>p {
+          margin: 0;
+        }
+      }
     }
   }
 }
 
+// Register Blocks
 .register-how,
 .register-call {
   border: $border__solid;
