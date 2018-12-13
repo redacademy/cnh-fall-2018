@@ -18,12 +18,16 @@ get_header(); ?>
 			<?php endif;  ?>
 		
 			<?php /* Start the Loop */ ?>
+			
+	
 			<?php while ( have_posts() ) : the_post(); ?>
-
+			<header class="entry-header">
 				<a href="<?php echo get_permalink(); ?>"><?php if ( has_post_thumbnail() ) : ?>
-        		<?php the_post_thumbnail( 'large' ); ?>
+        		<?php the_post_thumbnail( 'full' ); ?>
+						
+			</header>
         		<?php endif; ?>
-
+				<p class="We-are-a-place-title">we are a place</p>
 				<?php the_content(); ?>
 
 			<?php endwhile; ?>
@@ -73,7 +77,7 @@ $event_id = get_the_ID();
 
 <!--start of instagram-->
 
-	<p class="instagram-updates-title"> Instagram updates</p>
+	<p class="instagram-updates-title"> Instagram Updates</p>
 				<div class="instalame-container">
 				
                         
@@ -81,8 +85,8 @@ $event_id = get_the_ID();
 				<div class="follow-box">
 					<div class="follow-content">
 					<p class="follow-us">follow us</p>
-					<img class="facebook-w-o-border" src='http://localhost/cnh/wp-content/uploads/2018/12/facebook-in-orange.png'>
-					<img class="inst-w-o-border" src='http://localhost/cnh/wp-content/uploads/2018/12/instagram-in-orange.png'>
+					<img class="facebook-w-o-border" src='http://cnh.van.cp.academy.red/wp-content/uploads/2018/12/facebook-in-orange.png'>
+					<img class="inst-w-o-border" src='http://cnh.van.cp.academy.red/wp-content/uploads/2018/12/instagram-in-orange.png'>
 </div>
 </div>
 			</div><!--End main-->

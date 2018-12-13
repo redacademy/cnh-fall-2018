@@ -1,3 +1,23 @@
+
+.home .site-content {
+    width: 100%;
+}
+.entry-header img {
+    transform: translateY(-39%);
+    z-index: -1;
+}
+.home-title {
+    position: absolute;
+    top: 125px;
+    width: 50%;
+    left: 25%;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 1.35pt;
+}
+.home-subtitle {
+    display: none;
+}
 .wp-block-column {
 
     .wp-block-image {
@@ -37,7 +57,7 @@
 .follow-box {
     display: none;
 }
-.upcoming-events-title, .instagram-updates-title, {
+.upcoming-events-title, .instagram-updates-title, .we-are-a-place-title {
     display: flex;
     justify-content: center;
     color: #282460;
@@ -131,6 +151,24 @@
     font-family: $font__title;
 }
 @include desktop {
+    .home-title {
+        top: 125px;
+        width: 65%;
+        left: 18%;
+        font-size: 45px;
+        text-transform: none;
+        line-height: 50px;
+        letter-spacing: 3.66px;
+        margin-bottom: 1rem;
+    }
+    .home-subtitle {
+        display: initial;
+        position: absolute;
+        top: 260px;
+        left: 36.5%;
+        font-size: 25px;
+        margin-top: .5rem;
+    }
     .wp-block-column {
         height: auto;
     img {
