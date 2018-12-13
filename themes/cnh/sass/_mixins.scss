@@ -5,6 +5,12 @@
   }
 }
 
+@mixin mid-tablet {
+  @media all and (min-width: $mid-tablet-width) {
+    @content;
+  }
+}
+
 @mixin desktop {
   @media all and (min-width: $desktop-width) {
     @content;
