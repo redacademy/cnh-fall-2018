@@ -310,14 +310,32 @@ textarea {
   line-height: 1.5; }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  color: #282460;
+  font-family: "Lato-Black";
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+h2 {
+  font-size: 2.5rem; }
+
+h3 {
+  font-size: 1.875rem; }
 
 /* Copy */
 p {
   margin-bottom: 1.5rem; }
 
-dfn, cite, em, i {
+dfn,
+cite,
+em,
+i {
   font-style: italic; }
 
 blockquote {
@@ -337,16 +355,21 @@ pre {
   overflow: auto;
   padding: 1.6rem; }
 
-code, kbd, tt, var {
+code,
+kbd,
+tt,
+var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
   font-size: 0.9375rem; }
 
-abbr, acronym {
+abbr,
+acronym {
   border-bottom: 1px dotted #555;
   cursor: help; }
 
-mark, ins {
+mark,
+ins {
   background: #fff9c0;
   text-decoration: none; }
 
@@ -556,7 +579,8 @@ a {
     .main-navigation ul li:hover,
     .main-navigation ul .current-menu-item,
     .main-navigation ul .current_page_item,
-    .main-navigation ul .current-menu-parent {
+    .main-navigation ul .current-menu-parent,
+    .main-navigation ul .current-page-ancestor {
       border-bottom: 5px solid #fab0bc; }
       .main-navigation ul li:hover li:hover,
       .main-navigation ul li:hover .current-menu-item,
@@ -565,7 +589,9 @@ a {
       .main-navigation ul .current_page_item li:hover,
       .main-navigation ul .current_page_item .current-menu-item,
       .main-navigation ul .current-menu-parent li:hover,
-      .main-navigation ul .current-menu-parent .current-menu-item {
+      .main-navigation ul .current-menu-parent .current-menu-item,
+      .main-navigation ul .current-page-ancestor li:hover,
+      .main-navigation ul .current-page-ancestor .current-menu-item {
         background: #fab0bc; }
     .main-navigation ul ul {
       -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -895,6 +921,22 @@ object {
           flex: 2 0 100%;
   max-width: 100%;
   border: 0; }
+
+/* programs */
+.page-template-page-arts-music-dance .main .program-info h2 {
+  display: none; }
+
+.register-how,
+.register-call {
+  border: 1px solid #ddd;
+  border-color: #fff;
+  border-radius: 1rem; }
+
+.register-how {
+  background: #fab568 !important; }
+
+.register-call {
+  background: #282460 !important; }
 
 footer {
   background-color: #393947;
@@ -1582,12 +1624,6 @@ footer {
   @media all and (min-width: 1080px) {
     .hfeed {
       background-size: 100% 35%; } }
-
-h2 {
-  color: #282460;
-  font-family: 'Lato-Black';
-  font-size: 2.8125rem;
-  text-transform: uppercase; }
 
 li {
   list-style: none; }

@@ -62,7 +62,8 @@ a {
     li:hover,
     .current-menu-item,
     .current_page_item,
-    .current-menu-parent {
+    .current-menu-parent,
+    .current-page-ancestor {
       border-bottom: 5px solid $color__highlight;
 
       li:hover,

@@ -102,3 +102,33 @@
     border: 0;
   }
 }
+
+/* programs */
+.page-template-page-arts-music-dance .main {
+  .program-info {
+    h2 {
+      display: none;
+    }
+
+    div {
+      h2 {}
+
+      h3 {}
+    }
+  }
+}
+
+.register-how,
+.register-call {
+  border: $border__solid;
+  border-color: $color__background-body;
+  border-radius: 1rem;
+}
+
+.register-how {
+  background: $color__button !important;
+}
+
+.register-call {
+  background: $color__main !important;
+}
