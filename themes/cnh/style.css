@@ -1653,7 +1653,7 @@ footer {
 /*--------------------------------------------------------------
 # Side Menu
 --------------------------------------------------------------*/
-.side-nav {
+.side-menu {
   height: 100%;
   width: 0;
   position: fixed;
@@ -1666,10 +1666,10 @@ footer {
   -webkit-transition: 0.5s;
   transition: 0.5s; }
   @media all and (min-width: 600px) {
-    .side-nav {
+    .side-menu {
       -webkit-box-shadow: -8px 0 10px -6px #ddd;
               box-shadow: -8px 0 10px -6px #ddd; } }
-  .side-nav ul {
+  .side-menu ul {
     list-style: none;
     margin: 0 auto;
     padding: 0;
@@ -1685,30 +1685,30 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center; }
-    .side-nav ul .side-navbar-sub {
+    .side-menu ul .side-nav-sub {
       display: none; }
-    .side-nav ul .side-item {
+    .side-menu ul .side-item {
       border-top: 1px solid #ddd;
       padding: 0.75rem; }
-      .side-nav ul .side-item:first-child {
+      .side-menu ul .side-item:first-child {
         border: 0; }
-      .side-nav ul .side-item:last-child {
+      .side-menu ul .side-item:last-child {
         border-bottom: 1px solid #ddd; }
-    .side-nav ul .sub-item {
+    .side-menu ul .sub-item {
       padding: 0.5rem; }
-      .side-nav ul .sub-item:first-child {
+      .side-menu ul .sub-item:first-child {
         border-top: 1px solid #ddd; }
-      .side-nav ul .sub-item a {
+      .side-menu ul .sub-item a {
         font-family: "Lato-Regular";
         font-size: 1rem; }
-  .side-nav a {
+  .side-menu a {
     text-decoration: none;
     color: #282460;
     font-size: 1.25rem;
     font-family: "Lato-Bold"; }
-    .side-nav a:hover {
+    .side-menu a:hover {
       color: #fab0bc; }
-  .side-nav .side-menu-top {
+  .side-menu .side-menu-top {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1723,11 +1723,11 @@ footer {
         -ms-flex-align: center;
             align-items: center;
     padding: 0 2rem; }
-    .side-nav .side-menu-top fieldset {
+    .side-menu .side-menu-top fieldset {
       border-color: #eee;
       border-radius: 0.83333rem;
       background: #eee; }
-  .side-nav .btn-close {
+  .side-menu .btn-close {
     font-size: 2.5rem;
     color: #282460; }
 
@@ -1767,7 +1767,7 @@ footer {
   transition: all 0.3s ease; }
 
 .accordion-toggle a:hover.active {
-  color: #fff; }
+  color: #282460; }
 
 .accordion-toggle a.active:before {
   -webkit-transform: rotate(0deg);
@@ -1994,11 +1994,6 @@ li .menu-item a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-  @media all and (min-width: 1080px) {
-    .header-extras .search-btn {
-      display: block; } }
-  .header-extras .search-form {
-    display: none; }
   .header-extras .translate-icon {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2026,6 +2021,16 @@ li .menu-item a {
       .header-extras #google_language_translator {
         top: 100px;
         right: 300px; } }
+  @media all and (min-width: 1080px) {
+    .header-extras .search-btn {
+      display: block; } }
+  .header-extras .search-form {
+    display: none; }
+  .header-extras .btn-open {
+    margin-left: 0.75rem; }
+    @media all and (min-width: 1080px) {
+      .header-extras .btn-open {
+        display: none; } }
   .header-extras .side-menu .search-form {
     display: none; }
     @media all and (min-width: 1080px) {
@@ -2035,11 +2040,6 @@ li .menu-item a {
         display: inline-flex;
         position: absolute;
         top: 6rem; } }
-  .header-extras .btn-open {
-    margin-left: 0.75rem; }
-    @media all and (min-width: 1080px) {
-      .header-extras .btn-open {
-        display: none; } }
 
 .error-404 {
   display: -webkit-box;

@@ -2,7 +2,7 @@
 # Side Menu
 --------------------------------------------------------------*/
 
-.side-nav {
+.side-menu {
   height: 100%;
   width: 0;
   position: fixed;
@@ -29,7 +29,7 @@
     flex-direction: column;
     text-align: center;
 
-    .side-navbar-sub {
+    .side-nav-sub {
       display: none;
     }
 
@@ -134,7 +134,7 @@
 }
 
 .accordion-toggle a:hover.active {
-  color: $color__background-body;
+  color: $color__main;
 }
 
 .accordion-toggle a.active:before {

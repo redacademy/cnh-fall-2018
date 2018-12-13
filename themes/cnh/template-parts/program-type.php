@@ -1,6 +1,6 @@
 <?php 
   /**
-   * Get the program type entry
+   * Template part for displaying the program type entry.
    * 
    * Start the loop 
    */ 

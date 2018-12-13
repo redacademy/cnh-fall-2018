@@ -31,7 +31,7 @@
       $sideMenu.css('width', '0');
     }
 
-    $('.side-navbar')
+    $('.side-nav')
       .find('.accordion-toggle')
       .click(function () {
         $(this)
@@ -43,11 +43,11 @@
           .find('.side-link')
           .toggleClass('active');
 
-        $('.side-navbar .accordion-content')
+        $('.side-nav .accordion-content')
           .not($(this).next())
           .slideUp('fast')
           .removeClass('open');
-        $('.side-navbar .accordion-toggle')
+        $('.side-nav .accordion-toggle')
           .not(jQuery(this))
           .removeClass('active-tab')
           .find('.side-link')
