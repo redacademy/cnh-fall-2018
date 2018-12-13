@@ -1,3 +1,9 @@
+<?php
+/**
+ * Template part for displaying breadcrumbs and hero img.
+ *
+ */
+?>
 <header class="page-header">    
   <!-- program thumbnail -->
   <a href="<?php echo get_permalink(); ?>"><?php if ( has_post_thumbnail() ) : ?>

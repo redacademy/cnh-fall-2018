@@ -1,3 +1,9 @@
+<?php
+/**
+ * Template part for displaying program details.
+ *
+ */
+?>
 <article class="program-entry">
   <div class="program-entry-info">
     <h4><?php the_title(); ?></h4>

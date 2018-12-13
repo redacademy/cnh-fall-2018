@@ -2,15 +2,15 @@
   text-align: center;
 }
 
+.flower {
+  width: 100px;
+}
+
 .page-template-programs-php {
   .site-main {
     .center-page {
       .attachment-large {
         width: 100vw;
-      }
-
-      .flower-icon {
-        width: 20vw;
       }
 
       .post-122 {
@@ -61,6 +61,7 @@
       color: $color__main;
       font-size: 45px;
       line-height: 54px;
+      text-align: center;
     }
   }
 }
@@ -75,4 +76,8 @@
 .page-template-programs-php .site-content .content-area {
   max-width: 100%;
   flex: 0 0 100%;
+}
+
+.page-template-programs-php .wp-block-image img {
+  max-width: 10%;
 }
