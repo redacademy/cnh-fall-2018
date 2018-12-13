@@ -31,7 +31,7 @@
       $sideMenu.css('width', '0');
     }
 
-    $('.side-nav')
+    $('.side-navbar')
       .find('.accordion-toggle')
       .click(function() {
         $(this)
@@ -43,11 +43,11 @@
           .find('.side-link')
           .toggleClass('active');
 
-        $('.side-nav .accordion-content')
+        $('.side-navbar .accordion-content')
           .not($(this).next())
           .slideUp('fast')
           .removeClass('open');
-        $('.side-nav .accordion-toggle')
+        $('.side-navbar .accordion-toggle')
           .not(jQuery(this))
           .removeClass('active-tab')
           .find('.side-link')
@@ -149,7 +149,11 @@
         let selected = $(this).val();
 
         window.location.replace(selected);
-      });
+      }); // end of linking
+
+      $('.content-area').removeProp('flex');
+      $('.content-area').removeProp('max-width');
+      $('.content-area').removeProp('padding');
     } //end of if statement
   }); // end of doc ready
 })(jQuery);
