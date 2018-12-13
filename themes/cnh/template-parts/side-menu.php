@@ -14,78 +14,78 @@
       <a href="<?php echo esc_url( home_url() ); ?>" class="side-link">Home</a>
     </li>
     <li class="side-item accordion-toggle">
-      <a href="<?php echo get_permalink('about'); ?>" class="side-link">About Us</a>
+      <a href="/about" class="side-link">About Us</a>
     </li>
     <ul class="side-nav-sub accordion-content">
         <li class="sub-item">
-          <a href="<?php the_permalink('who-we-are'); ?>">Who We Are</a>
+          <a href="/about/who-we-are">Who We Are</a>
         </li>
         <li class="sub-item">
-          <a href="<?php the_permalink('contact-us'); ?>">Contact Us</a>
+          <a href="/about/contact-us">Contact Us</a>
         </li>
         <li class="sub-item">
-          <a href="<?php the_permalink('careers'); ?>">Careers</a>
+          <a href="/about/careers">Careers</a>
         </li>
       </ul>
     <li class="side-item accordion-toggle">
-      <a href="<?php the_permalink('programs'); ?>" class="side-link">Programs</a>
+      <a href="/programs" class="side-link">Programs</a>
     </li>
     <ul class="side-nav-sub accordion-content">
       <li class="sub-item">
-        <a href="<?php the_permalink('children-youth'); ?>">Children/Youth</a>
+        <a href="/programs/children-youth">Children/Youth</a>
       </li>
       <li class="sub-item">
-        <a href="<?php the_permalink('programs/family'); ?>">Family</a>
+        <a href="/programs/family">Family</a>
       </li>
       <li class="sub-item">
-        <a href="<?php the_permalink('programs/seniors'); ?>">Senior</a>
+        <a href="/programs/seniors">Senior</a>
       </li>
       <li class="sub-item">
-        <a href="<?php the_permalink('adults'); ?>">Adults</a>
+        <a href="/programs/adults">Adults</a>
       </li>
       <li class="sub-item">
-        <a href="<?php the_permalink('community-development'); ?>">Community Development</a>
+        <a href="/programs/community-development">Community Development</a>
       </li>
     </ul>
     <li class="side-item accordion-toggle">
-      <a href="<?php the_permalink('services'); ?>" class="side-link">Services</a>
+      <a href="/services" class="side-link">Services</a>
     </li>
     <ul class="side-nav-sub accordion-content">
       <li class="sub-item">
-        <a href="<?php the_permalink('childcare'); ?>">Childcare</a>
+        <a href="/services/childcare">Childcare</a>
       </li>
       <li class="sub-item">
-        <a href="<?php the_permalink('immigrant-services'); ?>">Immigrant Services</a>
+        <a href="/services/immigrant-services">Immigrant Services</a>
       </li>
       <li class="sub-item">
-        <a href="<?php the_permalink('services/family'); ?>">Family</a>
+        <a href="/services/family">Family</a>
       </li>
       <li class="sub-item">
-        <a href="<?php the_permalink('youth'); ?>">Youth</a>
+        <a href="/services/youth">Youth</a>
       </li>
       <li class="sub-item">
-        <a href="<?php the_permalink('services/seniors'); ?>">Seniors</a>
+        <a href="/services/seniors">Seniors</a>
       </li>
       <li class="sub-item">
-        <a href="<?php the_permalink('rental'); ?>">Rentals</a>
+        <a href="/services/rentals">Rentals</a>
       </li>
     </ul>
     <li class="side-item accordion-toggle">
-      <a href="<?php the_permalink('get-involved'); ?>" class="side-link">Get Involved</a>
+      <a href="/get-involved" class="side-link">Get Involved</a>
     </li>
     <ul class="side-nav-sub accordion-content">
       <li class="sub-item">
-        <a href="<?php the_permalink('become-a-member'); ?>">Become a Member</a>
+        <a href="/get-involved/become-a-member">Become a Member</a>
       </li>
       <li class="sub-item">
-        <a href="<?php the_permalink('donate'); ?>">Donate</a>
+        <a href="/get-involved/donate">Donate</a>
       </li>
       <li class="sub-item">
-        <a href="<?php the_permalink('volunteer'); ?>">Volunteer</a>
+        <a href="/get-involved/volunteer">Volunteer</a>
       </li>
     </ul>
     <li class="side-item">
-      <a href="<?php the_permalink('events'); ?>" class="side-link">Events</a>
+      <a href="/events" class="side-link">Events</a>
     </li>
   </ul>
 </div><!-- .side-menu -->
