@@ -34,7 +34,10 @@
         display: none;
     }
 }
-.upcoming-events-title {
+.follow-box {
+    display: none;
+}
+.upcoming-events-title, .instagram-updates-title, {
     display: flex;
     justify-content: center;
     color: #282460;
@@ -87,7 +90,7 @@
 .location-box {
     height: 30px;
     position: relative;
-    bottom: 28.5%;
+    bottom: 29%;
     justify-content: center;
     display: flex;
     color: white;
@@ -98,6 +101,9 @@
         position: relative;
         top: 15px;
         color: white;
+        &:visited {
+            color: inherit;
+        }
     }
 }
 .hover-details {
@@ -107,6 +113,22 @@
     border-radius: 0 10px 10px 0;
     margin-left: 0;
     background-color: #ffffff98;
+}
+.view-calendar-container {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.view-calendar {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    background-color: #fab568;
+    color: #282460;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-family: $font__title;
 }
 @include desktop {
     .wp-block-column {
@@ -144,9 +166,11 @@
             border-radius: 10px
         }
     }
-
+    .upcoming-events-title, .instagram-updates-title, {
+        font-size: 2.8125rem;
+    }
     .instalame-container {
-        width: 1094px;
+        width: 1100px;
         .photo {
             width: 456px;
             height: 456px;
@@ -161,13 +185,38 @@
             border-radius: 2%;
         }
         
+    }.follow-box {
+        display: flex;
+        width: 1100px;
+        justify-content: flex-end;
+        .follow-content {
+            margin-top: 3.25rem;
+            display: inline-flex;
+            height: 64px;
+        img {
+        height: 64px;
+        width: 64px;
+        background-color: #fab568;
+        border-radius: 100px;
+        &:last-of-type {
+            margin-right: 4.5rem;
+        }
+    }
+}
+}
+    .follow-us {
+        display: flex;
+        color: #282460;
+        font-family: $font__subtitle;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        margin: auto
     }
     .upcoming-events {
             width: 1170px;
             display: flex;
         }
         .hover-details {
-            margin-left: 2rem;
             font-size: 1.25rem;
             .hover-title {
                 font-weight: bold;
@@ -232,6 +281,8 @@
                 margin: auto;
             }
         }
-        
+        .view-calendar-container {
+            display: none;
+        }
     
 }
