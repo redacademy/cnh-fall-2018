@@ -29,12 +29,10 @@
         font-size: 1.1rem;
         line-height: 1.5rem;
         font-family: $font__sidebar;
-        font-weight: 600;
         display: flex;
         position: relative;
-        padding: $base__space-unit/3 $base__space-unit * 2 $base__space-unit/3
-          $base__space-unit;
-        margin: 0.5rem 0;
+        padding: $base__space-unit/3 $base__space-unit * 2 $base__space-unit/3 $base__space-unit;
+        margin-bottom: $base__space-unit/6;
         text-transform: uppercase;
 
         &::after {
@@ -53,6 +51,7 @@
           background: $color__highlight;
         }
       }
+
       @include desktop {
         font-size: 1.25rem;
       }

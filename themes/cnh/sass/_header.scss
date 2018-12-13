@@ -4,7 +4,7 @@
 
 .site-header {
   padding: $base__space-unit;
-  @include flex(row, center, center);
+  @include flex(row, space-between, center);
 
   p {
     margin: 0;

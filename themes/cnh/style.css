@@ -310,14 +310,37 @@ textarea {
   line-height: 1.5; }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  color: #282460;
+  font-family: "Lato-Black";
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+h2 {
+  font-size: 2.5rem; }
+
+h3 {
+  font-size: 1.875rem;
+  font-family: "Lato-Bold"; }
+
+h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0; }
 
 /* Copy */
 p {
-  margin-bottom: 1.5rem; }
+  font-style: normal; }
 
-dfn, cite, em, i {
+dfn,
+cite,
+em,
+i {
   font-style: italic; }
 
 blockquote {
@@ -337,16 +360,21 @@ pre {
   overflow: auto;
   padding: 1.6rem; }
 
-code, kbd, tt, var {
+code,
+kbd,
+tt,
+var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
   font-size: 15px;
   font-size: 0.9375rem; }
 
-abbr, acronym {
+abbr,
+acronym {
   border-bottom: 1px dotted #555;
   cursor: help; }
 
-mark, ins {
+mark,
+ins {
   background: #fff9c0;
   text-decoration: none; }
 
@@ -417,6 +445,9 @@ img {
 table {
   margin: 0 0 1.5rem;
   width: 100%; }
+
+article {
+  margin: 2.25rem 0; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -529,14 +560,22 @@ a {
 /* Menus */
 .main-navigation {
   clear: both;
-  display: block;
+  display: none;
   float: left;
   width: 100%;
   font-size: 1.25rem; }
+  @media all and (min-width: 1080px) {
+    .main-navigation {
+      display: block; } }
   .main-navigation button {
     display: none; }
   .main-navigation ul {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     list-style: none;
     margin: 0;
     padding-left: 0; }
@@ -548,16 +587,34 @@ a {
     .main-navigation ul li:hover,
     .main-navigation ul .current-menu-item,
     .main-navigation ul .current_page_item,
-    .main-navigation ul .current-menu-parent {
+    .main-navigation ul .current-menu-parent,
+    .main-navigation ul .current-page-ancestor {
       border-bottom: 5px solid #fab0bc; }
       .main-navigation ul li:hover li:hover,
       .main-navigation ul li:hover .current-menu-item,
+      .main-navigation ul li:hover .current_page_item,
+      .main-navigation ul li:hover .current-menu-parent,
+      .main-navigation ul li:hover .current-page-ancestor,
       .main-navigation ul .current-menu-item li:hover,
       .main-navigation ul .current-menu-item .current-menu-item,
+      .main-navigation ul .current-menu-item .current_page_item,
+      .main-navigation ul .current-menu-item .current-menu-parent,
+      .main-navigation ul .current-menu-item .current-page-ancestor,
       .main-navigation ul .current_page_item li:hover,
       .main-navigation ul .current_page_item .current-menu-item,
+      .main-navigation ul .current_page_item .current_page_item,
+      .main-navigation ul .current_page_item .current-menu-parent,
+      .main-navigation ul .current_page_item .current-page-ancestor,
       .main-navigation ul .current-menu-parent li:hover,
-      .main-navigation ul .current-menu-parent .current-menu-item {
+      .main-navigation ul .current-menu-parent .current-menu-item,
+      .main-navigation ul .current-menu-parent .current_page_item,
+      .main-navigation ul .current-menu-parent .current-menu-parent,
+      .main-navigation ul .current-menu-parent .current-page-ancestor,
+      .main-navigation ul .current-page-ancestor li:hover,
+      .main-navigation ul .current-page-ancestor .current-menu-item,
+      .main-navigation ul .current-page-ancestor .current_page_item,
+      .main-navigation ul .current-page-ancestor .current-menu-parent,
+      .main-navigation ul .current-page-ancestor .current-page-ancestor {
         background: #fab0bc; }
     .main-navigation ul ul {
       -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -603,17 +660,6 @@ a {
 .menu-toggle,
 .main-navigation.toggled ul {
   display: none; }
-
-@media screen and (min-width: 768px) {
-  .menu-toggle {
-    display: none; }
-  .main-navigation ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -854,25 +900,30 @@ object {
         -ms-flex: 2 0 100%;
             flex: 2 0 100%;
     max-width: 100%;
-    margin-bottom: 3rem;
-    padding: 0 1.5rem; }
+    margin-bottom: 3rem; }
     @media all and (min-width: 600px) {
       .page-template .site-content .content-area,
       .page-template-default .site-content .content-area {
         -webkit-box-flex: 2;
             -ms-flex: 2 0 75%;
                 flex: 2 0 75%;
-        max-width: 75%; } }
-    @media all and (min-width: 1080px) {
-      .page-template .site-content .content-area,
-      .page-template-default .site-content .content-area {
-        -webkit-box-flex: 2;
-            -ms-flex: 2 0 75%;
-                flex: 2 0 75%;
-        max-width: 75%; } }
-    .page-template .site-content .content-area h2,
-    .page-template-default .site-content .content-area h2 {
-      margin-top: 0; }
+        max-width: 75%;
+        padding: 0 1.5rem; } }
+    @media all and (min-width: 600px) {
+      .page-template .site-content .content-area h2,
+      .page-template-default .site-content .content-area h2 {
+        margin-top: 0; } }
+    .page-template .site-content .content-area .program-wrapper,
+    .page-template .site-content .content-area .service-wrapper,
+    .page-template-default .site-content .content-area .program-wrapper,
+    .page-template-default .site-content .content-area .service-wrapper {
+      padding: 0 3rem; }
+      @media all and (min-width: 600px) {
+        .page-template .site-content .content-area .program-wrapper,
+        .page-template .site-content .content-area .service-wrapper,
+        .page-template-default .site-content .content-area .program-wrapper,
+        .page-template-default .site-content .content-area .service-wrapper {
+          padding: 0; } }
   .page-template .site-content .widget-sidebar,
   .page-template-default .site-content .widget-sidebar {
     -webkit-box-ordinal-group: 3;
@@ -898,6 +949,166 @@ object {
           flex: 2 0 100%;
   max-width: 100%;
   border: 0; }
+
+/* programs */
+.page-template-template-pages-serv .program-info .entry-title,
+.page-template-template-pages-serv .service-info .entry-title,
+.page-template-template-pages-prog .program-info .entry-title,
+.page-template-template-pages-prog .service-info .entry-title,
+.page-template-taxonomy-service_type .program-info .entry-title,
+.page-template-taxonomy-service_type .service-info .entry-title,
+.page-template-taxonomy-program_type .program-info .entry-title,
+.page-template-taxonomy-program_type .service-info .entry-title {
+  display: block;
+  padding: 0 1.5rem;
+  text-align: center; }
+  @media all and (min-width: 600px) {
+    .page-template-template-pages-serv .program-info .entry-title,
+    .page-template-template-pages-serv .service-info .entry-title,
+    .page-template-template-pages-prog .program-info .entry-title,
+    .page-template-template-pages-prog .service-info .entry-title,
+    .page-template-taxonomy-service_type .program-info .entry-title,
+    .page-template-taxonomy-service_type .service-info .entry-title,
+    .page-template-taxonomy-program_type .program-info .entry-title,
+    .page-template-taxonomy-program_type .service-info .entry-title {
+      display: none;
+      padding: 0;
+      text-align: left; } }
+
+.page-template-template-pages-serv .program-info div,
+.page-template-template-pages-serv .service-info div,
+.page-template-template-pages-prog .program-info div,
+.page-template-template-pages-prog .service-info div,
+.page-template-taxonomy-service_type .program-info div,
+.page-template-taxonomy-service_type .service-info div,
+.page-template-taxonomy-program_type .program-info div,
+.page-template-taxonomy-program_type .service-info div {
+  margin-top: 0; }
+  .page-template-template-pages-serv .program-info div h2,
+  .page-template-template-pages-serv .service-info div h2,
+  .page-template-template-pages-prog .program-info div h2,
+  .page-template-template-pages-prog .service-info div h2,
+  .page-template-taxonomy-service_type .program-info div h2,
+  .page-template-taxonomy-service_type .service-info div h2,
+  .page-template-taxonomy-program_type .program-info div h2,
+  .page-template-taxonomy-program_type .service-info div h2 {
+    margin: 0; }
+  .page-template-template-pages-serv .program-info div h3,
+  .page-template-template-pages-serv .service-info div h3,
+  .page-template-template-pages-prog .program-info div h3,
+  .page-template-template-pages-prog .service-info div h3,
+  .page-template-taxonomy-service_type .program-info div h3,
+  .page-template-taxonomy-service_type .service-info div h3,
+  .page-template-taxonomy-program_type .program-info div h3,
+  .page-template-taxonomy-program_type .service-info div h3 {
+    margin-top: 0; }
+  .page-template-template-pages-serv .program-info div h2,
+  .page-template-template-pages-serv .program-info div h3,
+  .page-template-template-pages-serv .service-info div h2,
+  .page-template-template-pages-serv .service-info div h3,
+  .page-template-template-pages-prog .program-info div h2,
+  .page-template-template-pages-prog .program-info div h3,
+  .page-template-template-pages-prog .service-info div h2,
+  .page-template-template-pages-prog .service-info div h3,
+  .page-template-taxonomy-service_type .program-info div h2,
+  .page-template-taxonomy-service_type .program-info div h3,
+  .page-template-taxonomy-service_type .service-info div h2,
+  .page-template-taxonomy-service_type .service-info div h3,
+  .page-template-taxonomy-program_type .program-info div h2,
+  .page-template-taxonomy-program_type .program-info div h3,
+  .page-template-taxonomy-program_type .service-info div h2,
+  .page-template-taxonomy-program_type .service-info div h3 {
+    display: none; }
+    @media all and (min-width: 600px) {
+      .page-template-template-pages-serv .program-info div h2,
+      .page-template-template-pages-serv .program-info div h3,
+      .page-template-template-pages-serv .service-info div h2,
+      .page-template-template-pages-serv .service-info div h3,
+      .page-template-template-pages-prog .program-info div h2,
+      .page-template-template-pages-prog .program-info div h3,
+      .page-template-template-pages-prog .service-info div h2,
+      .page-template-template-pages-prog .service-info div h3,
+      .page-template-taxonomy-service_type .program-info div h2,
+      .page-template-taxonomy-service_type .program-info div h3,
+      .page-template-taxonomy-service_type .service-info div h2,
+      .page-template-taxonomy-service_type .service-info div h3,
+      .page-template-taxonomy-program_type .program-info div h2,
+      .page-template-taxonomy-program_type .program-info div h3,
+      .page-template-taxonomy-program_type .service-info div h2,
+      .page-template-taxonomy-program_type .service-info div h3 {
+        display: block; } }
+  .page-template-template-pages-serv .program-info div p:first-of-type,
+  .page-template-template-pages-serv .service-info div p:first-of-type,
+  .page-template-template-pages-prog .program-info div p:first-of-type,
+  .page-template-template-pages-prog .service-info div p:first-of-type,
+  .page-template-taxonomy-service_type .program-info div p:first-of-type,
+  .page-template-taxonomy-service_type .service-info div p:first-of-type,
+  .page-template-taxonomy-program_type .program-info div p:first-of-type,
+  .page-template-taxonomy-program_type .service-info div p:first-of-type {
+    margin-top: 3rem; }
+  .page-template-template-pages-serv .program-info div p:nth-of-type(2),
+  .page-template-template-pages-serv .service-info div p:nth-of-type(2),
+  .page-template-template-pages-prog .program-info div p:nth-of-type(2),
+  .page-template-template-pages-prog .service-info div p:nth-of-type(2),
+  .page-template-taxonomy-service_type .program-info div p:nth-of-type(2),
+  .page-template-taxonomy-service_type .service-info div p:nth-of-type(2),
+  .page-template-taxonomy-program_type .program-info div p:nth-of-type(2),
+  .page-template-taxonomy-program_type .service-info div p:nth-of-type(2) {
+    margin-bottom: 3rem; }
+
+.page-template-template-pages-serv .program-wrapper article div div > p,
+.page-template-template-pages-serv .service-wrapper article div div > p,
+.page-template-template-pages-prog .program-wrapper article div div > p,
+.page-template-template-pages-prog .service-wrapper article div div > p,
+.page-template-taxonomy-service_type .program-wrapper article div div > p,
+.page-template-taxonomy-service_type .service-wrapper article div div > p,
+.page-template-taxonomy-program_type .program-wrapper article div div > p,
+.page-template-taxonomy-program_type .service-wrapper article div div > p {
+  margin: 0;
+  font-weight: bold;
+  letter-spacing: 1px; }
+  @media all and (min-width: 600px) {
+    .page-template-template-pages-serv .program-wrapper article div div > p,
+    .page-template-template-pages-serv .service-wrapper article div div > p,
+    .page-template-template-pages-prog .program-wrapper article div div > p,
+    .page-template-template-pages-prog .service-wrapper article div div > p,
+    .page-template-taxonomy-service_type .program-wrapper article div div > p,
+    .page-template-taxonomy-service_type .service-wrapper article div div > p,
+    .page-template-taxonomy-program_type .program-wrapper article div div > p,
+    .page-template-taxonomy-program_type .service-wrapper article div div > p {
+      font-weight: normal; } }
+
+.page-template-taxonomy-service_type .content-area .entry-content,
+.page-template-taxonomy-program_type .content-area .entry-content {
+  padding: 0 3rem; }
+  @media all and (min-width: 600px) {
+    .page-template-taxonomy-service_type .content-area .entry-content,
+    .page-template-taxonomy-program_type .content-area .entry-content {
+      padding: 0; } }
+
+@media all and (min-width: 600px) {
+  .register-how,
+  .register-call {
+    border: 1px solid #ddd;
+    border-color: #fff;
+    border-radius: 1rem; } }
+
+.register-how {
+  background: #282460 !important;
+  color: #fff;
+  padding: 1.5rem 3rem !important; }
+  @media all and (min-width: 600px) {
+    .register-how {
+      background: #fab568 !important;
+      color: #282460;
+      padding: 0; } }
+
+.register-call {
+  display: none; }
+  @media all and (min-width: 600px) {
+    .register-call {
+      display: block;
+      background: #282460 !important; } }
 
 footer {
   background-color: #393947;
@@ -1586,12 +1797,6 @@ footer {
     .hfeed {
       background-size: 100% 35%; } }
 
-h2 {
-  color: #282460;
-  font-family: 'Lato-Black';
-  font-size: 2.8125rem;
-  text-transform: uppercase; }
-
 li {
   list-style: none; }
 
@@ -1605,16 +1810,6 @@ a {
 
 .wp-block-button:hover {
   opacity: .5; }
-
-.menut-item:active {
-  border-bottom: 5px #fab0bc solid; }
-
-.content-area {
-  width: 100%;
-  margin: 0 auto; }
-  @media all and (min-width: 1080px) {
-    .content-area {
-      width: 1170px; } }
 
 .page-template-services-php .entry-content {
   display: -webkit-box;
@@ -1723,14 +1918,17 @@ a {
     .widget-sidebar a {
       font-size: 1.1rem;
       line-height: 1.5rem;
-      font-family: "Lato-Regular";
-      font-weight: 600;
+      font-family: "Lato-Bold";
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       position: relative;
       padding: 0.5rem 3rem 0.5rem 1.5rem;
+<<<<<<< HEAD
       margin: 0.5rem 0;
+=======
+      margin-bottom: 0.25rem;
+>>>>>>> afe09051ad7d756a6fe28ae91ae50d1424828570
       text-transform: uppercase; }
       .widget-sidebar a::after {
         content: '';
@@ -1772,9 +1970,9 @@ li .menu-item a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }

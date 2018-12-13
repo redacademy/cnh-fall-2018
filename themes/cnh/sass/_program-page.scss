@@ -44,6 +44,7 @@
   display: flex;
   flex-direction: column;
   margin: 0 2.4rem;
+
   p {
     color: $color__main;
 
@@ -53,6 +54,7 @@
       line-height: 26px;
     }
   }
+
   h3 {
     @include desktop {
       font-family: $font__title;

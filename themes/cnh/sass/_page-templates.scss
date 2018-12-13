@@ -56,23 +56,35 @@
       flex: 2 0 100%;
       max-width: 100%;
       margin-bottom: $base__space-unit * 2;
-      padding: 0 $base__space-unit;
+      // padding: 0 $base__space-unit;
 
       @include tablet {
         flex: 2 0 75%;
         max-width: 75%;
+        padding: 0 $base__space-unit;
       }
 
-      @include desktop {
-        flex: 2 0 75%;
-        max-width: 75%;
-        // border-right: $border__solid;
-        // border-color: $color__main;
-        // margin-bottom: $base__space-unit * 2;
-      }
+      // @include desktop {
+      //   flex: 2 0 75%;
+      //   max-width: 75%;
+      // border-right: $border__solid;
+      // border-color: $color__main;
+      // margin-bottom: $base__space-unit * 2;
+      // }
 
       h2 {
-        margin-top: 0;
+        @include tablet {
+          margin-top: 0;
+        }
+      }
+
+      .program-wrapper,
+      .service-wrapper {
+        padding: 0 $base__space-unit*2;
+
+        @include tablet {
+          padding: 0;
+        }
       }
     }
 
@@ -100,5 +112,121 @@
     flex: 2 0 100%;
     max-width: 100%;
     border: 0;
+  }
+}
+
+// TODO: add program and service type children pages
+/* programs */
+// .page-template-page-arts-music-dance,
+.page-template-template-pages-serv,
+.page-template-template-pages-prog,
+.page-template-taxonomy-service_type,
+.page-template-taxonomy-program_type {
+
+  .program-info,
+  .service-info {
+    .entry-title {
+      display: block;
+      padding: 0 $base__space-unit;
+      text-align: center;
+
+      @include tablet {
+        display: none;
+        padding: 0;
+        text-align: left;
+      }
+    }
+
+    div {
+      margin-top: 0;
+
+      h2 {
+        margin: 0;
+
+      }
+
+      h3 {
+        margin-top: 0;
+      }
+
+      // TODO: add parent and children headers in wp
+      h2,
+      h3 {
+        display: none;
+
+        @include tablet {
+          display: block;
+        }
+      }
+
+      p:first-of-type {
+        margin-top: $base__space-unit * 2;
+      }
+
+      p:nth-of-type(2) {
+        margin-bottom: $base__space-unit * 2;
+      }
+    }
+  }
+
+  .program-wrapper,
+  .service-wrapper {
+    article {
+      div {
+        div>p {
+          margin: 0;
+          font-weight: bold;
+          letter-spacing: 1px;
+
+          @include tablet {
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+.page-template-taxonomy-service_type,
+.page-template-taxonomy-program_type {
+  .content-area {
+    .entry-content {
+      padding: 0 $base__space-unit*2;
+
+      @include tablet {
+        padding: 0;
+      }
+    }
+  }
+}
+
+// Register Blocks
+.register-how,
+.register-call {
+  @include tablet {
+    border: $border__solid;
+    border-color: $color__background-body;
+    border-radius: 1rem;
+  }
+}
+
+.register-how {
+  background: $color__main !important;
+  color: $color__background-body;
+  padding: $base__space-unit $base__space-unit*2 !important;
+
+  @include tablet {
+    background: $color__button !important;
+    color: $color__main;
+    padding: 0;
+  }
+}
+
+.register-call {
+  display: none;
+
+  @include tablet {
+    display: block;
+    background: $color__main !important;
   }
 }
