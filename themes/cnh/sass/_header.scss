@@ -4,7 +4,7 @@
 
 .site-header {
   padding: $base__space-unit;
-  @include flex(row, center, center);
+  @include flex(row, space-between, center);
 
   p {
     margin: 0;
@@ -25,16 +25,6 @@
 
 .header-extras {
   @include flex(row, space-between, null);
-
-  .search-btn {
-    @include desktop {
-      display: block;
-    }
-  }
-
-  .search-form {
-    display: none;
-  }
 
   .translate-icon {
     @include flex(row, null, baseline);
@@ -66,14 +56,14 @@
     }
   }
 
-  .side-menu .search-form {
-    display: none;
-
+  .search-btn {
     @include desktop {
-      display: inline-flex;
-      position: absolute;
-      top: $base__space-unit * 4;
+      display: block;
     }
+  }
+
+  .search-form {
+    display: none;
   }
 
   .btn-open {
@@ -81,6 +71,16 @@
 
     @include desktop {
       display: none;
+    }
+  }
+
+  .side-menu .search-form {
+    display: none;
+
+    @include desktop {
+      display: inline-flex;
+      position: absolute;
+      top: $base__space-unit * 4;
     }
   }
 }

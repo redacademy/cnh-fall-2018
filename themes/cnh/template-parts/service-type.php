@@ -1,6 +1,6 @@
 <?php 
   /**
-   * Get the service type entry
+   * Template part for displaying the service type entry.
    * 
    * Start the loop 
    */ 
