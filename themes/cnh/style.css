@@ -529,14 +529,22 @@ a {
 /* Menus */
 .main-navigation {
   clear: both;
-  display: block;
+  display: none;
   float: left;
   width: 100%;
   font-size: 1.25rem; }
+  @media all and (min-width: 1080px) {
+    .main-navigation {
+      display: block; } }
   .main-navigation button {
     display: none; }
   .main-navigation ul {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     list-style: none;
     margin: 0;
     padding-left: 0; }
@@ -603,17 +611,6 @@ a {
 .menu-toggle,
 .main-navigation.toggled ul {
   display: none; }
-
-@media screen and (min-width: 768px) {
-  .menu-toggle {
-    display: none; }
-  .main-navigation ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly; } }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -1688,9 +1685,9 @@ li .menu-item a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }

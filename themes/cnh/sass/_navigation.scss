@@ -31,21 +31,21 @@ a {
 
 .main-navigation {
   clear: both;
-  display: block;
+  display: none;
   float: left;
   width: 100%;
   font-size: $size__body;
 
-  // @include desktop {
-  //   justify-content: space-around;
-  // }
+  @include desktop {
+    display: block;
+  }
 
   button {
     display: none;
   }
 
   ul {
-    display: none;
+    @include flex(null, space-evenly, null);
     list-style: none;
     margin: 0;
     padding-left: 0;
@@ -141,15 +141,15 @@ a {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
+// @media screen and (min-width: 768px) {
+//   .menu-toggle {
+//     display: none;
+//   }
 
-  .main-navigation ul {
-    @include flex(null, space-evenly, null);
-  }
-}
+//   .main-navigation ul {
+//     @include flex(null, space-evenly, null);
+//   }
+// }
 
 .comment-navigation,
 .posts-navigation,
