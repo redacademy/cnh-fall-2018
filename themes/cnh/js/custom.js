@@ -150,10 +150,9 @@
 
         window.location.replace(selected);
       }); // end of linking
-
-      $('.content-area').removeProp('flex');
-      $('.content-area').removeProp('max-width');
-      $('.content-area').removeProp('padding');
     } //end of if statement
+    else {
+      $('.content-area').css('max-width', '100%');
+    }
   }); // end of doc ready
 })(jQuery);
