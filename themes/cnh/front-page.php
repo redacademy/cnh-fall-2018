@@ -27,7 +27,7 @@ get_header(); ?>
 						
 			</header>
         		<?php endif; ?>
-				<p class="we-are-a-place-title">we are a place...</p>
+				<h2 class="we-are-a-place-title">We are a place...</h2>
 				<?php the_content(); ?>
 
 			<?php endwhile; ?>
@@ -41,7 +41,7 @@ get_header(); ?>
 		<?php endif; ?>
 
 		<!--Upcoming events-->	
-		<p class="upcoming-events-title"> Upcoming Events</p>
+		<h2 class="upcoming-events-title"> Upcoming Events</h2>
 		<div class='upcoming-events'>
 <?php $loop = new WP_Query( array( 'post_type' => 'tribe_events', 'posts_per_page' => 10, 'orderby' => 'date', 'order' => 'ASC', 'paged' ) ); ?> 
 
@@ -77,7 +77,7 @@ $event_id = get_the_ID();
 
 <!--start of instagram-->
 
-	<p class="instagram-updates-title"> Instagram Updates</p>
+	<h2 class="instagram-updates-title"> Instagram Updates</h2>
 				<div class="instalame-container">
 				
                         

@@ -1217,19 +1217,23 @@ footer {
 .home .site-content {
   width: 100%; }
 
-.entry-header img {
-  -webkit-transform: translateY(-34.5%);
-          transform: translateY(-34.5%);
-  z-index: -1; }
+.entry-header {
+  height: 190px; }
+  .entry-header img {
+    -webkit-transform: translateY(-39%);
+            transform: translateY(-39%);
+    z-index: -1; }
 
 .home-title {
   position: absolute;
-  top: 125px;
-  width: 50%;
-  left: 25%;
-  font-size: 16px;
+  top: 30px;
+  width: 75%;
+  left: 50%;
+  font-size: 20px;
   text-align: center;
-  letter-spacing: 1.35pt; }
+  letter-spacing: 1.35pt;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
 
 .home-subtitle {
   display: none; }
@@ -1283,19 +1287,10 @@ footer {
           justify-content: center;
   color: #282460;
   font-family: "Lato-Bold";
-  font-size: 1.5rem;
-  text-transform: uppercase; }
-
-.we-are-a-place-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #282460;
-  font-family: "Lato-Bold";
-  font-size: 1.5rem; }
+  text-transform: initial;
+  font-size: 1.625rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1.05; }
 
 .upcoming-events {
   width: 275px;
@@ -1394,6 +1389,8 @@ footer {
   font-family: "Lato-Black"; }
 
 @media all and (min-width: 1080px) {
+  .entry-header {
+    height: 475px; }
   .home-title {
     top: 25px;
     width: 65%;
@@ -1415,6 +1412,16 @@ footer {
     text-transform: none;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
+  .upcoming-events-title, .instagram-updates-title, .we-are-a-place-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #282460;
+    font-family: "Lato-Black";
+    text-transform: uppercase; }
   .wp-block-column {
     height: auto; }
     .wp-block-column img {
@@ -1446,7 +1453,7 @@ footer {
       font-size: 16px;
       width: 195px;
       border-radius: 10px; }
-  .upcoming-events-title, .instagram-updates-title {
+  .upcoming-events-title, .instagram-updates-title, .we-are-a-place-title {
     font-size: 2.8125rem; }
   .instalame-container {
     width: 1100px;
