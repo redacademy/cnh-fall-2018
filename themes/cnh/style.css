@@ -1389,6 +1389,12 @@ footer {
   text-transform: uppercase;
   font-family: "Lato-Black"; }
 
+.frontpage-buttons {
+  margin: 3rem; }
+  .frontpage-buttons .senior-programs-button {
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+
 @media all and (min-width: 1080px) {
   .entry-header {
     height: 475px; }
@@ -1559,7 +1565,21 @@ footer {
       position: initial;
       margin: auto; }
   .view-calendar-container {
-    display: none; } }
+    display: none; }
+  .frontpage-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 9.5rem;
+    margin-top: 6.5635rem; }
+    .frontpage-buttons .childcare-button, .frontpage-buttons .senior-programs-button, .frontpage-buttons .donate-button {
+      margin: auto;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      text-transform: uppercase; } }
 
 .center-page {
   text-align: center; }
