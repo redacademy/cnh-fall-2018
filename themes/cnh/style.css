@@ -589,7 +589,7 @@ a {
     .main-navigation ul .current_page_item,
     .main-navigation ul .current-menu-parent,
     .main-navigation ul .current-page-ancestor {
-      border-bottom: 5px solid #fab0bc; }
+      border-bottom: 3.5px solid #fab0bc; }
       .main-navigation ul li:hover li:hover,
       .main-navigation ul li:hover .current-menu-item,
       .main-navigation ul li:hover .current_page_item,
@@ -638,7 +638,7 @@ a {
         left: -999rem;
         top: 0; }
       .main-navigation ul ul li {
-        margin: 1px 0; }
+        margin: 3.5px 0 0; }
         .main-navigation ul ul li:first-child {
           margin-top: 0; }
         .main-navigation ul ul li:hover > ul,
@@ -1214,6 +1214,26 @@ footer {
   #custom_html-4, #custom_html-3 {
     display: none; } }
 
+.home .site-content {
+  width: 100%; }
+
+.entry-header img {
+  -webkit-transform: translateY(-39%);
+          transform: translateY(-39%);
+  z-index: -1; }
+
+.home-title {
+  position: absolute;
+  top: 125px;
+  width: 50%;
+  left: 25%;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 1.35pt; }
+
+.home-subtitle {
+  display: none; }
+
 .wp-block-column .wp-block-image {
   width: 280px;
   height: 56px;
@@ -1254,7 +1274,7 @@ footer {
 .follow-box {
   display: none; }
 
-.upcoming-events-title, .instagram-updates-title {
+.upcoming-events-title, .instagram-updates-title, .we-are-a-place-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1362,6 +1382,22 @@ footer {
   font-family: "Lato-Black"; }
 
 @media all and (min-width: 1080px) {
+  .home-title {
+    top: 125px;
+    width: 65%;
+    left: 18%;
+    font-size: 45px;
+    text-transform: none;
+    line-height: 50px;
+    letter-spacing: 3.66px;
+    margin-bottom: 1rem; }
+  .home-subtitle {
+    display: initial;
+    position: absolute;
+    top: 260px;
+    left: 36.5%;
+    font-size: 25px;
+    margin-top: .5rem; }
   .wp-block-column {
     height: auto; }
     .wp-block-column img {
