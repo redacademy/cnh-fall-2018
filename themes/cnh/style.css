@@ -1283,6 +1283,18 @@ footer {
           justify-content: center;
   color: #282460;
   font-family: "Lato-Bold";
+  font-size: 1.5rem;
+  text-transform: uppercase; }
+
+.we-are-a-place-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #282460;
+  font-family: "Lato-Bold";
   font-size: 1.5rem; }
 
 .upcoming-events {
@@ -2023,6 +2035,8 @@ li .menu-item a {
 # Header
 --------------------------------------------------------------*/
 .site-header {
+  position: relative;
+  z-index: 2000;
   padding: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
