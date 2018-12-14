@@ -27,11 +27,11 @@
 }
 
 .header-extras {
-  @include flex(row, space-between, flex-start);
+  @include flex(row, space-between, center);
 
-  @include desktop {
-    align-items: center;
-  }
+  // @include desktop {
+  //   align-items: center;
+  // }
 
   &>* {
     padding-left: $base__space-unit/1.5;
@@ -42,6 +42,7 @@
   }
 
   .translate-icon {
+
     padding: 0;
     // @include flex(row, null, baseline);
     // color: $color__main;
@@ -50,6 +51,7 @@
 
     i {
       padding: 0 2px;
+      font-size: $size__body * 1.5;
 
       @include desktop {
         font-size: $size__body * 1.5;
@@ -60,12 +62,11 @@
       display: none;
       position: absolute;
       top: $base__space-unit * 1.63;
-      right: -20px;
+      right: -40px;
 
-      // @include desktop {
-      //   top: $base__space-unit * 1.63;
-      //   right: 0;
-      // }
+      @include desktop {
+        right: -45px;
+      }
     }
   }
 
@@ -82,10 +83,22 @@
     }
 
     .search-form {
-      // display: none;
+      display: none;
       position: absolute;
       top: $base__space-unit * 1.63;
       right: 0;
+
+      fieldset {
+        position: relative;
+
+        .search-submit {
+          position: absolute;
+          right: 2px;
+          top: 2px;
+          font-size: $size__body * 0.5;
+          border-radius: 0.4rem;
+        }
+      }
     }
   }
 
@@ -98,8 +111,6 @@
       color: $color__highlight;
     }
   }
-
-
 
   .btn-open {
     margin-left: $base__space-unit / 2;
