@@ -100,15 +100,24 @@ function cnh_scripts() {
   // to link font awesome
   wp_enqueue_style('cnh-fontawesome','https://use.fontawesome.com/releases/v5.5.0/css/all.css');
 
+  wp_enqueue_style('cnh-flickity-style','https://unpkg.com/flickity@2/dist/flickity.min.css');
+
   // to link material icons
   wp_enqueue_style('cnh-materialicons','https://fonts.googleapis.com/icon?family=Material+Icons');
 
   // to queue jquery
   wp_enqueue_script('jquery');
+
+  // flickity
+  wp_enqueue_script('cnh-flickity-script', 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', array('jquery'), '', true); 
   
   wp_enqueue_script('spectragram.js', get_template_directory_uri() . '/build/js/spectragram.min.js', array(), '20181206', true);
 	wp_enqueue_script( 'cnh-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
   wp_enqueue_script( 'cnh-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
+
+
+  // rentals js
+wp_enqueue_script('rentals.js', get_template_directory_uri() . '/build/js/rentals.min.js', array('jquery','cnh-flickity-script'), '', true );
 
   wp_enqueue_script('cnh-selectric-js', 'https://cdn.jsdelivr.net/npm/selectric@1.13.0/public/jquery.selectric.min.js', array('jquery'), '20181206', true);
   
