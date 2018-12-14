@@ -42,6 +42,9 @@
         line-height: 18pt;
         margin-top: 0;
     }
+    &:first-child {
+        margin-right: 0;
+    }
 }
 .we-are-a-place-buttons {
     display: none!important;
@@ -171,7 +174,7 @@
         left: 50%;
         font-size: 30px;
         text-transform: none;
-        line-height: 45px;
+        line-height: 40px;
         letter-spacing: 3.66px;
         margin-bottom: 1rem;
         transform: translateX(-50%);
@@ -213,13 +216,23 @@
         .frontpage-content {
         margin-top: 15rem;
     }
+    .instalame-container {
+        .photo:last-child {
+            display: initial;
+            margin-left: 1rem;
+            border-radius: 10px;
+        }
+    }
+    .wp-block-image {
+        width: 600px;
+    }
 }
 @include desktop {
     .entry-header {
         height: 475px;
     }
     .home-title {
-        top: 25px;
+        top: 55px;
         width: 65%;
         left: 50%;
         font-size: 55px;
@@ -232,7 +245,7 @@
     .home-subtitle {
         display: initial;
         position: absolute;
-        top: 225px;
+        top: 210px;
         left: 50%;
         font-size: 25px;
         margin-top: .5rem;
