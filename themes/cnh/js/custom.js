@@ -5,13 +5,13 @@
     /**
      * start of side menu
      */
-    $('.btn-open').on('click', function (event) {
-      event.preventDefault();
+    $('.btn-open').on('click', function () {
+      // event.preventDefault();
       openSideMenu();
     });
 
-    $('.btn-close').on('click', function (event) {
-      event.preventDefault();
+    $('.btn-close').on('click', function () {
+      // event.preventDefault();
       closeSideMenu();
     });
 
@@ -55,53 +55,61 @@
       }); // end of side menu
 
     /**
-     * start of Google Translate changes
+     * start of Google Translate
      */
     const $translateBtn = $('.translate-icon');
     const $translator = $('#google_language_translator');
-    const $translatorOptn = $('.goog-te-combo option');
+    // const $translatorOptns = $('select.goog-te-combo');
+    // const $translatorOptn = $('.goog-te-combo option').val();
+    // const $page = $('#page');
 
     // Handle click on toggle translate button
     $translateBtn.on('click', function () {
-      $translator.toggle();
+      $translator.show().focus();
+      // $translator.toggle();
       return false;
     });
 
     // Handle change on translator
-    $translatorOptn.on('change', function () {
-      $translator.toggle();
-    });
+    // $translatorOptns.on('change', function () {
+    //   // $translator.toggle();
+    //   // return true;
+    //   console.log('working!');
 
-    // show translator
-    // $translateBtn.on('click', function () {
-    //   // $('#google_language_translator').fadeToggle();
-    //   $translator.toggle(1000);
-    //   // $searchField.focus();
-    // }); 
-    // end of show translator
+    //   if ($translatorOptn !== '') {
+    //     $page.css('margin-top', '38px');
+    //   }
+    // });
+
+    // $page.css('color', 'red');
+
+    // Handle blur on translator
+    $translator.on('blur', function () {
+      // if ($(this).val() === "") {
+      $translator.hide();
+      // }
+    });
+    // end of Google Translator
 
     /**
-     * start of search form in header
+     * start of header Search Form
      */
-    // const $searchBtn = $('.search-btn');
-    // const $searchForm = $('.header-extras .search-form');
+    const $searchBtn = $('.search-btn');
+    const $searchForm = $('.search-btn .search-form');
+    const $searchField = $('.search-btn .search-field');
 
-    // show search form
-    // $searchBtn.on('click', function () {
-    //   // $('#google_language_translator').fadeToggle();
-    //   $searchForm.toggle(1000);
-    //   $searchForm.focus();
-    // }); 
-    // end of show search form
+    $searchBtn.on('click', function (event) {
+      event.preventDefault();
+      $searchForm.fadeToggle();
+      $searchField.focus();
+    });
 
-    // hide translator
-    // $searchForm.on('blur', function () {
-    //   if ($(this).val === '') {
-    //     $searchForm.toggle(1000);
-    //   }
-    // }); 
-    // end of hide search form
-    // end of search form in header
+    $searchField.on('blur', function () {
+      if ($(this).val() === "") {
+        $searchForm.fadeToggle();
+      }
+    });
+    // end of header Search Form
 
     // start of spectagram
     // var spectragramComplete = function () {
