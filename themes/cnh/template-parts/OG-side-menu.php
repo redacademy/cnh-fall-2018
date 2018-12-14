@@ -15,7 +15,6 @@
     </li>
     <li class="side-item accordion-toggle">
       <a href="/about" class="side-link">About Us</a>
-      <div class="side-btn accordion-toggle"></div>
     </li>
     <ul class="side-nav-sub accordion-content">
         <li class="sub-item">
@@ -30,7 +29,6 @@
       </ul>
     <li class="side-item accordion-toggle">
       <a href="/programs" class="side-link">Programs</a>
-      <div class="side-btn accordion-toggle"></div>
     </li>
     <ul class="side-nav-sub accordion-content">
       <li class="sub-item">
@@ -51,7 +49,6 @@
     </ul>
     <li class="side-item accordion-toggle">
       <a href="/services" class="side-link">Services</a>
-      <div class="side-btn accordion-toggle"></div>
     </li>
     <ul class="side-nav-sub accordion-content">
       <li class="sub-item">
@@ -75,7 +72,6 @@
     </ul>
     <li class="side-item accordion-toggle">
       <a href="/get-involved" class="side-link">Get Involved</a>
-      <div class="side-btn"></div>
     </li>
     <ul class="side-nav-sub accordion-content">
       <li class="sub-item">
