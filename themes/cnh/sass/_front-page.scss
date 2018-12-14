@@ -2,18 +2,22 @@
 .home .site-content {
     width: 100%;
 }
-.entry-header img {
-    transform: translateY(-34.5%);
+.entry-header {
+    height: 190px;
+    img {
+    transform: translateY(-39%);
     z-index: -1;
+}
 }
 .home-title {
     position: absolute;
-    top: 125px;
-    width: 50%;
-    left: 25%;
-    font-size: 16px;
+    top: 30px;
+    width: 75%;
+    left: 50%;
+    font-size: 20px;
     text-align: center;
     letter-spacing: 1.35pt;
+    transform: translateX(-50%)
 }
 .home-subtitle {
     display: none;
@@ -62,15 +66,10 @@
     justify-content: center;
     color: #282460;
     font-family: $font__subtitle;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-}
-.we-are-a-place-title {
-    display: flex;
-    justify-content: center;
-    color: #282460;
-    font-family: $font__subtitle;
-    font-size: 1.5rem;
+    text-transform: initial;
+    font-size: 1.625rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1.05
 }
 .upcoming-events {
     width: 275px;
@@ -159,6 +158,9 @@
     font-family: $font__title;
 }
 @include desktop {
+    .entry-header {
+        height: 475px;
+    }
     .home-title {
         top: 25px;
         width: 65%;
@@ -179,6 +181,13 @@
         margin-top: .5rem;
         text-transform: none;
         transform: translateX(-50%);
+    }
+    .upcoming-events-title, .instagram-updates-title, .we-are-a-place-title {
+        display: flex;
+        justify-content: center;
+        color: #282460;
+        font-family: $font__title;
+        text-transform: uppercase;
     }
     .wp-block-column {
         height: auto;
@@ -202,7 +211,8 @@
     }
     .we-are-a-place {
         width: 1170px;
-        margin: auto
+        margin: auto;
+        margin-bottom: 6rem;
     }
     .we-are-a-place-buttons {
         display: inline !important;
@@ -214,12 +224,13 @@
             border-radius: 10px
         }
     }
-    .upcoming-events-title, .instagram-updates-title, {
+    .upcoming-events-title, .instagram-updates-title, .we-are-a-place-title {
         font-size: 2.8125rem;
     }
     .instalame-container {
         width: 1100px;
         margin: auto;
+        margin-top: 3.125rem;
         .photo {
             width: 456px;
             height: 456px;
@@ -233,10 +244,11 @@
             height: 100%;
             border-radius: 2%;
         }
+    }
         
-    }.follow-box {
+    .follow-box {
         display: flex;
-        width: 1100px;
+        width: 1150px;
         justify-content: flex-end;
         .follow-content {
             margin-top: 3.25rem;
@@ -249,7 +261,7 @@
         border-radius: 100px;
         margin-right: 1.5rem;
         &:last-of-type {
-            margin-right: 4.5rem;
+            margin-right: 0;
         }
     }
 }
@@ -266,6 +278,7 @@
     .upcoming-events {
             width: 1170px;
             display: flex;
+            margin-bottom: 6rem;
         }
         .hover-details {
             font-size: 1.25rem;
