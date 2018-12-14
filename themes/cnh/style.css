@@ -1445,7 +1445,8 @@ footer {
       margin-bottom: 0; }
   .we-are-a-place {
     width: 1170px;
-    margin: auto; }
+    margin: auto;
+    margin-bottom: 6rem; }
   .we-are-a-place-buttons {
     display: inline !important;
     position: relative;
@@ -1458,7 +1459,8 @@ footer {
     font-size: 2.8125rem; }
   .instalame-container {
     width: 1100px;
-    margin: auto; }
+    margin: auto;
+    margin-top: 3.125rem; }
     .instalame-container .photo {
       width: 456px;
       height: 456px; }
@@ -1473,7 +1475,7 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 1100px;
+    width: 1150px;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
@@ -1490,7 +1492,7 @@ footer {
         border-radius: 100px;
         margin-right: 1.5rem; }
         .follow-box .follow-content img:last-of-type {
-          margin-right: 4.5rem; }
+          margin-right: 0; }
   .follow-us {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1505,7 +1507,8 @@ footer {
     width: 1170px;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    margin-bottom: 6rem; }
   .hover-details {
     font-size: 1.25rem; }
     .hover-details .hover-title {
@@ -1627,6 +1630,9 @@ footer {
 
 .button-pink {
   background-color: #fab0bc; }
+
+.wp-block-column {
+  margin-bottom: 0; }
 
 .all-button {
   border-radius: 1rem;
@@ -1909,7 +1915,8 @@ a {
           flex-direction: column;
   margin: 0 2.4rem; }
   .page-template-services-php .entry-content p {
-    color: #282460; }
+    color: #282460;
+    margin: 0 auto; }
     @media all and (min-width: 1080px) {
       .page-template-services-php .entry-content p {
         text-align: center;
@@ -1918,15 +1925,15 @@ a {
         margin: 0 auto; } }
 
 @media all and (min-width: 1080px) {
+  .service-description {
+    width: 537px; } }
+
+@media all and (min-width: 1080px) {
   .page-template-services-php .entry-title {
     font-family: "Lato-Black";
     color: #282460;
     font-size: 65px;
     line-height: 78px; } }
-
-.service-description {
-  height: 105px;
-  width: 537px; }
 
 .page-template-services .site-content .content-area {
   max-width: 100%;
@@ -2183,7 +2190,7 @@ li .menu-item a {
   position: relative;
   cursor: pointer;
   text-align: center;
-  widows: 400px;
+  max-width: 400px;
   margin: auto; }
   @media all and (min-width: 600px) {
     .selectric-wrapper {
@@ -2465,3 +2472,6 @@ iframe.maps {
 
 .location-name {
   font-size: 1.25rem; }
+
+.is-selected {
+  background: black; }

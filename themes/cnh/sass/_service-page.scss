@@ -5,6 +5,7 @@
 
   p {
     color: $color__main;
+    margin: 0 auto;
 
     @include desktop {
       text-align: center;
@@ -15,6 +16,12 @@
   }
 }
 
+.service-description {
+  @include desktop {
+    width: 537px;
+  }
+}
+
 .page-template-services-php .entry-title {
   @include desktop {
     font-family: $font__title;
@@ -22,11 +29,6 @@
     font-size: 65px;
     line-height: 78px;
   }
-}
-
-.service-description {
-  height: 105px;
-  width: 537px;
 }
 
 .page-template-services .site-content .content-area {
