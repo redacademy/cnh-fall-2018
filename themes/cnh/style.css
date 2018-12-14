@@ -1218,8 +1218,8 @@ footer {
   width: 100%; }
 
 .entry-header img {
-  -webkit-transform: translateY(-39%);
-          transform: translateY(-39%);
+  -webkit-transform: translateY(-34.5%);
+          transform: translateY(-34.5%);
   z-index: -1; }
 
 .home-title {
@@ -1275,6 +1275,18 @@ footer {
   display: none; }
 
 .upcoming-events-title, .instagram-updates-title, .we-are-a-place-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #282460;
+  font-family: "Lato-Bold";
+  font-size: 1.5rem;
+  text-transform: uppercase; }
+
+.we-are-a-place-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1383,21 +1395,26 @@ footer {
 
 @media all and (min-width: 1080px) {
   .home-title {
-    top: 125px;
+    top: 25px;
     width: 65%;
-    left: 18%;
-    font-size: 45px;
+    left: 50%;
+    font-size: 55px;
     text-transform: none;
-    line-height: 50px;
+    line-height: 65px;
     letter-spacing: 3.66px;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
   .home-subtitle {
     display: initial;
     position: absolute;
-    top: 260px;
-    left: 36.5%;
+    top: 225px;
+    left: 50%;
     font-size: 25px;
-    margin-top: .5rem; }
+    margin-top: .5rem;
+    text-transform: none;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
   .wp-block-column {
     height: auto; }
     .wp-block-column img {
@@ -1432,7 +1449,8 @@ footer {
   .upcoming-events-title, .instagram-updates-title {
     font-size: 2.8125rem; }
   .instalame-container {
-    width: 1100px; }
+    width: 1100px;
+    margin: auto; }
     .instalame-container .photo {
       width: 456px;
       height: 456px; }
