@@ -96,6 +96,9 @@ $event_id = get_the_ID();
 			
 
 				<div class="frontpage-buttons">
+					<a class="childcare-button button-yellow all-button" href="/childcare">childcare</a>
+					<a class="senior-programs-button button-pink all-button" href="/senior-programs">senior programs</a>
+					<a class="donate-button button-yellow all-button" href="/donate">donate</a>
 				</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->

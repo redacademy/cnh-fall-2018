@@ -1388,6 +1388,12 @@ footer {
   text-transform: uppercase;
   font-family: "Lato-Black"; }
 
+.frontpage-buttons {
+  margin: 3rem; }
+  .frontpage-buttons .senior-programs-button {
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+
 @media all and (min-width: 1080px) {
   .entry-header {
     height: 475px; }
@@ -1444,7 +1450,8 @@ footer {
       margin-bottom: 0; }
   .we-are-a-place {
     width: 1170px;
-    margin: auto; }
+    margin: auto;
+    margin-bottom: 6rem; }
   .we-are-a-place-buttons {
     display: inline !important;
     position: relative;
@@ -1457,7 +1464,8 @@ footer {
     font-size: 2.8125rem; }
   .instalame-container {
     width: 1100px;
-    margin: auto; }
+    margin: auto;
+    margin-top: 3.125rem; }
     .instalame-container .photo {
       width: 456px;
       height: 456px; }
@@ -1472,7 +1480,7 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 1100px;
+    width: 1150px;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
@@ -1489,7 +1497,7 @@ footer {
         border-radius: 100px;
         margin-right: 1.5rem; }
         .follow-box .follow-content img:last-of-type {
-          margin-right: 4.5rem; }
+          margin-right: 0; }
   .follow-us {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1504,7 +1512,8 @@ footer {
     width: 1170px;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    margin-bottom: 6rem; }
   .hover-details {
     font-size: 1.25rem; }
     .hover-details .hover-title {
@@ -1555,7 +1564,21 @@ footer {
       position: initial;
       margin: auto; }
   .view-calendar-container {
-    display: none; } }
+    display: none; }
+  .frontpage-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 9.5rem;
+    margin-top: 6.5635rem; }
+    .frontpage-buttons .childcare-button, .frontpage-buttons .senior-programs-button, .frontpage-buttons .donate-button {
+      margin: auto;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      text-transform: uppercase; } }
 
 .center-page {
   text-align: center; }

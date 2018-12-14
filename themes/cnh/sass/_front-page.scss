@@ -157,6 +157,13 @@
     text-transform: uppercase;
     font-family: $font__title;
 }
+.frontpage-buttons {
+    margin: 3rem;
+    .senior-programs-button  {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
 @include desktop {
     .entry-header {
         height: 475px;
@@ -347,6 +354,18 @@
         }
         .view-calendar-container {
             display: none;
+        }
+        .frontpage-buttons {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 9.5rem;
+            margin-top: 6.5635rem;
+            .childcare-button, .senior-programs-button, .donate-button  {
+                margin: auto;
+                margin-left: 1rem;
+                margin-right: 1rem;
+                text-transform: uppercase;
+            }
         }
     
 }
