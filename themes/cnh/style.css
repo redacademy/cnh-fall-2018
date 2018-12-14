@@ -1389,6 +1389,60 @@ footer {
   text-transform: uppercase;
   font-family: "Lato-Black"; }
 
+.frontpage-buttons {
+  margin: 3rem; }
+  .frontpage-buttons .senior-programs-button {
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
+
+@media all and (min-width: 600px) {
+  .home-title {
+    top: 25px;
+    width: 65%;
+    left: 50%;
+    font-size: 30px;
+    text-transform: none;
+    line-height: 45px;
+    letter-spacing: 3.66px;
+    margin-bottom: 1rem;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin-top: 0; }
+  .home-subtitle {
+    display: none; }
+  .frontpage-content {
+    margin-top: 5rem; }
+  .we-are-a-place {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
+@media all and (min-width: 800px) {
+  .home-title {
+    top: 20px;
+    left: 50%;
+    font-size: 40px;
+    text-transform: none;
+    line-height: 50px;
+    letter-spacing: 3.66px;
+    margin-bottom: 1rem;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin-top: 0; }
+  .home-subtitle {
+    display: initial;
+    position: absolute;
+    top: 135px;
+    left: 50%;
+    font-size: 20px;
+    margin-top: .5rem;
+    text-transform: none;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  .frontpage-content {
+    margin-top: 15rem; } }
+
 @media all and (min-width: 1080px) {
   .entry-header {
     height: 475px; }
@@ -1446,7 +1500,15 @@ footer {
   .we-are-a-place {
     width: 1170px;
     margin: auto;
+<<<<<<< HEAD
     margin-bottom: 6rem; }
+=======
+    margin-bottom: 6rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+>>>>>>> b588382540ea9186a6eb1758d6be8497cfb4fab0
   .we-are-a-place-buttons {
     display: inline !important;
     position: relative;
@@ -1559,7 +1621,21 @@ footer {
       position: initial;
       margin: auto; }
   .view-calendar-container {
-    display: none; } }
+    display: none; }
+  .frontpage-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 9.5rem;
+    margin-top: 6.5635rem; }
+    .frontpage-buttons .childcare-button, .frontpage-buttons .senior-programs-button, .frontpage-buttons .donate-button {
+      margin: auto;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      text-transform: uppercase; } }
 
 .center-page {
   text-align: center; }
@@ -2095,14 +2171,9 @@ li .menu-item a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start; }
-  @media all and (min-width: 1080px) {
-    .header-extras {
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; } }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .header-extras > * {
     padding-left: 1rem; }
     @media all and (min-width: 1080px) {
@@ -2113,7 +2184,8 @@ li .menu-item a {
     cursor: pointer;
     position: relative; }
     .header-extras .translate-icon i {
-      padding: 0 2px; }
+      padding: 0 2px;
+      font-size: 1.875rem; }
       @media all and (min-width: 1080px) {
         .header-extras .translate-icon i {
           font-size: 1.875rem; } }
@@ -2121,7 +2193,10 @@ li .menu-item a {
       display: none;
       position: absolute;
       top: 2.445rem;
-      right: -20px; }
+      right: -40px; }
+      @media all and (min-width: 1080px) {
+        .header-extras .translate-icon #google_language_translator {
+          right: -45px; } }
   .header-extras .search-btn {
     display: none; }
     .header-extras .search-btn:hover {
@@ -2132,9 +2207,18 @@ li .menu-item a {
         -ms-flex-item-align: baseline;
             align-self: baseline; } }
     .header-extras .search-btn .search-form {
+      display: none;
       position: absolute;
       top: 2.445rem;
       right: 0; }
+      .header-extras .search-btn .search-form fieldset {
+        position: relative; }
+        .header-extras .search-btn .search-form fieldset .search-submit {
+          position: absolute;
+          right: 2px;
+          top: 2px;
+          font-size: 0.625rem;
+          border-radius: 0.4rem; }
   .header-extras .translate-icon,
   .header-extras .search-btn {
     cursor: pointer;

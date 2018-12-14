@@ -23,10 +23,10 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 			<header class="entry-header">
 				<a href="<?php echo get_permalink(); ?>"><?php if ( has_post_thumbnail() ) : ?>
-        		<?php the_post_thumbnail( 'full' ); ?>
-						
+        		<?php the_post_thumbnail( 'full' ); ?>	
 			</header>
-        		<?php endif; ?>
+				<?php endif; ?>
+				<div class="frontpage-content">	
 				<h2 class="we-are-a-place-title">We are a place...</h2>
 				<?php the_content(); ?>
 
@@ -96,7 +96,11 @@ $event_id = get_the_ID();
 			
 
 				<div class="frontpage-buttons">
+					<a class="childcare-button button-yellow all-button" href="/childcare">childcare</a>
+					<a class="senior-programs-button button-pink all-button" href="/senior-programs">senior programs</a>
+					<a class="donate-button button-yellow all-button" href="/donate">donate</a>
 				</div>
+</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
