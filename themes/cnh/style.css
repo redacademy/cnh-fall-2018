@@ -2048,6 +2048,8 @@ li .menu-item a {
 # Header
 --------------------------------------------------------------*/
 .site-header {
+  position: relative;
+  z-index: 2000;
   padding: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;

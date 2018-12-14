@@ -3,6 +3,8 @@
 --------------------------------------------------------------*/
 
 .site-header {
+  position: relative;
+  z-index: 2000;
   padding: $base__space-unit;
   @include flex(row, space-between, center);
 
