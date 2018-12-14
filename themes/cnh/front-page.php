@@ -27,7 +27,7 @@ get_header(); ?>
 						
 			</header>
         		<?php endif; ?>
-				<p class="We-are-a-place-title">we are a place</p>
+				<p class="We-are-a-place-title">we are a place...</p>
 				<?php the_content(); ?>
 
 			<?php endwhile; ?>
