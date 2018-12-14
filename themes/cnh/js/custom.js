@@ -1,17 +1,17 @@
-(function($) {
-  $(function() {
+(function ($) {
+  $(function () {
     const $sideMenu = $('#side-menu');
 
     /**
      * start of side menu
      */
-    $('.btn-open').on('click', function(event) {
-      event.preventDefault();
+    $('.btn-open').on('click', function () {
+      // event.preventDefault();
       openSideMenu();
     });
 
-    $('.btn-close').on('click', function(event) {
-      event.preventDefault();
+    $('.btn-close').on('click', function () {
+      // event.preventDefault();
       closeSideMenu();
     });
 
@@ -31,9 +31,9 @@
       $sideMenu.css('width', '0');
     }
 
-    $('.side-navbar')
+    $('.side-nav')
       .find('.accordion-toggle')
-      .click(function() {
+      .click(function () {
         $(this)
           .next()
           .toggleClass('open')
@@ -43,7 +43,7 @@
           .find('.side-link')
           .toggleClass('active');
 
-        $('.side-navbar .accordion-content')
+        $('.side-nav .accordion-content')
           .not($(this).next())
           .slideUp('fast')
           .removeClass('open');
@@ -55,53 +55,61 @@
       }); // end of side menu
 
     /**
-     * start of Google Translate changes
+     * start of Google Translate
      */
     const $translateBtn = $('.translate-icon');
     const $translator = $('#google_language_translator');
-    const $translatorOptn = $('.goog-te-combo option');
+    // const $translatorOptns = $('select.goog-te-combo');
+    // const $translatorOptn = $('.goog-te-combo option').val();
+    // const $page = $('#page');
 
     // Handle click on toggle translate button
-    $translateBtn.on('click', function() {
-      $translator.toggle();
+    $translateBtn.on('click', function () {
+      $translator.show().focus();
+      // $translator.toggle();
       return false;
     });
 
     // Handle change on translator
-    $translatorOptn.on('change', function() {
-      $translator.toggle();
-    });
+    // $translatorOptns.on('change', function () {
+    //   // $translator.toggle();
+    //   // return true;
+    //   console.log('working!');
 
-    // show translator
-    // $translateBtn.on('click', function () {
-    //   // $('#google_language_translator').fadeToggle();
-    //   $translator.toggle(1000);
-    //   // $searchField.focus();
-    // });
-    // end of show translator
-
-    /**
-     * start of search form in header
-     */
-    // const $searchBtn = $('.search-btn');
-    // const $searchForm = $('.header-extras .search-form');
-
-    // show search form
-    // $searchBtn.on('click', function () {
-    //   // $('#google_language_translator').fadeToggle();
-    //   $searchForm.toggle(1000);
-    //   $searchForm.focus();
-    // });
-    // end of show search form
-
-    // hide translator
-    // $searchForm.on('blur', function () {
-    //   if ($(this).val === '') {
-    //     $searchForm.toggle(1000);
+    //   if ($translatorOptn !== '') {
+    //     $page.css('margin-top', '38px');
     //   }
     // });
-    // end of hide search form
-    // end of search form in header
+
+    // $page.css('color', 'red');
+
+    // Handle blur on translator
+    $translator.on('blur', function () {
+      // if ($(this).val() === "") {
+      $translator.hide();
+      // }
+    });
+    // end of Google Translator
+
+    /**
+     * start of header Search Form
+     */
+    const $searchBtn = $('.search-btn');
+    const $searchForm = $('.search-btn .search-form');
+    const $searchField = $('.search-btn .search-field');
+
+    $searchBtn.on('click', function (event) {
+      event.preventDefault();
+      $searchForm.fadeToggle();
+      $searchField.focus();
+    });
+
+    $searchField.on('blur', function () {
+      if ($(this).val() === "") {
+        $searchForm.fadeToggle();
+      }
+    });
+    // end of header Search Form
 
     // start of spectagram
     // var spectragramComplete = function () {
@@ -109,7 +117,7 @@
       instaToken: '9448460219.0d61304.de737249603f46ec9356ff60f0aabdcf',
       instaID: '0d61304f0d4242a9b55e5c1378ba869e',
 
-      init: function() {
+      init: function () {
         $.fn.spectragram.accessData = {
           accessToken: this.instaToken,
           clientID: this.instaID
@@ -137,7 +145,7 @@
       }).appendTo('.entry-title select');
 
       // Populate dropdown with menu items
-      $('.widget-sidebar a').each(function() {
+      $('.widget-sidebar a').each(function () {
         var el = $(this);
         $('<option />', {
           value: el.attr('href'),
@@ -147,14 +155,11 @@
 
       $('.entry-title select').selectric();
 
-      $('.entry-title select').on('change', function() {
+      $('.entry-title select').on('change', function () {
         let selected = $(this).val();
 
         window.location.replace(selected);
-      }); // end of linking
+      });
     } //end of if statement
-    else {
-      $('.content-area').css('max-width', '100%');
-    }
   }); // end of doc ready
 })(jQuery);
