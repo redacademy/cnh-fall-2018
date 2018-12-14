@@ -589,7 +589,7 @@ a {
     .main-navigation ul .current_page_item,
     .main-navigation ul .current-menu-parent,
     .main-navigation ul .current-page-ancestor {
-      border-bottom: 5px solid #fab0bc; }
+      border-bottom: 3.5px solid #fab0bc; }
       .main-navigation ul li:hover li:hover,
       .main-navigation ul li:hover .current-menu-item,
       .main-navigation ul li:hover .current_page_item,
@@ -638,7 +638,7 @@ a {
         left: -999rem;
         top: 0; }
       .main-navigation ul ul li {
-        margin: 1px 0; }
+        margin: 3.5px 0 0; }
         .main-navigation ul ul li:first-child {
           margin-top: 0; }
         .main-navigation ul ul li:hover > ul,
