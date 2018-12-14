@@ -3,8 +3,11 @@
 --------------------------------------------------------------*/
 
 .site-header {
+  position: relative;
+  z-index: 2000;
   padding: $base__space-unit;
   @include flex(row, space-between, center);
+  color: $color__main;
 
   p {
     margin: 0;
@@ -24,12 +27,26 @@
 }
 
 .header-extras {
-  @include flex(row, space-between, null);
+  @include flex(row, space-between, flex-start);
+
+  @include desktop {
+    align-items: center;
+  }
+
+  &>* {
+    padding-left: $base__space-unit/1.5;
+
+    @include desktop {
+      padding-left: $base__space-unit;
+    }
+  }
 
   .translate-icon {
-    @include flex(row, null, baseline);
-    color: $color__main;
+    padding: 0;
+    // @include flex(row, null, baseline);
+    // color: $color__main;
     cursor: pointer;
+    position: relative;
 
     i {
       padding: 0 2px;
@@ -39,32 +56,50 @@
       }
     }
 
-    .material-icons {
-      // font-size: $size__body * 1.5;
-    }
-  }
+    #google_language_translator {
+      display: none;
+      position: absolute;
+      top: $base__space-unit * 1.63;
+      right: -20px;
 
-  #google_language_translator {
-    display: none;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-
-    @include desktop {
-      top: 100px;
-      right: 300px;
+      // @include desktop {
+      //   top: $base__space-unit * 1.63;
+      //   right: 0;
+      // }
     }
   }
 
   .search-btn {
+    display: none;
+
+    &:hover {
+      color: $color__highlight;
+    }
+
     @include desktop {
       display: block;
+      align-self: baseline;
+    }
+
+    .search-form {
+      // display: none;
+      position: absolute;
+      top: $base__space-unit * 1.63;
+      right: 0;
     }
   }
 
-  .search-form {
-    display: none;
+  .translate-icon,
+  .search-btn {
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+      color: $color__highlight;
+    }
   }
+
+
 
   .btn-open {
     margin-left: $base__space-unit / 2;

@@ -638,14 +638,15 @@ a {
         left: -999rem;
         top: 0; }
       .main-navigation ul ul li {
-        margin: 3.5px 0 0; }
+        margin: 3.5px 0 0;
+        font-size: 1rem; }
         .main-navigation ul ul li:first-child {
           margin-top: 0; }
         .main-navigation ul ul li:hover > ul,
         .main-navigation ul ul li.focus > ul {
           left: 100%; }
       .main-navigation ul ul a {
-        width: 150px; }
+        width: 125px; }
     .main-navigation ul li:hover > ul,
     .main-navigation ul li.focus > ul {
       left: auto; }
@@ -1217,19 +1218,23 @@ footer {
 .home .site-content {
   width: 100%; }
 
-.entry-header img {
-  -webkit-transform: translateY(-34.5%);
-          transform: translateY(-34.5%);
-  z-index: -1; }
+.entry-header {
+  height: 190px; }
+  .entry-header img {
+    -webkit-transform: translateY(-39%);
+            transform: translateY(-39%);
+    z-index: -1; }
 
 .home-title {
   position: absolute;
-  top: 125px;
-  width: 50%;
-  left: 25%;
-  font-size: 16px;
+  top: 30px;
+  width: 75%;
+  left: 50%;
+  font-size: 20px;
   text-align: center;
-  letter-spacing: 1.35pt; }
+  letter-spacing: 1.35pt;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
 
 .home-subtitle {
   display: none; }
@@ -1283,19 +1288,10 @@ footer {
           justify-content: center;
   color: #282460;
   font-family: "Lato-Bold";
-  font-size: 1.5rem;
-  text-transform: uppercase; }
-
-.we-are-a-place-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #282460;
-  font-family: "Lato-Bold";
-  font-size: 1.5rem; }
+  text-transform: initial;
+  font-size: 1.625rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1.05; }
 
 .upcoming-events {
   width: 275px;
@@ -1394,6 +1390,8 @@ footer {
   font-family: "Lato-Black"; }
 
 @media all and (min-width: 1080px) {
+  .entry-header {
+    height: 475px; }
   .home-title {
     top: 25px;
     width: 65%;
@@ -1415,6 +1413,16 @@ footer {
     text-transform: none;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
+  .upcoming-events-title, .instagram-updates-title, .we-are-a-place-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #282460;
+    font-family: "Lato-Black";
+    text-transform: uppercase; }
   .wp-block-column {
     height: auto; }
     .wp-block-column img {
@@ -1446,7 +1454,7 @@ footer {
       font-size: 16px;
       width: 195px;
       border-radius: 10px; }
-  .upcoming-events-title, .instagram-updates-title {
+  .upcoming-events-title, .instagram-updates-title, .we-are-a-place-title {
     font-size: 2.8125rem; }
   .instalame-container {
     width: 1100px;
@@ -2041,6 +2049,8 @@ li .menu-item a {
 # Header
 --------------------------------------------------------------*/
 .site-header {
+  position: relative;
+  z-index: 2000;
   padding: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2054,7 +2064,8 @@ li .menu-item a {
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  color: #282460; }
   .site-header p {
     margin: 0; }
   .site-header .header-logo {
@@ -2076,39 +2087,54 @@ li .menu-item a {
           flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  @media all and (min-width: 1080px) {
+    .header-extras {
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
+  .header-extras > * {
+    padding-left: 1rem; }
+    @media all and (min-width: 1080px) {
+      .header-extras > * {
+        padding-left: 1.5rem; } }
   .header-extras .translate-icon {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-    color: #282460;
-    cursor: pointer; }
+    padding: 0;
+    cursor: pointer;
+    position: relative; }
     .header-extras .translate-icon i {
       padding: 0 2px; }
       @media all and (min-width: 1080px) {
         .header-extras .translate-icon i {
           font-size: 1.875rem; } }
-  .header-extras #google_language_translator {
-    display: none;
-    position: absolute;
-    top: 60px;
-    right: 20px; }
-    @media all and (min-width: 1080px) {
-      .header-extras #google_language_translator {
-        top: 100px;
-        right: 300px; } }
-  @media all and (min-width: 1080px) {
-    .header-extras .search-btn {
-      display: block; } }
-  .header-extras .search-form {
+    .header-extras .translate-icon #google_language_translator {
+      display: none;
+      position: absolute;
+      top: 2.445rem;
+      right: -20px; }
+  .header-extras .search-btn {
     display: none; }
+    .header-extras .search-btn:hover {
+      color: #fab0bc; }
+    @media all and (min-width: 1080px) {
+      .header-extras .search-btn {
+        display: block;
+        -ms-flex-item-align: baseline;
+            align-self: baseline; } }
+    .header-extras .search-btn .search-form {
+      position: absolute;
+      top: 2.445rem;
+      right: 0; }
+  .header-extras .translate-icon,
+  .header-extras .search-btn {
+    cursor: pointer;
+    position: relative; }
+    .header-extras .translate-icon:hover,
+    .header-extras .search-btn:hover {
+      color: #fab0bc; }
   .header-extras .btn-open {
     margin-left: 0.75rem; }
     @media all and (min-width: 1080px) {
