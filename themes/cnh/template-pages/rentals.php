@@ -32,10 +32,20 @@ get_header(); ?>
           foreach ( $rooms as $room ): ?>
             <div class="carousel-cell">
               <h2 class="carousel-rental-title"><?php echo $room['room_title']; ?></h2>
+              <div>
               <img src="<?php echo $room['room_image']; ?>" />
-              <?php echo $room['room_measurements']; ?>
+                </div>
+            <div class="room-stats">
+                <div>
+                      <?php echo $room['room_measurements']; ?>
+                </div>
+                <div>
               <?php echo $room['room_capacity']; ?>
+                </div>
+                <div>
               <?php echo $room['room_features']; ?>
+                </div>
+            </div>
             </div>
           <?php endforeach; ?>
         </div><!-- / Flickity Carousel -->

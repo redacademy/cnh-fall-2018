@@ -1,3 +1,12 @@
 .is-selected {
-  background: black;
+  background: green;
+}
+
+.room-image {
+  width: 100%;
+}
+
+.room-stats {
+  display: flex;
+  flex-direction: column;
 }
