@@ -987,7 +987,17 @@ object {
   .page-template-taxonomy-service_type .service-info div h2,
   .page-template-taxonomy-program_type .program-info div h2,
   .page-template-taxonomy-program_type .service-info div h2 {
-    margin: 0; }
+    margin-bottom: 0; }
+    @media all and (min-width: 600px) {
+      .page-template-template-pages-serv .program-info div h2,
+      .page-template-template-pages-serv .service-info div h2,
+      .page-template-template-pages-prog .program-info div h2,
+      .page-template-template-pages-prog .service-info div h2,
+      .page-template-taxonomy-service_type .program-info div h2,
+      .page-template-taxonomy-service_type .service-info div h2,
+      .page-template-taxonomy-program_type .program-info div h2,
+      .page-template-taxonomy-program_type .service-info div h2 {
+        margin: 0; } }
   .page-template-template-pages-serv .program-info div h3,
   .page-template-template-pages-serv .service-info div h3,
   .page-template-template-pages-prog .program-info div h3,
@@ -2545,3 +2555,35 @@ iframe.maps {
 
 .is-selected {
   background: black; }
+
+/*--------------------------------------------------------------
+# Page No Sidebar Template  
+--------------------------------------------------------------*/
+.page-template-page-no-sidebar .site-content .entry-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media all and (min-width: 1080px) {
+    .page-template-page-no-sidebar .site-content .entry-content h2,
+    .page-template-page-no-sidebar .site-content .entry-content p {
+      width: 60%;
+      margin: 0 0 1.5rem 0;
+      text-align: left; } }
+  .page-template-page-no-sidebar .site-content .entry-content h2 {
+    margin-bottom: 0; }
+  @media all and (min-width: 1080px) {
+    .page-template-page-no-sidebar .site-content .entry-content .all-button {
+      height: 54px;
+      width: 198px; } }
+  .page-template-page-no-sidebar .site-content .entry-content .all-button a {
+    font-size: 1.25rem;
+    line-height: 1.5; }
+  .page-template-page-no-sidebar .site-content .entry-content .has-2-columns {
+    padding-top: 30px; }

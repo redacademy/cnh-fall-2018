@@ -1,0 +1,50 @@
+/*--------------------------------------------------------------
+# Page No Sidebar Template  
+--------------------------------------------------------------*/
+.page-template-page-no-sidebar {
+  .site-content {
+    .entry-content {
+      @include flex(column, null, center);
+      // display: flex;
+      // flex-direction: column;
+      // margin: 0 2.4rem;
+
+      // @include desktop {
+      //   text-align: left;
+      // }
+
+      h2,
+      p {
+        @include desktop {
+          width: 60%;
+          margin: 0 0 $base__space-unit 0;
+          text-align: left;
+
+          .wp-block-image figure {
+            // margin-left: 0;
+          }
+        }
+      }
+
+      h2 {
+        margin-bottom: 0;
+      }
+
+      .all-button {
+        @include desktop {
+          height: 54px;
+          width: 198px;
+        }
+
+        a {
+          font-size: $size__body;
+          line-height: $font__line-height-body;
+        }
+      }
+
+      .has-2-columns {
+        padding-top: 30px;
+      }
+    }
+  }
+}
