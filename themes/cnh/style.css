@@ -1397,9 +1397,15 @@ footer {
     margin-top: 0; }
   .home .home-subtitle {
     display: none; }
+<<<<<<< HEAD
+  .frontpage-content {
+    margin-top: 12%; }
+  .we-are-a-place {
+=======
   .home .frontpage-content {
     margin-top: 5rem; }
   .home .we-are-a-place {
+>>>>>>> 8e94368c76d58ca34e30c61d94b9532c7bbc71e2
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1427,9 +1433,15 @@ footer {
     text-transform: none;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
+<<<<<<< HEAD
+  .frontpage-content {
+    margin-top: 18%; }
+  .instalame-container .photo:last-child {
+=======
   .home .frontpage-content {
     margin-top: 15rem; }
   .home .instalame-container .photo:last-child {
+>>>>>>> 8e94368c76d58ca34e30c61d94b9532c7bbc71e2
     display: initial;
     margin-left: 1rem;
     border-radius: 10px; }
@@ -1439,11 +1451,20 @@ footer {
 @media all and (min-width: 1080px) {
   .home .entry-header {
     height: 475px; }
+<<<<<<< HEAD
+    .home .entry-header img {
+      -webkit-transform: translateY(-23%);
+              transform: translateY(-23%);
+      z-index: -1; }
+  .home-title {
+    top: 120px;
+=======
   .home .home-title {
     top: 55px;
+>>>>>>> 8e94368c76d58ca34e30c61d94b9532c7bbc71e2
     width: 65%;
     left: 50%;
-    font-size: 55px;
+    font-size: 65px;
     text-transform: none;
     line-height: 65px;
     letter-spacing: 3.66px;
@@ -1453,16 +1474,22 @@ footer {
   .home .home-subtitle {
     display: initial;
     position: absolute;
-    top: 210px;
+    top: 275px;
     left: 50%;
-    font-size: 25px;
+    font-size: 30px;
     margin-top: .5rem;
     text-transform: none;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
+<<<<<<< HEAD
+  .frontpage-content {
+    margin-top: 11rem; }
+  .upcoming-events-title, .instagram-updates-title, .we-are-a-place-title {
+=======
   .home .upcoming-events-title,
   .home .instagram-updates-title,
   .home .we-are-a-place-title {
+>>>>>>> 8e94368c76d58ca34e30c61d94b9532c7bbc71e2
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
