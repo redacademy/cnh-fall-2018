@@ -137,12 +137,12 @@
     };
     spectra.init();
 
-    const $contentArea = $('.page-template .site-content .content-area');
+    // const $contentArea = $('.page-template .site-content .content-area');
 
-    // Add full-width
-    function fullWidth() {
-      $contentArea.addClass('full-width');
-    }
+    // // Add full-width
+    // function fullWidth() {
+    //   $contentArea.addClass('full-width');
+    // }
 
     // Create the dropdown base
     if ($('.widget_nav_menu').length) {
@@ -175,9 +175,11 @@
 
         window.location.replace(selected);
       }); // end of linking
-    } else {
-      // style pgs w/o sidebars as full-width
-      fullWidth();
-    } //end of if statement
+    } // end of if stmt
+
+    // else {
+    //   // style pgs w/o sidebars as full-width
+    //   fullWidth();
+    // } //end of if statement
   }); // end of doc ready
 })(jQuery);

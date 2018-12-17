@@ -947,13 +947,6 @@ object {
       margin: 0;
       padding: 0; }
 
-.home .site-content .content-area {
-  -webkit-box-flex: 2;
-      -ms-flex: 2 0 100%;
-          flex: 2 0 100%;
-  max-width: 100%;
-  border: 0; }
-
 /* programs */
 .page-template-template-pages-serv .program-info .entry-title,
 .page-template-template-pages-serv .service-info .entry-title,
@@ -1090,6 +1083,24 @@ object {
     .page-template-taxonomy-program_type .content-area .entry-content {
       padding: 0; } }
 
+/* Home */
+/* Page Template No Sidebar */
+.home .site-content .content-area,
+.page-template-page-no-sidebar .site-content .content-area {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 0 100%;
+          flex: 2 0 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
+  text-align: center;
+  padding: 0 3rem; }
+  @media all and (min-width: 600px) {
+    .home .site-content .content-area,
+    .page-template-page-no-sidebar .site-content .content-area {
+      padding: 0 1.5rem; } }
+
 @media all and (min-width: 600px) {
   .register-how,
   .register-call {
@@ -1219,14 +1230,14 @@ footer {
 .home .site-content {
   width: 100%; }
 
-.entry-header {
+.home .entry-header {
   height: 190px; }
-  .entry-header img {
+  .home .entry-header img {
     -webkit-transform: translateY(-39%);
             transform: translateY(-39%);
     z-index: -1; }
 
-.home-title {
+.home .home-title {
   position: absolute;
   top: 30px;
   width: 75%;
@@ -1237,10 +1248,10 @@ footer {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%); }
 
-.home-subtitle {
+.home .home-subtitle {
   display: none; }
 
-.wp-block-column .wp-block-image {
+.home .wp-block-column .wp-block-image {
   width: 280px;
   height: 56px;
   display: -webkit-box;
@@ -1249,24 +1260,24 @@ footer {
   margin: auto;
   margin-bottom: 2.5rem; }
 
-.wp-block-column img {
+.home .wp-block-column img {
   width: 56px;
   margin-right: 1.5rem; }
 
-.wp-block-column figcaption {
+.home .wp-block-column figcaption {
   text-align: left;
   letter-spacing: .85pt;
   font-size: 15px;
   line-height: 18pt;
   margin-top: 0; }
 
-.wp-block-column:first-child {
+.home .wp-block-column:first-child {
   margin-right: 0; }
 
-.we-are-a-place-buttons {
+.home .we-are-a-place-buttons {
   display: none !important; }
 
-.instalame-container {
+.home .instalame-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1274,16 +1285,18 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100vw; }
-  .instalame-container .photo {
+  .home .instalame-container .photo {
     width: 280px;
     height: auto; }
-  .instalame-container .photo:last-child {
+  .home .instalame-container .photo:last-child {
     display: none; }
 
-.follow-box {
+.home .follow-box {
   display: none; }
 
-.upcoming-events-title, .instagram-updates-title, .we-are-a-place-title {
+.home .upcoming-events-title,
+.home .instagram-updates-title,
+.home .we-are-a-place-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1297,11 +1310,11 @@ footer {
   margin-bottom: 1.5rem;
   letter-spacing: 1.05; }
 
-.upcoming-events {
+.home .upcoming-events {
   width: 275px;
   margin: auto; }
 
-.date {
+.home .date {
   background-color: #282460;
   border-radius: 10px 0 0 10px;
   width: 40%;
@@ -1315,16 +1328,16 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   text-transform: uppercase; }
-  .date .date-text-container {
+  .home .date .date-text-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-  .date .day {
+  .home .date .day {
     display: none; }
-  .date p {
+  .home .date p {
     margin-bottom: 1.5rem;
     margin: auto;
     width: 40%;
@@ -1332,20 +1345,20 @@ footer {
     font-family: 'Lato-Black';
     text-align: center; }
 
-.eventimg {
+.home .eventimg {
   line-height: 0; }
-  .eventimg img {
+  .home .eventimg img {
     height: 100%;
     border-radius: 0 10px 10px 0; }
 
-.singular-event {
+.home .singular-event {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 105px;
   margin-top: 1.375rem; }
 
-.location-box {
+.home .location-box {
   height: 30px;
   position: relative;
   bottom: 29%;
@@ -1358,14 +1371,14 @@ footer {
   color: white;
   background-color: #282460b9;
   border-radius: 0 0 10px 0; }
-  .location-box a {
+  .home .location-box a {
     position: relative;
     top: 15px;
     color: white; }
-    .location-box a:visited {
+    .home .location-box a:visited {
       color: inherit; }
 
-.hover-details {
+.home .hover-details {
   display: none;
   padding: 2rem;
   border: 1px solid #282460;
@@ -1373,7 +1386,7 @@ footer {
   margin-left: 0;
   background-color: #ffffff98; }
 
-.view-calendar-container {
+.home .view-calendar-container {
   margin-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1382,7 +1395,7 @@ footer {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.view-calendar {
+.home .view-calendar {
   padding-top: .75rem;
   padding-bottom: .75rem;
   padding-left: 1.25rem;
@@ -1393,14 +1406,14 @@ footer {
   text-transform: uppercase;
   font-family: "Lato-Black"; }
 
-.frontpage-buttons {
+.home .frontpage-buttons {
   margin: 3rem; }
-  .frontpage-buttons .senior-programs-button {
+  .home .frontpage-buttons .senior-programs-button {
     margin-top: 2rem;
     margin-bottom: 2rem; }
 
 @media all and (min-width: 600px) {
-  .home-title {
+  .home .home-title {
     top: 25px;
     width: 65%;
     left: 50%;
@@ -1412,18 +1425,18 @@ footer {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     margin-top: 0; }
-  .home-subtitle {
+  .home .home-subtitle {
     display: none; }
-  .frontpage-content {
+  .home .frontpage-content {
     margin-top: 5rem; }
-  .we-are-a-place {
+  .home .we-are-a-place {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; } }
 
 @media all and (min-width: 800px) {
-  .home-title {
+  .home .home-title {
     top: 20px;
     left: 50%;
     font-size: 40px;
@@ -1434,7 +1447,7 @@ footer {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     margin-top: 0; }
-  .home-subtitle {
+  .home .home-subtitle {
     display: initial;
     position: absolute;
     top: 135px;
@@ -1444,19 +1457,19 @@ footer {
     text-transform: none;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
-  .frontpage-content {
+  .home .frontpage-content {
     margin-top: 15rem; }
-  .instalame-container .photo:last-child {
+  .home .instalame-container .photo:last-child {
     display: initial;
     margin-left: 1rem;
     border-radius: 10px; }
-  .wp-block-image {
+  .home .wp-block-image {
     width: 600px; } }
 
 @media all and (min-width: 1080px) {
-  .entry-header {
+  .home .entry-header {
     height: 475px; }
-  .home-title {
+  .home .home-title {
     top: 55px;
     width: 65%;
     left: 50%;
@@ -1467,7 +1480,7 @@ footer {
     margin-bottom: 1rem;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
-  .home-subtitle {
+  .home .home-subtitle {
     display: initial;
     position: absolute;
     top: 210px;
@@ -1477,7 +1490,9 @@ footer {
     text-transform: none;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
-  .upcoming-events-title, .instagram-updates-title, .we-are-a-place-title {
+  .home .upcoming-events-title,
+  .home .instagram-updates-title,
+  .home .we-are-a-place-title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1487,12 +1502,12 @@ footer {
     color: #282460;
     font-family: "Lato-Black";
     text-transform: uppercase; }
-  .wp-block-column {
+  .home .wp-block-column {
     height: auto; }
-    .wp-block-column img {
+    .home .wp-block-column img {
       width: 140px;
       margin: auto; }
-    .wp-block-column .wp-block-image {
+    .home .wp-block-column .wp-block-image {
       display: inline-block;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1502,12 +1517,12 @@ footer {
           -ms-flex-direction: column;
               flex-direction: column;
       height: auto; }
-    .wp-block-column .wp-block-column img {
+    .home .wp-block-column .wp-block-column img {
       width: 140px; }
-    .wp-block-column figcaption {
+    .home .wp-block-column figcaption {
       text-align: center;
       margin-bottom: 0; }
-  .we-are-a-place {
+  .home .we-are-a-place {
     width: 1170px;
     margin: auto;
     margin-bottom: 6rem;
@@ -1515,31 +1530,33 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row; }
-  .we-are-a-place-buttons {
+  .home .we-are-a-place-buttons {
     display: inline !important;
     position: relative;
     left: 20%; }
-    .we-are-a-place-buttons .wp-block-button__link {
+    .home .we-are-a-place-buttons .wp-block-button__link {
       font-size: 16px;
       width: 195px;
       border-radius: 10px; }
-  .upcoming-events-title, .instagram-updates-title, .we-are-a-place-title {
+  .home .upcoming-events-title,
+  .home .instagram-updates-title,
+  .home .we-are-a-place-title {
     font-size: 2.8125rem; }
-  .instalame-container {
+  .home .instalame-container {
     width: 1100px;
     margin: auto;
     margin-top: 3.125rem; }
-    .instalame-container .photo {
+    .home .instalame-container .photo {
       width: 456px;
       height: 456px; }
-    .instalame-container .photo:last-child {
+    .home .instalame-container .photo:last-child {
       display: initial;
       margin-left: 2rem; }
-    .instalame-container img {
+    .home .instalame-container img {
       width: 100%;
       height: 100%;
       border-radius: 2%; }
-  .follow-box {
+  .home .follow-box {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1547,21 +1564,21 @@ footer {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
-    .follow-box .follow-content {
+    .home .follow-box .follow-content {
       margin-top: 3.25rem;
       display: -webkit-inline-box;
       display: -ms-inline-flexbox;
       display: inline-flex;
       height: 64px; }
-      .follow-box .follow-content img {
+      .home .follow-box .follow-content img {
         height: 64px;
         width: 64px;
         background-color: #fab568;
         border-radius: 100px;
         margin-right: 1.5rem; }
-        .follow-box .follow-content img:last-of-type {
+        .home .follow-box .follow-content img:last-of-type {
           margin-right: 0; }
-  .follow-us {
+  .home .follow-us {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1571,43 +1588,43 @@ footer {
     text-transform: uppercase;
     margin: auto;
     margin-right: 1.5rem; }
-  .upcoming-events {
+  .home .upcoming-events {
     width: 1170px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 6rem; }
-  .hover-details {
+  .home .hover-details {
     font-size: 1.25rem; }
-    .hover-details .hover-title {
+    .home .hover-details .hover-title {
       font-weight: bold; }
-  .singular-event {
+  .home .singular-event {
     height: 258px;
     width: 555px; }
-    .singular-event:first-of-type {
+    .home .singular-event:first-of-type {
       margin-right: 2rem; }
-      .singular-event:first-of-type:hover .eventimg {
+      .home .singular-event:first-of-type:hover .eventimg {
         display: none; }
-      .singular-event:first-of-type:hover .hover-details {
+      .home .singular-event:first-of-type:hover .hover-details {
         display: block; }
-    .singular-event:last-of-type {
+    .home .singular-event:last-of-type {
       margin-right: 2rem; }
-      .singular-event:last-of-type:hover .eventimg {
+      .home .singular-event:last-of-type:hover .eventimg {
         display: none; }
-      .singular-event:last-of-type:hover .hover-details {
+      .home .singular-event:last-of-type:hover .hover-details {
         display: block; }
-  .date {
+  .home .date {
     width: 30%;
     font-size: 2.5rem; }
-    .date p {
+    .home .date p {
       width: 60%; }
-    .date .date-text-container {
+    .home .date .date-text-container {
       margin-top: 3.5rem;
       display: block; }
-    .date .date-text {
+    .home .date .date-text {
       line-height: 3rem;
       letter-spacing: 2.25px; }
-    .date .day {
+    .home .date .day {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1619,16 +1636,16 @@ footer {
               justify-content: center;
       margin-bottom: .5rem;
       letter-spacing: 1px; }
-  .location-box {
+  .home .location-box {
     height: 65px;
     bottom: 65px;
     font-size: 1.75rem; }
-    .location-box a {
+    .home .location-box a {
       position: initial;
       margin: auto; }
-  .view-calendar-container {
+  .home .view-calendar-container {
     display: none; }
-  .frontpage-buttons {
+  .home .frontpage-buttons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1637,7 +1654,9 @@ footer {
             justify-content: center;
     margin-bottom: 9.5rem;
     margin-top: 6.5635rem; }
-    .frontpage-buttons .childcare-button, .frontpage-buttons .senior-programs-button, .frontpage-buttons .donate-button {
+    .home .frontpage-buttons .childcare-button,
+    .home .frontpage-buttons .senior-programs-button,
+    .home .frontpage-buttons .donate-button {
       margin: auto;
       margin-left: 1rem;
       margin-right: 1rem;
@@ -1976,6 +1995,9 @@ footer {
     padding: 0 !important;
     text-align: center; } }
 
+.goog-te-banner-frame {
+  display: none; }
+
 .hfeed {
   background: no-repeat bottom url("../../assets/images/Wave_Background.png");
   background-size: 100% 40%; }
@@ -2210,7 +2232,7 @@ li .menu-item a {
       @media all and (min-width: 1080px) {
         .header-extras .translate-icon #google_language_translator {
           top: 2.445rem;
-          right: -105px; } }
+          right: -108px; } }
   .header-extras .search-btn {
     display: none; }
     .header-extras .search-btn:hover {

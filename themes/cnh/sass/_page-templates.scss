@@ -107,13 +107,13 @@
   }
 }
 
-.home .site-content {
-  .content-area {
-    flex: 2 0 100%;
-    max-width: 100%;
-    border: 0;
-  }
-}
+// .home .site-content {
+//   .content-area {
+//     flex: 2 0 100%;
+//     max-width: 100%;
+//     border: 0;
+//   }
+// }
 
 // TODO: add program and service type children pages
 /* programs */
@@ -195,6 +195,25 @@
 
       @include tablet {
         padding: 0;
+      }
+    }
+  }
+}
+
+/* Home */
+/* Page Template No Sidebar */
+.home,
+.page-template-page-no-sidebar {
+  .site-content {
+    .content-area {
+      flex: 2 0 100%;
+      align-items: center;
+      max-width: 100%;
+      text-align: center;
+      padding: 0 $base__space-unit*2;
+
+      @include tablet {
+        padding: 0 $base__space-unit;
       }
     }
   }
