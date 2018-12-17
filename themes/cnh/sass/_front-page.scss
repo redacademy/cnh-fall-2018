@@ -1,9 +1,8 @@
 .home {
   .site-content {
     width: 100%;
-  }
-
-  .entry-header {
+}
+.home .entry-header {
     height: 190px;
 
     img {
@@ -442,6 +441,9 @@
       .hover-title {
         font-weight: bold;
       }
+      .hover-description {
+        text-overflow: ellipsis;
+      }
     }
 
     .singular-event {
@@ -536,6 +538,6 @@
         text-transform: uppercase;
       }
     }
-
   }
+  
 }

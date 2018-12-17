@@ -552,7 +552,7 @@ textarea {
 a {
   color: #282460; }
   a:visited {
-    color: #282460; }
+    color: inherit; }
   a:hover, a:focus, a:active {
     color: #282460; }
   a:focus {
@@ -1060,17 +1060,38 @@ object {
 /* Home */
 /* Page Template No Sidebar */
 .home .site-content .content-area,
-.page-template-page-no-sidebar .site-content .content-area {
+.page-template-page-no-sidebar .site-content .content-area,
+.page-template-volunteer .site-content .content-area,
+.page-template-career .site-content .content-area {
   -webkit-box-flex: 2;
       -ms-flex: 2 0 100%;
           flex: 2 0 100%;
   max-width: 100%;
-  text-align: center;
   padding: 0 3rem; }
   @media all and (min-width: 600px) {
     .home .site-content .content-area,
-    .page-template-page-no-sidebar .site-content .content-area {
+    .page-template-page-no-sidebar .site-content .content-area,
+    .page-template-volunteer .site-content .content-area,
+    .page-template-career .site-content .content-area {
       padding: 0 1.5rem; } }
+
+.home .site-content .content-area,
+.page-template-page-no-sidebar .site-content .content-area {
+  text-align: center; }
+
+.page-template-volunteer .site-content .content-area,
+.page-template-career .site-content .content-area,
+.search .site-content .content-area {
+  text-align: left; }
+  @media all and (min-width: 1080px) {
+    .page-template-volunteer .site-content .content-area,
+    .page-template-career .site-content .content-area,
+    .search .site-content .content-area {
+      max-width: 70%;
+      margin: 0 auto; } }
+
+.search h2 {
+  font-size: 1.875rem; }
 
 @media all and (min-width: 600px) {
   .register-how,
@@ -1120,7 +1141,10 @@ footer {
       color: #fab0bc; }
 
 .widget_text {
-  margin-bottom: .5rem; }
+  margin-bottom: .5rem;
+  height: 30px;
+  position: relative;
+  top: -25px; }
 
 .alignnone {
   width: 40px;
@@ -1131,7 +1155,8 @@ footer {
   margin: .5rem;
   font-size: 1.25rem;
   font-family: "Lato-Regular";
-  color: #fff; }
+  color: #fff;
+  text-transform: inherit; }
 
 .joyce-phonenumber, .annex-phonenumber {
   margin-bottom: 1rem; }
@@ -1148,11 +1173,14 @@ footer {
     padding: 0;
     text-align: left;
     margin-bottom: 1rem;
-    margin-top: .625rem; }
+    margin-top: 1rem; }
   footer img {
     margin-top: 0; }
   .widget_text {
-    margin-bottom: 0; }
+    height: 20px;
+    position: relative;
+    left: -332px;
+    top: 95px; }
   .desktop-footer-locations {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1201,9 +1229,9 @@ footer {
 .home .site-content {
   width: 100%; }
 
-.home .entry-header {
+.home .home .entry-header {
   height: 190px; }
-  .home .entry-header img {
+  .home .home .entry-header img {
     -webkit-transform: translateY(-39%);
             transform: translateY(-39%);
     z-index: -1; }
@@ -1467,6 +1495,21 @@ footer {
             transform: translateX(-50%); }
   .home .frontpage-content {
     margin-top: 11rem; }
+<<<<<<< HEAD
+  .home .upcoming-events-title, .home .instagram-updates-title, .home .we-are-a-place-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #282460;
+    font-family: "Lato-Black";
+    text-transform: uppercase; }
+  .home .upcoming-events-title,
+  .home .instagram-updates-title,
+  .home .we-are-a-place-title {
+=======
   .home .upcoming-events-title,
   .home .instagram-updates-title,
   .home .we-are-a-place-title {
@@ -1482,6 +1525,7 @@ footer {
   .home .upcoming-events-title,
   .home .instagram-updates-title,
   .home .we-are-a-place-title {
+>>>>>>> 2a915a3f839da03b63fdb7cafb41c93d953bd0ff
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1587,6 +1631,8 @@ footer {
     font-size: 1.25rem; }
     .home .hover-details .hover-title {
       font-weight: bold; }
+    .home .hover-details .hover-description {
+      text-overflow: ellipsis; }
   .home .singular-event {
     height: 258px;
     width: 555px; }
@@ -1831,8 +1877,12 @@ footer {
     margin: 0; } }
 
 .btn-sm {
-  height: 55px;
-  width: 200px; }
+  height: 50px;
+  width: 198px;
+  padding: 0;
+  margin: 0; }
+  .btn-sm a {
+    font-size: 1rem; }
 
 /*--------------------------------------------------------------
 # Side Menu
@@ -1998,7 +2048,7 @@ a {
   a:hover {
     color: #282460; }
   a:visited {
-    color: #282460; }
+    color: inherit; }
 
 .wp-block-button:hover {
   opacity: .5; }

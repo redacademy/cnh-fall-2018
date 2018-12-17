@@ -215,18 +215,49 @@
 /* Home */
 /* Page Template No Sidebar */
 .home,
-.page-template-page-no-sidebar {
+.page-template-page-no-sidebar,
+.page-template-volunteer,
+.page-template-career {
   .site-content {
     .content-area {
       flex: 2 0 100%;
       max-width: 100%;
-      text-align: center;
       padding: 0 $base__space-unit*2;
 
       @include tablet {
         padding: 0 $base__space-unit;
       }
     }
+  }
+}
+
+.home,
+.page-template-page-no-sidebar {
+  .site-content {
+    .content-area {
+      text-align: center;
+    }
+  }
+}
+
+.page-template-volunteer,
+.page-template-career,
+.search {
+  .site-content {
+    .content-area {
+      text-align: left;
+
+      @include desktop {
+        max-width: 70%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.search {
+  h2 {
+    font-size: $size__subtitle;
   }
 }
 

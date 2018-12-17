@@ -78,7 +78,10 @@ function cnh_widgets_init() {
 	
 }
 add_action( 'widgets_init', 'cnh_widgets_init' );
-
+function custom_excerpt_length( $length ) {
+	return 10;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 /**
  * Filter the stylesheet_uri to output the minified CSS file.
  */

@@ -100,8 +100,7 @@
     const $searchForm = $('.search-btn .search-form');
     const $searchField = $('.search-btn .search-field');
 
-    $searchBtn.on('click', function(event) {
-      event.preventDefault();
+    $searchBtn.on('click', function() {
       $searchForm.fadeToggle();
       $searchField.focus();
     });
