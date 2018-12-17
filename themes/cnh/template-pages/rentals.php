@@ -10,31 +10,30 @@ get_header(); ?>
 
 <div id="primary" class="content-area">
   <main id="main" class="site-main" role="main">
-
-
-
+  
     <div class="rooms-carousel-container">
         <?php
         
         //TODO use if statement to check if field is not empty
     
-         $rooms = CFS()->get( 'rental_room' ); // get CFS loop for rooms  ?>
+         $rooms = CFS()->get( 'rental_room' ); // get CFS loop for rooms   ?>
         <div>
           <ul class="rooms-carousel-list">
             <?php foreach ( $rooms as $room ): ?>
               <li><?php echo $room['room_title']; ?></li>
             <?php endforeach; ?>
           </ul>
-        </div>
-        <!-- Flickity Carousel -->
-        <div class="main-carousel">
+          </div>
           <?php
           foreach ( $rooms as $room ): ?>
-            <div class="carousel-cell">
+          <div class="room-wrapper">
               <h2 class="carousel-rental-title"><?php echo $room['room_title']; ?></h2>
-              <div>
-              <img src="<?php echo $room['room_image']; ?>" />
-                </div>
+              <div class="main-carousel">            
+              <div class="carousel-cell">
+                <img src="<?php echo $room['image_loop'][0]['room_image']; ?>" />
+              </div>
+        
+              </div>
             <div class="room-stats">
                 <div class="room-info">
                       <?php echo $room['room_measurements']; ?>
@@ -49,7 +48,7 @@ get_header(); ?>
             </div>
           <?php endforeach; ?>
         </div><!-- / Flickity Carousel -->
-    </div><!-- / rooms-carousel-container -->
+  
 
 
 

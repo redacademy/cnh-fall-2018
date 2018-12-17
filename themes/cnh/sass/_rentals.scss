@@ -1,49 +1,23 @@
 li.is-selected {
   background: $color__highlight;
 }
-
-.room-image {
-  width: 100%;
-}
-
-.room-stats {
-  display: flex;
-  flex-direction: column;
-  background: $color__main;
-  color: #fff;
-  padding-left: 20px;
-  @include tablet {
-    position: absolute;
-    bottom: 40px;
-    right: 0;
-    opacity: 0.5;
-  }
-}
-
 .rooms-carousel-container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   @include tablet {
     justify-content: space-around;
+    flex-direction: row;
   }
 }
 
-.rooms-carousel-list {
-  display: none;
-  margin: 0;
-  padding-left: 0;
-  @include tablet {
-    display: inline;
-    padding-right: 30px;
-  }
-}
-
-.main-carousel {
-  width: 75%;
+.room-stats {
+  background: $color__main;
+  color: #ffffff;
 }
 
 .carousel-rental-title {
-  background: none;
+  font-size: 1rem;
   @include tablet {
     display: none;
   }

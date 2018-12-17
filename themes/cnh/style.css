@@ -2575,53 +2575,32 @@ iframe.maps {
 li.is-selected {
   background: #fab0bc; }
 
-.room-image {
-  width: 100%; }
-
-.room-stats {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background: #282460;
-  color: #fff;
-  padding-left: 20px; }
-  @media all and (min-width: 600px) {
-    .room-stats {
-      position: absolute;
-      bottom: 40px;
-      right: 0;
-      opacity: 0.5; } }
-
 .rooms-carousel-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
   @media all and (min-width: 600px) {
     .rooms-carousel-container {
       -ms-flex-pack: distribute;
-          justify-content: space-around; } }
+          justify-content: space-around;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
 
-.rooms-carousel-list {
-  display: none;
-  margin: 0;
-  padding-left: 0; }
-  @media all and (min-width: 600px) {
-    .rooms-carousel-list {
-      display: inline;
-      padding-right: 30px; } }
-
-.main-carousel {
-  width: 75%; }
+.room-stats {
+  background: #282460;
+  color: #ffffff; }
 
 .carousel-rental-title {
-  background: none; }
+  font-size: 1rem; }
   @media all and (min-width: 600px) {
     .carousel-rental-title {
       display: none; } }
