@@ -139,7 +139,8 @@
   transition: all 0.3s ease;
 }
 
-.accordion-toggle div:hover.active {
+.side-link a.active,
+.accordion-toggle a:hover.active {
   color: $color__main;
 }
 

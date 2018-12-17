@@ -145,8 +145,10 @@
     // }
 
     // Create the dropdown base
+    // const $subtitle = $('.entry-subtitle');
+
     if ($('.widget_nav_menu').length) {
-      $('<select />').appendTo('.entry-title');
+      $('<select />').appendTo('.entry-subtitle');
       // $('.page-template .site-content .content-area').css({
       //   'flex': '2 0 100%',
       //   'max-width': '100%'
@@ -157,7 +159,7 @@
         selected: 'selected',
         value: '',
         text: 'Go to...'
-      }).appendTo('.entry-title select');
+      }).appendTo('.entry-subtitle select');
 
       // Populate dropdown with menu items
       $('.widget-sidebar a').each(function () {
@@ -165,12 +167,12 @@
         $('<option />', {
           value: el.attr('href'),
           text: el.text()
-        }).appendTo('.entry-title select');
+        }).appendTo('.entry-subtitle select');
       }); // end of dropdown nav
 
-      $('.entry-title select').selectric();
+      $('.entry-subtitle select').selectric();
 
-      $('.entry-title select').on('change', function () {
+      $('.entry-subtitle select').on('change', function () {
         let selected = $(this).val();
 
         window.location.replace(selected);
