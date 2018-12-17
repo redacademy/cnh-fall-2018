@@ -552,7 +552,7 @@ textarea {
 a {
   color: #282460; }
   a:visited {
-    color: #282460; }
+    color: inherit; }
   a:hover, a:focus, a:active {
     color: #282460; }
   a:focus {
@@ -1119,7 +1119,10 @@ footer {
       color: #fab0bc; }
 
 .widget_text {
-  margin-bottom: .5rem; }
+  margin-bottom: .5rem;
+  height: 30px;
+  position: relative;
+  top: -25px; }
 
 .alignnone {
   width: 40px;
@@ -1130,7 +1133,8 @@ footer {
   margin: .5rem;
   font-size: 1.25rem;
   font-family: "Lato-Regular";
-  color: #fff; }
+  color: #fff;
+  text-transform: inherit; }
 
 .joyce-phonenumber, .annex-phonenumber {
   margin-bottom: 1rem; }
@@ -1147,11 +1151,14 @@ footer {
     padding: 0;
     text-align: left;
     margin-bottom: 1rem;
-    margin-top: .625rem; }
+    margin-top: 1rem; }
   footer img {
     margin-top: 0; }
   .widget_text {
-    margin-bottom: 0; }
+    height: 20px;
+    position: relative;
+    left: -332px;
+    top: 95px; }
   .desktop-footer-locations {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1200,9 +1207,9 @@ footer {
 .home .site-content {
   width: 100%; }
 
-.home .entry-header {
+.home .home .entry-header {
   height: 190px; }
-  .home .entry-header img {
+  .home .home .entry-header img {
     -webkit-transform: translateY(-39%);
             transform: translateY(-39%);
     z-index: -1; }
@@ -1397,15 +1404,9 @@ footer {
     margin-top: 0; }
   .home .home-subtitle {
     display: none; }
-<<<<<<< HEAD
-  .frontpage-content {
-    margin-top: 12%; }
-  .we-are-a-place {
-=======
   .home .frontpage-content {
-    margin-top: 5rem; }
+    margin-top: 12%; }
   .home .we-are-a-place {
->>>>>>> 8e94368c76d58ca34e30c61d94b9532c7bbc71e2
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1433,15 +1434,9 @@ footer {
     text-transform: none;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
-<<<<<<< HEAD
-  .frontpage-content {
-    margin-top: 18%; }
-  .instalame-container .photo:last-child {
-=======
   .home .frontpage-content {
-    margin-top: 15rem; }
+    margin-top: 18%; }
   .home .instalame-container .photo:last-child {
->>>>>>> 8e94368c76d58ca34e30c61d94b9532c7bbc71e2
     display: initial;
     margin-left: 1rem;
     border-radius: 10px; }
@@ -1449,19 +1444,14 @@ footer {
     width: 600px; } }
 
 @media all and (min-width: 1080px) {
-  .home .entry-header {
+  .home .home .entry-header {
     height: 475px; }
-<<<<<<< HEAD
-    .home .entry-header img {
+    .home .home .entry-header img {
       -webkit-transform: translateY(-23%);
               transform: translateY(-23%);
       z-index: -1; }
-  .home-title {
-    top: 120px;
-=======
   .home .home-title {
-    top: 55px;
->>>>>>> 8e94368c76d58ca34e30c61d94b9532c7bbc71e2
+    top: 120px;
     width: 65%;
     left: 50%;
     font-size: 65px;
@@ -1481,15 +1471,21 @@ footer {
     text-transform: none;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
-<<<<<<< HEAD
-  .frontpage-content {
+  .home .frontpage-content {
     margin-top: 11rem; }
-  .upcoming-events-title, .instagram-updates-title, .we-are-a-place-title {
-=======
+  .home .upcoming-events-title, .home .instagram-updates-title, .home .we-are-a-place-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #282460;
+    font-family: "Lato-Black";
+    text-transform: uppercase; }
   .home .upcoming-events-title,
   .home .instagram-updates-title,
   .home .we-are-a-place-title {
->>>>>>> 8e94368c76d58ca34e30c61d94b9532c7bbc71e2
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1595,6 +1591,8 @@ footer {
     font-size: 1.25rem; }
     .home .hover-details .hover-title {
       font-weight: bold; }
+    .home .hover-details .hover-description {
+      text-overflow: ellipsis; }
   .home .singular-event {
     height: 258px;
     width: 555px; }
@@ -2006,7 +2004,7 @@ a {
   a:hover {
     color: #282460; }
   a:visited {
-    color: #282460; }
+    color: inherit; }
 
 .wp-block-button:hover {
   opacity: .5; }
