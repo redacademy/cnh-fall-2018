@@ -31,7 +31,7 @@ get_header(); ?>
           <p><?php the_content(); ?></p>
         </div><!-- .opportunity-entry-info -->
         <button class="button-yellow all-button btn-sm">
-          <a href="<?php echo CFS()->get( 'view_posting' ); ?>">View Posting</a>
+          <a href="<?php echo CFS()->get( 'view_posting' ); ?>" download="CNH-Career-Posting">View Posting</a>
         </button>
       </article><!-- .opportunity-entry -->
     <?php endforeach; wp_reset_postdata();
