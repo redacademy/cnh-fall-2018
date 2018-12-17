@@ -624,7 +624,7 @@ a {
               box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
       position: absolute;
-      top: 2.445rem;
+      top: 1.8rem;
       left: -999rem;
       z-index: 99999;
       background: #fff;
@@ -644,7 +644,7 @@ a {
         margin: 3.5px 0 0;
         font-size: 1rem; }
         .main-navigation ul ul li:first-child {
-          margin-top: 0; }
+          margin-top: 0.75rem; }
         .main-navigation ul ul li:hover > ul,
         .main-navigation ul ul li.focus > ul {
           left: 100%; }
@@ -978,7 +978,8 @@ object {
     .page-template-taxonomy-service_type .service-info div,
     .page-template-taxonomy-program_type .program-info div,
     .page-template-taxonomy-program_type .service-info div {
-      text-align: left; } }
+      text-align: left;
+      padding: 0; } }
   .page-template-template-pages-serv .program-info div h2,
   .page-template-template-pages-serv .service-info div h2,
   .page-template-template-pages-prog .program-info div h2,
@@ -1059,17 +1060,33 @@ object {
 /* Home */
 /* Page Template No Sidebar */
 .home .site-content .content-area,
-.page-template-page-no-sidebar .site-content .content-area {
+.page-template-page-no-sidebar .site-content .content-area,
+.page-template-volunteer .site-content .content-area,
+.page-template-career .site-content .content-area {
   -webkit-box-flex: 2;
       -ms-flex: 2 0 100%;
           flex: 2 0 100%;
   max-width: 100%;
-  text-align: center;
   padding: 0 3rem; }
   @media all and (min-width: 600px) {
     .home .site-content .content-area,
-    .page-template-page-no-sidebar .site-content .content-area {
+    .page-template-page-no-sidebar .site-content .content-area,
+    .page-template-volunteer .site-content .content-area,
+    .page-template-career .site-content .content-area {
       padding: 0 1.5rem; } }
+
+.home .site-content .content-area,
+.page-template-page-no-sidebar .site-content .content-area {
+  text-align: center; }
+
+.page-template-volunteer .site-content .content-area,
+.page-template-career .site-content .content-area {
+  text-align: left; }
+  @media all and (min-width: 1080px) {
+    .page-template-volunteer .site-content .content-area,
+    .page-template-career .site-content .content-area {
+      max-width: 70%;
+      margin: 0 auto; } }
 
 @media all and (min-width: 600px) {
   .register-how,
@@ -1473,6 +1490,7 @@ footer {
             transform: translateX(-50%); }
   .home .frontpage-content {
     margin-top: 11rem; }
+<<<<<<< HEAD
   .home .upcoming-events-title, .home .instagram-updates-title, .home .we-are-a-place-title {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1486,6 +1504,23 @@ footer {
   .home .upcoming-events-title,
   .home .instagram-updates-title,
   .home .we-are-a-place-title {
+=======
+  .home .upcoming-events-title,
+  .home .instagram-updates-title,
+  .home .we-are-a-place-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #282460;
+    font-family: "Lato-Black";
+    text-transform: uppercase; }
+  .home .upcoming-events-title,
+  .home .instagram-updates-title,
+  .home .we-are-a-place-title {
+>>>>>>> 2a915a3f839da03b63fdb7cafb41c93d953bd0ff
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1836,9 +1871,13 @@ footer {
   .btn-stack .wp-block-column {
     margin: 0; } }
 
-@media all and (min-width: 1080px) {
-  .btn-stack .wp-block-column {
-    margin: auto; } }
+.btn-sm {
+  height: 50px;
+  width: 198px;
+  padding: 0;
+  margin: 0; }
+  .btn-sm a {
+    font-size: 1rem; }
 
 /*--------------------------------------------------------------
 # Side Menu
@@ -2612,15 +2651,9 @@ iframe.maps {
     margin-bottom: 0; }
   .page-template-page-no-sidebar .site-content .entry-content p:last-of-type {
     margin-bottom: 4.5rem; }
-  @media all and (min-width: 1080px) {
-    .page-template-page-no-sidebar .site-content .entry-content .all-button {
-      height: 54px;
-      width: 198px; } }
   .page-template-page-no-sidebar .site-content .entry-content .all-button a {
     font-size: 1.25rem;
     line-height: 1.5; }
-  .page-template-page-no-sidebar .site-content .entry-content .wp-block-column {
-    height: 125px; }
 
 /*--------------------------------------------------------------
 # Calendar - Tribe Events
@@ -2640,7 +2673,7 @@ iframe.maps {
     font-size: 1.875rem;
     color: #282460 !important; }
     .post-type-archive-tribe_events table.tribe-events-calendar td > div h3.tribe-events-month-event-title {
-      font-size: 1.25rem !important; }
+      font-size: 1rem !important; }
   .post-type-archive-tribe_events table.tribe-events-calendar td.tribe-events-present div {
     background: #282460;
     opacity: 0.8;

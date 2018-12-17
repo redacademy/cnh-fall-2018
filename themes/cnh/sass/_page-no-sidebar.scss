@@ -40,8 +40,8 @@
 
       .all-button {
         @include desktop {
-          height: 54px;
-          width: 198px;
+          // height: 54px;
+          // width: 198px;
         }
 
         a {
@@ -55,9 +55,9 @@
         // padding-top: 30px;
       }
 
-      .wp-block-column {
-        height: 125px;
-      }
+      // .wp-block-column {
+      //   height: 125px;
+      // }
     }
   }
 }
