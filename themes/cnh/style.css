@@ -1060,17 +1060,33 @@ object {
 /* Home */
 /* Page Template No Sidebar */
 .home .site-content .content-area,
-.page-template-page-no-sidebar .site-content .content-area {
+.page-template-page-no-sidebar .site-content .content-area,
+.page-template-volunteer .site-content .content-area,
+.page-template-career .site-content .content-area {
   -webkit-box-flex: 2;
       -ms-flex: 2 0 100%;
           flex: 2 0 100%;
   max-width: 100%;
-  text-align: center;
   padding: 0 3rem; }
   @media all and (min-width: 600px) {
     .home .site-content .content-area,
-    .page-template-page-no-sidebar .site-content .content-area {
+    .page-template-page-no-sidebar .site-content .content-area,
+    .page-template-volunteer .site-content .content-area,
+    .page-template-career .site-content .content-area {
       padding: 0 1.5rem; } }
+
+.home .site-content .content-area,
+.page-template-page-no-sidebar .site-content .content-area {
+  text-align: center; }
+
+.page-template-volunteer .site-content .content-area,
+.page-template-career .site-content .content-area {
+  text-align: left; }
+  @media all and (min-width: 1080px) {
+    .page-template-volunteer .site-content .content-area,
+    .page-template-career .site-content .content-area {
+      max-width: 70%;
+      margin: 0 auto; } }
 
 @media all and (min-width: 600px) {
   .register-how,
@@ -1831,8 +1847,12 @@ footer {
     margin: 0; } }
 
 .btn-sm {
-  height: 55px;
-  width: 200px; }
+  height: 50px;
+  width: 198px;
+  padding: 0;
+  margin: 0; }
+  .btn-sm a {
+    font-size: 1rem; }
 
 /*--------------------------------------------------------------
 # Side Menu

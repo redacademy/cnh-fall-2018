@@ -121,8 +121,12 @@
 }
 
 .btn-sm {
-  height: 55px;
-  width: 200px;
-}
+  height: 50px;
+  width: 198px;
+  padding: 0;
+  margin: 0;
 
-.btn-lg {}
+  a {
+    font-size: $size__body * 0.8;
+  }
+}
