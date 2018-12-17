@@ -1,11 +1,23 @@
+<<<<<<< HEAD
 (function($) {
   $(function() {
     const $sideMenu = $('#side-menu');
+=======
+(function ($) {
+  $(function () {
+
+>>>>>>> 245bba81a16a58e88785328e072d49973d7c6cc2
 
     /**
      * start of side menu
      */
+<<<<<<< HEAD
     $('.btn-open').on('click', function() {
+=======
+    const $sideMenu = $('#side-menu');
+
+    $('.btn-open').on('click', function () {
+>>>>>>> 245bba81a16a58e88785328e072d49973d7c6cc2
       // event.preventDefault();
       openSideMenu();
     });
@@ -57,6 +69,8 @@
     /**
      * start of Google Translate
      */
+    $('.goog-te-banner').hide();
+
     const $translateBtn = $('.translate-icon');
     const $translator = $('#google_language_translator');
     // const $translatorOptns = $('select.goog-te-combo');
@@ -133,9 +147,20 @@
     };
     spectra.init();
 
+    // const $contentArea = $('.page-template .site-content .content-area');
+
+    // // Add full-width
+    // function fullWidth() {
+    //   $contentArea.addClass('full-width');
+    // }
+
     // Create the dropdown base
     if ($('.widget_nav_menu').length) {
       $('<select />').appendTo('.entry-title');
+      // $('.page-template .site-content .content-area').css({
+      //   'flex': '2 0 100%',
+      //   'max-width': '100%'
+      // });
 
       // Create default option "Go to..."
       $('<option />', {
@@ -159,10 +184,12 @@
         let selected = $(this).val();
 
         window.location.replace(selected);
-      });
-    } //end of if statement
-    else {
-      $('.content-area').css('max-width', '100%');
-    }
+      }); // end of linking
+    } // end of if stmt
+
+    // else {
+    //   // style pgs w/o sidebars as full-width
+    //   fullWidth();
+    // } //end of if statement
   }); // end of doc ready
 })(jQuery);

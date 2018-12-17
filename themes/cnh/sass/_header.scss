@@ -67,7 +67,7 @@
 
       @include desktop {
         top: $base__space-unit * 1.63;
-        right: -45px;
+        right: -108px;
       }
     }
   }
@@ -81,7 +81,7 @@
 
     @include desktop {
       display: block;
-      align-self: baseline;
+      // align-self: baseline;
     }
 
     .search-form {
