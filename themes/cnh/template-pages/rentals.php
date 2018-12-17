@@ -29,10 +29,9 @@ get_header(); ?>
           <div class="room-wrapper">
               <h2 class="carousel-rental-title"><?php echo $room['room_title']; ?></h2>
               <div class="main-carousel">            
-              <div class="carousel-cell">
-                <img src="<?php echo $room['image_loop'][0]['room_image']; ?>" />
-              </div>
-        
+                <div class="carousel-cell">
+                  <img src="<?php echo $room['image_loop'][0]['room_image']; ?>" />
+                </div>
               </div>
             <div class="room-stats">
                 <div class="room-info">
@@ -45,7 +44,7 @@ get_header(); ?>
               <?php echo $room['room_features']; ?>
                 </div>
             </div>
-            </div>
+          </div>
           <?php endforeach; ?>
         </div><!-- / Flickity Carousel -->
   

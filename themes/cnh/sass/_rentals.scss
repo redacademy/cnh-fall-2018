@@ -22,3 +22,12 @@ li.is-selected {
     display: none;
   }
 }
+
+.rooms-carousel-list {
+  display: none;
+  @include tablet {
+    display: inline;
+    margin: 0;
+    padding-left: 0;
+  }
+}

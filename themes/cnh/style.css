@@ -1495,21 +1495,6 @@ footer {
             transform: translateX(-50%); }
   .home .frontpage-content {
     margin-top: 11rem; }
-<<<<<<< HEAD
-  .home .upcoming-events-title, .home .instagram-updates-title, .home .we-are-a-place-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    color: #282460;
-    font-family: "Lato-Black";
-    text-transform: uppercase; }
-  .home .upcoming-events-title,
-  .home .instagram-updates-title,
-  .home .we-are-a-place-title {
-=======
   .home .upcoming-events-title,
   .home .instagram-updates-title,
   .home .we-are-a-place-title {
@@ -1525,7 +1510,6 @@ footer {
   .home .upcoming-events-title,
   .home .instagram-updates-title,
   .home .we-are-a-place-title {
->>>>>>> 2a915a3f839da03b63fdb7cafb41c93d953bd0ff
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2654,6 +2638,14 @@ li.is-selected {
   @media all and (min-width: 600px) {
     .carousel-rental-title {
       display: none; } }
+
+.rooms-carousel-list {
+  display: none; }
+  @media all and (min-width: 600px) {
+    .rooms-carousel-list {
+      display: inline;
+      margin: 0;
+      padding-left: 0; } }
 
 /*--------------------------------------------------------------
 # Page No Sidebar Template  
