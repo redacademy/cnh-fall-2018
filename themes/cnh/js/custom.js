@@ -176,10 +176,8 @@
         window.location.replace(selected);
       }); // end of linking
     } // end of if stmt
-
-    // else {
-    //   // style pgs w/o sidebars as full-width
-    //   fullWidth();
-    // } //end of if statement
+    else {
+      $('.content-area').css('max-width', '100%');
+    } //end of if statement
   }); // end of doc ready
 })(jQuery);

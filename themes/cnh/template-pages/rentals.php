@@ -36,13 +36,13 @@ get_header(); ?>
               <img src="<?php echo $room['room_image']; ?>" />
                 </div>
             <div class="room-stats">
-                <div>
+                <div class="room-info">
                       <?php echo $room['room_measurements']; ?>
                 </div>
-                <div>
+                <div class="room-info">
               <?php echo $room['room_capacity']; ?>
                 </div>
-                <div>
+                <div class="room-info">
               <?php echo $room['room_features']; ?>
                 </div>
             </div>
