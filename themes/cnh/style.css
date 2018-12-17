@@ -978,7 +978,8 @@ object {
     .page-template-taxonomy-service_type .service-info div,
     .page-template-taxonomy-program_type .program-info div,
     .page-template-taxonomy-program_type .service-info div {
-      text-align: left; } }
+      text-align: left;
+      padding: 0; } }
   .page-template-template-pages-serv .program-info div h2,
   .page-template-template-pages-serv .service-info div h2,
   .page-template-template-pages-prog .program-info div h2,
@@ -1397,15 +1398,9 @@ footer {
     margin-top: 0; }
   .home .home-subtitle {
     display: none; }
-<<<<<<< HEAD
-  .frontpage-content {
-    margin-top: 12%; }
-  .we-are-a-place {
-=======
   .home .frontpage-content {
-    margin-top: 5rem; }
+    margin-top: 12%; }
   .home .we-are-a-place {
->>>>>>> 8e94368c76d58ca34e30c61d94b9532c7bbc71e2
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1433,15 +1428,9 @@ footer {
     text-transform: none;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
-<<<<<<< HEAD
-  .frontpage-content {
-    margin-top: 18%; }
-  .instalame-container .photo:last-child {
-=======
   .home .frontpage-content {
-    margin-top: 15rem; }
+    margin-top: 18%; }
   .home .instalame-container .photo:last-child {
->>>>>>> 8e94368c76d58ca34e30c61d94b9532c7bbc71e2
     display: initial;
     margin-left: 1rem;
     border-radius: 10px; }
@@ -1449,19 +1438,14 @@ footer {
     width: 600px; } }
 
 @media all and (min-width: 1080px) {
-  .home .entry-header {
+  .home .home .entry-header {
     height: 475px; }
-<<<<<<< HEAD
-    .home .entry-header img {
+    .home .home .entry-header img {
       -webkit-transform: translateY(-23%);
               transform: translateY(-23%);
       z-index: -1; }
-  .home-title {
-    top: 120px;
-=======
   .home .home-title {
-    top: 55px;
->>>>>>> 8e94368c76d58ca34e30c61d94b9532c7bbc71e2
+    top: 120px;
     width: 65%;
     left: 50%;
     font-size: 65px;
@@ -1481,15 +1465,23 @@ footer {
     text-transform: none;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
-<<<<<<< HEAD
-  .frontpage-content {
+  .home .frontpage-content {
     margin-top: 11rem; }
-  .upcoming-events-title, .instagram-updates-title, .we-are-a-place-title {
-=======
   .home .upcoming-events-title,
   .home .instagram-updates-title,
   .home .we-are-a-place-title {
->>>>>>> 8e94368c76d58ca34e30c61d94b9532c7bbc71e2
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #282460;
+    font-family: "Lato-Black";
+    text-transform: uppercase; }
+  .home .upcoming-events-title,
+  .home .instagram-updates-title,
+  .home .we-are-a-place-title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1838,9 +1830,9 @@ footer {
   .btn-stack .wp-block-column {
     margin: 0; } }
 
-@media all and (min-width: 1080px) {
-  .btn-stack .wp-block-column {
-    margin: auto; } }
+.btn-sm {
+  height: 55px;
+  width: 200px; }
 
 /*--------------------------------------------------------------
 # Side Menu
@@ -2614,15 +2606,9 @@ iframe.maps {
     margin-bottom: 0; }
   .page-template-page-no-sidebar .site-content .entry-content p:last-of-type {
     margin-bottom: 4.5rem; }
-  @media all and (min-width: 1080px) {
-    .page-template-page-no-sidebar .site-content .entry-content .all-button {
-      height: 54px;
-      width: 198px; } }
   .page-template-page-no-sidebar .site-content .entry-content .all-button a {
     font-size: 1.25rem;
     line-height: 1.5; }
-  .page-template-page-no-sidebar .site-content .entry-content .wp-block-column {
-    height: 125px; }
 
 /*--------------------------------------------------------------
 # Calendar - Tribe Events
