@@ -322,6 +322,9 @@ h6 {
   text-transform: uppercase;
   letter-spacing: 2px; }
 
+h1 {
+  font-size: 2.8125rem; }
+
 h2 {
   font-size: 2.5rem; }
 
@@ -1100,8 +1103,6 @@ object {
   padding: 1.5rem 3rem !important; }
   @media all and (min-width: 600px) {
     .register-how {
-      background: #fab568 !important;
-      color: #282460;
       padding: 0; } }
 
 .register-call {
@@ -1966,6 +1967,15 @@ footer {
     .container {
       width: 1170px; } }
 
+@media all and (min-width: 600px) {
+  .full-width {
+    -webkit-box-flex: 2 !important;
+        -ms-flex: 2 0 100% !important;
+            flex: 2 0 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    text-align: center; } }
+
 .hfeed {
   background: no-repeat bottom url("../../assets/images/Wave_Background.png");
   background-size: 100% 40%; }
@@ -2019,12 +2029,6 @@ a {
     color: #282460;
     font-size: 65px;
     line-height: 78px; } }
-
-.page-template-services .site-content .content-area {
-  max-width: 100%;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%; }
 
 .page-template-about-php .entry-content {
   display: -webkit-box;
@@ -2206,16 +2210,14 @@ li .menu-item a {
       @media all and (min-width: 1080px) {
         .header-extras .translate-icon #google_language_translator {
           top: 2.445rem;
-          right: -45px; } }
+          right: -105px; } }
   .header-extras .search-btn {
     display: none; }
     .header-extras .search-btn:hover {
       color: #fab0bc; }
     @media all and (min-width: 1080px) {
       .header-extras .search-btn {
-        display: block;
-        -ms-flex-item-align: baseline;
-            align-self: baseline; } }
+        display: block; } }
     .header-extras .search-btn .search-form {
       display: none;
       position: absolute;

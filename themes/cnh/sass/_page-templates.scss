@@ -216,8 +216,8 @@
   padding: $base__space-unit $base__space-unit*2 !important;
 
   @include tablet {
-    background: $color__button !important;
-    color: $color__main;
+    // background: $color__button !important;
+    // color: $color__main;
     padding: 0;
   }
 }
