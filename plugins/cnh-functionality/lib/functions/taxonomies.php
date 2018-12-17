@@ -85,5 +85,44 @@ function cnh_service_types() {
 }
 add_action( 'init', 'cnh_service_types', 0 );
 
+// Register Custom Taxonomy for Opportunities
+function cnh_opportunity_types() {
+
+	$labels = array(
+		'name'                       => 'Opportunities Types',
+		'singular_name'              => 'Opportunity Type',
+		'menu_name'                  => 'Opportunity Type',
+		'all_items'                  => 'All Opportunity Types',
+		'parent_item'                => 'Parent Opportunity Type',
+		'parent_item_colon'          => 'Parent Opportunity Type:',
+		'new_item_name'              => 'New Opportunity Type Name',
+		'add_new_item'               => 'Add New Opportunity Type',
+		'edit_item'                  => 'Edit Opportunity Type',
+		'update_item'                => 'Update Opportunity Type',
+		'view_item'                  => 'View Opportunity Type',
+		'separate_items_with_commas' => 'Separate opportunity types with commas',
+		'add_or_remove_items'        => 'Add or remove opportunity types',
+		'choose_from_most_used'      => 'Choose from the most used',
+		'popular_items'              => 'Popular Opportunity Types',
+		'search_items'               => 'Search Opportunity Types',
+		'not_found'                  => 'Opportunity Type Not Found',
+		'no_terms'                   => 'No opportunity types',
+		'items_list'                 => 'Opportunity Types list',
+		'items_list_navigation'      => 'Opportunity Types list navigation',
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => true,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => true,
+	);
+	register_taxonomy( 'opportunity_type', array( 'opportunity' ), $args );
+
+}
+add_action( 'init', 'cnh_opportunity_types', 0 );
+
 
 

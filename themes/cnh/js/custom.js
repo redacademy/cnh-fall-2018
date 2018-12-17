@@ -1,10 +1,12 @@
 (function ($) {
   $(function () {
-    const $sideMenu = $('#side-menu');
+
 
     /**
      * start of side menu
      */
+    const $sideMenu = $('#side-menu');
+
     $('.btn-open').on('click', function () {
       // event.preventDefault();
       openSideMenu();
@@ -57,6 +59,8 @@
     /**
      * start of Google Translate
      */
+    $('.goog-te-banner').hide();
+
     const $translateBtn = $('.translate-icon');
     const $translator = $('#google_language_translator');
     // const $translatorOptns = $('select.goog-te-combo');
@@ -133,16 +137,29 @@
     };
     spectra.init();
 
+    // const $contentArea = $('.page-template .site-content .content-area');
+
+    // // Add full-width
+    // function fullWidth() {
+    //   $contentArea.addClass('full-width');
+    // }
+
     // Create the dropdown base
+    // const $subtitle = $('.entry-subtitle');
+
     if ($('.widget_nav_menu').length) {
-      $('<select />').appendTo('.entry-title');
+      $('<select />').appendTo('.entry-subtitle');
+      // $('.page-template .site-content .content-area').css({
+      //   'flex': '2 0 100%',
+      //   'max-width': '100%'
+      // });
 
       // Create default option "Go to..."
       $('<option />', {
         selected: 'selected',
         value: '',
         text: 'Go to...'
-      }).appendTo('.entry-title select');
+      }).appendTo('.entry-subtitle select');
 
       // Populate dropdown with menu items
       $('.widget-sidebar a').each(function () {
@@ -150,16 +167,21 @@
         $('<option />', {
           value: el.attr('href'),
           text: el.text()
-        }).appendTo('.entry-title select');
+        }).appendTo('.entry-subtitle select');
       }); // end of dropdown nav
 
-      $('.entry-title select').selectric();
+      $('.entry-subtitle select').selectric();
 
-      $('.entry-title select').on('change', function () {
+      $('.entry-subtitle select').on('change', function () {
         let selected = $(this).val();
 
         window.location.replace(selected);
-      });
-    } //end of if statement
+      }); // end of linking
+    } // end of if stmt
+
+    // else {
+    //   // style pgs w/o sidebars as full-width
+    //   fullWidth();
+    // } //end of if statement
   }); // end of doc ready
 })(jQuery);

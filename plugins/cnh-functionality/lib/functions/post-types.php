@@ -119,3 +119,59 @@ function cnh_service() {
 }
 add_action( 'init', 'cnh_service', 0 );
 
+// Register Custom Post Type for Opportunities
+function cnh_opportunity() {
+
+	$labels = array(
+		'name'                  => 'Opportunities',
+		'singular_name'         => 'Opportunity',
+		'menu_name'             => 'Opportunities',
+		'name_admin_bar'        => 'Opportunity',
+		'archives'              => 'Opportunity Archives',
+		'attributes'            => 'Opportunity Attributes',
+		'parent_item_colon'     => 'Parent Opportunity:',
+		'all_items'             => 'All Opportunities',
+		'add_new_item'          => 'Add New Opportunity',
+		'add_new'               => 'Add New Opportunity',
+		'new_item'              => 'New Opportunity',
+		'edit_item'             => 'Edit Opportunity',
+		'update_item'           => 'Update Opportunity',
+		'view_item'             => 'View Opportunity',
+		'view_items'            => 'View Opportunities',
+		'search_items'          => 'Search Opportunity',
+		'not_found'             => 'Opportunity Not found',
+		'not_found_in_trash'    => 'Opportunity Not Found in Trash',
+		'featured_image'        => 'Featured Image',
+		'set_featured_image'    => 'Set featured image',
+		'remove_featured_image' => 'Remove featured image',
+		'use_featured_image'    => 'Use as featured image',
+		'insert_into_item'      => 'Insert into opportunity',
+		'uploaded_to_this_item' => 'Uploaded to this opportunity',
+		'items_list'            => 'Opportunities list',
+		'items_list_navigation' => 'Opportunities list navigation',
+		'filter_items_list'     => 'Filter opportunities list',
+	);
+	$args = array(
+		'label'                 => 'Opportunity',
+		'description'           => 'CNH Opportunities',
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions' ),
+		'hierarchical'          => true,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'menu_icon'             => 'dashicons-id-alt',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'opportunity', $args );
+
+}
+add_action( 'init', 'cnh_opportunity', 0 );
+

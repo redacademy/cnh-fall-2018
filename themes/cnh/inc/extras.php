@@ -42,3 +42,27 @@ function all_character_uppercase($title){
   return ucfirst(strtoupper($title)); 
 }
 // add_filter('the_title', 'all_character_uppercase');
+
+/**
+ * Change the logo on the WP login screen.
+ */
+function cnh_login_logo() { ?>
+  <style type="text/css">
+      #login h1 a, .login h1 a {
+          background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo_cnh.svg);
+  height: 100px;
+  width: 320px;
+  background-size: 130px auto;
+  background-repeat: no-repeat;
+      }
+  </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'cnh_login_logo' );
+
+/**
+ * Change the logo's url on the WP login screen.
+ */
+function cnh_the_url( $url ) {
+  return home_url();
+}
+add_filter( 'login_headerurl', 'cnh_the_url' );
