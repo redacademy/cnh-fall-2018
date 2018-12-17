@@ -1,23 +1,11 @@
-<<<<<<< HEAD
 (function($) {
   $(function() {
-    const $sideMenu = $('#side-menu');
-=======
-(function ($) {
-  $(function () {
-
->>>>>>> 245bba81a16a58e88785328e072d49973d7c6cc2
-
     /**
      * start of side menu
      */
-<<<<<<< HEAD
-    $('.btn-open').on('click', function() {
-=======
     const $sideMenu = $('#side-menu');
 
-    $('.btn-open').on('click', function () {
->>>>>>> 245bba81a16a58e88785328e072d49973d7c6cc2
+    $('.btn-open').on('click', function() {
       // event.preventDefault();
       openSideMenu();
     });
