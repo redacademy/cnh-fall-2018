@@ -126,38 +126,46 @@
   .program-info,
   .service-info {
     .entry-title {
-      display: block;
-      padding: 0 $base__space-unit;
-      text-align: center;
+      display: none;
+      // padding: 0 $base__space-unit;
+      // text-align: center;
 
-      @include tablet {
-        display: none;
-        padding: 0;
-        text-align: left;
-      }
+      // @include tablet {
+      //   display: none;
+      //   padding: 0;
+      //   text-align: left;
+      // }
     }
 
     div {
       margin-top: 0;
+      padding: 0 $base__space-unit;
+      text-align: center;
+
+      @include tablet {
+        text-align: left;
+      }
 
       h2 {
         margin: 0;
 
       }
 
+
       h3 {
         margin-top: 0;
+        // padding:
       }
 
       // TODO: add parent and children headers in wp
-      h2,
-      h3 {
-        display: none;
+      // h2,
+      // h3 {
+      //   display: none;
 
-        @include tablet {
-          display: block;
-        }
-      }
+      //   @include tablet {
+      //     display: block;
+      //   }
+      // }
 
       p:first-of-type {
         margin-top: $base__space-unit * 2;

@@ -956,21 +956,7 @@ object {
 .page-template-taxonomy-service_type .service-info .entry-title,
 .page-template-taxonomy-program_type .program-info .entry-title,
 .page-template-taxonomy-program_type .service-info .entry-title {
-  display: block;
-  padding: 0 1.5rem;
-  text-align: center; }
-  @media all and (min-width: 600px) {
-    .page-template-template-pages-serv .program-info .entry-title,
-    .page-template-template-pages-serv .service-info .entry-title,
-    .page-template-template-pages-prog .program-info .entry-title,
-    .page-template-template-pages-prog .service-info .entry-title,
-    .page-template-taxonomy-service_type .program-info .entry-title,
-    .page-template-taxonomy-service_type .service-info .entry-title,
-    .page-template-taxonomy-program_type .program-info .entry-title,
-    .page-template-taxonomy-program_type .service-info .entry-title {
-      display: none;
-      padding: 0;
-      text-align: left; } }
+  display: none; }
 
 .page-template-template-pages-serv .program-info div,
 .page-template-template-pages-serv .service-info div,
@@ -980,7 +966,19 @@ object {
 .page-template-taxonomy-service_type .service-info div,
 .page-template-taxonomy-program_type .program-info div,
 .page-template-taxonomy-program_type .service-info div {
-  margin-top: 0; }
+  margin-top: 0;
+  padding: 0 1.5rem;
+  text-align: center; }
+  @media all and (min-width: 600px) {
+    .page-template-template-pages-serv .program-info div,
+    .page-template-template-pages-serv .service-info div,
+    .page-template-template-pages-prog .program-info div,
+    .page-template-template-pages-prog .service-info div,
+    .page-template-taxonomy-service_type .program-info div,
+    .page-template-taxonomy-service_type .service-info div,
+    .page-template-taxonomy-program_type .program-info div,
+    .page-template-taxonomy-program_type .service-info div {
+      text-align: left; } }
   .page-template-template-pages-serv .program-info div h2,
   .page-template-template-pages-serv .service-info div h2,
   .page-template-template-pages-prog .program-info div h2,
@@ -999,41 +997,6 @@ object {
   .page-template-taxonomy-program_type .program-info div h3,
   .page-template-taxonomy-program_type .service-info div h3 {
     margin-top: 0; }
-  .page-template-template-pages-serv .program-info div h2,
-  .page-template-template-pages-serv .program-info div h3,
-  .page-template-template-pages-serv .service-info div h2,
-  .page-template-template-pages-serv .service-info div h3,
-  .page-template-template-pages-prog .program-info div h2,
-  .page-template-template-pages-prog .program-info div h3,
-  .page-template-template-pages-prog .service-info div h2,
-  .page-template-template-pages-prog .service-info div h3,
-  .page-template-taxonomy-service_type .program-info div h2,
-  .page-template-taxonomy-service_type .program-info div h3,
-  .page-template-taxonomy-service_type .service-info div h2,
-  .page-template-taxonomy-service_type .service-info div h3,
-  .page-template-taxonomy-program_type .program-info div h2,
-  .page-template-taxonomy-program_type .program-info div h3,
-  .page-template-taxonomy-program_type .service-info div h2,
-  .page-template-taxonomy-program_type .service-info div h3 {
-    display: none; }
-    @media all and (min-width: 600px) {
-      .page-template-template-pages-serv .program-info div h2,
-      .page-template-template-pages-serv .program-info div h3,
-      .page-template-template-pages-serv .service-info div h2,
-      .page-template-template-pages-serv .service-info div h3,
-      .page-template-template-pages-prog .program-info div h2,
-      .page-template-template-pages-prog .program-info div h3,
-      .page-template-template-pages-prog .service-info div h2,
-      .page-template-template-pages-prog .service-info div h3,
-      .page-template-taxonomy-service_type .program-info div h2,
-      .page-template-taxonomy-service_type .program-info div h3,
-      .page-template-taxonomy-service_type .service-info div h2,
-      .page-template-taxonomy-service_type .service-info div h3,
-      .page-template-taxonomy-program_type .program-info div h2,
-      .page-template-taxonomy-program_type .program-info div h3,
-      .page-template-taxonomy-program_type .service-info div h2,
-      .page-template-taxonomy-program_type .service-info div h3 {
-        display: block; } }
   .page-template-template-pages-serv .program-info div p:first-of-type,
   .page-template-template-pages-serv .service-info div p:first-of-type,
   .page-template-template-pages-prog .program-info div p:first-of-type,
@@ -1962,7 +1925,8 @@ footer {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; }
 
-.accordion-toggle div:hover.active {
+.side-link a.active,
+.accordion-toggle a:hover.active {
   color: #282460; }
 
 .accordion-toggle div.active:before {
