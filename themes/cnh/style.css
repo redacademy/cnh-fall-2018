@@ -624,7 +624,7 @@ a {
               box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
       position: absolute;
-      top: 2.445rem;
+      top: 1.8rem;
       left: -999rem;
       z-index: 99999;
       background: #fff;
@@ -644,7 +644,7 @@ a {
         margin: 3.5px 0 0;
         font-size: 1rem; }
         .main-navigation ul ul li:first-child {
-          margin-top: 0; }
+          margin-top: 0.75rem; }
         .main-navigation ul ul li:hover > ul,
         .main-navigation ul ul li.focus > ul {
           left: 100%; }
@@ -2615,7 +2615,7 @@ iframe.maps {
     font-size: 1.875rem;
     color: #282460 !important; }
     .post-type-archive-tribe_events table.tribe-events-calendar td > div h3.tribe-events-month-event-title {
-      font-size: 1.25rem !important; }
+      font-size: 1rem !important; }
   .post-type-archive-tribe_events table.tribe-events-calendar td.tribe-events-present div {
     background: #282460;
     opacity: 0.8;
