@@ -1218,9 +1218,9 @@ footer {
 .home .site-content {
   width: 100%; }
 
-.entry-header {
+.home .entry-header {
   height: 190px; }
-  .entry-header img {
+  .home .entry-header img {
     -webkit-transform: translateY(-39%);
             transform: translateY(-39%);
     z-index: -1; }
@@ -1414,7 +1414,7 @@ footer {
   .home-subtitle {
     display: none; }
   .frontpage-content {
-    margin-top: 5rem; }
+    margin-top: 12%; }
   .we-are-a-place {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1444,7 +1444,7 @@ footer {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
   .frontpage-content {
-    margin-top: 15rem; }
+    margin-top: 18%; }
   .instalame-container .photo:last-child {
     display: initial;
     margin-left: 1rem;
@@ -1453,13 +1453,17 @@ footer {
     width: 600px; } }
 
 @media all and (min-width: 1080px) {
-  .entry-header {
+  .home .entry-header {
     height: 475px; }
+    .home .entry-header img {
+      -webkit-transform: translateY(-23%);
+              transform: translateY(-23%);
+      z-index: -1; }
   .home-title {
-    top: 55px;
+    top: 120px;
     width: 65%;
     left: 50%;
-    font-size: 55px;
+    font-size: 65px;
     text-transform: none;
     line-height: 65px;
     letter-spacing: 3.66px;
@@ -1469,13 +1473,15 @@ footer {
   .home-subtitle {
     display: initial;
     position: absolute;
-    top: 210px;
+    top: 275px;
     left: 50%;
-    font-size: 25px;
+    font-size: 30px;
     margin-top: .5rem;
     text-transform: none;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
+  .frontpage-content {
+    margin-top: 11rem; }
   .upcoming-events-title, .instagram-updates-title, .we-are-a-place-title {
     display: -webkit-box;
     display: -ms-flexbox;
