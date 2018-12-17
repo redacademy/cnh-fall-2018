@@ -1,0 +1,46 @@
+/*--------------------------------------------------------------
+# Calendar - Tribe Events
+--------------------------------------------------------------*/
+
+.post-type-archive-tribe_events {
+  .tribe-events-title-bar {
+    background: $color__main;
+
+    h1 {
+      color: $color__background-body;
+      padding: $base__space-unit 0;
+    }
+  }
+
+  table.tribe-events-calendar {
+    border-color: $color__main !important;
+
+    th {
+      background: $color__main;
+      color: $color__background-body;
+    }
+
+    td>div {
+      font-size: $size__body * 1.5;
+      color: $color__main !important;
+
+      h3.tribe-events-month-event-title {
+        font-size: $size__body * 0.8 !important;
+      }
+    }
+
+    td.tribe-events-present {
+
+      div {
+        background: $color__main;
+        opacity: 0.8;
+        color: $color__background-body !important;
+      }
+
+    }
+  }
+
+  .tribe-events-button {
+    display: none !important;
+  }
+}

@@ -624,7 +624,7 @@ a {
               box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
       position: absolute;
-      top: 2.445rem;
+      top: 1.8rem;
       left: -999rem;
       z-index: 99999;
       background: #fff;
@@ -644,7 +644,7 @@ a {
         margin: 3.5px 0 0;
         font-size: 1rem; }
         .main-navigation ul ul li:first-child {
-          margin-top: 0; }
+          margin-top: 0.75rem; }
         .main-navigation ul ul li:hover > ul,
         .main-navigation ul ul li.focus > ul {
           left: 100%; }
@@ -978,7 +978,8 @@ object {
     .page-template-taxonomy-service_type .service-info div,
     .page-template-taxonomy-program_type .program-info div,
     .page-template-taxonomy-program_type .service-info div {
-      text-align: left; } }
+      text-align: left;
+      padding: 0; } }
   .page-template-template-pages-serv .program-info div h2,
   .page-template-template-pages-serv .service-info div h2,
   .page-template-template-pages-prog .program-info div h2,
@@ -1398,7 +1399,7 @@ footer {
   .home .home-subtitle {
     display: none; }
   .home .frontpage-content {
-    margin-top: 5rem; }
+    margin-top: 12%; }
   .home .we-are-a-place {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1428,7 +1429,7 @@ footer {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
   .home .frontpage-content {
-    margin-top: 15rem; }
+    margin-top: 18%; }
   .home .instalame-container .photo:last-child {
     display: initial;
     margin-left: 1rem;
@@ -1437,13 +1438,17 @@ footer {
     width: 600px; } }
 
 @media all and (min-width: 1080px) {
-  .home .entry-header {
+  .home .home .entry-header {
     height: 475px; }
+    .home .home .entry-header img {
+      -webkit-transform: translateY(-23%);
+              transform: translateY(-23%);
+      z-index: -1; }
   .home .home-title {
-    top: 55px;
+    top: 120px;
     width: 65%;
     left: 50%;
-    font-size: 55px;
+    font-size: 65px;
     text-transform: none;
     line-height: 65px;
     letter-spacing: 3.66px;
@@ -1453,13 +1458,27 @@ footer {
   .home .home-subtitle {
     display: initial;
     position: absolute;
-    top: 210px;
+    top: 275px;
     left: 50%;
-    font-size: 25px;
+    font-size: 30px;
     margin-top: .5rem;
     text-transform: none;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
+  .home .frontpage-content {
+    margin-top: 11rem; }
+  .home .upcoming-events-title,
+  .home .instagram-updates-title,
+  .home .we-are-a-place-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #282460;
+    font-family: "Lato-Black";
+    text-transform: uppercase; }
   .home .upcoming-events-title,
   .home .instagram-updates-title,
   .home .we-are-a-place-title {
@@ -1811,9 +1830,9 @@ footer {
   .btn-stack .wp-block-column {
     margin: 0; } }
 
-@media all and (min-width: 1080px) {
-  .btn-stack .wp-block-column {
-    margin: auto; } }
+.btn-sm {
+  height: 55px;
+  width: 200px; }
 
 /*--------------------------------------------------------------
 # Side Menu
@@ -2624,17 +2643,47 @@ li.is-selected {
   @media all and (min-width: 1080px) {
     .page-template-page-no-sidebar .site-content .entry-content h2,
     .page-template-page-no-sidebar .site-content .entry-content p {
-      width: 60%;
+      width: 70%;
       margin: 0 0 1.5rem 0;
       text-align: left; } }
+  @media all and (min-width: 1080px) and (min-width: 600px) {
+    .page-template-page-no-sidebar .site-content .entry-content h2 .wp-block-image,
+    .page-template-page-no-sidebar .site-content .entry-content p .wp-block-image {
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+      width: 70%;
+      margin: 0 auto; } }
   .page-template-page-no-sidebar .site-content .entry-content h2 {
     margin-bottom: 0; }
-  @media all and (min-width: 1080px) {
-    .page-template-page-no-sidebar .site-content .entry-content .all-button {
-      height: 54px;
-      width: 198px; } }
+  .page-template-page-no-sidebar .site-content .entry-content p:last-of-type {
+    margin-bottom: 4.5rem; }
   .page-template-page-no-sidebar .site-content .entry-content .all-button a {
     font-size: 1.25rem;
     line-height: 1.5; }
-  .page-template-page-no-sidebar .site-content .entry-content .has-2-columns {
-    padding-top: 30px; }
+
+/*--------------------------------------------------------------
+# Calendar - Tribe Events
+--------------------------------------------------------------*/
+.post-type-archive-tribe_events .tribe-events-title-bar {
+  background: #282460; }
+  .post-type-archive-tribe_events .tribe-events-title-bar h1 {
+    color: #fff;
+    padding: 1.5rem 0; }
+
+.post-type-archive-tribe_events table.tribe-events-calendar {
+  border-color: #282460 !important; }
+  .post-type-archive-tribe_events table.tribe-events-calendar th {
+    background: #282460;
+    color: #fff; }
+  .post-type-archive-tribe_events table.tribe-events-calendar td > div {
+    font-size: 1.875rem;
+    color: #282460 !important; }
+    .post-type-archive-tribe_events table.tribe-events-calendar td > div h3.tribe-events-month-event-title {
+      font-size: 1rem !important; }
+  .post-type-archive-tribe_events table.tribe-events-calendar td.tribe-events-present div {
+    background: #282460;
+    opacity: 0.8;
+    color: #fff !important; }
+
+.post-type-archive-tribe_events .tribe-events-button {
+  display: none !important; }

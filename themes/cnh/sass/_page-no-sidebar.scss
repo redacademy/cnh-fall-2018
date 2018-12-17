@@ -16,12 +16,16 @@
       h2,
       p {
         @include desktop {
-          width: 60%;
+          width: 70%;
           margin: 0 0 $base__space-unit 0;
           text-align: left;
 
-          .wp-block-image figure {
-            // margin-left: 0;
+          .wp-block-image {
+            @include tablet {
+              align-self: flex-start;
+              width: 70%;
+              margin: 0 auto;
+            }
           }
         }
       }
@@ -30,10 +34,14 @@
         margin-bottom: 0;
       }
 
+      p:last-of-type {
+        margin-bottom: $base__space-unit * 3;
+      }
+
       .all-button {
         @include desktop {
-          height: 54px;
-          width: 198px;
+          // height: 54px;
+          // width: 198px;
         }
 
         a {
@@ -43,8 +51,13 @@
       }
 
       .has-2-columns {
-        padding-top: 30px;
+
+        // padding-top: 30px;
       }
+
+      // .wp-block-column {
+      //   height: 125px;
+      // }
     }
   }
 }

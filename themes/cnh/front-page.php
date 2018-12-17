@@ -22,7 +22,7 @@ get_header(); ?>
 	
 			<?php while ( have_posts() ) : the_post(); ?>
 			<header class="entry-header">
-				<?php echo get_permalink(); ?><?php if ( has_post_thumbnail() ) : ?>
+				<?php if ( has_post_thumbnail() ) : ?>
         		<?php the_post_thumbnail( 'full' ); ?>	
 			</header>
 				<?php endif; ?>
