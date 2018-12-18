@@ -172,7 +172,7 @@
         window.location.replace(selected);
       }); // end of linking
 
-      breadNoSidebar();
+      // breadNoSidebar();
     } // end of if stmt
   }); // end of doc ready
 })(jQuery);

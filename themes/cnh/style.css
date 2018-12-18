@@ -1775,11 +1775,15 @@ footer {
   background-color: #fab0bc; }
 
 .wp-block-column {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  height: 138px; }
+  @media all and (min-width: 1080px) {
+    .wp-block-column {
+      height: 252px; } }
 
 .all-button {
   border-radius: 1rem;
-  margin: 0.5rem;
+  margin: 1.5rem;
   font-size: 1.67rem;
   height: 5.67rem;
   text-align: center;
@@ -2684,13 +2688,13 @@ li.is-selected {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  @media all and (min-width: 1080px) {
+  @media all and (min-width: 600px) {
     .page-template-page-no-sidebar .site-content .entry-content h2,
     .page-template-page-no-sidebar .site-content .entry-content p {
       width: 70%;
       margin: 0 0 1.5rem 0;
       text-align: left; } }
-  @media all and (min-width: 1080px) and (min-width: 600px) {
+  @media all and (min-width: 600px) and (min-width: 600px) {
     .page-template-page-no-sidebar .site-content .entry-content h2 .wp-block-image,
     .page-template-page-no-sidebar .site-content .entry-content p .wp-block-image {
       -ms-flex-item-align: start;
