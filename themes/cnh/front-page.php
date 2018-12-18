@@ -85,8 +85,8 @@ $event_id = get_the_ID();
 				<div class="follow-box">
 					<div class="follow-content">
 					<p class="follow-us">follow us</p>
-					<img class="facebook-w-o-border" src='http://cnh.van.cp.academy.red/wp-content/uploads/2018/12/facebook-in-orange.png'>
-					<img class="inst-w-o-border" src='http://cnh.van.cp.academy.red/wp-content/uploads/2018/12/instagram-in-orange.png'>
+					<a href="https://www.facebook.com/cnh.bc.ca"><img class="facebook-w-o-border" src='http://cnh.van.cp.academy.red/wp-content/uploads/2018/12/facebook-in-orange.png'></a>
+					<a href="https://www.instagram.com/collingwoodnh/"><img class="inst-w-o-border" src='http://cnh.van.cp.academy.red/wp-content/uploads/2018/12/instagram-in-orange.png'></a>
 </div>
 </div>
 			</div><!--End main-->
