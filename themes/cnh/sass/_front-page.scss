@@ -4,64 +4,62 @@
 }
 .home .entry-header {
     height: 190px;
-
-    img {
-      transform: translateY(-39%);
+}
+  .entry-header img {
+      transform: translateY(-23.5%);
       z-index: -1;
-    }
   }
 
-  .home-title {
-    position: absolute;
-    top: 30px;
-    width: 75%;
-    left: 50%;
-    font-size: 20px;
-    text-align: center;
-    letter-spacing: 1.35pt;
-    transform: translateX(-50%)
+
+.home-title {
+  position: absolute;
+  top: 30px;
+  width: 75%;
+  left: 50%;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 1.35pt;
+  transform: translateX(-50%)
+}
+
+.home-subtitle {
+  display: none;
+}
+
+.wp-block-image {
+  width: 280px;
+  height: 56px;
+  display: flex;
+  margin: auto;
+  margin-bottom: 2.5rem;
+}
+.wp-block-column {
+  img {
+    width: 56px;
+    margin-right: 1.5rem;
   }
 
-  .home-subtitle {
-    display: none;
+  figcaption {
+    text-align: left;
+    letter-spacing: .85pt;
+    font-size: 15px;
+    line-height: 18pt;
+    margin-top: 0;
   }
 
-  .wp-block-column {
-
-    .wp-block-image {
-      width: 280px;
-      height: 56px;
-      display: flex;
-      margin: auto;
-      margin-bottom: 2.5rem;
-    }
-
-    img {
-      width: 56px;
-      margin-right: 1.5rem;
-    }
-
-    figcaption {
-      text-align: left;
-      letter-spacing: .85pt;
-      font-size: 15px;
-      line-height: 18pt;
-      margin-top: 0;
-    }
-
-    &:first-child {
-      margin-right: 0;
-    }
+  &:first-child {
+    margin-right: 0;
   }
+}
 
-  .we-are-a-place-buttons {
-    display: none !important;
-  }
+.we-are-a-place-buttons {
+  display: none !important;
+}
 
-  .instalame-container {
-    display: flex;
-    justify-content: center;
-    width: 100vw;
+.instagram-container {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
 
     .photo {
       width: 280px;
@@ -253,7 +251,7 @@
       margin-top: 18%;
     }
 
-    .instalame-container {
+    .instagram-container {
       .photo:last-child {
         display: initial;
         margin-left: 1rem;
@@ -373,7 +371,7 @@
       font-size: 2.8125rem;
     }
 
-    .instalame-container {
+    .instagram-container {
       width: 1100px;
       margin: auto;
       margin-top: 3.125rem;
