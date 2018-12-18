@@ -1,3 +1,24 @@
-.is-selected {
-  background: black;
+li.is-selected {
+  background: $color__highlight;
+}
+.rooms-carousel-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  @include tablet {
+    justify-content: space-around;
+    flex-direction: row;
+  }
+}
+
+.room-stats {
+  background: $color__main;
+  color: #ffffff;
+}
+
+.carousel-rental-title {
+  font-size: 1rem;
+  @include tablet {
+    display: none;
+  }
 }

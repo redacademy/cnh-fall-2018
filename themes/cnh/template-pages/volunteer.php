@@ -30,6 +30,9 @@ get_header(); ?>
           <h4><?php the_title(); ?></h4>
           <p><?php the_content(); ?></p>
         </div><!-- .opportunity-entry-info -->
+        <button class="button-yellow all-button btn-sm">
+          <a href="<?php echo CFS()->get( 'view_posting' ); ?>">View Posting</a>
+        </button>
       </article><!-- .opportunity-entry -->
     <?php endforeach; wp_reset_postdata();
     ?>

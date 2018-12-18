@@ -646,7 +646,7 @@ a {
         .main-navigation ul ul li:first-child {
           margin-top: 0.75rem; }
         .main-navigation ul ul li:hover > ul,
-        .main-navigation ul ul li.focus > ul {
+        .main-navigation ul ul li:focus > ul {
           left: 100%; }
       .main-navigation ul ul a {
         width: 125px; }
@@ -1080,13 +1080,18 @@ object {
   text-align: center; }
 
 .page-template-volunteer .site-content .content-area,
-.page-template-career .site-content .content-area {
+.page-template-career .site-content .content-area,
+.search .site-content .content-area {
   text-align: left; }
   @media all and (min-width: 1080px) {
     .page-template-volunteer .site-content .content-area,
-    .page-template-career .site-content .content-area {
+    .page-template-career .site-content .content-area,
+    .search .site-content .content-area {
       max-width: 70%;
       margin: 0 auto; } }
+
+.search h2 {
+  font-size: 1.875rem; }
 
 @media all and (min-width: 600px) {
   .register-how,
@@ -1490,21 +1495,6 @@ footer {
             transform: translateX(-50%); }
   .home .frontpage-content {
     margin-top: 11rem; }
-<<<<<<< HEAD
-  .home .upcoming-events-title, .home .instagram-updates-title, .home .we-are-a-place-title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    color: #282460;
-    font-family: "Lato-Black";
-    text-transform: uppercase; }
-  .home .upcoming-events-title,
-  .home .instagram-updates-title,
-  .home .we-are-a-place-title {
-=======
   .home .upcoming-events-title,
   .home .instagram-updates-title,
   .home .we-are-a-place-title {
@@ -1520,7 +1510,6 @@ footer {
   .home .upcoming-events-title,
   .home .instagram-updates-title,
   .home .we-are-a-place-title {
->>>>>>> 2a915a3f839da03b63fdb7cafb41c93d953bd0ff
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1875,9 +1864,11 @@ footer {
   height: 50px;
   width: 198px;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-size: 1rem; }
   .btn-sm a {
-    font-size: 1rem; }
+    font-size: 1rem;
+    line-height: normal; }
 
 /*--------------------------------------------------------------
 # Side Menu
@@ -2617,8 +2608,38 @@ iframe.maps {
 .location-name {
   font-size: 1.25rem; }
 
-.is-selected {
-  background: black; }
+li.is-selected {
+  background: #fab0bc; }
+
+.rooms-carousel-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media all and (min-width: 600px) {
+    .rooms-carousel-container {
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
+
+.room-stats {
+  background: #282460;
+  color: #ffffff; }
+
+.carousel-rental-title {
+  font-size: 1rem; }
+  @media all and (min-width: 600px) {
+    .carousel-rental-title {
+      display: none; } }
 
 /*--------------------------------------------------------------
 # Page No Sidebar Template  

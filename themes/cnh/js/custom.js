@@ -1,7 +1,5 @@
 (function ($) {
   $(function () {
-
-
     /**
      * start of side menu
      */
@@ -63,35 +61,32 @@
 
     const $translateBtn = $('.translate-icon');
     const $translator = $('#google_language_translator');
-    // const $translatorOptns = $('select.goog-te-combo');
+    const $translatorOptns = $('select.goog-te-combo option');
     // const $translatorOptn = $('.goog-te-combo option').val();
-    // const $page = $('#page');
 
     // Handle click on toggle translate button
     $translateBtn.on('click', function () {
-      $translator.show().focus();
+      $translator.show();
       // $translator.toggle();
-      return false;
+      // return false;
     });
 
     // Handle change on translator
-    // $translatorOptns.on('change', function () {
-    //   // $translator.toggle();
-    //   // return true;
-    //   console.log('working!');
-
-    //   if ($translatorOptn !== '') {
-    //     $page.css('margin-top', '38px');
-    //   }
-    // });
-
-    // $page.css('color', 'red');
-
-    // Handle blur on translator
-    $translator.on('blur', function () {
-      // if ($(this).val() === "") {
+    $translatorOptns.on('change', function (event) {
+      event.preventDefault();
+      // $translator.toggle();
+      // return true;
       $translator.hide();
-      // }
+      console.log('working');
+    });
+
+    console.log('this works!');
+    // Handle blur on translator
+    $translatorOptns.on('blur', function () {
+      console.log('this works!');
+      if ($(this).val() === "") {
+        $translator.hide();
+      }
     });
     // end of Google Translator
 
@@ -102,14 +97,13 @@
     const $searchForm = $('.search-btn .search-form');
     const $searchField = $('.search-btn .search-field');
 
-    $searchBtn.on('click', function (event) {
-      event.preventDefault();
+    $searchBtn.on('click', function () {
       $searchForm.fadeToggle();
       $searchField.focus();
     });
 
     $searchField.on('blur', function () {
-      if ($(this).val() === "") {
+      if ($(this).val() === '') {
         $searchForm.fadeToggle();
       }
     });
@@ -178,10 +172,8 @@
         window.location.replace(selected);
       }); // end of linking
     } // end of if stmt
-
-    // else {
-    //   // style pgs w/o sidebars as full-width
-    //   fullWidth();
-    // } //end of if statement
+    else {
+      $('.content-area').css('max-width', '100%');
+    } //end of if statement
   }); // end of doc ready
 })(jQuery);

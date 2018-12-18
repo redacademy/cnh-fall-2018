@@ -41,7 +41,7 @@
           </div><!-- .translate-icon -->
           <div class="translate-icon">
             <i class="fas fa-language fa-lg"></i>
-            <?php echo do_shortcode('[google-translator]'); ?>
+            
           </div><!-- .translate-icon -->
           <div class="search-btn" aria-hidden="true">
             <i class="fa fa-search fa-lg"></i>

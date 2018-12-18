@@ -241,7 +241,8 @@
 }
 
 .page-template-volunteer,
-.page-template-career {
+.page-template-career,
+.search {
   .site-content {
     .content-area {
       text-align: left;
@@ -251,6 +252,12 @@
         margin: 0 auto;
       }
     }
+  }
+}
+
+.search {
+  h2 {
+    font-size: $size__subtitle;
   }
 }
 
