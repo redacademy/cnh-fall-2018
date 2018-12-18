@@ -63,7 +63,7 @@
     const $translateBtn = $('.translate-icon');
     const $translator = $('#google_language_translator');
     const translatorSel = "select.goog-te-combo";
-    const $translateLang = $('.translate-lang p');
+    const $translateLang = $('.translate-lang p span');
 
     // const $translatorOptn = $('.goog-te-combo option').val();
 
@@ -74,9 +74,10 @@
 
     // Handle change on translator
     $body.on('change', translatorSel, function () {
-      let str = $(this).text();
+      let str = $(this).val().substring(0, 2);
+      console.log(str);
 
-      if (str.val() !== '') {
+      if (str !== '') {
         $translateLang.html(str);
         console.log('On change select working.');
       }
