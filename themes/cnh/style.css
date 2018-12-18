@@ -1105,6 +1105,10 @@ object {
     .page-template-career .site-content .content-area article p,
     .search .site-content .content-area article p {
       margin-bottom: 0; }
+    .page-template-volunteer .site-content .content-area article button,
+    .page-template-career .site-content .content-area article button,
+    .search .site-content .content-area article button {
+      margin-top: 1rem; }
 
 .search h2 {
   font-size: 1.875rem; }
