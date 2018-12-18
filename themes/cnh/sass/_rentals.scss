@@ -57,9 +57,13 @@
 }
 
 .room-list-container {
-  border: 2px solid $color__main;
-  border-radius: 10px;
-  overflow: hidden;
+  display: none;
+  @include tablet {
+    display: inline;
+    border: 2px solid $color__main;
+    border-radius: 10px;
+    overflow: hidden;
+  }
 }
 
 .main-carousel {
@@ -98,4 +102,8 @@
   border-radius: 1rem;
   display: block;
   background: $color__main !important;
+}
+
+.list-active {
+  background: $color__highlight;
 }

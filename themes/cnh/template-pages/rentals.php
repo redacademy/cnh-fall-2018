@@ -11,6 +11,7 @@ get_header(); ?>
 <div id="primary" class="content-area">
   <main id="main" class="site-main" role="main">
   
+
   <div class="rooms-carousel-container">
         <?php $rooms = CFS()->get( 'rental_room' ); // get CFS loop for rooms  ?>
         <div class="room-list-container">
@@ -18,7 +19,7 @@ get_header(); ?>
             <?php 
             $count = 0;
             foreach ( $rooms as $room ): ?>
-              <li data-id ="<?php echo $count ?>"><?php echo $room['room_title'];  $count ++;?></li>
+              <li data-id ="<?php echo $count ?>"><?php echo $room['room_title'];  $count ++; ?></li>
             <?php endforeach; ?>
           </ul>
         </div>
@@ -29,6 +30,7 @@ get_header(); ?>
           foreach ( $rooms as $room ): ?>
           <div class="room-separate" data-id="<?php echo $count ?>">
             <div class="carousel-cell">
+            <h3 class="room-title"><?php echo $room['room_title']; ?></h3>
               <img src="<?php echo $room['image_loop'][0]['room_image']; ?>" />
             </div>
             

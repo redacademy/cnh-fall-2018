@@ -2712,9 +2712,13 @@ iframe.maps {
       background: #fab0bc; }
 
 .room-list-container {
-  border: 2px solid #282460;
-  border-radius: 10px;
-  overflow: hidden; }
+  display: none; }
+  @media all and (min-width: 600px) {
+    .room-list-container {
+      display: inline;
+      border: 2px solid #282460;
+      border-radius: 10px;
+      overflow: hidden; } }
 
 .main-carousel {
   width: 70%;
@@ -2751,6 +2755,9 @@ iframe.maps {
   border-radius: 1rem;
   display: block;
   background: #282460 !important; }
+
+.list-active {
+  background: #fab0bc; }
 
 /*--------------------------------------------------------------
 # Page No Sidebar Template  

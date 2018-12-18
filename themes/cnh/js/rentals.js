@@ -12,7 +12,11 @@
 
     $('.rooms-carousel-list li').on('click', function() {
       let roomId = $(this).attr('data-id');
-      console.log(roomId);
+      $('.rooms-carousel-list li:first').addClass('list-active');
+      $('.rooms-carousel-list li').removeClass('list-active');
+      $(this).addClass('list-active');
+      $('.room-separate').hide();
+      $('.room-separate[data-id="' + roomId + '"]').toggle();
     });
   }); // end of doc ready
 })(jQuery);
