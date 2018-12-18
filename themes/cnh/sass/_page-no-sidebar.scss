@@ -15,7 +15,7 @@
 
       h2,
       p {
-        @include desktop {
+        @include tablet {
           width: 70%;
           margin: 0 0 $base__space-unit 0;
           text-align: left;

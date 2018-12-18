@@ -1113,6 +1113,9 @@ object {
 .search h2 {
   font-size: 1.875rem; }
 
+.contact .site-content .content-area {
+  margin: 0 auto; }
+
 @media all and (min-width: 600px) {
   .register-how,
   .register-call {
@@ -1772,11 +1775,15 @@ footer {
   background-color: #fab0bc; }
 
 .wp-block-column {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  height: 138px; }
+  @media all and (min-width: 1080px) {
+    .wp-block-column {
+      height: 252px; } }
 
 .all-button {
   border-radius: 1rem;
-  margin: 0.5rem;
+  margin: 1.5rem;
   font-size: 1.67rem;
   height: 5.67rem;
   text-align: center;
@@ -1890,6 +1897,8 @@ footer {
     font-size: 1rem;
     line-height: normal;
     background: #fab568; }
+    .btn-sm a:visited {
+      color: #282460; }
 
 /*--------------------------------------------------------------
 # Side Menu
@@ -2575,6 +2584,10 @@ li .menu-item a {
 .selectric-items .selectric-group li {
   padding-left: 25px; }
 
+.map-wrapper {
+  margin: 0 auto; }
+
+.map-wrapper,
 iframe.maps {
   width: 400px;
   height: 300px;
@@ -2609,9 +2622,11 @@ iframe.maps {
 
 .site-location {
   overflow: hidden; }
-  @media all and (min-width: 1080px) {
-    .site-location .wp-block-column {
-      padding-right: 1rem; } }
+  .site-location .wp-block-column {
+    height: 600px; }
+    @media all and (min-width: 1080px) {
+      .site-location .wp-block-column {
+        padding-right: 1rem; } }
   @media all and (min-width: 1080px) {
     .site-location:last-child {
       padding-left: 1rem; } }
@@ -2757,13 +2772,13 @@ iframe.maps {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  @media all and (min-width: 1080px) {
+  @media all and (min-width: 600px) {
     .page-template-page-no-sidebar .site-content .entry-content h2,
     .page-template-page-no-sidebar .site-content .entry-content p {
       width: 70%;
       margin: 0 0 1.5rem 0;
       text-align: left; } }
-  @media all and (min-width: 1080px) and (min-width: 600px) {
+  @media all and (min-width: 600px) and (min-width: 600px) {
     .page-template-page-no-sidebar .site-content .entry-content h2 .wp-block-image,
     .page-template-page-no-sidebar .site-content .entry-content p .wp-block-image {
       -ms-flex-item-align: start;

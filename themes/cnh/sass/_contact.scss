@@ -1,57 +1,66 @@
-iframe.maps{
-    width:400px;
-    height:300px;
-    overflow: hidden;
-    border-radius: 2rem;
-    border: 2px solid $color__main;
+.map-wrapper {
+  margin: 0 auto;
 }
 
+.map-wrapper,
+iframe.maps {
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 2rem;
+  border: 2px solid $color__main;
+}
 
-.page-template-contact .site-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.page-template-contact .site-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .entry-title {
     text-align: center;
-    .entry-title{
-        text-align: center;
-        font-size: $size__title;
-        color:$color__main;
-    }
+    font-size: $size__title;
+    color: $color__main;
+  }
 
-    h3{
-        text-align: center;
-        font-size: $size__subtitle;
-        text-transform: uppercase;
-        color: $color__main;
-    }
+  h3 {
+    text-align: center;
+    font-size: $size__subtitle;
+    text-transform: uppercase;
+    color: $color__main;
+  }
 }
 
-.site-location{
-    overflow: hidden;
-    .wp-block-column{
-        @include desktop{
-            padding-right:1rem;
-        }
+.site-location {
+  overflow: hidden;
+
+  .wp-block-column {
+    height: 600px;
+
+    @include desktop {
+      padding-right: 1rem;
     }
-    &:last-child{
-        @include desktop{
-            padding-left: 1rem;
-        }
-      }
+  }
+
+  &:last-child {
+    @include desktop {
+      padding-left: 1rem;
+    }
+  }
 }
 
-.location-hours{
-    color: #ffffff;
-    background: $color__main;
-    border-radius: 0.6rem;
-    font-size: $size__body;
-    padding: 0.6rem;
-    width: 350px;
-    margin: auto;
+.location-hours {
+  color: #ffffff;
+  background: $color__main;
+  border-radius: 0.6rem;
+  font-size: $size__body;
+  padding: 0.6rem;
+  width: 350px;
+  margin: auto;
 }
 
-.location-name{
-    font-size: $size__body;
+.location-name {
+  font-size: $size__body;
 
 }
