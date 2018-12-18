@@ -59,33 +59,36 @@
      */
     $('.goog-te-banner').hide();
 
+    const $body = $('body');
     const $translateBtn = $('.translate-icon');
     const $translator = $('#google_language_translator');
-    const $translatorOptns = $('select.goog-te-combo');
+    const translatorSel = "select.goog-te-combo";
+    const $translateLang = $('.translate-lang p');
+
     // const $translatorOptn = $('.goog-te-combo option').val();
 
     // Handle click on toggle translate button
     $translateBtn.on('click', function () {
-      $translator.show();
-      // $translator.toggle();
-      // return false;
+      $translator.show().focus();
     });
 
     // Handle change on translator
-    $('body').on('change', 'select.goog-te-combo', function () {
-      // $translator.toggle();
-      // return true;
+    $body.on('change', translatorSel, function () {
+      let str = $(this).text();
+
+      if (str.val() !== '') {
+        $translateLang.html(str);
+        console.log('On change select working.');
+      }
+
       $translator.hide();
-      console.log('working');
+      console.log('On change working.');
     });
 
-    console.log('this works!');
     // Handle blur on translator
-    $translatorOptns.on('blur', function () {
-      console.log('this works!');
-      if ($(this).val() === "") {
-        $translator.hide();
-      }
+    $body.on('blur', translatorSel, function () {
+      $translator.hide();
+      console.log('The blur works!');
     });
     // end of Google Translator
 
