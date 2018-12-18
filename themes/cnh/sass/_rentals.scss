@@ -1,19 +1,25 @@
-li.is-selected {
-  background: $color__highlight;
-}
 .rooms-carousel-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
   @include tablet {
     justify-content: space-around;
+    align-items: flex-start;
     flex-direction: row;
   }
 }
 
 .room-stats {
-  background: $color__main;
+  background: rgba($color: #282460, $alpha: 0.7);
   color: #ffffff;
+  @include tablet {
+    position: absolute;
+    bottom: 40px;
+    padding-left: 20px;
+    left: 300px;
+    width: 18vw;
+  }
 }
 
 .carousel-rental-title {
@@ -29,5 +35,17 @@ li.is-selected {
     display: inline;
     margin: 0;
     padding-left: 0;
+  }
+}
+
+.main-carousel {
+  width: 70%;
+}
+
+.room-separate {
+  display: inline;
+  position: relative;
+  &:nth-last-of-type() {
+    display: none;
   }
 }
