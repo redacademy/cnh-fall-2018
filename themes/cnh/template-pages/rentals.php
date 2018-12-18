@@ -13,7 +13,7 @@ get_header(); ?>
   
   <div class="rooms-carousel-container">
         <?php $rooms = CFS()->get( 'rental_room' ); // get CFS loop for rooms  ?>
-        <div>
+        <div class="room-list-container">
           <ul class="rooms-carousel-list">
             <?php foreach ( $rooms as $room ): ?>
               <li><?php echo $room['room_title']; ?></li>
@@ -31,16 +31,20 @@ get_header(); ?>
             
             <div class="room-stats">
               <div class="room-info">
-                <?php echo $room['room_measurements']; ?>
+              <p class="room-stat-title">Capacity:  </p>
+                <?php echo $room['room_capacity']; ?>
               </div>
           
               <div class="room-info">
-                <?php echo $room['room_capacity']; ?>
+                <p class="room-stat-title">Measurements:  </p>
+                <?php echo $room['room_measurements']; ?>
               </div>
             
               <div class="room-info">
+              <p class="room-stat-title">Features:  </p>
                 <?php echo $room['room_features']; ?>
               </div>
+
             </div>
           </div>
           <?php endforeach ?>
@@ -58,3 +62,4 @@ get_header(); ?>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
+

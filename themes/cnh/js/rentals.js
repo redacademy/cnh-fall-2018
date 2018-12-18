@@ -9,5 +9,7 @@
     // const $roomsList = $('.rooms-carousel-list');
     // const $roomsListItem = $roomsList.find('li');
     // $roomsListItem.eq(0).addClass('is-selected');
+
+    $('.rooms-carousel-list li').on('click', function() {});
   }); // end of doc ready
 })(jQuery);
