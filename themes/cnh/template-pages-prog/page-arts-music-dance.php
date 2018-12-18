@@ -31,7 +31,7 @@ get_header(); ?>
     ?>
     </div><!-- .program-wrapper -->
 
-  <?php cnh_numbered_pagination(); ?>
+  <?php echo cnh_numbered_pagination(); ?>
   </main><!-- #main -->
 </div><!-- #primary -->
 
