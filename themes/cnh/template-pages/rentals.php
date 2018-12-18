@@ -15,16 +15,19 @@ get_header(); ?>
         <?php $rooms = CFS()->get( 'rental_room' ); // get CFS loop for rooms  ?>
         <div class="room-list-container">
           <ul class="rooms-carousel-list">
-            <?php foreach ( $rooms as $room ): ?>
-              <li><?php echo $room['room_title']; ?></li>
+            <?php 
+            $count = 0;
+            foreach ( $rooms as $room ): ?>
+              <li data-id ="<?php echo $count ?>"><?php echo $room['room_title'];  $count ++;?></li>
             <?php endforeach; ?>
           </ul>
         </div>
         <!-- Flickity Carousel -->
         <div class="main-carousel">
           <?php
+          $count = 0;
           foreach ( $rooms as $room ): ?>
-          <div class="room-separate">
+          <div class="room-separate" data-id="<?php echo $count ?>">
             <div class="carousel-cell">
               <img src="<?php echo $room['image_loop'][0]['room_image']; ?>" />
             </div>
@@ -44,8 +47,8 @@ get_header(); ?>
               <p class="room-stat-title">Features:  </p>
                 <?php echo $room['room_features']; ?>
               </div>
-
             </div>
+           <?php $count ++;?>
           </div>
           <?php endforeach ?>
         </div><!-- / Flickity Carousel -->
