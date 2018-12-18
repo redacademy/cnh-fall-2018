@@ -8,11 +8,17 @@
 
 .wp-block-column {
   margin-bottom: 0;
+  height: 138px; // jl
+
+  @include desktop {
+    height: 252px; // jl
+  }
 }
 
 .all-button {
   border-radius: 1rem;
-  margin: 0.5rem;
+  // margin: 0.5rem;
+  margin: $base__space-unit; // jl
   font-size: 1.67rem;
   height: 5.67rem;
   text-align: center;
@@ -130,5 +136,10 @@
   a {
     font-size: $size__body * 0.8;
     line-height: normal;
+    background: $color__button;
+
+    &:visited {
+      color: $color__main;
+    }
   }
 }

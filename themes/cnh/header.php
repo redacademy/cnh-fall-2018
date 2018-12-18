@@ -39,9 +39,9 @@
             <i class="material-icons">language</i>
             <?php echo do_shortcode('[google-translator]'); ?>
           </div><!-- .translate-icon -->
-          <div class="translate-icon">
-            <i class="fas fa-language fa-lg"></i>
-            
+          <div class="translate-lang">
+            <!-- <i class="fas fa-language fa-lg"></i>           -->
+            <p>EN</p>
           </div><!-- .translate-icon -->
           <div class="search-btn" aria-hidden="true">
             <i class="fa fa-search fa-lg"></i>

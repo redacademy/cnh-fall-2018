@@ -59,34 +59,36 @@
      */
     $('.goog-te-banner').hide();
 
+    const $body = $('body');
     const $translateBtn = $('.translate-icon');
     const $translator = $('#google_language_translator');
-    const $translatorOptns = $('select.goog-te-combo option');
+    const translatorSel = "select.goog-te-combo";
+    const $translateLang = $('.translate-lang p');
+
     // const $translatorOptn = $('.goog-te-combo option').val();
 
     // Handle click on toggle translate button
     $translateBtn.on('click', function () {
-      $translator.show();
-      // $translator.toggle();
-      // return false;
+      $translator.show().focus();
     });
 
     // Handle change on translator
-    $translatorOptns.on('change', function (event) {
-      event.preventDefault();
-      // $translator.toggle();
-      // return true;
+    $body.on('change', translatorSel, function () {
+      let str = $(this).text();
+
+      if (str.val() !== '') {
+        $translateLang.html(str);
+        console.log('On change select working.');
+      }
+
       $translator.hide();
-      console.log('working');
+      console.log('On change working.');
     });
 
-    console.log('this works!');
     // Handle blur on translator
-    $translatorOptns.on('blur', function () {
-      console.log('this works!');
-      if ($(this).val() === "") {
-        $translator.hide();
-      }
+    $body.on('blur', translatorSel, function () {
+      $translator.hide();
+      console.log('The blur works!');
     });
     // end of Google Translator
 
@@ -130,23 +132,21 @@
       }
     };
     spectra.init();
+    // end of spectrogram
 
+    // const $sideBar = $('.page-template .site-content .widget-sidebar');
     // const $contentArea = $('.page-template .site-content .content-area');
 
-    // // Add full-width
-    // function fullWidth() {
-    //   $contentArea.addClass('full-width');
+    // // remove sidebar on pg 
+    // function breadNoSidebar() {
+    //   $sideBar.css('display', 'none');
+    //   $contentArea.css('margin', '0 auto');
+    //   console.log('work it sidebar');
     // }
 
     // Create the dropdown base
-    // const $subtitle = $('.entry-subtitle');
-
     if ($('.widget_nav_menu').length) {
       $('<select />').appendTo('.entry-subtitle');
-      // $('.page-template .site-content .content-area').css({
-      //   'flex': '2 0 100%',
-      //   'max-width': '100%'
-      // });
 
       // Create default option "Go to..."
       $('<option />', {
@@ -171,9 +171,8 @@
 
         window.location.replace(selected);
       }); // end of linking
+
+      // breadNoSidebar();
     } // end of if stmt
-    else {
-      $('.content-area').css('max-width', '100%');
-    } //end of if statement
   }); // end of doc ready
 })(jQuery);

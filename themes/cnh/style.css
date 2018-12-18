@@ -1089,9 +1089,32 @@ object {
     .search .site-content .content-area {
       max-width: 70%;
       margin: 0 auto; } }
+  .page-template-volunteer .site-content .content-area h3,
+  .page-template-career .site-content .content-area h3,
+  .search .site-content .content-area h3 {
+    margin-bottom: 0; }
+  .page-template-volunteer .site-content .content-area article,
+  .page-template-career .site-content .content-area article,
+  .search .site-content .content-area article {
+    margin: 3rem 0; }
+    .page-template-volunteer .site-content .content-area article:first-child,
+    .page-template-career .site-content .content-area article:first-child,
+    .search .site-content .content-area article:first-child {
+      margin-top: 0; }
+    .page-template-volunteer .site-content .content-area article p,
+    .page-template-career .site-content .content-area article p,
+    .search .site-content .content-area article p {
+      margin-bottom: 0; }
+    .page-template-volunteer .site-content .content-area article button,
+    .page-template-career .site-content .content-area article button,
+    .search .site-content .content-area article button {
+      margin-top: 1rem; }
 
 .search h2 {
   font-size: 1.875rem; }
+
+.contact .site-content .content-area {
+  margin: 0 auto; }
 
 @media all and (min-width: 600px) {
   .register-how,
@@ -1745,11 +1768,15 @@ footer {
   background-color: #fab0bc; }
 
 .wp-block-column {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  height: 138px; }
+  @media all and (min-width: 1080px) {
+    .wp-block-column {
+      height: 252px; } }
 
 .all-button {
   border-radius: 1rem;
-  margin: 0.5rem;
+  margin: 1.5rem;
   font-size: 1.67rem;
   height: 5.67rem;
   text-align: center;
@@ -1861,7 +1888,10 @@ footer {
   font-size: 1rem; }
   .btn-sm a {
     font-size: 1rem;
-    line-height: normal; }
+    line-height: normal;
+    background: #fab568; }
+    .btn-sm a:visited {
+      color: #282460; }
 
 /*--------------------------------------------------------------
 # Side Menu
@@ -2129,7 +2159,8 @@ a {
     .widget-sidebar ul {
       text-align: left; }
       .widget-sidebar ul .current-menu-item {
-        background: #fab0bc; } }
+        background: #fab0bc;
+        color: #282460; } }
   @media all and (min-width: 600px) and (min-width: 600px) {
     .widget-sidebar a {
       font-size: 0.8rem;
@@ -2219,11 +2250,6 @@ li .menu-item a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  .header-extras > * {
-    padding-left: 1rem; }
-    @media all and (min-width: 1080px) {
-      .header-extras > * {
-        padding-left: 1.5rem; } }
   .header-extras .translate-icon {
     padding: 0;
     cursor: pointer;
@@ -2243,8 +2269,11 @@ li .menu-item a {
         .header-extras .translate-icon #google_language_translator {
           top: 2.445rem;
           right: -108px; } }
+  .header-extras .translate-lang {
+    font-family: "Lato-Bold"; }
   .header-extras .search-btn {
-    display: none; }
+    display: none;
+    padding-left: 1.35rem; }
     .header-extras .search-btn:hover {
       color: #fab0bc; }
     @media all and (min-width: 1080px) {
@@ -2548,6 +2577,10 @@ li .menu-item a {
 .selectric-items .selectric-group li {
   padding-left: 25px; }
 
+.map-wrapper {
+  margin: 0 auto; }
+
+.map-wrapper,
 iframe.maps {
   width: 400px;
   height: 300px;
@@ -2582,9 +2615,11 @@ iframe.maps {
 
 .site-location {
   overflow: hidden; }
-  @media all and (min-width: 1080px) {
-    .site-location .wp-block-column {
-      padding-right: 1rem; } }
+  .site-location .wp-block-column {
+    height: 600px; }
+    @media all and (min-width: 1080px) {
+      .site-location .wp-block-column {
+        padding-right: 1rem; } }
   @media all and (min-width: 1080px) {
     .site-location:last-child {
       padding-left: 1rem; } }
@@ -2648,13 +2683,13 @@ li.is-selected {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  @media all and (min-width: 1080px) {
+  @media all and (min-width: 600px) {
     .page-template-page-no-sidebar .site-content .entry-content h2,
     .page-template-page-no-sidebar .site-content .entry-content p {
       width: 70%;
       margin: 0 0 1.5rem 0;
       text-align: left; } }
-  @media all and (min-width: 1080px) and (min-width: 600px) {
+  @media all and (min-width: 600px) and (min-width: 600px) {
     .page-template-page-no-sidebar .site-content .entry-content h2 .wp-block-image,
     .page-template-page-no-sidebar .site-content .entry-content p .wp-block-image {
       -ms-flex-item-align: start;
