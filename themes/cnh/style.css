@@ -2260,7 +2260,7 @@ li .menu-item a {
     .header-extras .search-btn .search-form {
       display: none;
       position: absolute;
-      top: 2.445rem;
+      top: -3.3rem;
       right: 0; }
       .header-extras .search-btn .search-form fieldset {
         position: relative; }

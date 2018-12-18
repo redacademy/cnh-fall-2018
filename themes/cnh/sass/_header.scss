@@ -87,7 +87,8 @@
     .search-form {
       display: none;
       position: absolute;
-      top: $base__space-unit * 1.63;
+      // top: $base__space-unit * 1.63;
+      top: -$base__space-unit * 2.2;
       right: 0;
 
       fieldset {
