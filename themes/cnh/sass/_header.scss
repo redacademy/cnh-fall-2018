@@ -33,13 +33,13 @@
   //   align-items: center;
   // }
 
-  &>* {
-    padding-left: $base__space-unit/1.5;
+  // &>* {
+  //   padding-left: $base__space-unit/1.5;
 
-    @include desktop {
-      padding-left: $base__space-unit;
-    }
-  }
+  //   @include desktop {
+  //     padding-left: $base__space-unit;
+  //   }
+  // }
 
   .translate-icon {
 
@@ -72,8 +72,13 @@
     }
   }
 
+  .translate-lang {
+    font-family: $font__subtitle;
+  }
+
   .search-btn {
     display: none;
+    padding-left: $base__space-unit * 0.9;
 
     &:hover {
       color: $color__highlight;
