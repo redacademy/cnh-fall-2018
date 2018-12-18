@@ -1,17 +1,17 @@
 (function ($) {
   $(function () {
-    const $sideMenu = $('#side-menu');
-
     /**
      * start of side menu
      */
-    $('.btn-open').on('click', function (event) {
-      event.preventDefault();
+    const $sideMenu = $('#side-menu');
+
+    $('.btn-open').on('click', function () {
+      // event.preventDefault();
       openSideMenu();
     });
 
-    $('.btn-close').on('click', function (event) {
-      event.preventDefault();
+    $('.btn-close').on('click', function () {
+      // event.preventDefault();
       closeSideMenu();
     });
 
@@ -55,53 +55,61 @@
       }); // end of side menu
 
     /**
-     * start of Google Translate changes
+     * start of Google Translate
      */
+    $('.goog-te-banner').hide();
+
+    const $body = $('body');
     const $translateBtn = $('.translate-icon');
     const $translator = $('#google_language_translator');
-    const $translatorOptn = $('.goog-te-combo option');
+    const translatorSel = "select.goog-te-combo";
+    const $translateLang = $('.translate-lang p');
+
+    // const $translatorOptn = $('.goog-te-combo option').val();
 
     // Handle click on toggle translate button
     $translateBtn.on('click', function () {
-      $translator.toggle();
-      return false;
+      $translator.show().focus();
     });
 
     // Handle change on translator
-    $translatorOptn.on('change', function () {
-      $translator.toggle();
+    $body.on('change', translatorSel, function () {
+      let str = $(this).text();
+
+      if (str.val() !== '') {
+        $translateLang.html(str);
+        console.log('On change select working.');
+      }
+
+      $translator.hide();
+      console.log('On change working.');
     });
 
-    // show translator
-    // $translateBtn.on('click', function () {
-    //   // $('#google_language_translator').fadeToggle();
-    //   $translator.toggle(1000);
-    //   // $searchField.focus();
-    // }); 
-    // end of show translator
+    // Handle blur on translator
+    $body.on('blur', translatorSel, function () {
+      $translator.hide();
+      console.log('The blur works!');
+    });
+    // end of Google Translator
 
     /**
-     * start of search form in header
+     * start of header Search Form
      */
-    // const $searchBtn = $('.search-btn');
-    // const $searchForm = $('.header-extras .search-form');
+    const $searchBtn = $('.search-btn');
+    const $searchForm = $('.search-btn .search-form');
+    const $searchField = $('.search-btn .search-field');
 
-    // show search form
-    // $searchBtn.on('click', function () {
-    //   // $('#google_language_translator').fadeToggle();
-    //   $searchForm.toggle(1000);
-    //   $searchForm.focus();
-    // }); 
-    // end of show search form
+    $searchBtn.on('click', function () {
+      $searchForm.fadeToggle();
+      $searchField.focus();
+    });
 
-    // hide translator
-    // $searchForm.on('blur', function () {
-    //   if ($(this).val === '') {
-    //     $searchForm.toggle(1000);
-    //   }
-    // }); 
-    // end of hide search form
-    // end of search form in header
+    $searchField.on('blur', function () {
+      if ($(this).val() === '') {
+        $searchForm.fadeToggle();
+      }
+    });
+    // end of header Search Form
 
     // start of spectagram
     // var spectragramComplete = function () {
@@ -124,17 +132,28 @@
       }
     };
     spectra.init();
+    // end of spectrogram
+
+    const $sideBar = $('.page-template .site-content .widget-sidebar');
+    const $contentArea = $('.page-template .site-content .content-area');
+
+    // remove sidebar on pg 
+    function breadNoSidebar() {
+      $sideBar.css('display', 'none');
+      $contentArea.css('margin', '0 auto');
+      console.log('work it sidebar');
+    }
 
     // Create the dropdown base
     if ($('.widget_nav_menu').length) {
-      $('<select />').appendTo('.entry-title');
+      $('<select />').appendTo('.entry-subtitle');
 
       // Create default option "Go to..."
       $('<option />', {
         selected: 'selected',
         value: '',
         text: 'Go to...'
-      }).appendTo('.entry-title select');
+      }).appendTo('.entry-subtitle select');
 
       // Populate dropdown with menu items
       $('.widget-sidebar a').each(function () {
@@ -142,16 +161,18 @@
         $('<option />', {
           value: el.attr('href'),
           text: el.text()
-        }).appendTo('.entry-title select');
+        }).appendTo('.entry-subtitle select');
       }); // end of dropdown nav
 
-      $('.entry-title select').selectric();
+      $('.entry-subtitle select').selectric();
 
-      $('.entry-title select').on('change', function () {
+      $('.entry-subtitle select').on('change', function () {
         let selected = $(this).val();
 
         window.location.replace(selected);
-      });
-    } //end of if statement
+      }); // end of linking
+
+      // breadNoSidebar();
+    } // end of if stmt
   }); // end of doc ready
 })(jQuery);

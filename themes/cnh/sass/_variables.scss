@@ -27,22 +27,34 @@ $color__background-ins: #fff9c0;
 $color__border-abbr: #555;
 
 $color__link: #282460;
-$color__link-visited: #282460;
+$color__link-visited: inherit;
 $color__link-hover: #fab0bc;
 
 // Typography
 
 $font__main: 'Lato-Regular';
 $font__body: 'Lato-Regular';
-$font__pre: 'Courier 10 Pitch', Courier, monospace;
-$font__code: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
+$font__pre: 'Courier 10 Pitch',
+Courier,
+monospace;
+$font__code: Monaco,
+Consolas,
+'Andale Mono',
+'DejaVu Sans Mono',
+monospace;
 $font__breadcrumb: 'Lato-Regular';
 $font__sidebar: 'Lato-Bold';
 $font__title: 'Lato-Black';
 $font__subtitle: 'Lato-Bold';
 
-$font__code: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
-$font__pre: 'Courier 10 Pitch', Courier, monospace;
+$font__code: Monaco,
+Consolas,
+'Andale Mono',
+'DejaVu Sans Mono',
+monospace;
+$font__pre: 'Courier 10 Pitch',
+Courier,
+monospace;
 
 $size__body: 1.25rem;
 $size__sidebar: 1.25rem;

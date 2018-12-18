@@ -22,11 +22,11 @@ get_header(); ?>
 	
 			<?php while ( have_posts() ) : the_post(); ?>
 			<header class="entry-header">
-				<a href="<?php echo get_permalink(); ?>"><?php if ( has_post_thumbnail() ) : ?>
-        		<?php the_post_thumbnail( 'full' ); ?>
-						
+				<?php if ( has_post_thumbnail() ) : ?>
+        		<?php the_post_thumbnail( 'full' ); ?>	
 			</header>
-        		<?php endif; ?>
+				<?php endif; ?>
+				<div class="frontpage-content">	
 				<h2 class="we-are-a-place-title">We are a place...</h2>
 				<?php the_content(); ?>
 
@@ -54,7 +54,7 @@ $event_id = get_the_ID();
 ?>
         <div class="singular-event">
 		<div class="date"><div class="date-text-container"><p class="day"><?php echo tribe_get_start_date( null, false, 'l' ); ?></p><p class="date-text"><?php echo tribe_get_start_date( null, false, 'M j' ); ?></p></div> </div>
-		<div class="eventimg"><a href="<?php the_permalink(); ?>"><?php if ( has_post_thumbnail() ) the_post_thumbnail('medium-list-thumbnail'); ?></a>
+		<div class="eventimg"><?php if ( has_post_thumbnail() ) the_post_thumbnail('medium-list-thumbnail'); ?>
         <div class="location-box" ><?php the_title('<a href="' . tribe_get_event_link() . '" title="' . the_title_attribute('echo=0') . '" rel="bookmark">', '</a>'); ?> </div></div >
 		
 	    <div class="hover-details" >      
@@ -85,8 +85,8 @@ $event_id = get_the_ID();
 				<div class="follow-box">
 					<div class="follow-content">
 					<p class="follow-us">follow us</p>
-					<img class="facebook-w-o-border" src='http://cnh.van.cp.academy.red/wp-content/uploads/2018/12/facebook-in-orange.png'>
-					<img class="inst-w-o-border" src='http://cnh.van.cp.academy.red/wp-content/uploads/2018/12/instagram-in-orange.png'>
+					<a href="https://www.facebook.com/cnh.bc.ca"><img class="facebook-w-o-border" src='http://cnh.van.cp.academy.red/wp-content/uploads/2018/12/facebook-in-orange.png'></a>
+					<a href="https://www.instagram.com/collingwoodnh/"><img class="inst-w-o-border" src='http://cnh.van.cp.academy.red/wp-content/uploads/2018/12/instagram-in-orange.png'></a>
 </div>
 </div>
 			</div><!--End main-->
@@ -97,9 +97,10 @@ $event_id = get_the_ID();
 
 				<div class="frontpage-buttons">
 					<a class="childcare-button button-yellow all-button" href="/childcare">childcare</a>
-					<a class="senior-programs-button button-pink all-button" href="/senior-programs">senior programs</a>
+					<a class="senior-programs-button button-pink all-button" href="programs/seniors">senior programs</a>
 					<a class="donate-button button-yellow all-button" href="/donate">donate</a>
 				</div>
+</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

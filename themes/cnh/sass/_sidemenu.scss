@@ -10,7 +10,7 @@
   top: 0;
   left: 0;
   background: $color__background-body;
-  overflow-x: hidden; // hides scroll bar
+  overflow-x: hidden; // hides vertical scroll bar
   padding-top: $base__space-unit;
   transition: 0.5s;
 
@@ -43,6 +43,12 @@
 
       &:last-child {
         border-bottom: $border__solid;
+      }
+
+      .side-btn {
+        position: absolute;
+        top: 50%;
+        right: 0;
       }
     }
 
@@ -107,8 +113,8 @@
   display: none;
 }
 
-.accordion-toggle a:before,
-.accordion-toggle a:after {
+.accordion-toggle div:before,
+.accordion-toggle div:after {
   content: '';
   display: block;
   position: absolute;
@@ -122,7 +128,7 @@
   transition: all 0.3s ease-out;
 }
 
-.accordion-toggle a:before {
+.accordion-toggle div:before {
   transform: rotate(-90deg);
   opacity: 1;
   z-index: 2;
@@ -133,15 +139,16 @@
   transition: all 0.3s ease;
 }
 
+.side-link a.active,
 .accordion-toggle a:hover.active {
   color: $color__main;
 }
 
-.accordion-toggle a.active:before {
+.accordion-toggle div.active:before {
   transform: rotate(0deg);
 }
 
-.accordion-toggle a.active:after {
+.accordion-toggle div.active:after {
   transform: rotate(180deg);
   // opacity: 0;
 }
