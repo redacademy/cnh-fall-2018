@@ -61,7 +61,7 @@
 
     const $translateBtn = $('.translate-icon');
     const $translator = $('#google_language_translator');
-    const $translatorOptns = $('select.goog-te-combo option');
+    const $translatorOptns = $('select.goog-te-combo');
     // const $translatorOptn = $('.goog-te-combo option').val();
 
     // Handle click on toggle translate button
@@ -72,8 +72,7 @@
     });
 
     // Handle change on translator
-    $translatorOptns.on('change', function (event) {
-      event.preventDefault();
+    $('body').on('change', 'select.goog-te-combo', function () {
       // $translator.toggle();
       // return true;
       $translator.hide();
