@@ -134,15 +134,15 @@
     spectra.init();
     // end of spectrogram
 
-    const $sideBar = $('.page-template .site-content .widget-sidebar');
-    const $contentArea = $('.page-template .site-content .content-area');
+    // const $sideBar = $('.page-template .site-content .widget-sidebar');
+    // const $contentArea = $('.page-template .site-content .content-area');
 
-    // remove sidebar on pg 
-    function breadNoSidebar() {
-      $sideBar.css('display', 'none');
-      $contentArea.css('margin', '0 auto');
-      console.log('work it sidebar');
-    }
+    // // remove sidebar on pg 
+    // function breadNoSidebar() {
+    //   $sideBar.css('display', 'none');
+    //   $contentArea.css('margin', '0 auto');
+    //   console.log('work it sidebar');
+    // }
 
     // Create the dropdown base
     if ($('.widget_nav_menu').length) {

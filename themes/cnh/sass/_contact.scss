@@ -36,6 +36,8 @@ iframe.maps {
   overflow: hidden;
 
   .wp-block-column {
+    height: 600px;
+
     @include desktop {
       padding-right: 1rem;
     }
