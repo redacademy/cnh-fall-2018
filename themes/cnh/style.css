@@ -646,7 +646,7 @@ a {
         .main-navigation ul ul li:first-child {
           margin-top: 0.75rem; }
         .main-navigation ul ul li:hover > ul,
-        .main-navigation ul ul li.focus > ul {
+        .main-navigation ul ul li:focus > ul {
           left: 100%; }
       .main-navigation ul ul a {
         width: 125px; }
@@ -1864,9 +1864,11 @@ footer {
   height: 50px;
   width: 198px;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-size: 1rem; }
   .btn-sm a {
-    font-size: 1rem; }
+    font-size: 1rem;
+    line-height: normal; }
 
 /*--------------------------------------------------------------
 # Side Menu

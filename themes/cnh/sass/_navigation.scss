@@ -101,7 +101,7 @@ a {
         }
 
         &:hover>ul,
-        &.focus>ul {
+        &:focus>ul {
           left: 100%;
         }
       }
