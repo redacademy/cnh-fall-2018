@@ -132,23 +132,21 @@
       }
     };
     spectra.init();
+    // end of spectrogram
 
-    // const $contentArea = $('.page-template .site-content .content-area');
+    const $sideBar = $('.page-template .site-content .widget-sidebar');
+    const $contentArea = $('.page-template .site-content .content-area');
 
-    // // Add full-width
-    // function fullWidth() {
-    //   $contentArea.addClass('full-width');
-    // }
+    // remove sidebar on pg 
+    function breadNoSidebar() {
+      $sideBar.css('display', 'none');
+      $contentArea.css('margin', '0 auto');
+      console.log('work it sidebar');
+    }
 
     // Create the dropdown base
-    // const $subtitle = $('.entry-subtitle');
-
     if ($('.widget_nav_menu').length) {
       $('<select />').appendTo('.entry-subtitle');
-      // $('.page-template .site-content .content-area').css({
-      //   'flex': '2 0 100%',
-      //   'max-width': '100%'
-      // });
 
       // Create default option "Go to..."
       $('<option />', {
@@ -173,9 +171,8 @@
 
         window.location.replace(selected);
       }); // end of linking
+
+      breadNoSidebar();
     } // end of if stmt
-    else {
-      $('.content-area').css('max-width', '100%');
-    } //end of if statement
   }); // end of doc ready
 })(jQuery);

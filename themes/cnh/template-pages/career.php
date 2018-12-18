@@ -29,9 +29,16 @@ get_header(); ?>
         <div class="opportunity-entry-info">
           <h4><?php the_title(); ?></h4>
           <p><?php the_content(); ?></p>
+          <p>
+          <?php 
+          if (CFS()->get( 'closing_date' ) == true):
+            echo 'Closing Date: ' . CFS()->get( 'closing_date' ); 
+          endif;
+          ?>
+          </p>
         </div><!-- .opportunity-entry-info -->
         <button class="button-yellow all-button btn-sm">
-          <a href="<?php echo CFS()->get( 'view_posting' ); ?>" download="CNH-Career-Posting">View Posting</a>
+          <a href="<?php echo CFS()->get( 'view_posting' ); ?>" target="_blank">View Posting</a>
         </button>
       </article><!-- .opportunity-entry -->
     <?php endforeach; wp_reset_postdata();
