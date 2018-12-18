@@ -1164,10 +1164,7 @@ footer {
       color: #fab0bc; }
 
 .widget_text {
-  margin-bottom: .5rem;
-  height: 30px;
-  position: relative;
-  top: -25px; }
+  margin-bottom: .5rem; }
 
 .alignnone {
   width: 40px;
@@ -1178,8 +1175,7 @@ footer {
   margin: .5rem;
   font-size: 1.25rem;
   font-family: "Lato-Regular";
-  color: #fff;
-  text-transform: inherit; }
+  color: #fff; }
 
 .joyce-phonenumber, .annex-phonenumber {
   margin-bottom: 1rem; }
@@ -1196,14 +1192,11 @@ footer {
     padding: 0;
     text-align: left;
     margin-bottom: 1rem;
-    margin-top: 1rem; }
+    margin-top: .625rem; }
   footer img {
     margin-top: 0; }
   .widget_text {
-    height: 20px;
-    position: relative;
-    left: -332px;
-    top: 95px; }
+    margin-bottom: 0; }
   .desktop-footer-locations {
     display: -webkit-box;
     display: -ms-flexbox;
