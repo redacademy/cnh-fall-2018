@@ -9,50 +9,54 @@ get_header(); ?>
 <?php get_template_part( 'template-parts/breadcrumbs', 'breadcrumbs' ); ?>
 
 <div id="primary" class="content-area">
-  <main id="main" class="site-main" role="main">
-  
-    <div class="rooms-carousel-container">
-        <?php
-        
-        //TODO use if statement to check if field is not empty
-    
-         $rooms = CFS()->get( 'rental_room' ); // get CFS loop for rooms   ?>
-        <div>
+  <main id="main" class="site-main" role="main">  
+
+  <div class='new-title'><?php the_title(); ?></div>
+  <div class="rooms-carousel-container">
+        <?php $rooms = CFS()->get( 'rental_room' ); // get CFS loop for rooms  ?>
+        <div class="room-list-container">
           <ul class="rooms-carousel-list">
-            <?php foreach ( $rooms as $room ): ?>
-              <li><?php echo $room['room_title']; ?></li>
+            <?php 
+            $count = 0;
+            foreach ( $rooms as $room ): ?>
+              <li data-id ="<?php echo $count ?>"><?php echo $room['room_title'];  $count ++; ?></li>
             <?php endforeach; ?>
           </ul>
-          </div>
+        </div>
+        <!-- Flickity Carousel -->
+        <div class="main-carousel">
           <?php
-          foreach ( $rooms as $room ): ?>
-          <div class="room-wrapper">
-              <h2 class="carousel-rental-title"><?php echo $room['room_title']; ?></h2>
-              <div class="main-carousel">            
+          $count = 0;
+          foreach ( $rooms as $room ): ?>  
+            <div class="room-separate" data-id="<?php echo $count ?>">
+            <h3 class="room-title"><?php echo $room['room_title']; ?></h3>
+            <div class="room-content">
               <div class="carousel-cell">
                 <img src="<?php echo $room['image_loop'][0]['room_image']; ?>" />
               </div>
-        
+            
+              <div class="room-stats">
+                <div class="room-info">
+                  <p class="room-stat-title">Capacity:  </p>
+                  <?php echo $room['room_capacity']; ?>
+                </div>
+          
+                <div class="room-info">
+                  <p class="room-stat-title">Measurements:  </p>
+                  <?php echo $room['room_measurements']; ?>
+                </div>
+            
+                <div class="room-info">
+                  <p class="room-stat-title">Features:  </p>
+                  <?php echo $room['room_features']; ?>
+                </div>
               </div>
-            <div class="room-stats">
-                <div class="room-info">
-                      <?php echo $room['room_measurements']; ?>
-                </div>
-                <div class="room-info">
-              <?php echo $room['room_capacity']; ?>
-                </div>
-                <div class="room-info">
-              <?php echo $room['room_features']; ?>
-                </div>
+              <?php $count ++;?>
             </div>
             </div>
-          <?php endforeach; ?>
+          <?php endforeach ?>
         </div><!-- / Flickity Carousel -->
-  
-
-
-
-
+      </div><!-- / rooms-carousel-container -->
 
     <?php while ( have_posts() ) : the_post(); ?>
 
@@ -65,3 +69,4 @@ get_header(); ?>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
+

@@ -2680,8 +2680,9 @@ iframe.maps {
 .location-name {
   font-size: 1.25rem; }
 
-li.is-selected {
-  background: #fab0bc; }
+.page-template-rentals h1,
+.page-template-rentals .entry-content h3 {
+  display: none; }
 
 .rooms-carousel-container {
   display: -webkit-box;
@@ -2693,11 +2694,17 @@ li.is-selected {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   @media all and (min-width: 600px) {
     .rooms-carousel-container {
       -ms-flex-pack: distribute;
           justify-content: space-around;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
@@ -2705,13 +2712,126 @@ li.is-selected {
 
 .room-stats {
   background: #282460;
-  color: #ffffff; }
+  color: #ffffff;
+  padding-left: 10px;
+  padding-right: 1px;
+  font-size: 0.7rem; }
+  @media all and (min-width: 600px) {
+    .room-stats {
+      background: rgba(40, 36, 96, 0.7);
+      position: absolute;
+      bottom: 6px;
+      right: 0;
+      width: 21vw;
+      font-size: 1.6vw; } }
+  @media all and (min-width: 1080px) {
+    .room-stats {
+      font-size: 1.25rem; } }
 
 .carousel-rental-title {
   font-size: 1rem; }
   @media all and (min-width: 600px) {
     .carousel-rental-title {
       display: none; } }
+
+.rooms-carousel-list {
+  display: none; }
+  @media all and (min-width: 600px) {
+    .rooms-carousel-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      margin: 0;
+      padding-left: 0; } }
+  .rooms-carousel-list li {
+    padding: 0 10px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer; }
+    .rooms-carousel-list li:hover {
+      background: #fab0bc; }
+
+.room-list-container {
+  display: none; }
+  @media all and (min-width: 600px) {
+    .room-list-container {
+      display: inline;
+      border: 2px solid #282460;
+      border-radius: 10px;
+      overflow: hidden; } }
+
+.main-carousel {
+  width: 70%;
+  position: relative; }
+
+@media all and (min-width: 600px) {
+  .room-separate {
+    display: none; }
+    .room-separate:first-child,
+    .room-separate:first-child .room-content {
+      display: inline; } }
+
+.room-separate .room-stat-title {
+  font-size: 0.7rem;
+  font-family: "Lato-Bold";
+  color: #ffffff;
+  margin: 0; }
+  @media all and (min-width: 600px) {
+    .room-separate .room-stat-title {
+      font-size: 1.6vw; } }
+  @media all and (min-width: 1080px) {
+    .room-separate .room-stat-title {
+      font-size: 1.25rem; } }
+
+.room-separate .room-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.room-separate .rentals-call {
+  border: 1px solid #ddd;
+  border-color: #fff;
+  border-radius: 1rem;
+  display: block;
+  background: #282460 !important; }
+
+.room-separate .list-active {
+  background: #fab0bc; }
+
+.room-separate .room-title {
+  font-weight: normal;
+  font-size: 0.7rem;
+  border: 1px solid #282460;
+  margin-bottom: 0;
+  cursor: pointer; }
+  @media all and (min-width: 600px) {
+    .room-separate .room-title {
+      display: none; } }
+
+.room-separate .room-content {
+  display: none; }
+  @media all and (min-width: 600px) {
+    .room-separate .room-content:first-child {
+      display: inline; } }
+
+.mobile-active {
+  background: #282460;
+  color: #ffffff; }
+
+.new-title {
+  font-size: 1.875rem;
+  font-family: "Lato-Bold";
+  color: #282460; }
 
 /*--------------------------------------------------------------
 # Page No Sidebar Template  
