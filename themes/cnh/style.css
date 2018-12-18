@@ -1113,6 +1113,9 @@ object {
 .search h2 {
   font-size: 1.875rem; }
 
+.contact .site-content .content-area {
+  margin: 0 auto; }
+
 @media all and (min-width: 600px) {
   .register-how,
   .register-call {
@@ -1890,6 +1893,8 @@ footer {
     font-size: 1rem;
     line-height: normal;
     background: #fab568; }
+    .btn-sm a:visited {
+      color: #282460; }
 
 /*--------------------------------------------------------------
 # Side Menu
@@ -2575,6 +2580,10 @@ li .menu-item a {
 .selectric-items .selectric-group li {
   padding-left: 25px; }
 
+.map-wrapper {
+  margin: 0 auto; }
+
+.map-wrapper,
 iframe.maps {
   width: 400px;
   height: 300px;
