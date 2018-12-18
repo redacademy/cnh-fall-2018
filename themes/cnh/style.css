@@ -1146,6 +1146,12 @@ object {
   .page-template-page-about .site-content .content-area div ul li {
     list-style: disc; }
 
+.page-template-page-about .site-content .content-area div a:hover {
+  color: #fab0bc; }
+
+.page-template-contact .site-content .content-area {
+  margin: 0 auto; }
+
 @media all and (min-width: 600px) {
   .register-how,
   .register-call {
@@ -2627,7 +2633,7 @@ iframe.maps {
   width: 400px;
   height: 300px;
   overflow: hidden;
-  border-radius: 2rem;
+  border-radius: 0.6rem;
   border: 2px solid #282460; }
 
 .page-template-contact .site-main {
@@ -2645,35 +2651,31 @@ iframe.maps {
       -ms-flex-align: center;
           align-items: center;
   text-align: center; }
-  .page-template-contact .site-main .entry-title {
-    text-align: center;
-    font-size: 4.063rem;
-    color: #282460; }
+  @media all and (min-width: 600px) {
+    .page-template-contact .site-main .entry-title {
+      margin: 0; } }
   .page-template-contact .site-main h3 {
-    text-align: center;
-    font-size: 1.875rem;
-    text-transform: uppercase;
-    color: #282460; }
+    margin-top: 0; }
+  .page-template-contact .site-main a:hover {
+    color: #fab0bc; }
 
 .site-location {
   overflow: hidden; }
   .site-location .wp-block-column {
-    height: 600px; }
-    @media all and (min-width: 1080px) {
+    height: 575px; }
+    @media all and (min-width: 600px) {
       .site-location .wp-block-column {
-        padding-right: 1rem; } }
-  @media all and (min-width: 1080px) {
-    .site-location:last-child {
-      padding-left: 1rem; } }
+        margin: 0.75rem; } }
 
 .location-hours {
   color: #ffffff;
   background: #282460;
-  border-radius: 0.6rem;
   font-size: 1.25rem;
   padding: 0.6rem;
-  width: 350px;
-  margin: auto; }
+  margin: 1.5rem 0 0; }
+  @media all and (min-width: 600px) {
+    .location-hours {
+      border-radius: 0.6rem; } }
 
 .location-name {
   font-size: 1.25rem; }
