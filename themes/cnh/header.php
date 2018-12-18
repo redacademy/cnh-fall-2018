@@ -36,17 +36,16 @@
 
         <div class="header-extras">
           <div class="translate-icon">
-            <i class="material-icons">language</i>
+            <i class="material-icons"><span class="notranslate">language</span></i>
             <?php echo do_shortcode('[google-translator]'); ?>
           </div><!-- .translate-icon -->
           <div class="translate-lang">
-            <!-- <i class="fas fa-language fa-lg"></i>           -->
-            <p>EN</p>
+            <p><span class="notranslate">EN</span></p>
           </div><!-- .translate-icon -->
           <div class="search-btn" aria-hidden="true">
             <i class="fa fa-search fa-lg"></i>
             <?php get_search_form(); ?>
-          </div>
+          </div><!-- .search-btn -->
           <span class="open-slide">
             <a href="#" class="btn-open">
               <svg width="30" height="30">

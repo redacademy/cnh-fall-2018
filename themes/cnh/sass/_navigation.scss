@@ -44,22 +44,10 @@ a {
     display: none;
   }
 
-  ul {
+  ul.nav-menu {
     @include flex(null, space-evenly, null);
-    list-style: none;
-    margin: 0;
-    padding-left: 0;
 
-    li {
-      margin: 0 3px;
-
-      a {
-        padding: 0 $base__space-unit / 2;
-        margin: 1px 0;
-      }
-    }
-
-    li:hover,
+    &>li:hover,
     .current-menu-item,
     .current_page_item,
     .current-menu-parent,
@@ -75,7 +63,26 @@ a {
       }
     }
 
+    ul ul {
+      li:first-child {
+        margin-top: 0;
+      }
+    }
+
     ul {
+      list-style: none;
+      margin: 0;
+      padding-left: 0;
+
+      li {
+        margin: 0 3px;
+
+        a {
+          padding: 0 $base__space-unit / 2;
+          margin: 1px 0;
+        }
+      }
+
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
       position: absolute;
@@ -95,10 +102,6 @@ a {
       li {
         margin: 3.5px 0 0;
         font-size: $size__body * 0.8;
-
-        &:first-child {
-          margin-top: $base__space-unit / 2;
-        }
 
         &:hover>ul,
         &:focus>ul {
