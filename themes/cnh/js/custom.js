@@ -124,7 +124,7 @@
           clientID: this.instaID
         };
 
-        $('.instalame-container').spectragram('getUserFeed', {
+        $('.instagram-container').spectragram('getUserFeed', {
           // complete : spectragramComplete(),
           max: 2,
           size: 'medium',
