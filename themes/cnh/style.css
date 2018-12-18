@@ -2660,6 +2660,10 @@ iframe.maps {
 .location-name {
   font-size: 1.25rem; }
 
+.page-template-rentals h1,
+.page-template-rentals .entry-content h3 {
+  display: none; }
+
 .rooms-carousel-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2698,7 +2702,7 @@ iframe.maps {
       position: absolute;
       bottom: 6px;
       right: 0;
-      width: 18vw;
+      width: 21vw;
       font-size: 1.6vw; } }
   @media all and (min-width: 1080px) {
     .room-stats {
@@ -2747,24 +2751,26 @@ iframe.maps {
   width: 70%;
   position: relative; }
 
-.room-separate {
-  display: none; }
-  .room-separate:first-child {
-    display: inline; }
+@media all and (min-width: 600px) {
+  .room-separate {
+    display: none; }
+    .room-separate:first-child,
+    .room-separate:first-child .room-content {
+      display: inline; } }
 
-.room-stat-title {
+.room-separate .room-stat-title {
   font-size: 0.7rem;
   font-family: "Lato-Bold";
   color: #ffffff;
   margin: 0; }
   @media all and (min-width: 600px) {
-    .room-stat-title {
+    .room-separate .room-stat-title {
       font-size: 1.6vw; } }
   @media all and (min-width: 1080px) {
-    .room-stat-title {
+    .room-separate .room-stat-title {
       font-size: 1.25rem; } }
 
-.room-info {
+.room-separate .room-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2772,15 +2778,40 @@ iframe.maps {
       -ms-flex-align: start;
           align-items: flex-start; }
 
-.rentals-call {
+.room-separate .rentals-call {
   border: 1px solid #ddd;
   border-color: #fff;
   border-radius: 1rem;
   display: block;
   background: #282460 !important; }
 
-.list-active {
+.room-separate .list-active {
   background: #fab0bc; }
+
+.room-separate .room-title {
+  font-weight: normal;
+  font-size: 0.7rem;
+  border: 1px solid #282460;
+  margin-bottom: 0;
+  cursor: pointer; }
+  @media all and (min-width: 600px) {
+    .room-separate .room-title {
+      display: none; } }
+
+.room-separate .room-content {
+  display: none; }
+  @media all and (min-width: 600px) {
+    .room-separate .room-content:first-child {
+      display: inline; } }
+
+.mobile-active {
+  background: #282460;
+  color: #ffffff; }
+
+.new-title {
+  font-size: 1.875rem;
+  font-family: "Lato-Bold";
+  color: #282460; }
 
 /*--------------------------------------------------------------
 # Page No Sidebar Template  

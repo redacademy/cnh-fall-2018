@@ -9,9 +9,9 @@ get_header(); ?>
 <?php get_template_part( 'template-parts/breadcrumbs', 'breadcrumbs' ); ?>
 
 <div id="primary" class="content-area">
-  <main id="main" class="site-main" role="main">
-  
+  <main id="main" class="site-main" role="main">  
 
+  <div class='new-title'><?php the_title(); ?></div>
   <div class="rooms-carousel-container">
         <?php $rooms = CFS()->get( 'rental_room' ); // get CFS loop for rooms  ?>
         <div class="room-list-container">
@@ -27,31 +27,33 @@ get_header(); ?>
         <div class="main-carousel">
           <?php
           $count = 0;
-          foreach ( $rooms as $room ): ?>
-          <div class="room-separate" data-id="<?php echo $count ?>">
-            <div class="carousel-cell">
+          foreach ( $rooms as $room ): ?>  
+            <div class="room-separate" data-id="<?php echo $count ?>">
             <h3 class="room-title"><?php echo $room['room_title']; ?></h3>
-              <img src="<?php echo $room['image_loop'][0]['room_image']; ?>" />
-            </div>
-            
-            <div class="room-stats">
-              <div class="room-info">
-              <p class="room-stat-title">Capacity:  </p>
-                <?php echo $room['room_capacity']; ?>
+            <div class="room-content">
+              <div class="carousel-cell">
+                <img src="<?php echo $room['image_loop'][0]['room_image']; ?>" />
               </div>
+            
+              <div class="room-stats">
+                <div class="room-info">
+                  <p class="room-stat-title">Capacity:  </p>
+                  <?php echo $room['room_capacity']; ?>
+                </div>
           
-              <div class="room-info">
-                <p class="room-stat-title">Measurements:  </p>
-                <?php echo $room['room_measurements']; ?>
-              </div>
+                <div class="room-info">
+                  <p class="room-stat-title">Measurements:  </p>
+                  <?php echo $room['room_measurements']; ?>
+                </div>
             
-              <div class="room-info">
-              <p class="room-stat-title">Features:  </p>
-                <?php echo $room['room_features']; ?>
+                <div class="room-info">
+                  <p class="room-stat-title">Features:  </p>
+                  <?php echo $room['room_features']; ?>
+                </div>
               </div>
+              <?php $count ++;?>
             </div>
-           <?php $count ++;?>
-          </div>
+            </div>
           <?php endforeach ?>
         </div><!-- / Flickity Carousel -->
       </div><!-- / rooms-carousel-container -->

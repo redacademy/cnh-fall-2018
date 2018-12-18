@@ -1,3 +1,8 @@
+.page-template-rentals h1,
+.page-template-rentals .entry-content h3 {
+  display: none;
+}
+
 .rooms-carousel-container {
   display: flex;
   justify-content: center;
@@ -21,7 +26,7 @@
     position: absolute;
     bottom: 6px;
     right: 0;
-    width: 18vw;
+    width: 21vw;
     font-size: 1.6vw;
   }
   @include desktop {
@@ -72,38 +77,72 @@
 }
 
 .room-separate {
-  display: none;
-  &:first-child {
-    display: inline;
-  }
-}
-
-.room-stat-title {
-  font-size: 0.7rem;
-  font-family: $font__subtitle;
-  color: #ffffff;
-  margin: 0;
   @include tablet {
-    font-size: 1.6vw;
+    display: none;
+    &:first-child,
+    &:first-child .room-content {
+      display: inline;
+    }
   }
-  @include desktop {
-    font-size: $size__body;
+
+  .room-stat-title {
+    font-size: 0.7rem;
+    font-family: $font__subtitle;
+    color: #ffffff;
+    margin: 0;
+    @include tablet {
+      font-size: 1.6vw;
+    }
+    @include desktop {
+      font-size: $size__body;
+    }
+  }
+
+  .room-info {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .rentals-call {
+    border: $border__solid;
+    border-color: $color__background-body;
+    border-radius: 1rem;
+    display: block;
+    background: $color__main !important;
+  }
+
+  .list-active {
+    background: $color__highlight;
+  }
+
+  .room-title {
+    font-weight: normal;
+    font-size: 0.7rem;
+    border: 1px solid $color__main;
+    margin-bottom: 0;
+    cursor: pointer;
+    @include tablet {
+      display: none;
+    }
+  }
+
+  .room-content {
+    display: none;
+    @include tablet {
+      &:first-child {
+        display: inline;
+      }
+    }
   }
 }
 
-.room-info {
-  display: flex;
-  align-items: flex-start;
+.mobile-active {
+  background: $color__main;
+  color: #ffffff;
 }
 
-.rentals-call {
-  border: $border__solid;
-  border-color: $color__background-body;
-  border-radius: 1rem;
-  display: block;
-  background: $color__main !important;
-}
-
-.list-active {
-  background: $color__highlight;
+.new-title {
+  font-size: $size__subtitle;
+  font-family: $font__subtitle;
+  color: $color__main;
 }
