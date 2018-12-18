@@ -91,3 +91,11 @@
   display: flex;
   align-items: flex-start;
 }
+
+.rentals-call {
+  border: $border__solid;
+  border-color: $color__background-body;
+  border-radius: 1rem;
+  display: block;
+  background: $color__main !important;
+}

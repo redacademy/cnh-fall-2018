@@ -2736,6 +2736,13 @@ iframe.maps {
       -ms-flex-align: start;
           align-items: flex-start; }
 
+.rentals-call {
+  border: 1px solid #ddd;
+  border-color: #fff;
+  border-radius: 1rem;
+  display: block;
+  background: #282460 !important; }
+
 /*--------------------------------------------------------------
 # Page No Sidebar Template  
 --------------------------------------------------------------*/
