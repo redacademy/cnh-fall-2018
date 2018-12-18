@@ -6,6 +6,10 @@ Built by
 **Kyle Tecson** | _kyltecs@gmail.com_
 **Matthew Wong** | _matthew.aramis@gmail.com_
 
+<img src="/themes/cnh/screenshot.png" alt="a picture of the front page for desktop" width="1250px" height="600px">
+
+<img src="/themes/cnh/assets/images/README_Screenshots/cnh_mobile.png" alt="a picture of the front page for mobile" width="400px" height="662px">
+
 This theme was built for the Collingwood Neighbourhood House Wordpress website. It was built as a part of the Community Partners initiative during our Web Development program at RED Academy.
 
 ## Technologies Used
