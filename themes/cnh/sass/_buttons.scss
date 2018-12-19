@@ -130,7 +130,8 @@
   height: 50px;
   width: 198px;
   padding: 0;
-  margin: 0;
+  // margin: 0;
+  margin: 0 $base__space-unit;
   font-size: $size__body * 0.8;
 
   a {

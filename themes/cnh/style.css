@@ -2003,7 +2003,7 @@ footer {
   height: 50px;
   width: 198px;
   padding: 0;
-  margin: 0;
+  margin: 0 1.5rem;
   font-size: 1rem; }
   .btn-sm a {
     font-size: 1rem;
@@ -2210,58 +2210,6 @@ a {
     color: #282460;
     font-size: 65px;
     line-height: 78px; } }
-
-.page-template-page-no-sidebar .entry-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 0 2.4rem; }
-  @media all and (min-width: 1080px) {
-    .page-template-page-no-sidebar .entry-content {
-      text-align: left; } }
-  .page-template-page-no-sidebar .entry-content p {
-    color: #282460; }
-    @media all and (min-width: 1080px) {
-      .page-template-page-no-sidebar .entry-content p {
-        font-size: 20px;
-        line-height: 24px;
-        margin: 5px; } }
-  .page-template-page-no-sidebar .entry-content .subtitle {
-    font-family: "Lato-Bold"; }
-    @media all and (min-width: 1080px) {
-      .page-template-page-no-sidebar .entry-content .subtitle {
-        font-size: 30px; } }
-
-.page-template-page-no-sidebar .site-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-
-.page-template-page-no-sidebar .entry-header {
-  text-align: center;
-  font-family: "Lato-Black"; }
-
-@media all and (min-width: 1080px) {
-  .page-template-page-no-sidebar .all-button {
-    height: 54px;
-    width: 198px; } }
-
-.page-template-page-no-sidebar .all-button a {
-  font-size: 1rem;
-  line-height: 19px; }
-
-.page-template-page-no-sidebar .has-2-columns {
-  padding-top: 30px; }
-  .page-template-page-no-sidebar .has-2-columns .wp-block-column {
-    padding: 30px; }
 
 #sidebar-2 {
   display: none; }
