@@ -1307,8 +1307,14 @@ footer {
     text-transform: uppercase; }
   .widget_text {
     margin-bottom: 0; }
-    .widget_text .textwidget .careers-link:visited {
+    .widget_text .textwidget .careers-link:visited,
+    .widget_text .textwidget .contact-us-link:visited,
+    .widget_text .textwidget .annual-reports-link:visited {
       color: #fff; }
+    .widget_text .textwidget .careers-link:hover,
+    .widget_text .textwidget .contact-us-link:hover,
+    .widget_text .textwidget .annual-reports-link:hover {
+      color: #fab0bc; }
   .desktop-footer-locations {
     display: -webkit-box;
     display: -ms-flexbox;

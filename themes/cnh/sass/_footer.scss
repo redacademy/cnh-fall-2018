@@ -69,7 +69,6 @@ footer {
 
 @include desktop {
   footer {
-
     // background-color: red;
     ul {
       margin: 0;
@@ -92,14 +91,14 @@ footer {
     margin-bottom: 0;
 
     .textwidget {
-      .careers-link,
-      .contact-us-link,
+      .careers-link:visited,
+      .contact-us-link:visited,
       .annual-reports-link:visited {
         color: $color__background-body;
       }
 
-      .careers-link,
-      .contact-us-link,
+      .careers-link:hover,
+      .contact-us-link:hover,
       .annual-reports-link:hover {
         color: $color__highlight;
       }
