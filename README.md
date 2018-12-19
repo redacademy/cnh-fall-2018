@@ -6,7 +6,7 @@ Built by
 **Kyle Tecson** | _kyltecs@gmail.com_
 **Matthew Wong** | _matthew.aramis@gmail.com_
 
-<img src="/themes/cnh/assets/images/README_Screenshots/cnh_desktop.png" alt="a picture of the front page for desktop" width="1350px" height="600px">
+<img src="/themes/cnh/assets/images/README_Screenshots/cnh_desktop.png" alt="a picture of the front page for desktop" width="1200px" height="600px">
 
 <img src="/themes/cnh/assets/images/README_Screenshots/cnh_mobile.png" alt="a picture of the front page for mobile" width="400px" height="662px">
 
