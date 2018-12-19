@@ -195,8 +195,8 @@
 }
 
 .btn-sm {
-  height: -webkit-fill-available;
-  width: inherit;
+  height: 50px;
+  width: 90%;
   padding: 0;
   // margin: 0;
   // margin: $base__space-unit $base__space-unit/2;
@@ -207,6 +207,7 @@
     font-size: $size__body * 0.8;
     line-height: normal;
     background: $color__button;
+    color: $color__main;
 
     &:visited {
       color: $color__main;
@@ -236,4 +237,7 @@
 
 .page-template-page-no-sidebar .btn-sm {
   margin: $base__space-unit/2;
+}
+.small-buttons {
+  height: 120px;
 }
