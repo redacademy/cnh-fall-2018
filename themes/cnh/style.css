@@ -2107,7 +2107,7 @@ a {
     color: #282460; }
 
 .wp-block-button:hover {
-  opacity: .5; }
+  opacity: 0.5; }
 
 .page-template-services-php .entry-content {
   display: -webkit-box;
@@ -2841,10 +2841,7 @@ iframe.maps {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end; }
+          flex-direction: column; }
 
 /*--------------------------------------------------------------
 # Page No Sidebar Template  
