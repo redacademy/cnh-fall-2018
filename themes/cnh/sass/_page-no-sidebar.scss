@@ -56,9 +56,9 @@
         // padding-top: 30px;
       }
 
-      // .wp-block-column {
-      //   height: 125px;
-      // }
+      .wp-block-column>p {
+        margin: 0;
+      }
     }
   }
 }
