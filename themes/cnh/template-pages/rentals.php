@@ -12,6 +12,7 @@ get_header(); ?>
   <main id="main" class="site-main" role="main">  
 
   <div class='new-title'><?php the_title(); ?></div>
+  
   <div class="rooms-carousel-container">
         <?php $rooms = CFS()->get( 'rental_room' ); // get CFS loop for rooms  ?>
         <div class="room-list-container">
