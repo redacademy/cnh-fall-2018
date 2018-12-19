@@ -1,14 +1,14 @@
-.home {
-  .site-content {
+.home .site-content {
     width: 100%;
 }
 .home .entry-header {
-    height: 190px;
+  height: 250px;
 }
-  .entry-header img {
+.entry-header img {
       transform: translateY(-23.5%);
       z-index: -1;
   }
+
 
 
 .home-title {
@@ -102,6 +102,7 @@
     display: flex;
     justify-content: center;
     text-transform: uppercase;
+  
 
     .date-text-container {
       display: flex;
@@ -147,7 +148,6 @@
     color: white;
     background-color: #282460b9;
     border-radius: 0 0 10px 0;
-
     a {
       position: relative;
       top: 15px;
@@ -186,6 +186,10 @@
     font-family: $font__title;
   }
 
+.frontpage-buttons-container {
+  width: 355px;
+  margin: auto;
+}
   .frontpage-buttons {
     margin: 3rem;
 
@@ -194,11 +198,19 @@
       margin-bottom: 2rem;
     }
   }
-
+      .childcare-button,
+      .senior-programs-button,
+      .donate-button {
+        width: 280px;
+        margin: auto;
+        height: 68px;
+        font-size: 18px;
+        text-transform: uppercase;
+      }
   @include tablet {
     .home-title {
       top: 25px;
-      width: 65%;
+      width: 75%;
       left: 50%;
       font-size: 30px;
       text-transform: none;
@@ -212,9 +224,12 @@
     .home-subtitle {
       display: none;
     }
+    .home .entry-header {
+      height: 250px;
+    }
 
     .frontpage-content {
-      margin-top: 12%;
+      margin-top: 1rem;
     }
 
     .we-are-a-place {
@@ -225,7 +240,7 @@
 
   @include mid-tablet {
     .home-title {
-      top: 20px;
+      top: 40px;
       left: 50%;
       font-size: 40px;
       text-transform: none;
@@ -239,25 +254,26 @@
     .home-subtitle {
       display: initial;
       position: absolute;
-      top: 135px;
+      top: 155px;
       left: 50%;
       font-size: 20px;
       margin-top: .5rem;
       text-transform: none;
       transform: translateX(-50%);
     }
-
+    .home .entry-header {
+      height: 400px;
+    }
     .frontpage-content {
-      margin-top: 18%;
+      margin-top: 1rem;
     }
 
-    .instagram-container {
-      .photo:last-child {
+ 
+.instagram-container .photo:last-child {
         display: initial;
         margin-left: 1rem;
         border-radius: 10px;
       }
-    }
 
     .wp-block-image {
       width: 600px;
@@ -265,15 +281,17 @@
   }
 
   @include desktop {
-    .home .entry-header {
-      height: 475px;
+    // .home .entry-header {
+    //   height: 475px;
 
-      img {
-        transform: translateY(-23%);
-        z-index: -1;
+      // img {
+      //   transform: translateY(-23%);
+      //   z-index: -1;
+      // }
+
+      .home .entry-header {
+        height: 600px;
       }
-    }
-
     .home-title {
       top: 120px;
       width: 65%;
@@ -298,7 +316,7 @@
     }
 
     .frontpage-content {
-      margin-top: 11rem;
+      margin-top: 1rem;
     }
 
     .upcoming-events-title,
@@ -361,7 +379,7 @@
       .wp-block-button__link {
         font-size: 16px;
         width: 195px;
-        border-radius: 10px
+        border-radius: 10px;
       }
     }
 
@@ -534,8 +552,9 @@
         margin-left: 1rem;
         margin-right: 1rem;
         text-transform: uppercase;
+        height: 198px;
+        width: 295px;
+
       }
     }
   }
-  
-}
