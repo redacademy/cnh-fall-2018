@@ -5,9 +5,9 @@
 /* Buttons */
 
 button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
   border-radius: 0.5rem;
   border-color: $color__button;
   background: $color__button;
@@ -26,12 +26,12 @@ input[type="submit"] {
 
 /* Fields */
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-input[type="tel"],
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
 textarea {
   color: #666;
   border: 1px solid #ccc;
@@ -42,12 +42,12 @@ textarea {
   }
 }
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-input[type="tel"] {
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
+input[type='tel'] {
   padding: 3px;
 }
 
@@ -111,12 +111,6 @@ textarea {
 .page-template-page-no-sidebar {
   .site-content {
     .content-area {
-
-      // Rental Quote Form
-      // h1 {
-      //   font-size: $size__subtitle;
-      // }
-
       .wpcf7-form {
         @include flex(null, center, center);
         flex-wrap: wrap;
@@ -130,8 +124,6 @@ textarea {
 
         div {
           margin: $base__space-unit/3 0;
-
-
         }
 
         div.rental-time {
@@ -156,7 +148,7 @@ textarea {
         input[type='submit'] {
           background: $color__button;
           font-size: $size__body;
-          padding: $base__space-unit/1.5 $base__space-unit*3;
+          padding: $base__space-unit/1.5 $base__space-unit * 3;
           text-align: center;
         }
 
