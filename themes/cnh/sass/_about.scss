@@ -1,4 +1,4 @@
-.page-template-about-php .entry-content {
+.page-template-page-no-sidebar .entry-content {
   display: flex;
   flex-direction: column;
   margin: 0 2.4rem;
@@ -22,19 +22,19 @@
   }
 }
 
-.page-template-about-php {
+.page-template-page-no-sidebar {
   .site-main {
     display: flex;
     flex-direction: column;
   }
 }
 
-.page-template-about-php .entry-header {
+.page-template-page-no-sidebar .entry-header {
   text-align: center;
   font-family: $font__title;
 }
 
-.page-template-about-php .all-button {
+.page-template-page-no-sidebar .all-button {
   @include desktop {
     height: 54px;
     width: 198px;
@@ -45,6 +45,9 @@
   }
 }
 
-.page-template-about-php .has-2-columns {
+.page-template-page-no-sidebar .has-2-columns {
   padding-top: 30px;
+  .wp-block-column {
+    padding: 30px;
+  }
 }
