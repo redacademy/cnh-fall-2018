@@ -71,8 +71,16 @@ footer {
   .widget_text {
     margin-bottom: 0;
     .textwidget {
-      .careers-link:visited {
+      .careers-link,
+      .contact-us-link,
+      .annual-reports-link:visited {
         color: $color__background-body;
+      }
+
+      .careers-link,
+      .contact-us-link,
+      .annual-reports-link:hover {
+        color: $color__highlight;
       }
     }
   }
