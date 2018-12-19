@@ -128,35 +128,28 @@ textarea {
           margin-top: $base__space-unit / 2;
         }
 
-        p {
-          margin-top: 0;
+        div {
+          margin: $base__space-unit/3 0;
 
-          label {
 
-            .your-start-time,
-            .your-end-time {
-              input {
-                width: 80%;
-              }
+        }
+
+        div.rental-time {
+          display: inline-flex;
+
+          div {
+            margin: 0 0 0 $base__space-unit/2;
+          }
+
+          .your-start-time,
+          .your-end-time {
+            input {
+              width: 93%;
             }
           }
         }
 
-        p:nth-last-of-type(4),
-        p:nth-last-of-type(3) {
-          width: 50%;
-          text-align: center;
-
-          label {
-            text-align: left;
-          }
-
-          input {
-            text-align: center;
-          }
-        }
-
-        p:last-of-type {
+        div:last-of-type {
           margin-bottom: 0;
         }
 
