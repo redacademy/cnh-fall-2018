@@ -26,7 +26,7 @@
   display: none;
 }
 
-.wp-block-image {
+.home .wp-block-image {
   width: 280px;
   height: 56px;
   display: flex;
@@ -294,7 +294,6 @@
       }
     .home-title {
       top: 120px;
-      width: 65%;
       left: 50%;
       font-size: 65px;
       text-transform: none;
