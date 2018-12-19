@@ -31,6 +31,7 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"],
+input[type="tel"],
 textarea {
   color: #666;
   border: 1px solid #ccc;
@@ -45,7 +46,8 @@ input[type="text"],
 input[type="email"],
 input[type="url"],
 input[type="password"],
-input[type="search"] {
+input[type="search"],
+input[type="tel"] {
   padding: 3px;
 }
 
@@ -101,6 +103,71 @@ textarea {
   .search-icon {
     @include desktop {
       display: none;
+    }
+  }
+}
+
+// Rental Quote Form
+.page-template-page-no-sidebar {
+  .site-content {
+    .content-area {
+
+      // Rental Quote Form
+      // h1 {
+      //   font-size: $size__subtitle;
+      // }
+
+      .wpcf7-form {
+        @include flex(null, center, center);
+        flex-wrap: wrap;
+        text-align: left;
+
+        input,
+        textarea {
+          background: $color__background-form;
+          margin-top: $base__space-unit / 2;
+        }
+
+        div {
+          margin: $base__space-unit/3 0;
+
+
+        }
+
+        div.rental-time {
+          display: inline-flex;
+
+          div {
+            margin: 0 0 0 $base__space-unit/2;
+          }
+
+          .your-start-time,
+          .your-end-time {
+            input {
+              width: 93%;
+            }
+          }
+        }
+
+        div:last-of-type {
+          margin-bottom: 0;
+        }
+
+        input[type='submit'] {
+          background: $color__button;
+          font-size: $size__body;
+          padding: $base__space-unit/1.5 $base__space-unit*3;
+          text-align: center;
+        }
+
+        .ajax-loader {
+          display: none;
+        }
+      }
+
+      .received {
+        display: none;
+      }
     }
   }
 }

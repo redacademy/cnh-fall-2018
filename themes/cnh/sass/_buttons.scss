@@ -176,10 +176,12 @@
 }
 
 .btn-sm {
-  height: 50px;
-  width: 198px;
+  height: -webkit-fill-available;
+  width: inherit;
   padding: 0;
-  margin: 0;
+  // margin: 0;
+  // margin: $base__space-unit $base__space-unit/2;
+  margin: $base__space-unit/2;
   font-size: $size__body * 0.8;
 
   a {
@@ -190,5 +192,10 @@
     &:visited {
       color: $color__main;
     }
+  }
+
+  @include tablet {
+    height: 50px;
+    width: 198px;
   }
 }

@@ -43,7 +43,7 @@
 
   .translate-icon {
 
-    padding: 0;
+    padding-top: 5px;
     // @include flex(row, null, baseline);
     // color: $color__main;
     cursor: pointer;
@@ -73,8 +73,8 @@
   }
 
   .translate-lang {
-    font-family: $font__subtitle;
     text-transform: uppercase;
+    font-size: $size__body;
   }
 
   .search-btn {
@@ -103,8 +103,7 @@
         .search-submit {
           position: absolute;
           right: 2px;
-          top: 3px;
-          font-size: $size__body * 0.5;
+          top: 2px;
           border-radius: 0.4rem;
         }
       }

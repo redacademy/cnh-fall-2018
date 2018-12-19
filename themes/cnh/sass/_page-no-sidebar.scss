@@ -1,6 +1,7 @@
 /*--------------------------------------------------------------
 # Page No Sidebar Template  
 --------------------------------------------------------------*/
+
 .page-template-page-no-sidebar {
   .site-content {
     .entry-content {
@@ -46,7 +47,7 @@
 
         a {
           font-size: $size__body;
-          line-height: $font__line-height-body;
+          // line-height: $font__line-height-body;
         }
       }
 
@@ -55,9 +56,9 @@
         // padding-top: 30px;
       }
 
-      // .wp-block-column {
-      //   height: 125px;
-      // }
+      .wp-block-column>p {
+        margin: 0;
+      }
     }
   }
 }

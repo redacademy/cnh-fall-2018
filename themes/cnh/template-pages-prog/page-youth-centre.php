@@ -18,7 +18,7 @@ get_header(); ?>
     /** 
      * Get the program entries
      */ 
-      $args = array( 'post_type' => 'program', 'order' => 'ASC', 'posts_per_page' => 6, 'program_type' => 'youth-centre');
+      $args = array( 'post_type' => 'program', 'order' => 'ASC', 'posts_per_page' => 666, 'program_type' => 'youth-centre');
       
       $program_posts = get_posts( $args ); ?>
     <div class="program-wrapper">

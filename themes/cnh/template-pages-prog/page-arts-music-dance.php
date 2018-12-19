@@ -18,7 +18,7 @@ get_header(); ?>
     /** 
      * Get the program entries
      */ 
-      $args = array( 'post_type' => 'program', 'order' => 'ASC', 'posts_per_page' => 6, 'program_type' => 'arts-music-dance');
+      $args = array( 'post_type' => 'program', 'order' => 'ASC', 'posts_per_page' => 666, 'program_type' => 'arts-music-dance');
       
       $program_posts = get_posts( $args ); ?>
     <div class="program-wrapper">
@@ -31,7 +31,9 @@ get_header(); ?>
     ?>
     </div><!-- .program-wrapper -->
 
-  <?php cnh_numbered_pagination(); ?>
+  <?php 
+  echo cnh_numbered_pagination(); 
+  ?>
   </main><!-- #main -->
 </div><!-- #primary -->
 
