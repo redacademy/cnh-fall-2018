@@ -8,19 +8,36 @@
 
 .wp-block-column {
   margin-bottom: 0;
-  height: 138px; // jl
+
 
   @include desktop {
+      height: 138px; // jl
     height: 252px; // jl
+    flex-basis: auto;
+    font-size: 30px;
+      line-height: 36px;
+      width: 357px;
+      // margin: 6.3125rem 0;
+      height: 238px;
   }
 }
-
+.wp-block-button {
+  height: 100%;
+}
+.wp-block-button__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wp-block-columns {
+  justify-content: center;
+}
 .all-button {
   border-radius: 1rem;
-  // margin: 0.5rem;
-  margin: $base__space-unit; // jl
-  font-size: 1.67rem;
-  height: 5.67rem;
+  // // margin: 0.5rem;
+
+
+  // // height: 5.67rem;
   text-align: center;
   font-family: 'Lato-Bold';
   text-decoration: none;
@@ -29,38 +46,70 @@
   align-items: center;
   justify-content: center;
 
+
   &:hover {
     opacity: 0.5;
   }
 
   @include desktop {
-    width: 330px;
-    height: 238px;
+      width: 355px;
+      margin: 0;
+      font-size: 1.67rem;
+      margin: $base__space-unit; // jl
+    // width: 330px;
+    // height: 238px;
     border-radius: 8px;
 
     a {
       font-size: 30px;
-      line-height: 36px;
+      height: 100%;
+      width: 100%;
+      // line-height: 36px;
+      // width: 357px;
+      // margin: 6.3125rem 0;
+      // height: 238px;
+      #text {
+        margin: auto;
+      }
     }
   }
 }
-
+.wp-block-column {
+  margin: 1rem;
+}
+.wp-block-column:not(:first-child), .wp-block-column:nth-child(2n) {
+  margin-left:1rem;
+}
+.wp-block-column:not(:first-child), .wp-block-column:nth-child(2n) {
+  margin-right: 1rem;
+}
+.wp-block-column:not(:last-child) {
+  margin-right: 1rem;
+}
+@include desktop {
+.page-template-programs .has-3-columns{
+  position: relative;
+  left: -60px;
+}
+}
 .has-3-columns {
+
   a {
     text-transform: uppercase;
   }
 
   @include desktop {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 30px;
+    // display: flex;
+    // justify-content: space-around;
+    // padding-top: 30px;
+    margin: auto;
   }
 }
 
 .has-2-columns {
-  .wp-block-column {
-    margin: 0;
-  }
+  // .wp-block-column {
+  //   margin: 0;
+  // }
 
   a {
     text-transform: uppercase;
