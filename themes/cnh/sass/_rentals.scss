@@ -145,4 +145,11 @@
   font-size: $size__subtitle;
   font-family: $font__subtitle;
   color: $color__main;
+  margin-bottom: 20px;
+}
+
+.page-template-rentals .entry-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }

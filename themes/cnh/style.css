@@ -2831,7 +2831,20 @@ iframe.maps {
 .new-title {
   font-size: 1.875rem;
   font-family: "Lato-Bold";
-  color: #282460; }
+  color: #282460;
+  margin-bottom: 20px; }
+
+.page-template-rentals .entry-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
 
 /*--------------------------------------------------------------
 # Page No Sidebar Template  
