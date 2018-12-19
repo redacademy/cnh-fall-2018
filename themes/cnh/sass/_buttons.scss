@@ -204,10 +204,10 @@ flex-direction: column;
   }
 }
 @include desktop {
-.page-template-about .wp-block-column{
+.page-id-21 .wp-block-column{
   margin: 0
 }
-.wp-block-column:first-child {
+.page-id-21 .wp-block-column:first-child {
   display: flex;
   justify-content: right;
 }
