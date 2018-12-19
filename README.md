@@ -10,7 +10,7 @@ Built by
 
 <img src="/themes/cnh/assets/images/README_Screenshots/cnh_mobile.png" alt="a picture of the front page for mobile" width="400px" height="662px">
 
-This theme was built for the Collingwood Neighbourhood House Wordpress website. It was built as a part of the Community Partners initiative during our Web Development program at RED Academy.
+This theme was built for the Collingwood Neighbourhood House Wordpress website. It was built as a part of the Community Partners initiative during our Web Development program at RED Academy. It includes a mobile, tablet, and desktop version.
 
 ## Technologies Used
 
