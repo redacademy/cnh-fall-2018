@@ -93,7 +93,8 @@
 }
 }
 .has-3-columns {
-
+flex-direction: column;
+width: 100%;
   a {
     text-transform: uppercase;
   }
@@ -103,13 +104,15 @@
     // justify-content: space-around;
     // padding-top: 30px;
     margin: auto;
+    flex-direction: row;
   }
 }
 
 .has-2-columns {
   // .wp-block-column {
   //   margin: 0;
-  // }
+  width: 100%;
+flex-direction: column;
 
   a {
     text-transform: uppercase;
@@ -117,6 +120,7 @@
 
   @include desktop {
     margin: auto;
+    flex-direction: row;
   }
 }
 
@@ -198,4 +202,13 @@
     height: 50px;
     width: 198px;
   }
+}
+@include desktop {
+.page-template-about .wp-block-column{
+  margin: 0
+}
+.wp-block-column:first-child {
+  display: flex;
+  justify-content: right;
+}
 }

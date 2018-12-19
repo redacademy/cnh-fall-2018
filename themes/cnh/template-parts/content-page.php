@@ -13,7 +13,13 @@
 	</header><!-- .entry-header -->
 	
 	<div class="entry-content">
-		<?php the_content(); ?>
+    <?php the_content(); ?>
+    <?php 
+      if (CFS()->get( 'download_form' ) == true):
+        echo '<button class="button-yellow all-button btn-sm">';
+        echo '<a href="' . CFS()->get( 'download_form' ) . '">Download Form</a></button>';
+      endif;
+      ?>
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
