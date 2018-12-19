@@ -45,7 +45,7 @@ a {
   }
 
   ul.nav-menu {
-    @include flex(null, space-evenly, null);
+    @include flex(null, space-around, null);
     margin: 0;
 
     &>li:hover,
