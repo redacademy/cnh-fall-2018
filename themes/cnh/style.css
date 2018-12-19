@@ -2120,7 +2120,7 @@ a {
   a:hover {
     color: #282460; }
   a:visited {
-    color: #fff; }
+    color: #282460; }
 
 .wp-block-button:hover {
   opacity: 0.5; }
@@ -2894,8 +2894,7 @@ iframe.maps {
   .page-template-page-no-sidebar .site-content .entry-content p:last-of-type {
     margin-bottom: 4.5rem; }
   .page-template-page-no-sidebar .site-content .entry-content .all-button a {
-    font-size: 1.25rem;
-    line-height: 1.5; }
+    font-size: 1.25rem; }
 
 /*--------------------------------------------------------------
 # Calendar - Tribe Events
