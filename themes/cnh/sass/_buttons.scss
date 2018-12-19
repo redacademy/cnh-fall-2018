@@ -203,3 +203,12 @@ flex-direction: column;
     width: 198px;
   }
 }
+@include desktop {
+.page-template-about .wp-block-column{
+  margin: 0
+}
+.wp-block-column:first-child {
+  display: flex;
+  justify-content: right;
+}
+}
