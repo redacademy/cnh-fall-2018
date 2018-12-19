@@ -1088,39 +1088,55 @@ object {
 .page-template-page-no-sidebar .site-content .content-area {
   text-align: center; }
 
+.single .site-content .content-area,
 .page-template-volunteer .site-content .content-area,
 .page-template-career .site-content .content-area,
 .search .site-content .content-area {
-  text-align: left; }
+  text-align: left;
+  max-width: 90%;
+  margin: 0 auto; }
   @media all and (min-width: 1080px) {
+    .single .site-content .content-area,
     .page-template-volunteer .site-content .content-area,
     .page-template-career .site-content .content-area,
     .search .site-content .content-area {
-      max-width: 70%;
-      margin: 0 auto; } }
+      max-width: 70%; } }
+  .single .site-content .content-area h3,
   .page-template-volunteer .site-content .content-area h3,
   .page-template-career .site-content .content-area h3,
   .search .site-content .content-area h3 {
     margin-bottom: 0; }
+  .single .site-content .content-area article,
   .page-template-volunteer .site-content .content-area article,
   .page-template-career .site-content .content-area article,
   .search .site-content .content-area article {
     margin: 3rem 0; }
+    .single .site-content .content-area article:first-child,
     .page-template-volunteer .site-content .content-area article:first-child,
     .page-template-career .site-content .content-area article:first-child,
     .search .site-content .content-area article:first-child {
       margin-top: 0; }
+    .single .site-content .content-area article p,
     .page-template-volunteer .site-content .content-area article p,
     .page-template-career .site-content .content-area article p,
     .search .site-content .content-area article p {
       margin-bottom: 0; }
+    .single .site-content .content-area article button,
     .page-template-volunteer .site-content .content-area article button,
     .page-template-career .site-content .content-area article button,
     .search .site-content .content-area article button {
       margin-top: 1rem; }
 
-.search h2 {
-  font-size: 1.875rem; }
+.search-results .site-content .content-area article {
+  margin-bottom: 1.5rem; }
+  .search-results .site-content .content-area article .entry-header h2 {
+    margin: 0;
+    font-size: 1.875rem; }
+  .search-results .site-content .content-area article .entry-summary {
+    margin: 0; }
+
+.search-results .site-content .content-area button a {
+  font-size: 1.25rem; }
 
 .contact .site-content .content-area {
   margin: 0 auto; }

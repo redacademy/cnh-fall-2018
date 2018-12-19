@@ -245,16 +245,24 @@
   }
 }
 
+.single,
 .page-template-volunteer,
 .page-template-career,
 .search {
   .site-content {
     .content-area {
       text-align: left;
+      max-width: 90%;
+      margin: 0 auto;
+
+      // @include tablet {
+      //   max-width: 90%;
+      //   margin: 0 auto;
+      // }
 
       @include desktop {
         max-width: 70%;
-        margin: 0 auto;
+        // margin: 0 auto;
       }
 
       h3 {
@@ -280,9 +288,31 @@
   }
 }
 
-.search {
-  h2 {
-    font-size: $size__subtitle;
+// .search,
+.search-results {
+  .site-content {
+    .content-area {
+      article {
+        margin-bottom: $base__space-unit;
+
+        .entry-header {
+          h2 {
+            margin: 0;
+            font-size: $size__subtitle;
+          }
+        }
+
+        .entry-summary {
+          margin: 0;
+        }
+      }
+
+      button {
+        a {
+          font-size: $size__body;
+        }
+      }
+    }
   }
 }
 
