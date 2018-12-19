@@ -338,10 +338,26 @@
             list-style: disc;
           }
         }
+
+        a {
+          &:hover {
+            color: $color__highlight;
+          }
+        }
       }
     }
   }
 }
+
+// Contact
+.page-template-contact {
+  .site-content {
+    .content-area {
+      margin: 0 auto;
+    }
+  }
+}
+
 
 // Register Blocks
 .register-how,

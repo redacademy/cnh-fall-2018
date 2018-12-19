@@ -1,12 +1,16 @@
-li.is-selected {
-  background: $color__highlight;
+.page-template-rentals h1,
+.page-template-rentals .entry-content h3 {
+  display: none;
 }
+
 .rooms-carousel-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
   @include tablet {
     justify-content: space-around;
+    align-items: flex-start;
     flex-direction: row;
   }
 }
@@ -14,6 +18,20 @@ li.is-selected {
 .room-stats {
   background: $color__main;
   color: #ffffff;
+  padding-left: 10px;
+  padding-right: 1px;
+  font-size: 0.7rem;
+  @include tablet {
+    background: rgba($color: $color__main, $alpha: 0.7);
+    position: absolute;
+    bottom: 6px;
+    right: 0;
+    width: 21vw;
+    font-size: 1.6vw;
+  }
+  @include desktop {
+    font-size: $size__body;
+  }
 }
 
 .carousel-rental-title {
@@ -21,4 +39,117 @@ li.is-selected {
   @include tablet {
     display: none;
   }
+}
+
+.rooms-carousel-list {
+  display: none;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding-left: 0;
+  }
+  li {
+    padding: 0 10px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+      background: $color__highlight;
+    }
+  }
+}
+
+.room-list-container {
+  display: none;
+  @include tablet {
+    display: inline;
+    border: 2px solid $color__main;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+}
+
+.main-carousel {
+  width: 70%;
+  position: relative;
+}
+
+.room-separate {
+  @include tablet {
+    display: none;
+    &:first-child,
+    &:first-child .room-content {
+      display: inline;
+    }
+  }
+
+  .room-stat-title {
+    font-size: 0.7rem;
+    font-family: $font__subtitle;
+    color: #ffffff;
+    margin: 0;
+    @include tablet {
+      font-size: 1.6vw;
+    }
+    @include desktop {
+      font-size: $size__body;
+    }
+  }
+
+  .room-info {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .rentals-call {
+    border: $border__solid;
+    border-color: $color__background-body;
+    border-radius: 1rem;
+    display: block;
+    background: $color__main !important;
+  }
+
+  .list-active {
+    background: $color__highlight;
+  }
+
+  .room-title {
+    font-weight: normal;
+    font-size: 0.7rem;
+    border: 1px solid $color__main;
+    margin-bottom: 0;
+    cursor: pointer;
+    @include tablet {
+      display: none;
+    }
+  }
+
+  .room-content {
+    display: none;
+    @include tablet {
+      &:first-child {
+        display: inline;
+      }
+    }
+  }
+}
+
+.mobile-active {
+  background: $color__main;
+  color: #ffffff;
+}
+
+.new-title {
+  font-size: $size__subtitle;
+  font-family: $font__subtitle;
+  color: $color__main;
+  margin-bottom: 20px;
+}
+
+.page-template-rentals .entry-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
