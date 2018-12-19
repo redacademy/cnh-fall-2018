@@ -2098,10 +2098,10 @@ a {
   a:hover {
     color: #282460; }
   a:visited {
-    color: #282460; }
+    color: #fff; }
 
 .wp-block-button:hover {
-  opacity: .5; }
+  opacity: 0.5; }
 
 .page-template-services-php .entry-content {
   display: -webkit-box;

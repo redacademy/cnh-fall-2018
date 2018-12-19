@@ -12,16 +12,6 @@
   }
 }
 
-// Full-width
-// .full-width {
-//   @include tablet {
-//     flex: 2 0 100% !important;
-//     max-width: 100% !important;
-//     padding: 0 !important;
-//     text-align: center;
-//   }
-// }
-
 // Google translator
 .goog-te-banner-frame {
   display: none;
@@ -54,12 +44,12 @@ a {
   }
 
   &:visited {
-    color: $color__link-visited;
+    color: $color__background-body;
   }
 }
 
 .wp-block-button:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 // .menut-item:active {
