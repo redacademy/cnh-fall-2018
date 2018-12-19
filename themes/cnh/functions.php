@@ -92,16 +92,13 @@ function cnh_minified_css( $stylesheet_uri, $stylesheet_dir_uri ) {
 
 	return $stylesheet_uri;
 }
-// add_filter( 'stylesheet_uri', 'cnh_minified_css', 10, 2 );
+add_filter( 'stylesheet_uri', 'cnh_minified_css', 10, 2 );
 
 /**
  * Enqueue scripts and styles.
  */
 function cnh_scripts() {
   wp_enqueue_style( 'cnh-style', get_stylesheet_uri() );
-
-  wp_enqueue_style( 'cnh-custom-style', get_template_directory() . '/build/css/style.min.css'  );
-
 
   // to link font awesome
   wp_enqueue_style('cnh-fontawesome','https://use.fontawesome.com/releases/v5.5.0/css/all.css');
