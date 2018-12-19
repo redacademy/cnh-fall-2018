@@ -9,31 +9,43 @@ footer {
   p {
     margin: 0;
   }
+
   ul {
     padding-left: 0;
     margin-left: 0;
     margin-top: 1.0625rem;
     margin-bottom: 0.5rem;
   }
+
   li {
     list-style: none;
   }
+
   a {
     text-decoration: none;
     color: white;
+
     &:hover {
       color: #fab0bc;
     }
   }
 }
+
 .widget_text {
   margin-bottom: 0.5rem;
 }
+
 .alignnone {
   width: 40px;
   margin: 0.5rem;
   margin-bottom: 0rem;
+
+  &:hover {
+    border-radius: 100%;
+    border: 1px solid $color__highlight;
+  }
 }
+
 .widget-title {
   margin: 0.5rem;
   font-size: $size__body;
@@ -41,18 +53,23 @@ footer {
   color: #fff;
   text-transform: inherit;
 }
+
 .joyce-phonenumber,
 .annex-phonenumber {
   margin-bottom: 1rem;
 }
+
 .careers-link {
   margin-top: 1.5rem;
 }
+
 #custom_html-5 {
   display: none;
 }
+
 @include desktop {
   footer {
+
     // background-color: red;
     ul {
       margin: 0;
@@ -61,36 +78,44 @@ footer {
       margin-bottom: 1rem;
       margin-top: 0.75rem;
     }
+
     img {
       margin-top: 0;
     }
   }
+
   .widget-title {
     text-transform: uppercase;
   }
+
   .widget_text {
     margin-bottom: 0;
+
     .textwidget {
       .careers-link:visited {
         color: $color__background-body;
       }
     }
   }
+
   .desktop-footer-locations {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
   }
+
   .joyce-location-details {
     border-right: white 5px solid;
     padding-right: 1.375rem;
   }
+
   .joyce-location-details,
   .annex-location-details,
   .main-house,
   .annex {
     text-align: left;
   }
+
   .main-house,
   .annex {
     margin-top: 0;
@@ -98,12 +123,15 @@ footer {
     font-size: 1.25rem;
     color: white;
   }
+
   .desktop-annex {
     margin-left: 1.375rem;
   }
+
   .wp-image-307 {
     margin-left: 0;
   }
+
   .widget-area {
     margin: auto;
     display: flex;
@@ -113,9 +141,11 @@ footer {
     margin-top: 2.0625rem;
     margin-bottom: 1.4375rem;
   }
+
   #custom_html-5 {
     display: inherit;
   }
+
   #custom_html-4,
   #custom_html-3 {
     display: none;
