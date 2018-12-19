@@ -51,3 +51,7 @@ Insert contents of downloaded folder into your `wp-content` directory.
 
 **2. Apply Theme**
 Assign the theme by logging into Wordpress as an admin. Select Appearance -> Themes in the sidebar, and click "Activate" on Collingwood Starter House theme.
+
+<img src="/themes/cnh/assets/images/README_Screenshots/instructions3.png" alt="a picture demonstrating where to activate the theme" width="1250px" height="600px">
+
+**That's all!** Thanks for viewing our theme.
