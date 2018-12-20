@@ -45,10 +45,6 @@ This theme was built for the Collingwood Neighbourhood House Wordpress website. 
 
 Insert contents of downloaded folder into your `wp-content` directory.
 
-<img src="/themes/cnh/assets/images/README_Screenshots/instructions1.png" alt="a picture demonstrating where to get the theme files" width="1250px" height="600px">
-
-<img src="/themes/cnh/assets/images/README_Screenshots/instructions2.png" alt="a picture demonstrating where to place the theme" width="1250px" height="600px">
-
 **2. Apply Theme**
 Assign the theme by logging into Wordpress as an admin. Select Appearance -> Themes in the sidebar, and click "Activate" on Collingwood Starter House theme.
 
