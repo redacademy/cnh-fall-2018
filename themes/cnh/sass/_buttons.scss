@@ -250,10 +250,6 @@
   align-items: center;
 }
 
-.app-form-wrap {
-  justify-content: center;
-}
-
 .about-btn {
   width: 300px;
   align-items: center;
@@ -261,5 +257,23 @@
     border-radius: 1rem;
     font-family: $font__subtitle;
     font-size: $size__body;
+  }
+}
+
+.app-form-wrap {
+  justify-content: space-around;
+  flex-direction: row;
+
+  .application-btn {
+    a {
+      width: 200px;
+      border-radius: 1rem;
+      font-family: $font__subtitle;
+      font-size: $size__body;
+      margin: auto;
+      @include tablet {
+        height: 100px;
+      }
+    }
   }
 }

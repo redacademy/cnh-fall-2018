@@ -2208,11 +2208,6 @@ footer {
       -ms-flex-align: center;
           align-items: center; }
 
-.app-form-wrap {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
 .about-btn {
   width: 300px;
   -webkit-box-align: center;
@@ -2222,6 +2217,23 @@ footer {
     border-radius: 1rem;
     font-family: "Lato-Bold";
     font-size: 1.25rem; }
+
+.app-form-wrap {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .app-form-wrap .application-btn a {
+    width: 200px;
+    border-radius: 1rem;
+    font-family: "Lato-Bold";
+    font-size: 1.25rem;
+    margin: auto; }
+    @media all and (min-width: 600px) {
+      .app-form-wrap .application-btn a {
+        height: 100px; } }
 
 /*--------------------------------------------------------------
 # Side Menu
