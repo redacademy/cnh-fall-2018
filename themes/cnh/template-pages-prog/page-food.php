@@ -27,6 +27,12 @@ get_header(); ?>
         <div class="program-entry-info">
           <h4><?php the_title(); ?></h4>
           <p><?php the_content(); ?></p>
+          <?php 
+          if (CFS()->get( 'view_menu' ) == true):
+            echo '<button class="button-yellow all-button btn-sm">';
+            echo '<a href="' . CFS()->get( 'view_menu' ) . '">View Menu</a></button>';
+          endif;
+          ?>
         </div><!-- .program-entry-info -->
       </article><!-- .program-entry -->
     <?php endforeach; wp_reset_postdata(); ?>

@@ -80,7 +80,7 @@
 
       .program-wrapper,
       .service-wrapper {
-        padding: 0 $base__space-unit*2;
+        padding: 0 $base__space-unit * 2;
 
         @include tablet {
           padding: 0;
@@ -122,7 +122,6 @@
 .page-template-template-pages-prog,
 .page-template-taxonomy-service_type,
 .page-template-taxonomy-program_type {
-
   .program-info,
   .service-info {
     .entry-title {
@@ -155,7 +154,6 @@
         }
       }
 
-
       h3 {
         margin-top: 0;
         // padding:
@@ -185,7 +183,7 @@
   .service-wrapper {
     article {
       div {
-        div>p {
+        div > p {
           margin: 0;
           font-weight: bold;
           letter-spacing: 1px;
@@ -208,7 +206,7 @@
     .entry-header,
     // page-template-page-about
     .entry-content {
-      padding: 0 $base__space-unit*2;
+      padding: 0 $base__space-unit * 2;
 
       @include tablet {
         padding: 0;
@@ -227,7 +225,7 @@
     .content-area {
       flex: 2 0 100%;
       max-width: 100%;
-      padding: 0 $base__space-unit*2;
+      padding: 0 $base__space-unit * 2;
 
       @include tablet {
         padding: 0 $base__space-unit;
@@ -270,7 +268,7 @@
       }
 
       article {
-        margin: $base__space-unit*2 0;
+        margin: $base__space-unit * 2 0;
 
         &:first-child {
           margin-top: 0;
@@ -338,13 +336,13 @@
 
       div {
         h3 {
-          margin: $base__space-unit*1.5 0 0;
+          margin: $base__space-unit * 1.5 0 0;
 
           @include tablet {
             margin-bottom: 0;
           }
 
-          &+p {
+          & + p {
             margin-top: 0;
           }
 
@@ -388,7 +386,6 @@
   }
 }
 
-
 // Register Blocks
 .register-how,
 .register-call {
@@ -402,12 +399,20 @@
 .register-how {
   background: $color__main !important;
   color: $color__background-body;
-  padding: $base__space-unit $base__space-unit*2 !important;
+  padding: $base__space-unit $base__space-unit * 2 !important;
 
   @include tablet {
     // background: $color__button !important;
     // color: $color__main;
     padding: 0;
+  }
+
+  a {
+    color: $color__background-body;
+
+    &:hover {
+      color: $color__highlight;
+    }
   }
 }
 

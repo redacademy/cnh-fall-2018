@@ -7,9 +7,14 @@
 }
 
 .style-button {
+  display: flex;
+  flex-direction: column;
   a {
+    padding: 30px 0;
+    font-family: $font__subtitle;
     @include desktop {
-      height: 350px;
+      font-size: 20px;
+      padding: 100px;
     }
   }
 }
