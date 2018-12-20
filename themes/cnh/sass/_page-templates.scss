@@ -409,6 +409,14 @@
     // color: $color__main;
     padding: 0;
   }
+
+  a {
+    color: $color__background-body;
+
+    &:hover {
+      $color__highlight;
+    }
+  }
 }
 
 .register-call {
