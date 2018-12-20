@@ -620,9 +620,8 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin: 0; }
     .main-navigation ul.nav-menu > li:hover,
     .main-navigation ul.nav-menu .current-menu-item,
@@ -1627,7 +1626,6 @@ footer {
     height: 600px; }
   .home-title {
     top: 120px;
-    width: 65%;
     left: 50%;
     font-size: 65px;
     text-transform: none;
@@ -1648,6 +1646,8 @@ footer {
             transform: translateX(-50%); }
   .frontpage-content {
     margin-top: 1rem; }
+  .upcoming-events-title {
+    padding-top: 6rem; }
   .upcoming-events-title,
   .instagram-updates-title,
   .we-are-a-place-title {
@@ -1972,10 +1972,12 @@ footer {
 .wp-block-column {
   margin: 1rem; }
 
-.wp-block-column:not(:first-child), .wp-block-column:nth-child(2n) {
+.wp-block-column:not(:first-child),
+.wp-block-column:nth-child(2n) {
   margin-left: 1rem; }
 
-.wp-block-column:not(:first-child), .wp-block-column:nth-child(2n) {
+.wp-block-column:not(:first-child),
+.wp-block-column:nth-child(2n) {
   margin-right: 1rem; }
 
 .wp-block-column:not(:last-child) {
@@ -2077,7 +2079,6 @@ footer {
   height: -webkit-fill-available;
   width: inherit;
   padding: 0;
-  margin: 0.75rem;
   font-size: 1rem; }
   .btn-sm a {
     font-size: 1rem;
@@ -2089,6 +2090,23 @@ footer {
     .btn-sm {
       height: 50px;
       width: 198px; } }
+
+@media all and (min-width: 1080px) {
+  .page-id-21 .wp-block-column {
+    margin: 0; }
+  .page-id-21 .wp-block-column:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right; } }
+
+.page-template .btn-sm {
+  margin: 0; }
+
+.page-template-page-no-sidebar .btn-sm {
+  margin: 0.75rem; }
 
 /*--------------------------------------------------------------
 # Side Menu
@@ -2436,9 +2454,10 @@ li .menu-item a {
         position: relative; }
         .header-extras .search-btn .search-form fieldset .search-submit {
           position: absolute;
-          right: 2px;
-          top: 2px;
-          border-radius: 0.4rem; }
+          right: 1px;
+          top: 1px;
+          border-radius: 0.4rem;
+          border-style: solid; }
   .header-extras .translate-icon,
   .header-extras .search-btn {
     cursor: pointer;
