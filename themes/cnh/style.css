@@ -1270,6 +1270,10 @@ object {
 .page-template-contact .site-content .content-area {
   margin: 0 auto; }
 
+.post-type-archive-tribe_events .site-content .content-area {
+  margin: 0 auto;
+  max-width: 100%; }
+
 @media all and (min-width: 600px) {
   .register-how,
   .register-call {
