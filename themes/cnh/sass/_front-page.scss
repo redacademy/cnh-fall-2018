@@ -281,15 +281,7 @@
   }
 
   @include desktop {
-    // .home .entry-header {
-    //   height: 475px;
-
-      // img {
-      //   transform: translateY(-23%);
-      //   z-index: -1;
-      // }
-
-      .home .entry-header {
+ .home .entry-header {
         height: 600px;
       }
     .home-title {

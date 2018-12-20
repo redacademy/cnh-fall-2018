@@ -6,14 +6,6 @@
   .site-content {
     .entry-content {
       @include flex(column, null, center);
-      // display: flex;
-      // flex-direction: column;
-      // margin: 0 2.4rem;
-
-      // @include desktop {
-      //   text-align: left;
-      // }
-
       h2,
       p {
         @include tablet {
@@ -41,19 +33,11 @@
 
       .all-button {
         @include desktop {
-          // height: 54px;
-          // width: 198px;
         }
 
         a {
           font-size: $size__body;
-          // line-height: $font__line-height-body;
         }
-      }
-
-      .has-2-columns {
-
-        // padding-top: 30px;
       }
 
       .wp-block-column>p {

@@ -29,23 +29,9 @@
 .header-extras {
   @include flex(row, space-between, center);
 
-  // @include desktop {
-  //   align-items: center;
-  // }
-
-  // &>* {
-  //   padding-left: $base__space-unit/1.5;
-
-  //   @include desktop {
-  //     padding-left: $base__space-unit;
-  //   }
-  // }
-
   .translate-icon {
 
     padding-top: 5px;
-    // @include flex(row, null, baseline);
-    // color: $color__main;
     cursor: pointer;
     position: relative;
 
@@ -62,7 +48,6 @@
       display: none;
       position: absolute;
       top: $base__space-unit * 1.3;
-      // right: -40px;
       right: -103px;
 
       @include desktop {
@@ -87,13 +72,11 @@
 
     @include desktop {
       display: block;
-      // align-self: baseline;
     }
 
     .search-form {
       display: none;
       position: absolute;
-      // top: $base__space-unit * 1.63;
       top: -$base__space-unit * 2.2;
       right: 0;
 
