@@ -87,7 +87,6 @@ a {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
       position: absolute;
-      // top: $base__space-unit * 1.63;
       top: $base__space-unit * 1.2;
       left: -999rem;
       z-index: 99999;
@@ -114,11 +113,6 @@ a {
         width: 125px;
       }
 
-      :hover>a,
-      .focus>a {}
-
-      a:hover,
-      a.focus {}
     }
 
     li:hover>ul,
@@ -130,9 +124,6 @@ a {
   li {
     float: left;
     position: relative;
-
-    // &:hover>a,
-    // &.focus>a {}
   }
 
   a {
@@ -140,9 +131,6 @@ a {
     text-decoration: none;
   }
 
-  // .current_page_item>a,
-  // .current-menu-item>a,
-  // .current_page_ancestor>a {}
 }
 
 /* Small menu. */
@@ -150,16 +138,6 @@ a {
 .main-navigation.toggled ul {
   display: none;
 }
-
-// @media screen and (min-width: 768px) {
-//   .menu-toggle {
-//     display: none;
-//   }
-
-//   .main-navigation ul {
-//     @include flex(null, space-evenly, null);
-//   }
-// }
 
 .comment-navigation,
 .posts-navigation,

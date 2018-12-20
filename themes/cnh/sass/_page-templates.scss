@@ -38,9 +38,6 @@
           }
 
           span {
-            // margin: 0 0.25rem 0 0;
-            // margin: 0 $base__space-unit;
-
             .breadcrumb_last {
               color: $color__highlight;
               font-weight: 600;
@@ -56,21 +53,12 @@
       flex: 2 0 100%;
       max-width: 100%;
       margin-bottom: $base__space-unit * 2;
-      // padding: 0 $base__space-unit;
 
       @include tablet {
         flex: 2 0 75%;
         max-width: 75%;
         padding: 0 $base__space-unit;
       }
-
-      // @include desktop {
-      //   flex: 2 0 75%;
-      //   max-width: 75%;
-      // border-right: $border__solid;
-      // border-color: $color__main;
-      // margin-bottom: $base__space-unit * 2;
-      // }
 
       h2 {
         @include tablet {
@@ -91,7 +79,6 @@
     .widget-sidebar {
       order: 2;
       display: none;
-      // padding: 0 $base__space-unit 0 0;
 
       @include tablet {
         display: block;
@@ -107,15 +94,6 @@
   }
 }
 
-// .home .site-content {
-//   .content-area {
-//     flex: 2 0 100%;
-//     max-width: 100%;
-//     border: 0;
-//   }
-// }
-
-// TODO: add program and service type children pages
 /* programs */
 // .page-template-page-arts-music-dance,
 .page-template-template-pages-serv,
@@ -127,14 +105,6 @@
   .service-info {
     .entry-title {
       display: none;
-      // padding: 0 $base__space-unit;
-      // text-align: center;
-
-      // @include tablet {
-      //   display: none;
-      //   padding: 0;
-      //   text-align: left;
-      // }
     }
 
     div {
@@ -158,18 +128,7 @@
 
       h3 {
         margin-top: 0;
-        // padding:
       }
-
-      // TODO: add parent and children headers in wp
-      // h2,
-      // h3 {
-      //   display: none;
-
-      //   @include tablet {
-      //     display: block;
-      //   }
-      // }
 
       p:first-of-type {
         margin-top: $base__space-unit * 2;
@@ -203,7 +162,7 @@
 .page-template-taxonomy-service_type,
 .page-template-taxonomy-program_type {
   .content-area {
-    // text-align: center; // about children
+
 
     .entry-header,
     // page-template-page-about
@@ -255,14 +214,9 @@
       max-width: 90%;
       margin: 0 auto;
 
-      // @include tablet {
-      //   max-width: 90%;
-      //   margin: 0 auto;
-      // }
-
       @include desktop {
         max-width: 70%;
-        // margin: 0 auto;
+
       }
 
       h3 {
@@ -324,9 +278,6 @@
   }
 }
 
-// .full-width {
-//   flex: 2 0 100%;
-// }
 
 // About children pages
 .page-template-page-about {
@@ -356,9 +307,6 @@
         h4 {
           text-transform: capitalize;
 
-          // &+p {
-          //   margin-top: 0;
-          // }
         }
 
         ul {
@@ -405,8 +353,6 @@
   padding: $base__space-unit $base__space-unit*2 !important;
 
   @include tablet {
-    // background: $color__button !important;
-    // color: $color__main;
     padding: 0;
   }
 }
