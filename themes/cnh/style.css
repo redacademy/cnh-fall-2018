@@ -1267,11 +1267,11 @@ footer {
       color: #fab0bc; }
   footer .widget_text .textwidget .careers-link:visited,
   footer .widget_text .textwidget .contact-us-link:visited,
-  footer .widget_text .textwidget .annual-reports-link:visited {
+  footer .widget_text .textwidget .staff-portal-link:visited {
     color: #fff; }
   footer .widget_text .textwidget .careers-link:hover,
   footer .widget_text .textwidget .contact-us-link:hover,
-  footer .widget_text .textwidget .annual-reports-link:hover {
+  footer .widget_text .textwidget .staff-portal-link:hover {
     color: #fab0bc; }
 
 .widget_text {
@@ -1390,7 +1390,7 @@ footer {
 .home-subtitle {
   display: none; }
 
-.wp-block-image {
+.home .wp-block-image {
   width: 280px;
   height: 56px;
   display: -webkit-box;
@@ -1986,19 +1986,37 @@ footer {
     position: relative;
     left: -60px; } }
 
-.has-3-columns a {
-  text-transform: uppercase; }
+.has-3-columns {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%; }
+  .has-3-columns a {
+    text-transform: uppercase; }
+  @media all and (min-width: 1080px) {
+    .has-3-columns {
+      margin: auto;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
 
-@media all and (min-width: 1080px) {
-  .has-3-columns {
-    margin: auto; } }
-
-.has-2-columns a {
-  text-transform: uppercase; }
-
-@media all and (min-width: 1080px) {
-  .has-2-columns {
-    margin: auto; } }
+.has-2-columns {
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .has-2-columns a {
+    text-transform: uppercase; }
+  @media all and (min-width: 1080px) {
+    .has-2-columns {
+      margin: auto;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row; } }
 
 .sidebar-button {
   display: none; }
