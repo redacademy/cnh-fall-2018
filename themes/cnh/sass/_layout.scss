@@ -55,3 +55,18 @@ a {
 // .menut-item:active {
 //   border-bottom: 5px #fab0bc solid;
 // }
+
+.tb-blue {
+  color: #fff;
+  background: $color__main;
+  border-radius: 10px;
+
+  td {
+    padding-left: 10px;
+    border: 0.5px solid #fff;
+    font-size: 12px;
+    @include tablet {
+      font-size: $size__body;
+    }
+  }
+}

@@ -667,9 +667,8 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin: 0; }
     .main-navigation ul.nav-menu > li:hover,
     .main-navigation ul.nav-menu .current-menu-item,
@@ -1694,6 +1693,8 @@ footer {
             transform: translateX(-50%); }
   .frontpage-content {
     margin-top: 1rem; }
+  .upcoming-events-title {
+    padding-top: 6rem; }
   .upcoming-events-title,
   .instagram-updates-title,
   .we-are-a-place-title {
@@ -1952,6 +1953,10 @@ footer {
 .button-pink {
   background-color: #fab0bc; }
 
+@media all and (min-width: 1080px) {
+  .style-button a {
+    height: 350px; } }
+
 .wp-block-column {
   margin-bottom: 0; }
   @media all and (min-width: 1080px) {
@@ -1986,6 +1991,7 @@ footer {
 
 .all-button {
   border-radius: 1rem;
+  text-transform: uppercase;
   text-align: center;
   font-family: 'Lato-Bold';
   text-decoration: none;
@@ -2018,10 +2024,12 @@ footer {
 .wp-block-column {
   margin: 1rem; }
 
-.wp-block-column:not(:first-child), .wp-block-column:nth-child(2n) {
+.wp-block-column:not(:first-child),
+.wp-block-column:nth-child(2n) {
   margin-left: 1rem; }
 
-.wp-block-column:not(:first-child), .wp-block-column:nth-child(2n) {
+.wp-block-column:not(:first-child),
+.wp-block-column:nth-child(2n) {
   margin-right: 1rem; }
 
 .wp-block-column:not(:last-child) {
@@ -2120,15 +2128,15 @@ footer {
     margin: 0; } }
 
 .btn-sm {
-  height: -webkit-fill-available;
-  width: inherit;
+  height: 50px;
+  width: 90%;
   padding: 0;
-  margin: 0.75rem;
   font-size: 1rem; }
   .btn-sm a {
     font-size: 1rem;
     line-height: normal;
-    background: #fab568; }
+    background: #fab568;
+    color: #282460; }
     .btn-sm a:visited {
       color: #282460; }
   @media all and (min-width: 600px) {
@@ -2137,15 +2145,24 @@ footer {
       width: 198px; } }
 
 @media all and (min-width: 1080px) {
-  .page-template-about .wp-block-column {
+  .page-id-21 .wp-block-column {
     margin: 0; }
-  .wp-block-column:first-child {
+  .page-id-21 .wp-block-column:first-child {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: right;
         -ms-flex-pack: right;
             justify-content: right; } }
+
+.page-template .btn-sm {
+  margin: 0; }
+
+.page-template-page-no-sidebar .btn-sm {
+  margin: 0.75rem; }
+
+.small-buttons {
+  height: 120px; }
 
 /*--------------------------------------------------------------
 # Side Menu
@@ -2315,6 +2332,18 @@ a {
 
 .wp-block-button:hover {
   opacity: 0.5; }
+
+.tb-blue {
+  color: #fff;
+  background: #282460;
+  border-radius: 10px; }
+  .tb-blue td {
+    padding-left: 10px;
+    border: 0.5px solid #fff;
+    font-size: 12px; }
+    @media all and (min-width: 600px) {
+      .tb-blue td {
+        font-size: 1.25rem; } }
 
 .page-template-services-php .entry-content {
   display: -webkit-box;
@@ -2493,9 +2522,10 @@ li .menu-item a {
         position: relative; }
         .header-extras .search-btn .search-form fieldset .search-submit {
           position: absolute;
-          right: 2px;
-          top: 2px;
-          border-radius: 0.4rem; }
+          right: 1px;
+          top: 1px;
+          border-radius: 0.4rem;
+          border-style: solid; }
   .header-extras .translate-icon,
   .header-extras .search-btn {
     cursor: pointer;
