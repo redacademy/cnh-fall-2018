@@ -160,15 +160,33 @@
 .page-template-taxonomy-service_type,
 .page-template-taxonomy-program_type {
   .content-area {
-
-
-    .entry-header,
-    // page-template-page-about
+    .entry-header {
+      // page-template-page-about
+      .entry-title {
+        text-align: center;
+        @include tablet {
+          text-align: left;
+        }
+      }
+    }
     .entry-content {
       padding: 0 $base__space-unit * 2;
 
       @include tablet {
         padding: 0;
+      }
+    }
+  }
+}
+
+.page-template-template-pages-serv,
+.page-template-template-pages-prog {
+  .content-area {
+    .entry-content {
+      padding: 0;
+
+      @include tablet {
+        padding: 0 $base__space-unit * 2;
       }
     }
   }
@@ -214,7 +232,6 @@
 
       @include desktop {
         max-width: 70%;
-
       }
 
       h3 {
@@ -276,7 +293,6 @@
   }
 }
 
-
 // About children pages
 .page-template-page-about {
   .site-content {
@@ -304,7 +320,6 @@
 
         h4 {
           text-transform: capitalize;
-
         }
 
         ul {

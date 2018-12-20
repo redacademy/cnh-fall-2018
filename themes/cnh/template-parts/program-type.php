@@ -10,7 +10,6 @@
     <?php the_title(); ?>
   </h2>
   <div class="entry-content">
-      <!-- <img class="opening-wave" src="<?php echo get_template_directory_uri() . '/images/Wave_Background.png' ?>"> -->
   <?php the_content(); ?>  
   </div><!-- .entry-content -->
 </div><!-- .program-info -->

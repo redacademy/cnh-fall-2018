@@ -63,7 +63,6 @@
         font-family: $font__main;
         font-size: $size__body / 1.25;
       }
-
     }
   }
 
@@ -98,7 +97,7 @@
   }
 }
 
-// 
+//
 .accordion-toggle,
 .accordion-content {
   cursor: pointer;
@@ -146,5 +145,4 @@
 
 .accordion-toggle div.active:after {
   transform: rotate(180deg);
-  // opacity: 0;
 }

@@ -4,44 +4,47 @@
 
 .page-template-page-no-sidebar {
   .site-content {
-    .entry-content {
-      @include flex(column, null, center);
-      h2,
-      p {
-        @include tablet {
-          width: 70%;
-          margin: 0 0 $base__space-unit 0;
-          text-align: left;
+    .content-area {
+      max-width: 100%;
+      .entry-content {
+        @include flex(column, null, center);
+        h2,
+        p {
+          @include tablet {
+            width: 70%;
+            margin: 0 0 $base__space-unit 0;
+            text-align: left;
 
-          .wp-block-image {
-            @include tablet {
-              align-self: flex-start;
-              width: 70%;
-              margin: 0 auto;
+            .wp-block-image {
+              @include tablet {
+                align-self: flex-start;
+                width: 70%;
+                margin: 0 auto;
+              }
             }
           }
         }
-      }
 
-      h2 {
-        margin-bottom: 0;
-      }
-
-      p:last-of-type {
-        margin-bottom: $base__space-unit * 3;
-      }
-
-      .all-button {
-        @include desktop {
+        h2 {
+          margin-bottom: 0;
         }
 
-        a {
-          font-size: $size__body;
+        p:last-of-type {
+          margin-bottom: $base__space-unit * 3;
         }
-      }
 
-      .wp-block-column>p {
-        margin: 0;
+        .all-button {
+          @include desktop {
+          }
+
+          a {
+            font-size: $size__body;
+          }
+        }
+
+        .wp-block-column > p {
+          margin: 0;
+        }
       }
     }
   }
