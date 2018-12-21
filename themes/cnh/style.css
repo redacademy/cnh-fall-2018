@@ -1225,6 +1225,8 @@ object {
   @media all and (min-width: 600px) {
     .register-how {
       padding: 0; } }
+  .register-how a {
+    color: #fff; }
 
 .register-call {
   display: none; }
@@ -1940,6 +1942,7 @@ footer {
 
 .all-button {
   border-radius: 1rem;
+  text-transform: uppercase;
   text-align: center;
   font-family: 'Lato-Bold';
   text-decoration: none;
@@ -2076,14 +2079,15 @@ footer {
     margin: 0; } }
 
 .btn-sm {
-  height: -webkit-fill-available;
-  width: inherit;
+  height: 50px;
+  width: 90%;
   padding: 0;
   font-size: 1rem; }
   .btn-sm a {
     font-size: 1rem;
     line-height: normal;
-    background: #fab568; }
+    background: #fab568;
+    color: #282460; }
     .btn-sm a:visited {
       color: #282460; }
   @media all and (min-width: 600px) {
@@ -2107,6 +2111,9 @@ footer {
 
 .page-template-page-no-sidebar .btn-sm {
   margin: 0.75rem; }
+
+.small-buttons {
+  height: 120px; }
 
 /*--------------------------------------------------------------
 # Side Menu
@@ -2238,7 +2245,8 @@ footer {
 
 .accordion-toggle div.active:after {
   -webkit-transform: rotate(180deg);
-          transform: rotate(180deg); }
+          transform: rotate(180deg);
+  opacity: 0; }
 
 .site-main {
   margin: 0 auto;
@@ -2780,7 +2788,8 @@ iframe.maps {
 .site-location {
   overflow: hidden; }
   .site-location .wp-block-column {
-    height: 575px; }
+    height: 575px;
+    width: 100%; }
     @media all and (min-width: 600px) {
       .site-location .wp-block-column {
         margin: 0.75rem; } }

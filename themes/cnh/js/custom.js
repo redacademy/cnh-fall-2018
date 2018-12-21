@@ -42,7 +42,6 @@
           .toggleClass('active-tab')
           .find('.side-link')
           .toggleClass('active');
-
         $('.side-nav .accordion-content')
           .not($(this).next())
           .slideUp('fast')
