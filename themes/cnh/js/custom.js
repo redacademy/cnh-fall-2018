@@ -1,16 +1,16 @@
-(function ($) {
-  $(function () {
+(function($) {
+  $(function() {
     /**
      * start of side menu
      */
     const $sideMenu = $('#side-menu');
 
-    $('.btn-open').on('click', function () {
+    $('.btn-open').on('click', function() {
       // event.preventDefault();
       openSideMenu();
     });
 
-    $('.btn-close').on('click', function () {
+    $('.btn-close').on('click', function() {
       // event.preventDefault();
       closeSideMenu();
     });
@@ -33,7 +33,7 @@
 
     $('.side-nav')
       .find('.accordion-toggle')
-      .click(function () {
+      .click(function() {
         $(this)
           .next()
           .toggleClass('open')
@@ -67,12 +67,12 @@
     // const $translatorOptn = $('.goog-te-combo option').val();
 
     // Handle click on toggle translate button
-    $translateBtn.on('click', function () {
+    $translateBtn.on('click', function() {
       $translator.show().focus();
     });
 
     // Handle change on translator
-    $body.on('change', translatorSel, function () {
+    $body.on('change', translatorSel, function() {
       let str = $(this)
         .val()
         .substring(0, 2);
@@ -88,7 +88,7 @@
     });
 
     // Handle blur on translator
-    $body.on('blur', translatorSel, function () {
+    $body.on('blur', translatorSel, function() {
       $translator.hide();
       console.log('The blur works!');
     });
@@ -101,12 +101,12 @@
     const $searchForm = $('.search-btn .search-form');
     const $searchField = $('.search-btn .search-field');
 
-    $searchBtn.on('click', function () {
+    $searchBtn.on('click', function() {
       $searchForm.fadeToggle();
       $searchField.focus();
     });
 
-    $searchField.on('blur', function () {
+    $searchField.on('blur', function() {
       if ($(this).val() === '') {
         $searchForm.fadeToggle();
       }
@@ -119,7 +119,7 @@
       instaToken: '9448460219.0d61304.de737249603f46ec9356ff60f0aabdcf',
       instaID: '0d61304f0d4242a9b55e5c1378ba869e',
 
-      init: function () {
+      init: function() {
         $.fn.spectragram.accessData = {
           accessToken: this.instaToken,
           clientID: this.instaID
@@ -143,32 +143,53 @@
     function breadNoSidebar() {
       $sideBar.css('display', 'none');
       $contentArea.css('margin', '0 auto');
-      console.log('work it sidebar');
+      console.log('sidebar menu does not exist');
+      $('.content-area').css('max-width', '70%');
+      $('.page-template-page-no-sidebar .content-area').css(
+        'max-width',
+        '100%'
+      );
+      $('.page-template-default .site-content .widget-sidebar').css(
+        'display',
+        'none'
+      );
     }
 
     // Create the dropdown base
     if ($('.widget_nav_menu').length) {
-      $('<select />').appendTo('.entry-subtitle');
+      $('<select />').appendTo('.entry-title');
+      $('<select />').appendTo('.header-dropdown');
 
       // Create default option "Go to..."
       $('<option />', {
         selected: 'selected',
         value: '',
         text: 'Go to...'
-      }).appendTo('.entry-subtitle select');
+      })
+        .appendTo('.entry-title select')
+        .appendTo('.header-dropdown select');
 
       // Populate dropdown with menu items
-      $('.widget-sidebar a').each(function () {
+      $('.widget-sidebar a').each(function() {
         var el = $(this);
         $('<option />', {
           value: el.attr('href'),
           text: el.text()
-        }).appendTo('.entry-subtitle select');
+        })
+          .appendTo('.entry-title select')
+          .appendTo('.header-dropdown select');
       }); // end of dropdown nav
 
-      $('.entry-subtitle select').selectric();
+      $('.entry-title select').selectric();
+      $('.header-dropdown select').selectric();
 
-      $('.entry-subtitle select').on('change', function () {
+      $('.entry-title select').on('change', function() {
+        let selected = $(this).val();
+
+        window.location.replace(selected);
+      }); // end of linking
+
+      $('.header-dropdown select').on('change', function() {
         let selected = $(this).val();
 
         window.location.replace(selected);
@@ -178,7 +199,7 @@
       breadNoSidebar();
     } // end else stmt
 
-    $('.wpcf7-form').on('submit', function () {
+    $('.wpcf7-form').on('submit', function() {
       $('.wpcf7-form').slideUp('slow');
       $('.entry-title').slideUp('slow');
       $('.received').toggle();

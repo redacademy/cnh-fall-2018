@@ -10,7 +10,7 @@
   top: 0;
   left: 0;
   background: $color__background-body;
-  overflow-x: hidden; // hides vertical scroll bar
+  overflow-x: hidden;
   padding-top: $base__space-unit;
   transition: 0.5s;
 
@@ -63,7 +63,6 @@
         font-family: $font__main;
         font-size: $size__body / 1.25;
       }
-
     }
   }
 
@@ -93,20 +92,16 @@
   }
 
   .btn-close {
-    // position: absolute;
-    // top: $base__space-unit;
-    // right: $base__space-unit;
     font-size: $size__body * 2;
     color: $color__main;
   }
 }
 
-// 
+//
 .accordion-toggle,
 .accordion-content {
   cursor: pointer;
   position: relative;
-  // letter-spacing: 1px;
 }
 
 .accordion-content {

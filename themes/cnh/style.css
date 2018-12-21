@@ -567,12 +567,59 @@ textarea {
     margin-top: 0.75rem; }
   .page-template-page-no-sidebar .site-content .content-area .wpcf7-form div {
     margin: 0.5rem 0; }
+    @media all and (min-width: 600px) {
+      .page-template-page-no-sidebar .site-content .content-area .wpcf7-form div {
+        width: 50%; }
+        .page-template-page-no-sidebar .site-content .content-area .wpcf7-form div:nth-of-type(2) {
+          -webkit-box-ordinal-group: 2;
+              -ms-flex-order: 1;
+                  order: 1; }
+        .page-template-page-no-sidebar .site-content .content-area .wpcf7-form div:nth-of-type(3) {
+          -webkit-box-ordinal-group: 4;
+              -ms-flex-order: 3;
+                  order: 3; }
+        .page-template-page-no-sidebar .site-content .content-area .wpcf7-form div:nth-of-type(4) {
+          -webkit-box-ordinal-group: 6;
+              -ms-flex-order: 5;
+                  order: 5; }
+        .page-template-page-no-sidebar .site-content .content-area .wpcf7-form div:nth-of-type(5) {
+          -webkit-box-ordinal-group: 8;
+              -ms-flex-order: 7;
+                  order: 7; }
+        .page-template-page-no-sidebar .site-content .content-area .wpcf7-form div:nth-of-type(6) {
+          -webkit-box-ordinal-group: 3;
+              -ms-flex-order: 2;
+                  order: 2; }
+        .page-template-page-no-sidebar .site-content .content-area .wpcf7-form div:nth-of-type(7) {
+          -webkit-box-ordinal-group: 5;
+              -ms-flex-order: 4;
+                  order: 4; }
+        .page-template-page-no-sidebar .site-content .content-area .wpcf7-form div:nth-of-type(8) {
+          -webkit-box-ordinal-group: 7;
+              -ms-flex-order: 6;
+                  order: 6; }
+        .page-template-page-no-sidebar .site-content .content-area .wpcf7-form div:nth-of-type(9) {
+          -webkit-box-ordinal-group: 8;
+              -ms-flex-order: 7;
+                  order: 7; }
+        .page-template-page-no-sidebar .site-content .content-area .wpcf7-form div:nth-of-type(10) {
+          -webkit-box-ordinal-group: 9;
+              -ms-flex-order: 8;
+                  order: 8;
+          width: 100%; } }
+  .page-template-page-no-sidebar .site-content .content-area .wpcf7-form p {
+    -webkit-box-ordinal-group: 10;
+        -ms-flex-order: 9;
+            order: 9;
+    width: 100%;
+    text-align: right; }
   .page-template-page-no-sidebar .site-content .content-area .wpcf7-form div.rental-time {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex; }
     .page-template-page-no-sidebar .site-content .content-area .wpcf7-form div.rental-time div {
-      margin: 0 0 0 0.75rem; }
+      margin: 0 0 0 0.75rem;
+      width: 25%; }
     .page-template-page-no-sidebar .site-content .content-area .wpcf7-form div.rental-time .your-start-time input,
     .page-template-page-no-sidebar .site-content .content-area .wpcf7-form div.rental-time .your-end-time input {
       width: 93%; }
@@ -1093,21 +1140,33 @@ object {
     .page-template-taxonomy-program_type .service-wrapper article div div > p {
       font-weight: normal; } }
 
-.page-template-page-about .content-area .entry-header,
+.page-template-page-about .content-area .entry-header .entry-title,
+.page-template-taxonomy-service_type .content-area .entry-header .entry-title,
+.page-template-taxonomy-program_type .content-area .entry-header .entry-title {
+  text-align: center; }
+  @media all and (min-width: 600px) {
+    .page-template-page-about .content-area .entry-header .entry-title,
+    .page-template-taxonomy-service_type .content-area .entry-header .entry-title,
+    .page-template-taxonomy-program_type .content-area .entry-header .entry-title {
+      text-align: left; } }
+
 .page-template-page-about .content-area .entry-content,
-.page-template-taxonomy-service_type .content-area .entry-header,
 .page-template-taxonomy-service_type .content-area .entry-content,
-.page-template-taxonomy-program_type .content-area .entry-header,
 .page-template-taxonomy-program_type .content-area .entry-content {
   padding: 0 3rem; }
   @media all and (min-width: 600px) {
-    .page-template-page-about .content-area .entry-header,
     .page-template-page-about .content-area .entry-content,
-    .page-template-taxonomy-service_type .content-area .entry-header,
     .page-template-taxonomy-service_type .content-area .entry-content,
-    .page-template-taxonomy-program_type .content-area .entry-header,
     .page-template-taxonomy-program_type .content-area .entry-content {
       padding: 0; } }
+
+.page-template-template-pages-serv .content-area .entry-content,
+.page-template-template-pages-prog .content-area .entry-content {
+  padding: 0; }
+  @media all and (min-width: 600px) {
+    .page-template-template-pages-serv .content-area .entry-content,
+    .page-template-template-pages-prog .content-area .entry-content {
+      padding: 0 3rem; } }
 
 /* Home */
 /* Page Template No Sidebar */
@@ -1211,6 +1270,10 @@ object {
 .page-template-contact .site-content .content-area {
   margin: 0 auto; }
 
+.post-type-archive-tribe_events .site-content .content-area {
+  margin: 0 auto;
+  max-width: 100%; }
+
 @media all and (min-width: 600px) {
   .register-how,
   .register-call {
@@ -1227,6 +1290,11 @@ object {
       padding: 0; } }
   .register-how a {
     color: #fff; }
+<<<<<<< HEAD
+=======
+    .register-how a:hover {
+      color: #fab0bc; }
+>>>>>>> de5c17dee887018ca172cd99bc488dcafb7e8973
 
 .register-call {
   display: none; }
@@ -1842,7 +1910,8 @@ footer {
   text-align: center; }
 
 .flower {
-  width: 100px; }
+  width: 100px;
+  margin: auto; }
 
 .page-template-programs-php .site-main .center-page .attachment-large {
   width: 100vw; }
@@ -1907,6 +1976,22 @@ footer {
 
 .button-pink {
   background-color: #fab0bc; }
+
+.style-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .style-button a {
+    padding: 30px 0;
+    font-family: "Lato-Bold"; }
+    @media all and (min-width: 1080px) {
+      .style-button a {
+        font-size: 20px;
+        padding: 100px; } }
 
 .wp-block-column {
   margin-bottom: 0; }
@@ -2115,6 +2200,51 @@ footer {
 .small-buttons {
   height: 120px; }
 
+<<<<<<< HEAD
+=======
+.childcare-buttons {
+  width: 230px;
+  height: 50px; }
+  .childcare-buttons a {
+    font-size: 16px; }
+
+.page-template-page-infants .wp-block-column {
+  width: 230px;
+  height: auto; }
+
+.about-btn-wrap {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.about-btn {
+  width: 300px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .about-btn a {
+    border-radius: 1rem;
+    font-family: "Lato-Bold";
+    font-size: 1.25rem; }
+
+.app-form-wrap {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+  .app-form-wrap .application-btn a {
+    width: 200px;
+    border-radius: 1rem;
+    font-family: "Lato-Bold";
+    font-size: 1.25rem;
+    margin: auto; }
+    @media all and (min-width: 600px) {
+      .app-form-wrap .application-btn a {
+        height: 100px; } }
+
+>>>>>>> de5c17dee887018ca172cd99bc488dcafb7e8973
 /*--------------------------------------------------------------
 # Side Menu
 --------------------------------------------------------------*/
@@ -2284,6 +2414,18 @@ a {
 
 .wp-block-button:hover {
   opacity: 0.5; }
+
+.tb-blue {
+  color: #fff;
+  background: #282460;
+  border-radius: 10px; }
+  .tb-blue td {
+    padding-left: 10px;
+    border: 0.5px solid #fff;
+    font-size: 12px; }
+    @media all and (min-width: 600px) {
+      .tb-blue td {
+        font-size: 1.25rem; } }
 
 .page-template-services-php .entry-content {
   display: -webkit-box;
@@ -2973,38 +3115,40 @@ iframe.maps {
 /*--------------------------------------------------------------
 # Page No Sidebar Template  
 --------------------------------------------------------------*/
-.page-template-page-no-sidebar .site-content .entry-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  @media all and (min-width: 600px) {
-    .page-template-page-no-sidebar .site-content .entry-content h2,
-    .page-template-page-no-sidebar .site-content .entry-content p {
-      width: 70%;
-      margin: 0 0 1.5rem 0;
-      text-align: left; } }
+.page-template-page-no-sidebar .site-content .content-area {
+  max-width: 100%; }
+  .page-template-page-no-sidebar .site-content .content-area .entry-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media all and (min-width: 600px) {
+      .page-template-page-no-sidebar .site-content .content-area .entry-content h2,
+      .page-template-page-no-sidebar .site-content .content-area .entry-content p {
+        width: 70%;
+        margin: 0 0 1.5rem 0;
+        text-align: left; } }
   @media all and (min-width: 600px) and (min-width: 600px) {
-    .page-template-page-no-sidebar .site-content .entry-content h2 .wp-block-image,
-    .page-template-page-no-sidebar .site-content .entry-content p .wp-block-image {
+    .page-template-page-no-sidebar .site-content .content-area .entry-content h2 .wp-block-image,
+    .page-template-page-no-sidebar .site-content .content-area .entry-content p .wp-block-image {
       -ms-flex-item-align: start;
           align-self: flex-start;
       width: 70%;
       margin: 0 auto; } }
-  .page-template-page-no-sidebar .site-content .entry-content h2 {
-    margin-bottom: 0; }
-  .page-template-page-no-sidebar .site-content .entry-content p:last-of-type {
-    margin-bottom: 4.5rem; }
-  .page-template-page-no-sidebar .site-content .entry-content .all-button a {
-    font-size: 1.25rem; }
-  .page-template-page-no-sidebar .site-content .entry-content .wp-block-column > p {
-    margin: 0; }
+    .page-template-page-no-sidebar .site-content .content-area .entry-content h2 {
+      margin-bottom: 0; }
+    .page-template-page-no-sidebar .site-content .content-area .entry-content p:last-of-type {
+      margin-bottom: 4.5rem; }
+    .page-template-page-no-sidebar .site-content .content-area .entry-content .all-button a {
+      font-size: 1.25rem; }
+    .page-template-page-no-sidebar .site-content .content-area .entry-content .wp-block-column > p {
+      margin: 0; }
 
 /*--------------------------------------------------------------
 # Calendar - Tribe Events
