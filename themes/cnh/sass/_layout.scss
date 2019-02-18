@@ -61,6 +61,7 @@ a {
     padding-left: 10px;
     border: 0.5px solid #fff;
     font-size: 12px;
+
     @include tablet {
       font-size: $size__body;
     }

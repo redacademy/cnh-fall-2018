@@ -145,4 +145,5 @@
 
 .accordion-toggle div.active:after {
   transform: rotate(180deg);
+  opacity: 0;
 }

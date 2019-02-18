@@ -66,3 +66,5 @@ function cnh_the_url( $url ) {
   return home_url();
 }
 add_filter( 'login_headerurl', 'cnh_the_url' );
+
+

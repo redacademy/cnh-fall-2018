@@ -100,6 +100,7 @@
 .page-template-template-pages-prog,
 .page-template-taxonomy-service_type,
 .page-template-taxonomy-program_type {
+
   .program-info,
   .service-info {
     .entry-title {
@@ -142,7 +143,7 @@
   .service-wrapper {
     article {
       div {
-        div > p {
+        div>p {
           margin: 0;
           font-weight: bold;
           letter-spacing: 1px;
@@ -161,14 +162,17 @@
 .page-template-taxonomy-program_type {
   .content-area {
     .entry-header {
+
       // page-template-page-about
       .entry-title {
         text-align: center;
+
         @include tablet {
           text-align: left;
         }
       }
     }
+
     .entry-content {
       padding: 0 $base__space-unit * 2;
 
@@ -309,7 +313,7 @@
             margin-bottom: 0;
           }
 
-          & + p {
+          &+p {
             margin-top: 0;
           }
 
