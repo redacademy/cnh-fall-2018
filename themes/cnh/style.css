@@ -2188,7 +2188,9 @@ footer {
 
 .page-template .btn-sm {
   margin: 0; }
-
+.main {
+  display: none;
+}
 .page-template-page-no-sidebar .btn-sm {
   margin: 0.75rem; }
 
