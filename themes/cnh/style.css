@@ -2178,9 +2178,6 @@ footer {
       width: 198px; } }
 
 @media all and (min-width: 1080px) {
-  main {
-    display: none;
-  }
   .page-id-21 .wp-block-column {
     margin: 0; }
   .page-id-21 .wp-block-column:first-child {
