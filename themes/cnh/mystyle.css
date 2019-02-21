@@ -1,6 +1,6 @@
 body {
     background-color: blue!important;
 }
-style-button a {
+.style-button a {
     white-space: nowrap;
 }
