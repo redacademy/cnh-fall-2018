@@ -15,8 +15,8 @@
     <link rel="stylesheet" type="text/css" href="mystyle.css">
     <link rel="stylesheet" type="text/css" href="../mystyle.css">
     <link rel="stylesheet" type="text/css" href="./mystyle.css">
-    <link rel="stylesheet" type="text/css" href="/mystyle.css">
-    <link rel="stylesheet" type="text/css" href="//mystyle.css">
+    <link rel="stylesheet" type="text/css" href="././mystyle.css">
+    <link rel="stylesheet" type="text/css" href="../../mystyle.css">
 
 	<?php wp_head(); ?>
 	</head>
