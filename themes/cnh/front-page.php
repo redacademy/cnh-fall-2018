@@ -85,7 +85,7 @@ $event_id = get_the_ID();
 					<div class="follow-content">
 					<p class="follow-us">follow us</p>
 					<a href="https://www.facebook.com/cnh.bc.ca"><img class="facebook-w-o-border" src='<?php echo get_template_directory_uri() . "/assets/icons/facebook_in_orange.png" ?>'></a>
-					<a href="https://www.instagram.com/collingwoodnh/"><img class="inst-w-o-border" src='<?php echo get_template_directory_uri() . "/assets/icons/instagram_in_orange.png" ?>'></a>
+					<a class="inst-w-o-border" href="https://www.instagram.com/collingwoodnh/"><img  src='<?php echo get_template_directory_uri() . "/assets/icons/instagram_in_orange.png" ?>'></a>
 </div>
 </div>
 			</div><!--End main-->
