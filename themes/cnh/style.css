@@ -2213,6 +2213,12 @@ footer {
       -ms-flex-align: center;
           align-items: center; }
 
+@media all and (min-width: 1080px) {
+  .about-btn-wrap {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly; } }
+
 .about-btn {
   width: 300px;
   -webkit-box-align: center;

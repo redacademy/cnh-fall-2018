@@ -250,6 +250,11 @@
 .about-btn-wrap {
   align-items: center;
 }
+@include desktop {
+.about-btn-wrap {
+  justify-content: space-evenly;
+}
+}
 
 .about-btn {
   width: 300px;
