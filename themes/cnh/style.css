@@ -1814,7 +1814,7 @@ footer {
         border-radius: 100px;
         margin-right: 1.5rem; }
   .inst-w-o-border {
-    margin-right: 0px; }
+    width: 64px; }
   .follow-us {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1988,7 +1988,8 @@ footer {
     @media all and (min-width: 1080px) {
       .style-button a {
         font-size: 20px;
-        padding: 100px; } }
+        padding: 100px;
+        white-space: nowrap; } }
 
 .wp-block-column {
   margin-bottom: 0; }
