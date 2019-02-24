@@ -1307,7 +1307,7 @@ object {
   display: none; }
 
 footer {
-  background-color: red;
+  background-color: #393947;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3171,6 +3171,3 @@ iframe.maps {
 
 .post-type-archive-tribe_events .tribe-events-button {
   display: none !important; }
-
-body {
-  font-size: 92px; }
