@@ -1692,7 +1692,7 @@ footer {
   .home .entry-header {
     height: 600px; }
   .home-title {
-    top: 200px;
+    top: 120px;
     left: 50%;
     font-size: 65px;
     text-transform: none;
@@ -1813,8 +1813,6 @@ footer {
         background-color: #fab568;
         border-radius: 100px;
         margin-right: 1.5rem; }
-        .follow-box .follow-content img:last-of-type {
-          margin-right: 0; }
   .follow-us {
     display: -webkit-box;
     display: -ms-flexbox;
