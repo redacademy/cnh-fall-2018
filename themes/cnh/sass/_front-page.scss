@@ -422,13 +422,12 @@
           border-radius: 100px;
           margin-right: 1.5rem;
 
-          &:last-of-type {
-            margin-right: 0;
-          }
         }
       }
     }
-
+.inst-w-o-border {
+  margin-right: 0px;
+}
     .follow-us {
       display: flex;
       color: #282460;

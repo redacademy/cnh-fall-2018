@@ -1813,8 +1813,8 @@ footer {
         background-color: #fab568;
         border-radius: 100px;
         margin-right: 1.5rem; }
-        .follow-box .follow-content img:last-of-type {
-          margin-right: 0; }
+  .inst-w-o-border {
+    margin-right: 0px; }
   .follow-us {
     display: -webkit-box;
     display: -ms-flexbox;
