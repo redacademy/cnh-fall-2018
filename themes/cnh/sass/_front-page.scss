@@ -1,554 +1,554 @@
 .home .site-content {
-  width: 100%;
+    width: 100%;
 }
 .home .entry-header {
-height: 250px;
+  height: 250px;
 }
 .entry-header img {
-    transform: translateY(-23.5%);
-    z-index: -1;
-}
+      transform: translateY(-23.5%);
+      z-index: -1;
+  }
 
 
 
 .home-title {
-position: absolute;
-top: 30px;
-width: 75%;
-left: 50%;
-font-size: 20px;
-text-align: center;
-letter-spacing: 1.35pt;
-transform: translateX(-50%)
+  position: absolute;
+  top: 30px;
+  width: 75%;
+  left: 50%;
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 1.35pt;
+  transform: translateX(-50%)
 }
 
 .home-subtitle {
-display: none;
+  display: none;
 }
 
 .home .wp-block-image {
-width: 280px;
-height: 56px;
-display: flex;
-margin: auto;
-margin-bottom: 2.5rem;
+  width: 280px;
+  height: 56px;
+  display: flex;
+  margin: auto;
+  margin-bottom: 2.5rem;
 }
 .wp-block-column {
-img {
-  width: 56px;
-  margin-right: 1.5rem;
-}
+  img {
+    width: 56px;
+    margin-right: 1.5rem;
+  }
 
-figcaption {
-  text-align: left;
-  letter-spacing: .85pt;
-  font-size: 15px;
-  line-height: 18pt;
-  margin-top: 0;
-}
+  figcaption {
+    text-align: left;
+    letter-spacing: .85pt;
+    font-size: 15px;
+    line-height: 18pt;
+    margin-top: 0;
+  }
 
-&:first-child {
-  margin-right: 0;
-}
+  &:first-child {
+    margin-right: 0;
+  }
 }
 
 .we-are-a-place-buttons {
-display: none !important;
+  display: none !important;
 }
 
 .instagram-container {
-display: flex;
-justify-content: center;
-width: 100vw;
-
-  .photo {
-    width: 280px;
-    height: auto;
-  }
-
-  .photo:last-child {
-    display: none;
-  }
-}
-
-.follow-box {
-  display: none;
-}
-
-.upcoming-events-title,
-.instagram-updates-title,
-.we-are-a-place-title {
   display: flex;
   justify-content: center;
-  color: #282460;
-  font-family: $font__subtitle;
-  text-transform: initial;
-  font-size: 1.625rem;
-  margin-bottom: 1.5rem;
-  letter-spacing: 1.05
-}
+  width: 100vw;
 
-.upcoming-events {
-  width: 275px;
-  margin: auto;
-}
-
-.date {
-  background-color: #282460;
-  border-radius: 10px 0 0 10px;
-  width: 40%;
-  color: white;
-  flex-shrink: 0;
-  display: flex;
-  justify-content: center;
-  text-transform: uppercase;
-
-
-  .date-text-container {
-    display: flex;
-    justify-content: center;
-  }
-
-  .day {
-    display: none;
-  }
-
-  p {
-    margin-bottom: 1.5rem;
-    margin: auto;
-    width: 40%;
-    font-weight: 900;
-    font-family: 'Lato-Black';
-    text-align: center;
-  }
-}
-
-.eventimg {
-  line-height: 0;
-
-  img {
-    height: 100%;
-    border-radius: 0 10px 10px 0;
-  }
-}
-
-.singular-event {
-  display: flex;
-  height: 105px;
-  margin-top: 1.375rem;
-
-}
-
-.location-box {
-  height: 30px;
-  position: relative;
-  bottom: 29%;
-  justify-content: center;
-  display: flex;
-  color: white;
-  background-color: #282460b9;
-  border-radius: 0 0 10px 0;
-  a {
-    position: relative;
-    top: 15px;
-    color: white;
-
-    &:visited {
-      color: inherit;
-    }
-  }
-}
-
-.hover-details {
-  display: none;
-  padding: 2rem;
-  border: 1px solid #282460;
-  border-radius: 0 10px 10px 0;
-  margin-left: 0;
-  background-color: #ffffff98;
-}
-
-.view-calendar-container {
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-}
-
-.view-calendar {
-  padding-top: .75rem;
-  padding-bottom: .75rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  background-color: #fab568;
-  color: #282460;
-  border-radius: 10px;
-  text-transform: uppercase;
-  font-family: $font__title;
-}
-
-.frontpage-buttons-container {
-width: 355px;
-margin: auto;
-}
-.frontpage-buttons {
-  margin: 3rem;
-
-  .senior-programs-button {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-}
-    .childcare-button,
-    .senior-programs-button,
-    .donate-button {
+    .photo {
       width: 280px;
-      margin: auto;
-      height: 68px;
-      font-size: 18px;
-      text-transform: uppercase;
-    }
-@include tablet {
-  .home-title {
-    top: 25px;
-    width: 75%;
-    left: 50%;
-    font-size: 30px;
-    text-transform: none;
-    line-height: 40px;
-    letter-spacing: 3.66px;
-    margin-bottom: 1rem;
-    transform: translateX(-50%);
-    margin-top: 0;
-  }
-
-  .home-subtitle {
-    display: none;
-  }
-  .home .entry-header {
-    height: 250px;
-  }
-
-  .frontpage-content {
-    margin-top: 1rem;
-  }
-
-  .we-are-a-place {
-    flex-direction: column;
-  }
-
-}
-
-@include mid-tablet {
-  .home-title {
-    top: 40px;
-    left: 50%;
-    font-size: 40px;
-    text-transform: none;
-    line-height: 50px;
-    letter-spacing: 3.66px;
-    margin-bottom: 1rem;
-    transform: translateX(-50%);
-    margin-top: 0;
-  }
-
-  .home-subtitle {
-    display: initial;
-    position: absolute;
-    top: 155px;
-    left: 50%;
-    font-size: 20px;
-    margin-top: .5rem;
-    text-transform: none;
-    transform: translateX(-50%);
-  }
-  .home .entry-header {
-    height: 400px;
-  }
-  .frontpage-content {
-    margin-top: 1rem;
-  }
-
-
-.instagram-container .photo:last-child {
-      display: initial;
-      margin-left: 1rem;
-      border-radius: 10px;
-    }
-
-  .wp-block-image {
-    width: 600px;
-  }
-}
-
-@include desktop {
-.home .entry-header {
-      height: 600px;
-    }
-  .home-title {
-    top: 120px;
-    left: 50%;
-    font-size: 65px;
-    text-transform: none;
-    line-height: 65px;
-    letter-spacing: 3.66px;
-    margin-bottom: 1rem;
-    transform: translateX(-50%);
-  }
-
-  .home-subtitle {
-    display: initial;
-    position: absolute;
-    top: 275px;
-    left: 50%;
-    font-size: 30px;
-    margin-top: .5rem;
-    text-transform: none;
-    transform: translateX(-50%);
-  }
-
-  .frontpage-content {
-    margin-top: 1rem;
-  }
-  .upcoming-events-title {
-    padding-top: 6rem;
-  }
-
-  .upcoming-events-title,
-  .instagram-updates-title,
-  .we-are-a-place-title {
-    display: flex;
-    justify-content: center;
-    color: #282460;
-    font-family: $font__title;
-    text-transform: uppercase;
-  }
-
-  .upcoming-events-title,
-  .instagram-updates-title,
-  .we-are-a-place-title {
-    display: flex;
-    justify-content: center;
-    color: #282460;
-    font-family: $font__title;
-    text-transform: uppercase;
-  }
-
-  .wp-block-column {
-    height: auto;
-
-    img {
-      width: 140px;
-      margin: auto;
-    }
-
-    .wp-block-image {
-      display: inline-block;
-      display: flex;
-      flex-direction: column;
       height: auto;
     }
 
-    .wp-block-column img {
-      width: 140px;
-    }
-
-    figcaption {
-      text-align: center;
-      margin-bottom: 0;
-    }
-  }
-
-  .we-are-a-place {
-    width: 1170px;
-    margin: auto;
-    margin-bottom: 6rem;
-    flex-direction: row;
-  }
-
-  .we-are-a-place-buttons {
-    display: inline !important;
-    position: relative;
-    left: 20%;
-
-    .wp-block-button__link {
-      font-size: 16px;
-      width: 195px;
-      border-radius: 10px;
-    }
-  }
-
-  .upcoming-events-title,
-  .instagram-updates-title,
-  .we-are-a-place-title {
-    font-size: 2.8125rem;
-  }
-
-  .instagram-container {
-    width: 1100px;
-    margin: auto;
-    margin-top: 3.125rem;
-
-    .photo {
-      width: 456px;
-      height: 456px;
-    }
-
     .photo:last-child {
-      display: initial;
-      margin-left: 2rem;
-    }
-
-    img {
-      width: 100%;
-      height: 100%;
-      border-radius: 2%;
+      display: none;
     }
   }
 
   .follow-box {
-    display: flex;
-    width: 1150px;
-    justify-content: flex-end;
-
-    .follow-content {
-      margin-top: 3.25rem;
-      display: inline-flex;
-      height: 64px;
-
-      img {
-        height: 64px;
-        width: 64px;
-        background-color: #fab568;
-        border-radius: 100px;
-        margin-right: 1.5rem;
-
-        // &:last-of-type {
-        //   margin-right: 0;
-        // }
-      }
-    }
+    display: none;
   }
 
-  .follow-us {
+  .upcoming-events-title,
+  .instagram-updates-title,
+  .we-are-a-place-title {
     display: flex;
+    justify-content: center;
     color: #282460;
     font-family: $font__subtitle;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    margin: auto;
-    margin-right: 1.5rem;
+    text-transform: initial;
+    font-size: 1.625rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1.05
   }
 
   .upcoming-events {
-    width: 1170px;
-    display: flex;
-    margin-bottom: 6rem;
+    width: 275px;
+    margin: auto;
   }
 
-  .hover-details {
-    font-size: 1.25rem;
+  .date {
+    background-color: #282460;
+    border-radius: 10px 0 0 10px;
+    width: 40%;
+    color: white;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+  
 
-    .hover-title {
-      font-weight: bold;
+    .date-text-container {
+      display: flex;
+      justify-content: center;
     }
-    .hover-description {
-      text-overflow: ellipsis;
+
+    .day {
+      display: none;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      margin: auto;
+      width: 40%;
+      font-weight: 900;
+      font-family: 'Lato-Black';
+      text-align: center;
+    }
+  }
+
+  .eventimg {
+    line-height: 0;
+
+    img {
+      height: 100%;
+      border-radius: 0 10px 10px 0;
     }
   }
 
   .singular-event {
-    height: 258px;
-    width: 555px;
+    display: flex;
+    height: 105px;
+    margin-top: 1.375rem;
 
-    &:first-of-type {
-      margin-right: 2rem;
-
-      &:hover {
-        .eventimg {
-          display: none
-        }
-
-        .hover-details {
-          display: block;
-        }
-      }
-    }
-
-    &:last-of-type {
-      margin-right: 2rem;
-
-      &:hover {
-        .eventimg {
-          display: none
-        }
-
-        .hover-details {
-          display: block;
-        }
-      }
-    }
-  }
-
-  .date {
-    width: 30%;
-    font-size: 2.5rem;
-
-    p {
-      width: 60%
-    }
-
-    .date-text-container {
-      margin-top: 3.5rem;
-      display: block;
-    }
-
-    .date-text {
-      line-height: 3rem;
-      letter-spacing: 2.25px;
-    }
-
-    .day {
-      display: flex;
-      font-size: .9375rem;
-      font-family: 'Lato-Regular';
-      font-weight: 500;
-      justify-content: center;
-      margin-bottom: .5rem;
-      letter-spacing: 1px;
-    }
   }
 
   .location-box {
-    height: 65px;
-    bottom: 65px;
-    font-size: 1.75rem;
-
+    height: 30px;
+    position: relative;
+    bottom: 29%;
+    justify-content: center;
+    display: flex;
+    color: white;
+    background-color: #282460b9;
+    border-radius: 0 0 10px 0;
     a {
-      position: initial;
-      margin: auto;
+      position: relative;
+      top: 15px;
+      color: white;
+
+      &:visited {
+        color: inherit;
+      }
     }
+  }
+
+  .hover-details {
+    display: none;
+    padding: 2rem;
+    border: 1px solid #282460;
+    border-radius: 0 10px 10px 0;
+    margin-left: 0;
+    background-color: #ffffff98;
   }
 
   .view-calendar-container {
-    display: none;
-  }
-
-  .frontpage-buttons {
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
-    margin-bottom: 9.5rem;
-    margin-top: 6.5635rem;
+  }
 
-    .childcare-button,
-    .senior-programs-button,
-    .donate-button {
-      margin: auto;
-      margin-left: 1rem;
-      margin-right: 1rem;
-      text-transform: uppercase;
-      height: 198px;
-      width: 295px;
+  .view-calendar {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    background-color: #fab568;
+    color: #282460;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-family: $font__title;
+  }
 
+.frontpage-buttons-container {
+  width: 355px;
+  margin: auto;
+}
+  .frontpage-buttons {
+    margin: 3rem;
+
+    .senior-programs-button {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
     }
   }
-}
+      .childcare-button,
+      .senior-programs-button,
+      .donate-button {
+        width: 280px;
+        margin: auto;
+        height: 68px;
+        font-size: 18px;
+        text-transform: uppercase;
+      }
+  @include tablet {
+    .home-title {
+      top: 25px;
+      width: 75%;
+      left: 50%;
+      font-size: 30px;
+      text-transform: none;
+      line-height: 40px;
+      letter-spacing: 3.66px;
+      margin-bottom: 1rem;
+      transform: translateX(-50%);
+      margin-top: 0;
+    }
+
+    .home-subtitle {
+      display: none;
+    }
+    .home .entry-header {
+      height: 250px;
+    }
+
+    .frontpage-content {
+      margin-top: 1rem;
+    }
+
+    .we-are-a-place {
+      flex-direction: column;
+    }
+
+  }
+
+  @include mid-tablet {
+    .home-title {
+      top: 40px;
+      left: 50%;
+      font-size: 40px;
+      text-transform: none;
+      line-height: 50px;
+      letter-spacing: 3.66px;
+      margin-bottom: 1rem;
+      transform: translateX(-50%);
+      margin-top: 0;
+    }
+
+    .home-subtitle {
+      display: initial;
+      position: absolute;
+      top: 155px;
+      left: 50%;
+      font-size: 20px;
+      margin-top: .5rem;
+      text-transform: none;
+      transform: translateX(-50%);
+    }
+    .home .entry-header {
+      height: 400px;
+    }
+    .frontpage-content {
+      margin-top: 1rem;
+    }
+
+ 
+.instagram-container .photo:last-child {
+        display: initial;
+        margin-left: 1rem;
+        border-radius: 10px;
+      }
+
+    .wp-block-image {
+      width: 600px;
+    }
+  }
+
+  @include desktop {
+ .home .entry-header {
+        height: 600px;
+      }
+    .home-title {
+      top: 120px;
+      left: 50%;
+      font-size: 65px;
+      text-transform: none;
+      line-height: 65px;
+      letter-spacing: 3.66px;
+      margin-bottom: 1rem;
+      transform: translateX(-50%);
+    }
+
+    .home-subtitle {
+      display: initial;
+      position: absolute;
+      top: 275px;
+      left: 50%;
+      font-size: 30px;
+      margin-top: .5rem;
+      text-transform: none;
+      transform: translateX(-50%);
+    }
+
+    .frontpage-content {
+      margin-top: 1rem;
+    }
+    .upcoming-events-title {
+      padding-top: 6rem;
+    }
+
+    .upcoming-events-title,
+    .instagram-updates-title,
+    .we-are-a-place-title {
+      display: flex;
+      justify-content: center;
+      color: #282460;
+      font-family: $font__title;
+      text-transform: uppercase;
+    }
+
+    .upcoming-events-title,
+    .instagram-updates-title,
+    .we-are-a-place-title {
+      display: flex;
+      justify-content: center;
+      color: #282460;
+      font-family: $font__title;
+      text-transform: uppercase;
+    }
+
+    .wp-block-column {
+      height: auto;
+
+      img {
+        width: 140px;
+        margin: auto;
+      }
+
+      .wp-block-image {
+        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+      }
+
+      .wp-block-column img {
+        width: 140px;
+      }
+
+      figcaption {
+        text-align: center;
+        margin-bottom: 0;
+      }
+    }
+
+    .we-are-a-place {
+      width: 1170px;
+      margin: auto;
+      margin-bottom: 6rem;
+      flex-direction: row;
+    }
+
+    .we-are-a-place-buttons {
+      display: inline !important;
+      position: relative;
+      left: 20%;
+
+      .wp-block-button__link {
+        font-size: 16px;
+        width: 195px;
+        border-radius: 10px;
+      }
+    }
+
+    .upcoming-events-title,
+    .instagram-updates-title,
+    .we-are-a-place-title {
+      font-size: 2.8125rem;
+    }
+
+    .instagram-container {
+      width: 1100px;
+      margin: auto;
+      margin-top: 3.125rem;
+
+      .photo {
+        width: 456px;
+        height: 456px;
+      }
+
+      .photo:last-child {
+        display: initial;
+        margin-left: 2rem;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 2%;
+      }
+    }
+
+    .follow-box {
+      display: flex;
+      width: 1150px;
+      justify-content: flex-end;
+
+      .follow-content {
+        margin-top: 3.25rem;
+        display: inline-flex;
+        height: 64px;
+
+        img {
+          height: 64px;
+          width: 64px;
+          background-color: #fab568;
+          border-radius: 100px;
+          margin-right: 1.5rem;
+
+          &:last-of-type {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    .follow-us {
+      display: flex;
+      color: #282460;
+      font-family: $font__subtitle;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      margin: auto;
+      margin-right: 1.5rem;
+    }
+
+    .upcoming-events {
+      width: 1170px;
+      display: flex;
+      margin-bottom: 6rem;
+    }
+
+    .hover-details {
+      font-size: 1.25rem;
+
+      .hover-title {
+        font-weight: bold;
+      }
+      .hover-description {
+        text-overflow: ellipsis;
+      }
+    }
+
+    .singular-event {
+      height: 258px;
+      width: 555px;
+
+      &:first-of-type {
+        margin-right: 2rem;
+
+        &:hover {
+          .eventimg {
+            display: none
+          }
+
+          .hover-details {
+            display: block;
+          }
+        }
+      }
+
+      &:last-of-type {
+        margin-right: 2rem;
+
+        &:hover {
+          .eventimg {
+            display: none
+          }
+
+          .hover-details {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .date {
+      width: 30%;
+      font-size: 2.5rem;
+
+      p {
+        width: 60%
+      }
+
+      .date-text-container {
+        margin-top: 3.5rem;
+        display: block;
+      }
+
+      .date-text {
+        line-height: 3rem;
+        letter-spacing: 2.25px;
+      }
+
+      .day {
+        display: flex;
+        font-size: .9375rem;
+        font-family: 'Lato-Regular';
+        font-weight: 500;
+        justify-content: center;
+        margin-bottom: .5rem;
+        letter-spacing: 1px;
+      }
+    }
+
+    .location-box {
+      height: 65px;
+      bottom: 65px;
+      font-size: 1.75rem;
+
+      a {
+        position: initial;
+        margin: auto;
+      }
+    }
+
+    .view-calendar-container {
+      display: none;
+    }
+
+    .frontpage-buttons {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 9.5rem;
+      margin-top: 6.5635rem;
+
+      .childcare-button,
+      .senior-programs-button,
+      .donate-button {
+        margin: auto;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        text-transform: uppercase;
+        height: 198px;
+        width: 295px;
+
+      }
+    }
+  }
