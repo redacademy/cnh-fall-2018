@@ -99,7 +99,7 @@ $event_id = get_the_ID();
 					<a class="senior-programs-button button-pink all-button" href="programs/seniors">senior programs</a>
 					<a class="donate-button button-yellow all-button" href="/donate">donate</a>
 			</div>
-</div>
+<!-- </div> -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
