@@ -1845,7 +1845,8 @@ footer {
       .singular-event:first-of-type:hover .eventimg {
         display: none; }
       .singular-event:first-of-type:hover .hover-details {
-        display: block; }
+        display: block;
+        width: 555px; }
     .singular-event:last-of-type {
       margin-right: 2rem; }
       .singular-event:last-of-type:hover .eventimg {
