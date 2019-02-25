@@ -82,10 +82,8 @@
 .page-template-programs-php .wp-block-image img {
   max-width: 10%;
 }
-.parent-pageid-122 {
-  @include desktop{
-  h2 {
+.community-programs-h2 {
+  @include desktop {
     margin-bottom: 4rem;
   }
-}
 }
