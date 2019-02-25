@@ -1968,9 +1968,6 @@ footer {
 .page-template-programs-php .wp-block-image img {
   max-width: 10%; }
 
-.community-programs-h2 {
-  margin-bottom: 4rem; }
-
 .button-yellow {
   background-color: #fab568; }
 
@@ -2430,6 +2427,10 @@ a {
     @media all and (min-width: 600px) {
       .tb-blue td {
         font-size: 1.25rem; } }
+
+@media all and (min-width: 1080px) {
+  .community-programs-h2 {
+    margin-bottom: 4rem; } }
 
 .page-template-services-php .entry-content {
   display: -webkit-box;
