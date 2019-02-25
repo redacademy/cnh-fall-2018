@@ -82,8 +82,10 @@
 .page-template-programs-php .wp-block-image img {
   max-width: 10%;
 }
-.page-id-135 {
+.parent-pageid-122 {
+  @include desktop{
   h2 {
     margin-bottom: 4rem;
   }
+}
 }

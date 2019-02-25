@@ -1968,8 +1968,9 @@ footer {
 .page-template-programs-php .wp-block-image img {
   max-width: 10%; }
 
-.page-id-135 h2 {
-  margin-bottom: 4rem; }
+@media all and (min-width: 1080px) {
+  .parent-pageid-122 h2 {
+    margin-bottom: 4rem; } }
 
 .button-yellow {
   background-color: #fab568; }
