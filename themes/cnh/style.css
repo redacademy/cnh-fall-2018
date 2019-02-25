@@ -1832,7 +1832,8 @@ footer {
     display: flex;
     margin-bottom: 6rem; }
   .hover-details {
-    font-size: 1.25rem; }
+    font-size: 1.25rem;
+    width: 555px; }
     .hover-details .hover-title {
       font-weight: bold; }
     .hover-details .hover-description {
@@ -1845,8 +1846,7 @@ footer {
       .singular-event:first-of-type:hover .eventimg {
         display: none; }
       .singular-event:first-of-type:hover .hover-details {
-        display: block;
-        width: 555px; }
+        display: block; }
     .singular-event:last-of-type {
       margin-right: 2rem; }
       .singular-event:last-of-type:hover .eventimg {
