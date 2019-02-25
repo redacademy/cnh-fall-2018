@@ -2655,6 +2655,19 @@ li .menu-item a {
       -webkit-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start; } }
+  .error-404 .page-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 50px; }
+    @media all and (min-width: 1080px) {
+      .error-404 .page-header {
+        margin-left: 0px;
+        display: inline; } }
 
 .title-404 {
   text-transform: uppercase;

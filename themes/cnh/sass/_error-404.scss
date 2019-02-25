@@ -4,8 +4,17 @@
     justify-content: flex-start;
     align-items: center;
     margin:1rem;
-    @include desktop{
+    @include desktop {
         align-items: flex-start;
+    }
+    .page-header {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    @include desktop {
+        margin-left: 0px;
+        display: inline;
+    }
     }
 }
 
