@@ -1058,7 +1058,6 @@ object {
 .page-template-taxonomy-program_type .program-info div,
 .page-template-taxonomy-program_type .service-info div {
   margin-top: 0;
-  padding: 0 1.5rem;
   text-align: center; }
   @media all and (min-width: 600px) {
     .page-template-template-pages-serv .program-info div,
@@ -1840,7 +1839,7 @@ footer {
       text-overflow: ellipsis; }
   .singular-event {
     height: 258px;
-    width: 555px; }
+    width: 554px; }
     .singular-event:first-of-type {
       margin-right: 2rem; }
       .singular-event:first-of-type:hover .eventimg {
