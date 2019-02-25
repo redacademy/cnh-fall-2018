@@ -43,7 +43,7 @@ get_header(); ?>
 		<!--Upcoming events-->	
 		<h2 class="upcoming-events-title"> Upcoming Events</h2>
 		<div class='upcoming-events'>
-<?php $loop = new WP_Query( array( 'post_type' => 'tribe_events', 'posts_per_page' => 10, 'orderby' => 'date', 'order' => 'ASC', 'paged' ) ); ?> 
+<?php $loop = new WP_Query( array( 'post_type' => 'tribe_events', 'posts_per_page' => 2, 'orderby' => 'date', 'order' => 'ASC', 'paged' ) ); ?> 
 
 
 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
