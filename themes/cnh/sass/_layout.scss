@@ -67,8 +67,8 @@ a {
     }
   }
 }
-h2 .community-programs-h2 {
+.community-programs-h2 {
   @include desktop {
-    margin-bottom: 4rem;
+    margin-bottom: 4rem!important;
   }
 }

@@ -2429,8 +2429,8 @@ a {
         font-size: 1.25rem; } }
 
 @media all and (min-width: 1080px) {
-  h2 .community-programs-h2 {
-    margin-bottom: 4rem; } }
+  .community-programs-h2 {
+    margin-bottom: 4rem !important; } }
 
 .page-template-services-php .entry-content {
   display: -webkit-box;
