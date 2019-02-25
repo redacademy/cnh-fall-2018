@@ -1139,6 +1139,14 @@ object {
     .page-template-taxonomy-program_type .service-wrapper article div div > p {
       font-weight: normal; } }
 
+.page-id-331 .wp-block-column {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .page-template-page-about .content-area .entry-header .entry-title,
 .page-template-taxonomy-service_type .content-area .entry-header .entry-title,
 .page-template-taxonomy-program_type .content-area .entry-header .entry-title {
