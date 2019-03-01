@@ -23,7 +23,7 @@ get_header(); ?>
         <?php get_template_part( 'template-parts/content', 'search' ); ?>
         
       <button>
-        <a class="button" href='<?php echo get_permalink($post->ID); ?>'>Read More</a>
+        <a class="button" href='google.ca'>Read More</a>
       </button>
 
 			<?php endwhile; ?>
