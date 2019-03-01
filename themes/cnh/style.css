@@ -3055,15 +3055,8 @@ iframe.maps {
 
 .room-list-container {
   display: none; }
-  @media all and (min-width: 600px) {
-    .room-list-container {
-      display: inline;
-      border: 2px solid #282460;
-      border-radius: 10px;
-      overflow: hidden; } }
 
 .main-carousel {
-  width: 70%;
   position: relative; }
 
 @media all and (min-width: 600px) {

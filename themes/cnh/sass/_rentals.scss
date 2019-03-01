@@ -63,16 +63,16 @@
 
 .room-list-container {
   display: none;
-  @include tablet {
-    display: inline;
-    border: 2px solid $color__main;
-    border-radius: 10px;
-    overflow: hidden;
-  }
+  // @include tablet {
+  //   display: inline;
+  //   border: 2px solid $color__main;
+  //   border-radius: 10px;
+  //   overflow: hidden;
+  // }
 }
 
 .main-carousel {
-  width: 70%;
+  // width: 70%;
   position: relative;
 }
 
