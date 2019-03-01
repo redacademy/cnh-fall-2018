@@ -1445,8 +1445,8 @@ footer {
   height: 250px; }
 
 .entry-header img {
-  -webkit-transform: translateY(-23.5%);
-          transform: translateY(-23.5%);
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
   z-index: -1; }
 
 .home-title {
@@ -1653,7 +1653,7 @@ footer {
   .home-subtitle {
     display: none; }
   .home .entry-header {
-    height: 250px; }
+    height: 350px; }
   .frontpage-content {
     margin-top: 1rem; }
   .we-are-a-place {
@@ -1685,7 +1685,7 @@ footer {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
   .home .entry-header {
-    height: 400px; }
+    height: 500px; }
   .frontpage-content {
     margin-top: 1rem; }
   .instagram-container .photo:last-child {
@@ -1699,7 +1699,7 @@ footer {
   .home .entry-header {
     height: 600px; }
   .home-title {
-    top: 120px;
+    top: 60px;
     left: 50%;
     font-size: 65px;
     text-transform: none;
@@ -1711,7 +1711,7 @@ footer {
   .home-subtitle {
     display: initial;
     position: absolute;
-    top: 275px;
+    top: 215px;
     left: 50%;
     font-size: 30px;
     margin-top: .5rem;
