@@ -16,8 +16,8 @@
     <?php the_content(); ?>
     <?php 
       if (CFS()->get( 'download_form' ) == true):
-        echo '<button class="button-yellow all-button btn-sm">';
-        echo '<a href="' . CFS()->get( 'download_form' ) . '">Download Form</a></button>';
+
+        echo '<a class="readmore-button" href="' . CFS()->get( 'download_form' ) . '">Download Form</a>';
       endif;
       ?>
 		<?php
