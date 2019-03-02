@@ -2258,8 +2258,7 @@ footer {
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-  border-radius: 0.5rem;
-  border-color: #fab568;
+  border: 1px #282460 solid;
   background: #fab568;
   font-family: "Lato-Bold";
   text-transform: uppercase;
