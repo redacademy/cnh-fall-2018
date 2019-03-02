@@ -283,3 +283,22 @@
     }
   }
 }
+.readmore-button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  border-radius: 0.5rem;
+  border-color: $color__button;
+  background: $color__button;
+  font-family: $font__subtitle;
+  text-transform: uppercase;
+  @include font-size(0.75);
+  line-height: 1;
+  padding: $base__space-unit / 2.5;
+
+  &:hover,
+  &:active,
+  &:focus {
+    opacity: 0.75;
+  }
+}

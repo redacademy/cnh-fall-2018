@@ -2254,6 +2254,31 @@ footer {
       .app-form-wrap .application-btn a {
         height: 100px; } }
 
+.readmore-button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  border-radius: 0.5rem;
+  border-color: #fab568;
+  background: #fab568;
+  font-family: "Lato-Bold";
+  text-transform: uppercase;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1;
+  padding: 0.6rem; }
+  .readmore-button:hover, .readmore-button:active, .readmore-button:focus,
+  input[type='button']:hover,
+  input[type='button']:active,
+  input[type='button']:focus,
+  input[type='reset']:hover,
+  input[type='reset']:active,
+  input[type='reset']:focus,
+  input[type='submit']:hover,
+  input[type='submit']:active,
+  input[type='submit']:focus {
+    opacity: 0.75; }
+
 /*--------------------------------------------------------------
 # Side Menu
 --------------------------------------------------------------*/

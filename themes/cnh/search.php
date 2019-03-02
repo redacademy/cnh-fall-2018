@@ -22,9 +22,9 @@ get_header(); ?>
 
         <?php get_template_part( 'template-parts/content', 'search' ); ?>
         
-<button>
+
         <a class="readmore-button" href='<?php echo get_permalink(); ?>'>Read More</a>
-</button>
+
 
 			<?php endwhile; ?>
 
