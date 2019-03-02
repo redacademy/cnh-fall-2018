@@ -23,7 +23,7 @@ get_header(); ?>
         <?php get_template_part( 'template-parts/content', 'search' ); ?>
         
       <button>
-        <a class="button" href='<?php echo get_the_permalink(); ?>'>Read More</a>
+			<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
       </button>
 
 			<?php endwhile; ?>
