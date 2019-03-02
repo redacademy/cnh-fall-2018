@@ -23,7 +23,7 @@ get_header(); ?>
         <?php get_template_part( 'template-parts/content', 'search' ); ?>
         
 
-			<?php the_title( sprintf( '<button class="button"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></button>' ); ?>
+			<?php the_title( sprintf( '<a class="button" href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a>' ); ?>
 
 
 			<?php endwhile; ?>
