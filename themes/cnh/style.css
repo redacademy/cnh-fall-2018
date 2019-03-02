@@ -2259,6 +2259,7 @@ input[type='button'],
 input[type='reset'],
 input[type='submit'] {
   border: 1px #282460 solid;
+  border-radius: .5rem;
   background: #fab568;
   font-family: "Lato-Bold";
   text-transform: uppercase;
