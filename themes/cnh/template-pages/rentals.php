@@ -30,7 +30,6 @@ get_header(); ?>
           $count = 0;
           foreach ( $rooms as $room ): ?>  
             <div class="room-separate" data-id="<?php echo $count ?>">
-            <h3 class="room-title"><?php echo $room['room_title']; ?></h3>
             
             </div>
           <?php endforeach ?>
