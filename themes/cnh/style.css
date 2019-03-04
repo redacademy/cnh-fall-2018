@@ -2985,7 +2985,7 @@ iframe.maps {
   overflow: hidden; }
   .site-location .wp-block-column {
     height: 575px;
-    width: 100%; }
+    width: auto; }
     @media all and (min-width: 600px) {
       .site-location .wp-block-column {
         margin: 0.75rem; } }

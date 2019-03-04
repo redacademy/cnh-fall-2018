@@ -40,7 +40,7 @@ iframe.maps {
 
   .wp-block-column {
     height: 575px;
-    width: 100%;
+    width: auto;
 
     @include tablet {
       margin: $base__space-unit/2;
