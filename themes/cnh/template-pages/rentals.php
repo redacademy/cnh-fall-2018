@@ -31,27 +31,7 @@ get_header(); ?>
           foreach ( $rooms as $room ): ?>  
             <div class="room-separate" data-id="<?php echo $count ?>">
             <h3 class="room-title"><?php echo $room['room_title']; ?></h3>
-            <div class="room-content">
-
             
-              <div class="room-stats">
-                <div class="room-info">
-                  <p class="room-stat-title">Capacity:  </p>
-                  <?php echo $room['room_capacity']; ?>
-                </div>
-          
-                <div class="room-info">
-                  <p class="room-stat-title">Measurements:  </p>
-                  <?php echo $room['room_measurements']; ?>
-                </div>
-            
-                <div class="room-info">
-                  <p class="room-stat-title">Features:  </p>
-                  <?php echo $room['room_features']; ?>
-                </div>
-              </div>
-              <?php $count ++;?>
-            </div>
             </div>
           <?php endforeach ?>
         </div><!-- / Flickity Carousel -->
