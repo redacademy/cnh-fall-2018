@@ -2465,6 +2465,9 @@ a {
   .community-programs-h2 {
     margin-bottom: 4rem !important; } }
 
+.opportunity-entry-info {
+  margin-bottom: 25px; }
+
 .page-template-services-php .entry-content {
   display: -webkit-box;
   display: -ms-flexbox;
