@@ -310,4 +310,9 @@ input[type='submit'] {
   .all-button {
     border: none;
   }
+  @include tablet {
+    .has-2-columns {
+      flex-direction: row;
+    }
+  }
 }

@@ -2290,6 +2290,13 @@ input[type='submit'] {
 .page-id-151 .all-button {
   border: none; }
 
+@media all and (min-width: 600px) {
+  .page-id-151 .has-2-columns {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; } }
+
 /*--------------------------------------------------------------
 # Side Menu
 --------------------------------------------------------------*/
