@@ -2300,7 +2300,12 @@ input[type='submit'] {
           flex-direction: row; }
 
 .page-id-331 .has-2-columns {
-  height: 100px; }
+  height: 100px;
+  margin-bottom: 5rem; }
+
+@media all and (min-width: 600px) {
+  .page-id-331 .has-2-columns {
+    margin-bottom: 0rem; } }
 
 /*--------------------------------------------------------------
 # Side Menu

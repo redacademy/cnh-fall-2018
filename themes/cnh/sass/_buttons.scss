@@ -320,5 +320,11 @@ input[type='submit'] {
 .page-id-331 {
   .has-2-columns {
     height: 100px;
+    margin-bottom: 5rem;
+  }
+  @include tablet {
+    .has-2-columns {
+      margin-bottom: 0rem;
+    }
   }
 }
