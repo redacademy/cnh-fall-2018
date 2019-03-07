@@ -2284,7 +2284,11 @@ input[type='submit'] {
     opacity: 0.75; }
 
 .page-id-151 .all-button a {
-  height: auto; }
+  height: auto;
+  border-radius: 1rem; }
+
+.page-id-151 .all-button {
+  border: none; }
 
 /*--------------------------------------------------------------
 # Side Menu
