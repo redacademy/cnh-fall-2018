@@ -53,7 +53,7 @@ $event_id = get_the_ID();
 ?>
         <div class="singular-event">
 		<div class="date"><div class="date-text-container"><p class="day"><?php echo tribe_get_start_date( null, false, 'l' ); ?></p><p class="date-text"><?php echo tribe_get_start_date( null, false, 'M j' ); ?></p></div> </div>
-		<div class="eventimg"><?php if ( has_post_thumbnail('<a href="' . tribe_get_event_link()'</a>') ) the_post_thumbnail('medium-list-thumbnail'); ?>
+		<div class="eventimg"><?php if ( has_post_thumbnail() ) the_post_thumbnail('medium-list-thumbnail'); ?>
         <div class="location-box" ><?php the_title('<a href="' . tribe_get_event_link() . '" title="' . the_title_attribute('echo=0') . '" rel="bookmark">', '</a>'); ?> </div></div >
 		
 	    <div class="hover-details" >      
