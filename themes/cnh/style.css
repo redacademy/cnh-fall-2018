@@ -2283,6 +2283,9 @@ input[type='submit'] {
   input[type='submit']:focus {
     opacity: 0.75; }
 
+.page-id-151 .small-buttons {
+  height: 140px; }
+
 .page-id-151 .all-button a {
   height: auto;
   border-radius: 1rem; }
