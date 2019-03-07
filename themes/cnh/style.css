@@ -1594,7 +1594,7 @@ footer {
 
 .hover-details {
   display: none;
-  padding: 2rem;
+  padding-left: 1rem;
   border: 1px solid #282460;
   border-radius: 0 10px 10px 0;
   margin-left: 0;
