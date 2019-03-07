@@ -2299,6 +2299,10 @@ input[type='submit'] {
       -ms-flex-direction: row;
           flex-direction: row; }
 
+.page-id-331 .wp-block-columns {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+
 .page-id-331 .has-2-columns {
   height: 100px;
   margin-bottom: 5rem; }

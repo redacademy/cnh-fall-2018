@@ -318,6 +318,9 @@ input[type='submit'] {
   }
 }
 .page-id-331 {
+  .wp-block-columns {
+    flex-wrap: nowrap;
+  }
   .has-2-columns {
     height: 100px;
     margin-bottom: 5rem;
