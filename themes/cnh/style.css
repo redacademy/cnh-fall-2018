@@ -1721,7 +1721,8 @@ footer {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
   .frontpage-content {
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    padding-top: 1rem; }
   .upcoming-events-title {
     padding-top: 6rem; }
   .upcoming-events-title,
@@ -2281,6 +2282,9 @@ input[type='submit'] {
   input[type='submit']:active,
   input[type='submit']:focus {
     opacity: 0.75; }
+
+.page-id-151 .all-button a {
+  height: auto; }
 
 /*--------------------------------------------------------------
 # Side Menu
