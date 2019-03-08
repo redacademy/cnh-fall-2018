@@ -1913,12 +1913,6 @@ footer {
       height: 198px;
       width: 295px; } }
 
-@supports (-ms-ime-align: auto) {
-  .location-box {
-    background-color: #282460;
-    opacity: .75;
-    bottom: 66px; } }
-
 .location-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1942,6 +1936,12 @@ footer {
       font-size: 100%; }
   .eventimg {
     line-height: 3vh; } }
+
+@supports (-ms-ime-align: auto) {
+  .location-box {
+    background-color: #282460;
+    opacity: .75;
+    bottom: 66px; } }
 
 .center-page {
   text-align: center; }

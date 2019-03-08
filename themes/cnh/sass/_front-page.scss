@@ -552,13 +552,7 @@
       }
     }
   }
-  @supports (-ms-ime-align:auto) {
-    .location-box {
-      background-color: #282460;
-      opacity: .75;
-      bottom: 66px;
-    }
-  }
+
   .location-box {
   display: flex;
   align-items: center;
@@ -583,3 +577,10 @@
     line-height: 3vh;
   }
 }
+  @supports (-ms-ime-align:auto) {
+    .location-box {
+      background-color: #282460;
+      opacity: .75;
+      bottom: 66px;
+    }
+  }
