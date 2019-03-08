@@ -1913,7 +1913,7 @@ footer {
       height: 198px;
       width: 295px; } }
 
-@supports (-ms-accelerator: true) {
+@supports (-ms-ime-align: auto) {
   .location-box {
     background-color: #282460;
     opacity: .75; } }
@@ -1930,7 +1930,6 @@ footer {
   .location-box a {
     line-height: 1;
     font-size: 1.25vh;
-    margin-left: 5px;
     top: 0px; }
 
 @media all and (min-width: 1080px) {
@@ -2339,7 +2338,7 @@ input[type='submit'] {
   .page-id-331 .has-2-columns {
     margin-bottom: 0rem; } }
 
-@supports (-ms-accelerator: true) {
+@supports (-ms-ime-align: auto) {
   .page-id-21 .about-btn-wrap {
     -webkit-box-pack: center;
         -ms-flex-pack: center;

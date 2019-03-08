@@ -331,7 +331,7 @@ input[type='submit'] {
     }
   }
 }
-@supports (-ms-accelerator:true) {
+@supports (-ms-ime-align:auto) {
   .page-id-21 {
     .about-btn-wrap {
       justify-content: center;
