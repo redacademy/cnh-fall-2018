@@ -552,6 +552,12 @@
       }
     }
   }
+  @supports (-ms-accelerator:true) {
+    .location-box {
+      background-color: #282460;
+      opacity: .75;
+    }
+  }
   .location-box {
   display: flex;
   align-items: center;

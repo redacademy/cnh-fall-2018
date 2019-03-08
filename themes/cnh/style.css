@@ -1913,6 +1913,11 @@ footer {
       height: 198px;
       width: 295px; } }
 
+@supports (-ms-accelerator: true) {
+  .location-box {
+    background-color: #282460;
+    opacity: .75; } }
+
 .location-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2333,6 +2338,12 @@ input[type='submit'] {
 @media all and (min-width: 600px) {
   .page-id-331 .has-2-columns {
     margin-bottom: 0rem; } }
+
+@supports (-ms-accelerator: true) {
+  .page-id-21 .about-btn-wrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
 
 /*--------------------------------------------------------------
 # Side Menu

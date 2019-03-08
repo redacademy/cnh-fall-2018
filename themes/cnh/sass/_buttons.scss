@@ -331,3 +331,10 @@ input[type='submit'] {
     }
   }
 }
+@supports (-ms-accelerator:true) {
+  .page-id-21 {
+    .about-btn-wrap {
+      justify-content: center;
+    }
+  }
+}
