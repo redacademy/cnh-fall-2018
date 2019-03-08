@@ -1918,7 +1918,11 @@ footer {
 @media all and (min-width: 1080px) {
   .location-box {
     width: 388px;
+    bottom: 75px;
+    height: 65px;
     bottom: 75px; }
+    .location-box a {
+      font-size: 100%; }
   .eventimg {
     line-height: 3vh; } }
 
