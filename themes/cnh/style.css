@@ -1916,7 +1916,8 @@ footer {
 @supports (-ms-ime-align: auto) {
   .location-box {
     background-color: #282460;
-    opacity: .75; } }
+    opacity: .75;
+    bottom: 66px; } }
 
 .location-box {
   display: -webkit-box;
