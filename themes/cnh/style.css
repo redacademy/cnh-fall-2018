@@ -1934,7 +1934,8 @@ footer {
   .location-box a {
     line-height: 1;
     font-size: 1.25vh;
-    margin-left: 5px; }
+    margin-left: 5px;
+    top: 0px; }
 
 .center-page {
   text-align: center; }
