@@ -554,30 +554,12 @@
       }
     }
   }
-// @include desktop {
-//   .entry-header img {
-//     transform: translateX(-10%)!important;
-
-// transform: translate3d(10% 10%)!important;
-
-// position: absolute!important;
-
-// top: 130px!important;
-// width: 105%!important;
-//   }
-//   .home-title {
-//     top: 50px!important;
-//     font-size: 55px!important;
-//   }
-//   .home-subtitle {
-//     top: 225px!important;
-//     font-size: 20px!important;
-//   }
-//   .site-header {
-//     background-color: #d8e3e4!important;
-
-// z-index: -1!important;
-
-// width: 100%!important;
-//   }
-// }
+@include desktop {
+  .location-box {
+    width: 388px;
+    bottom: none;
+  }
+  .eventimg {
+    line-break: 3vh;
+  }
+}

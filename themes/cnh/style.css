@@ -1915,6 +1915,13 @@ footer {
       height: 198px;
       width: 295px; } }
 
+@media all and (min-width: 1080px) {
+  .location-box {
+    width: 388px;
+    bottom: none; }
+  .eventimg {
+    line-break: 3vh; } }
+
 .center-page {
   text-align: center; }
 
