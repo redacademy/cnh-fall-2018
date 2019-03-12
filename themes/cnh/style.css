@@ -886,7 +886,7 @@ a {
 .bypostauthor {
   display: block; }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 460px) {
   .page-id-132 table {
     font-size: 10px; }
   .page-id-132 td {
