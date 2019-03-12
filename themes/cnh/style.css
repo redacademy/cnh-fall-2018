@@ -1454,9 +1454,8 @@ footer {
 .home-title {
   position: absolute;
   top: 30px;
-  width: 75%;
   left: 50%;
-  font-size: 20px;
+  font-size: 12px;
   text-align: center;
   letter-spacing: 1.35pt;
   -webkit-transform: translateX(-50%);
