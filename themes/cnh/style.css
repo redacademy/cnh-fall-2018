@@ -886,6 +886,14 @@ a {
 .bypostauthor {
   display: block; }
 
+@media screen and (min-width: 360px) {
+  .page-id-132 table {
+    font-size: 10px; } }
+
+@media screen and (min-width: 490px) {
+  .page-id-132 table {
+    font-size: 12px; } }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
