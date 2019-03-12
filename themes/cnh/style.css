@@ -888,7 +888,9 @@ a {
 
 @media screen and (max-width: 490px) {
   .page-id-132 table {
-    font-size: 10px; } }
+    font-size: 10px; }
+  .page-id-132 td {
+    padding-bottom: 15px; } }
 
 /*--------------------------------------------------------------
 # Media
