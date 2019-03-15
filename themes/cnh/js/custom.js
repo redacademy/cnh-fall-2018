@@ -126,7 +126,7 @@
         };
 
         $('.instagram-container').spectragram('getUserFeed', {
-          complete : spectragramComplete(),
+          complete : null,
           max: 2,
           size: 'medium',
           wrapEachWith: '<div class="photo">'
