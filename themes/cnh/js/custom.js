@@ -126,6 +126,7 @@
         };
 
         $('.instagram-container').spectragram('getUserFeed', {
+          query:'converse',
           complete : null,
           max: 2,
           size: 'medium',
