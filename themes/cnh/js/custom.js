@@ -116,8 +116,8 @@
     // start of spectagram
     // var spectragramComplete = function () {
     var spectra = {
-      instaToken: '9448460219.0d61304.de737249603f46ec9356ff60f0aabdcf',
-      instaID: '0d61304f0d4242a9b55e5c1378ba869e',
+      instaToken: '4212657349.22c4823.826c784be9a5409f969b7dadb50e9476',
+      instaID: '22c4823f00bd4be4869b62d209939ce4',
 
       init: function () {
         $.fn.spectragram.accessData = {
