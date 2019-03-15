@@ -115,15 +115,13 @@
 
     // start of spectagram
     // var spectragramComplete = function () {
-    var spectra = {
-      instaToken: '4212657349.c812fe1.8477907309a64d23ab54271059b71ff5',
-      instaID: 'c812fe1508444f2cb56abd7569401e7e',
-
-      init: function () {
-        $.fn.spectragram.accessData = {
-          accessToken: this.instaToken,
-          clientID: this.instaID
-        };
+      var Spectra = {
+        instaToken: '4212657349.c812fe1.8477907309a64d23ab54271059b71ff5',
+        
+        init: function () {
+          $.fn.spectragram.accessData = {
+            accessToken: this.instaToken
+          };
 
         $('.instagram-container').spectragram('getUserFeed', {
           complete : myCallbackFunc(),
