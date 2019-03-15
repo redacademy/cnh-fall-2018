@@ -126,8 +126,7 @@
         };
 
         $('.instagram-container').spectragram('getUserFeed', {
-          query:'converse',
-          complete : null,
+          complete : myCallbackFunc(),
           max: 2,
           size: 'medium',
           wrapEachWith: '<div class="photo">'
