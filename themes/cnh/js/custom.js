@@ -122,16 +122,16 @@
           $.fn.spectragram.accessData = {
             accessToken: this.instaToken
           };
-
-        $('.instagram-container').spectragram('getUserFeed', {
-          complete : console.log('completed'),
-          max: 2,
-          size: 'medium',
-          wrapEachWith: '<div class="photo">'
-        });
+          
+          $('.instagram-container').spectragram('getUserFeed', {
+            max: 2,
+            size: 'medium',
+            wrapEachWith: '<div class="photo">'
+          });  
+        }
       }
-    }
-    spectra.init();
+      
+      Spectra.init();
     // end of spectrogram
 
     const $sideBar = $('.page-template .site-content .widget-sidebar');

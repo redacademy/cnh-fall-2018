@@ -76,11 +76,17 @@ $event_id = get_the_ID();
 
 <!--start of instagram-->
 
-	<h2 class="instagram-updates-title"> Instagram Updates</h2>
+	<!-- <h2 class="instagram-updates-title"> Instagram Updates</h2>
 				<div class="instagram-container">
 				
                         
-				</div>
+				</div> -->
+				<main>
+  <article>
+	<h2 class="instagram-updates-title"> Instagram Updates</h2>
+    <div class="instagram-container"></div>
+  </article>
+</main>
 				<div class="follow-box">
 					<div class="follow-content">
 					<p class="follow-us">follow us</p>
