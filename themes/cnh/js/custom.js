@@ -130,7 +130,7 @@
           wrapEachWith: '<div class="photo">'
         });
       }
-    };
+    }
     spectra.init();
     // end of spectrogram
 
