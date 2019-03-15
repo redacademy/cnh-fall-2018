@@ -115,23 +115,25 @@
 
     // start of spectagram
     // var spectragramComplete = function () {
-      var Spectra = {
-        instaToken: '4212657349.c812fe1.8477907309a64d23ab54271059b71ff5',
-        
-        init: function () {
-          $.fn.spectragram.accessData = {
-            accessToken: this.instaToken
-          };
-          
-          $('.instagram-container').spectragram('getUserFeed', {
-            max: 2,
-            size: 'medium',
-            wrapEachWith: '<div class="photo">'
-          });  
-        }
+    var spectra = {
+      instaToken: '9448460219.0d61304.de737249603f46ec9356ff60f0aabdcf',
+      instaID: '0d61304f0d4242a9b55e5c1378ba869e',
+
+      init: function () {
+        $.fn.spectragram.accessData = {
+          accessToken: this.instaToken,
+          clientID: this.instaID
+        };
+
+        $('.instagram-container').spectragram('getUserFeed', {
+          // complete : spectragramComplete(),
+          max: 2,
+          size: 'medium',
+          wrapEachWith: '<div class="photo">'
+        });
       }
-      
-      Spectra.init();
+    };
+    spectra.init();
     // end of spectrogram
 
     const $sideBar = $('.page-template .site-content .widget-sidebar');
