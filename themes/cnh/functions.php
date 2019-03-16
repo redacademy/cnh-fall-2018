@@ -103,7 +103,7 @@ function cnh_scripts() {
   // to link font awesome
   wp_enqueue_style('cnh-fontawesome','https://use.fontawesome.com/releases/v5.5.0/css/all.css');
 
-  wp_enqueue_style('cnh-spectragram','https://cdn.rawgit.com/adrianengine/jquery-spectragram/1.1.0/spectragram.min.js');
+  wp_enqueue_script('cnh-spectragram','https://cdn.rawgit.com/adrianengine/jquery-spectragram/1.1.0/spectragram.min.js');
 
   wp_enqueue_style('cnh-flickity-style','https://unpkg.com/flickity@2/dist/flickity.min.css');
 
