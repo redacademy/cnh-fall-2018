@@ -57,7 +57,7 @@ if ( typeof Object.create !== "function" ) {
 			self.fetch( endpoint ).done( function ( results ) {
 				var status = self.options.query || 'User';
 
-				if ( results.data[i] && results.data.length ) {
+				if ( results.data && results.data[i].length ) {
 					self.display( results );
 				} else {
 					$.error( "Spectragram.js - Error: " + status + " doesn'tt have photos." );
