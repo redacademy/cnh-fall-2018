@@ -145,7 +145,7 @@
         };
     
     
-        $('.feed').spectragram('getUserFeed',{
+        $('.instagram-container').spectragram('getUserFeed',{
           complete: this.callback('user'),
           max: 2,
           wrapEachWith: '<div class="photo">'
