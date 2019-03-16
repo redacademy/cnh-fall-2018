@@ -136,7 +136,7 @@
     // spectra.init();
     // end of spectrogram
     var Spectra = {
-      instaToken: '9448460219.0d61304.12ca31f98ede424589619fb033b9198d',
+      instaToken: "9448460219.0d61304.12ca31f98ede424589619fb033b9198d",
     
       init: function () {
         $.fn.spectragram.accessData = {
