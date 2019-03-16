@@ -103,7 +103,7 @@ function cnh_scripts() {
   // to link font awesome
   wp_enqueue_style('cnh-fontawesome','https://use.fontawesome.com/releases/v5.5.0/css/all.css');
 
-//   wp_enqueue_script('cnh-spectragram','https://cdn.rawgit.com/adrianengine/jquery-spectragram/1.1.0/spectragram.min.js');
+  wp_enqueue_script('cnh-spectragram','https://cdn.rawgit.com/adrianengine/jquery-spectragram/1.1.0/spectragram.min.js');
 
 //  wp_enqueue_script('cnh-spectragram','https://cdnjs.cloudflare.com/ajax/libs/spectragram/1.1.0/spectragram.js');
 
@@ -118,7 +118,7 @@ function cnh_scripts() {
   // flickity
   wp_enqueue_script('cnh-flickity-script', 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', array('jquery'), '', true); 
   
-  wp_enqueue_script('spectragram.js', get_template_directory_uri() . '/js/spectragram.js', array(), '20190203', true);
+//   wp_enqueue_script('spectragram.js', get_template_directory_uri() . '/js/spectragram.js', array(), '20190203', true);
 	wp_enqueue_script( 'cnh-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
   wp_enqueue_script( 'cnh-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
 
