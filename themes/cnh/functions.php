@@ -119,7 +119,7 @@ function cnh_scripts() {
   wp_enqueue_script('cnh-flickity-script', 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', array('jquery'), '', true); 
   
   wp_enqueue_script('spectragram.js', get_template_directory_uri() . '/build/js/spectragram.min.js', array(), '20181206', true);
-	wp_enqueue_script( 'cnh-navigation', get_template_directory_uri() . '/js/navigation.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'cnh-navigation', get_template_directory_uri() . '/js/navigation.min.js', array(), '20190203', true );
   wp_enqueue_script( 'cnh-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
 
 
