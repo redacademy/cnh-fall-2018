@@ -115,26 +115,49 @@
 
     // start of spectagram
     // var spectragramComplete = function () {
-    var spectra = {
-      instaToken: '9448460219.0d61304.12ca31f98ede424589619fb033b9198d',
-      instaID: '0d61304f0d4242a9b55e5c1378ba869e',
+    // var spectra = {
+    //   instaToken: '9448460219.0d61304.12ca31f98ede424589619fb033b9198d',
+    //   instaID: '0d61304f0d4242a9b55e5c1378ba869e',
 
+    //   init: function () {
+    //     $.fn.spectragram.accessData = {
+    //       accessToken: this.instaToken,
+    //       clientID: this.instaID
+    //     };
+
+    //     $('.instagram-container').spectragram('getUserFeed', {
+    //       // complete : spectragramComplete(),
+    //       max: 2,
+    //       size: 'medium',
+    //       wrapEachWith: '<div class="photo">'
+    //     });
+    //   }
+    // };
+    // spectra.init();
+    // end of spectrogram
+    var Spectra = {
+      instaToken: '9448460219.0d61304.12ca31f98ede424589619fb033b9198d',
+    
       init: function () {
         $.fn.spectragram.accessData = {
           accessToken: this.instaToken,
           clientID: this.instaID
         };
-
-        $('.instagram-container').spectragram('getUserFeed', {
-          // complete : spectragramComplete(),
+    
+    
+        $('.feed').spectragram('getUserFeed',{
+          complete: this.callback('user'),
           max: 2,
-          size: 'medium',
           wrapEachWith: '<div class="photo">'
         });
+      },
+    
+      callback: function ( completeString ) {
+        console.log('completed: ' + completeString);
       }
-    };
-    spectra.init();
-    // end of spectrogram
+    }
+    
+    Spectra.init();
 
     const $sideBar = $('.page-template .site-content .widget-sidebar');
     const $contentArea = $('.page-template .site-content .content-area');
