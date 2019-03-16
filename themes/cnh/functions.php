@@ -105,6 +105,8 @@ function cnh_scripts() {
 
   wp_enqueue_script('cnh-spectragram','https://cdn.rawgit.com/adrianengine/jquery-spectragram/1.1.0/spectragram.min.js');
 
+ wp_enqueue_script('cnh-spectragram','https://cdnjs.cloudflare.com/ajax/libs/spectragram/1.1.0/spectragram.js');
+
   wp_enqueue_style('cnh-flickity-style','https://unpkg.com/flickity@2/dist/flickity.min.css');
 
   // to link material icons
