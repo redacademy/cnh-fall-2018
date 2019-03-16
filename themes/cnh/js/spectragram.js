@@ -60,7 +60,7 @@ if ( typeof Object.create !== "function" ) {
 				if ( results.data && results.data.length ) {
 					self.display( results );
 				} else {
-					$.error( "Spectragram.js - Error: " + status + " does not have photos." );
+					$.error( "Spectragram.js - Error: " + status + " does have photos." );
 				}
 			} );
 		},
