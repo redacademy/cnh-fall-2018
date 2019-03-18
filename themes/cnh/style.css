@@ -1932,13 +1932,12 @@ footer {
   bottom: 32px; }
   .location-box a {
     line-height: 1;
-    font-size: 1.25vh;
     top: 0px; }
 
 @media all and (min-width: 1080px) {
   .location-box {
     width: 388px;
-    bottom: 66px;
+    bottom: 68px;
     height: 65px; }
     .location-box a {
       font-size: 100%; }
@@ -1950,6 +1949,10 @@ footer {
     background-color: #282460;
     opacity: .75;
     bottom: 66px; } }
+
+@media screen and (max-width: 480px) {
+  .home-title {
+    font-size: 14px; } }
 
 .center-page {
   text-align: center; }

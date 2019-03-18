@@ -564,14 +564,13 @@
   bottom: 32px;
   a {
     line-height: 1;
-    font-size: 1.25vh;
     top: 0px;
   }
 }
 @include desktop {
   .location-box {
     width: 388px;
-    bottom: 66px;
+    bottom: 68px;
     height: 65px;
     a {
       font-size: 100%;
@@ -586,5 +585,10 @@
       background-color: #282460;
       opacity: .75;
       bottom: 66px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .home-title {
+      font-size: 14px;
     }
   }
