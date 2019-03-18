@@ -2649,6 +2649,8 @@ li .menu-item a {
       margin-bottom: .5rem;
       margin-left: 1.5rem;
       margin-top: .5rem; }
+      .widget-sidebar li a {
+        text-decoration: underline; }
     .widget-sidebar aside {
       width: 100%; } }
 
