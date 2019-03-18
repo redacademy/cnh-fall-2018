@@ -2648,7 +2648,8 @@ li .menu-item a {
     .widget-sidebar li {
       margin-bottom: .5rem;
       margin-left: 1.5rem;
-      margin-top: .5rem; }
+      margin-top: .5rem;
+      font-size: 14px; }
       .widget-sidebar li a {
         text-decoration: underline; }
     .widget-sidebar aside {
