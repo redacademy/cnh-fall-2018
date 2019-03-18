@@ -82,3 +82,11 @@
 .page-template-programs-php .wp-block-image img {
   max-width: 10%;
 }
+
+@include mobile {
+  .program-info {
+    .entry-content {
+      padding: 1rem;
+    }
+  }
+}
