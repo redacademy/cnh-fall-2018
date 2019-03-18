@@ -78,7 +78,7 @@
 
     .widget-sidebar {
       order: 2;
-      display: none;
+      // display: none;
 
       @include tablet {
         display: block;
