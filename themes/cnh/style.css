@@ -2644,10 +2644,13 @@ li .menu-item a {
     grid-template-columns: 1fr 1fr 1fr;
     border-top: #282460 solid 2px; }
   .widget-sidebar .li {
-    list-style: none;
     margin-bottom: 1rem;
     margin-left: 2.5rem;
     margin-top: 1rem; } }
+
+@media screen and (max-width: 600px) {
+  h2 {
+    font-size: 30px; } }
 
 /*--------------------------------------------------------------
 # Header
