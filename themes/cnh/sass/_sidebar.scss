@@ -79,9 +79,10 @@ li .menu-item a {
 
 .widget-sidebar {
   @media screen and (max-width: 600px) {
+    width: 100%;
+    margin: 1rem;
     .menu {
-      margin: 1rem;
-
+      
 display: grid;
 
 flex-wrap: wrap;
@@ -92,7 +93,6 @@ grid-template-columns: 1fr 1fr 1fr;
 
 border-top: #282460 solid 2px;
 
-width: 100%;
     }
     li {
 

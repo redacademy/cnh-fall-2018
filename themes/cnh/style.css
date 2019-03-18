@@ -2635,21 +2635,22 @@ li .menu-item a {
             transform: translateY(-50%); }
 
 @media screen and (max-width: 600px) {
-  .widget-sidebar .menu {
-    margin: 1rem;
-    display: grid;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    border-bottom: #282460 solid 2px;
-    grid-template-columns: 1fr 1fr 1fr;
-    border-top: #282460 solid 2px;
-    width: 100%; }
-  .widget-sidebar li {
-    margin-bottom: .5rem;
-    margin-left: 1.5rem;
-    margin-top: .5rem; }
-  .widget-sidebar aside {
-    width: 100%; } }
+  .widget-sidebar {
+    width: 100%;
+    margin: 1rem; }
+    .widget-sidebar .menu {
+      display: grid;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      border-bottom: #282460 solid 2px;
+      grid-template-columns: 1fr 1fr 1fr;
+      border-top: #282460 solid 2px; }
+    .widget-sidebar li {
+      margin-bottom: .5rem;
+      margin-left: 1.5rem;
+      margin-top: .5rem; }
+    .widget-sidebar aside {
+      width: 100%; } }
 
 @media screen and (max-width: 600px) {
   h2 {
