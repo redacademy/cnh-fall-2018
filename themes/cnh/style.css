@@ -2648,7 +2648,7 @@ li .menu-item a {
     margin-bottom: .5rem;
     margin-left: 1.5rem;
     margin-top: .5rem; }
-  .widget-sidebar .widget_nav_menu {
+  .widget-sidebar aside {
     width: 100%; } }
 
 @media screen and (max-width: 600px) {
