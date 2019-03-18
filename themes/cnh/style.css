@@ -2331,7 +2331,10 @@ input[type='submit'] {
     opacity: 0.75; }
 
 .page-id-151 .small-buttons {
-  height: 140px; }
+  height: 160px; }
+
+.page-id-151 .wp-block-column {
+  margin-left: 0px; }
 
 .page-id-151 .all-button a {
   height: auto;
