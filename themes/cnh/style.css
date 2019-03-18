@@ -1709,7 +1709,7 @@ footer {
   .home .entry-header {
     height: 600px; }
   .home-title {
-    top: 60px;
+    top: 80px;
     left: 50%;
     font-size: 65px;
     text-transform: none;
@@ -1721,7 +1721,7 @@ footer {
   .home-subtitle {
     display: initial;
     position: absolute;
-    top: 215px;
+    top: 245px;
     left: 50%;
     font-size: 30px;
     margin-top: .5rem;
@@ -1730,7 +1730,7 @@ footer {
             transform: translateX(-50%); }
   .frontpage-content {
     margin-top: 1rem;
-    padding-top: 1rem; }
+    padding-top: 5rem; }
   .upcoming-events-title {
     padding-top: 6rem; }
   .upcoming-events-title,
@@ -1952,7 +1952,8 @@ footer {
 
 @media screen and (max-width: 480px) {
   .home-title {
-    font-size: 14px; } }
+    font-size: 14px;
+    top: 45px; } }
 
 .center-page {
   text-align: center; }

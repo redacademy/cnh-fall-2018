@@ -289,7 +289,7 @@
         height: 600px;
       }
     .home-title {
-      top: 60px;
+      top: 80px;
       left: 50%;
       font-size: 65px;
       text-transform: none;
@@ -302,7 +302,7 @@
     .home-subtitle {
       display: initial;
       position: absolute;
-      top: 215px;
+      top: 245px;
       left: 50%;
       font-size: 30px;
       margin-top: .5rem;
@@ -312,7 +312,7 @@
 
     .frontpage-content {
       margin-top: 1rem;
-      padding-top: 1rem;
+      padding-top: 5rem;
     }
     .upcoming-events-title {
       padding-top: 6rem;
@@ -590,5 +590,6 @@
   @media screen and (max-width: 480px) {
     .home-title {
       font-size: 14px;
+      top: 45px;
     }
   }
