@@ -2642,11 +2642,14 @@ li .menu-item a {
         flex-wrap: wrap;
     border-bottom: #282460 solid 2px;
     grid-template-columns: 1fr 1fr 1fr;
-    border-top: #282460 solid 2px; }
+    border-top: #282460 solid 2px;
+    width: 100%; }
   .widget-sidebar li {
     margin-bottom: .5rem;
-    margin-left: 2.5rem;
-    margin-top: .5rem; } }
+    margin-left: 1.5rem;
+    margin-top: .5rem; }
+  .widget-sidebar .widget_nav_menu {
+    width: 100%; } }
 
 @media screen and (max-width: 600px) {
   h2 {
