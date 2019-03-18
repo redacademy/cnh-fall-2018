@@ -2021,11 +2021,11 @@ footer {
   max-width: 10%; }
 
 @media screen and (max-width: 460px) {
-  .program-info {
+  .program-info ul {
     margin: 0px;
     padding: 0px; }
-    .program-info .entry-content {
-      padding: 1rem !important; } }
+  .program-info .entry-content {
+    padding: 1rem !important; } }
 
 .button-yellow {
   background-color: #fab568; }

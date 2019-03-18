@@ -85,8 +85,10 @@
 
 @media screen and (max-width: 460px) {
   .program-info {
+    ul {
     margin: 0px;
     padding: 0px;
+    }
     .entry-content {
       padding: 1rem!important;
     }
