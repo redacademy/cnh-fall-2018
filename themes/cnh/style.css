@@ -3258,7 +3258,8 @@ iframe.maps {
   font-size: 1.875rem;
   font-family: "Lato-Bold";
   color: #282460;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  margin-left: 30px; }
 
 .page-template-rentals .entry-content {
   display: -webkit-box;
