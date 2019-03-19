@@ -111,5 +111,5 @@ $event_id = get_the_ID();
 
 <?php get_footer(); ?>
 
-<script type="text/javascript" src="js/instafeed.min.js"></script>
+<script type="text/javascript" src="/wp-content/themes/cnh/js/instafeed.min.js"></script>
       
