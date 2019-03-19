@@ -78,7 +78,13 @@ $event_id = get_the_ID();
 
 	<h2 class="instagram-updates-title"> Instagram Updates</h2>
 				<div class="instagram-container">
-				
+				<script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'user',
+        clientId: 'bd87aad432154b9187ebd906a3a7dbdd'
+    });
+    feed.run();
+</script>
                         
 				</div>
 				<div class="follow-box">
@@ -104,3 +110,6 @@ $event_id = get_the_ID();
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
+
+<script type="text/javascript" src="js/instafeed.min.js"></script>
+      

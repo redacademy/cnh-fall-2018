@@ -135,29 +135,30 @@
     // };
     // spectra.init();
     // end of spectrogram
-    var Spectra = {
-      instaToken: "4212657349.bd87aad.833cccb9aca549a69da0dd495cc8d6af",
+    // var Spectra = {
+    //   instaToken: "4212657349.bd87aad.833cccb9aca549a69da0dd495cc8d6af",
     
-      init: function () {
-        $.fn.spectragram.accessData = {
-          accessToken: this.instaToken,
-          clientID: this.instaID
-        };
+    //   init: function () {
+    //     $.fn.spectragram.accessData = {
+    //       accessToken: this.instaToken,
+    //       clientID: this.instaID
+    //     };
     
     
-        $('.instagram-container').spectragram('getUserFeed',{
-          complete: this.callback('user'),
-          max: 2,
-          wrapEachWith: '<div class="photo">'
-        });
-      },
+    //     $('.instagram-container').spectragram('getUserFeed',{
+    //       complete: this.callback('user'),
+    //       max: 2,
+    //       wrapEachWith: '<div class="photo">'
+    //     });
+    //   },
     
-      callback: function ( completeString ) {
-        console.log('completed: ' + completeString);
-      }
-    }
+    //   callback: function ( completeString ) {
+    //     console.log('completed: ' + completeString);
+    //   }
+    // }
     
-    Spectra.init();
+    // Spectra.init();
+    
 
     const $sideBar = $('.page-template .site-content .widget-sidebar');
     const $contentArea = $('.page-template .site-content .content-area');
