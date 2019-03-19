@@ -79,7 +79,7 @@ $event_id = get_the_ID();
 	<h2 class="instagram-updates-title"> Instagram Updates</h2>
 				<div class="instagram-container">
 				<script type="text/javascript">
-    var feed = new Instafeed({
+    var feed = new instafeed({
         get: 'user',
         clientId: 'bd87aad432154b9187ebd906a3a7dbdd'
     });
