@@ -78,7 +78,9 @@ $event_id = get_the_ID();
 
 	<h2 class="instagram-updates-title"> Instagram Updates</h2>
 				<div class="instagram-container">
-				<p><code>[instagram-feed class=feedOne]</code></p>
+				
+<?php echo do_shortcode('[instagram-feed class=feedOne]'); ?>
+
 				</div>
 				<div class="follow-box">
 					<div class="follow-content">
