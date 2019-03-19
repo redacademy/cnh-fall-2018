@@ -113,51 +113,7 @@
     });
     // end of header Search Form
 
-    // start of spectagram
-    // var spectragramComplete = function () {
-    // var spectra = {
-    //   instaToken: '9448460219.0d61304.12ca31f98ede424589619fb033b9198d',
-    //   instaID: '0d61304f0d4242a9b55e5c1378ba869e',
-
-    //   init: function () {
-    //     $.fn.spectragram.accessData = {
-    //       accessToken: this.instaToken,
-    //       clientID: this.instaID
-    //     };
-
-    //     $('.instagram-container').spectragram('getUserFeed', {
-    //       // complete : spectragramComplete(),
-    //       max: 2,
-    //       size: 'medium',
-    //       wrapEachWith: '<div class="photo">'
-    //     });
-    //   }
-    // };
-    // spectra.init();
-    // end of spectrogram
-    // var Spectra = {
-    //   instaToken: "4212657349.bd87aad.833cccb9aca549a69da0dd495cc8d6af",
-    
-    //   init: function () {
-    //     $.fn.spectragram.accessData = {
-    //       accessToken: this.instaToken,
-    //       clientID: this.instaID
-    //     };
-    
-    
-    //     $('.instagram-container').spectragram('getUserFeed',{
-    //       complete: this.callback('user'),
-    //       max: 2,
-    //       wrapEachWith: '<div class="photo">'
-    //     });
-    //   },
-    
-    //   callback: function ( completeString ) {
-    //     console.log('completed: ' + completeString);
-    //   }
-    // }
-    
-    // Spectra.init();
+  
     
 
     const $sideBar = $('.page-template .site-content .widget-sidebar');

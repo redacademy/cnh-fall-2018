@@ -65,12 +65,12 @@
   justify-content: center;
   width: 100vw;
 
-    .photo {
+    .sbi_photo_wrap {
       width: 280px;
       height: auto;
     }
 
-    .photo:last-child {
+    .sbi_photo_wrap:last-child {
       display: none;
     }
   }
@@ -273,7 +273,7 @@
     }
 
  
-.instagram-container .photo:last-child {
+.instagram-container .sbi_photo_wrap:last-child {
         display: initial;
         margin-left: 1rem;
         border-radius: 10px;
@@ -393,12 +393,12 @@
       margin: auto;
       margin-top: 3.125rem;
 
-      .photo {
+      .sbi_photo_wrap {
         width: 456px;
         height: 456px;
       }
 
-      .photo:last-child {
+      .sbi_photo_wrap:last-child {
         display: initial;
         margin-left: 2rem;
       }

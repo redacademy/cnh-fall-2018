@@ -1507,10 +1507,10 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100vw; }
-  .instagram-container .photo {
+  .instagram-container .sbi_photo_wrap {
     width: 280px;
     height: auto; }
-  .instagram-container .photo:last-child {
+  .instagram-container .sbi_photo_wrap:last-child {
     display: none; }
 
 .follow-box {
@@ -1698,7 +1698,7 @@ footer {
     height: 500px; }
   .frontpage-content {
     margin-top: 1rem; }
-  .instagram-container .photo:last-child {
+  .instagram-container .sbi_photo_wrap:last-child {
     display: initial;
     margin-left: 1rem;
     border-radius: 10px; }
@@ -1801,10 +1801,10 @@ footer {
     width: 1100px;
     margin: auto;
     margin-top: 3.125rem; }
-    .instagram-container .photo {
+    .instagram-container .sbi_photo_wrap {
       width: 456px;
       height: 456px; }
-    .instagram-container .photo:last-child {
+    .instagram-container .sbi_photo_wrap:last-child {
       display: initial;
       margin-left: 2rem; }
     .instagram-container img {
