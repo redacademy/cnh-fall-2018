@@ -1951,7 +1951,8 @@ footer {
 @media screen and (max-width: 480px) {
   .home-title {
     font-size: 14px;
-    top: 45px; }
+    top: 45px;
+    width: 80%; }
   .page-id-14 .frontpage-content {
     width: 100vw; } }
 
