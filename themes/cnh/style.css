@@ -1953,14 +1953,9 @@ footer {
 @media screen and (max-width: 480px) {
   .home-title {
     font-size: 14px;
-    top: 45px; } }
-
-.sbi_item {
-  width: 100% !important; }
-
-@media all and (min-width: 800px) {
+    top: 45px; }
   .sbi_item {
-    width: 50%; } }
+    width: 100% !important; } }
 
 .center-page {
   text-align: center; }

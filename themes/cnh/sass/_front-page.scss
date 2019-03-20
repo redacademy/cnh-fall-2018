@@ -594,12 +594,8 @@
       font-size: 14px;
       top: 45px;
     }
-  }
-  .sbi_item {
-    width: 100%!important;
-  }
-  @include mid-tablet {
     .sbi_item {
-      width: 50%;
+      width: 100%!important;
     }
   }
+
