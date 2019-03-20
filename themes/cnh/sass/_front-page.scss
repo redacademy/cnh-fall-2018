@@ -598,7 +598,7 @@
   @media screen and (max-width: 600px) {
     .sbi_item {
       width: 100%!important;
-      display: flex;
+      display: flex!important;
   justify-content: center;
     }
   }
