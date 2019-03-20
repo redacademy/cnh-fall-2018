@@ -601,7 +601,7 @@
       }
     }
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 599.9px) {
     .sbi_item {
       width: 100%!important;
       display: flex!important;
@@ -611,7 +611,7 @@
       width: 280px;
     }
   }
-  @media screen and (min-width: 599.9px) {
+  @media screen and (min-width: 600px) {
     .sbi_item {
       display: inline-block;
     }
