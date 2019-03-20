@@ -1510,8 +1510,6 @@ footer {
   .instagram-container .sbi_photo_wrap {
     width: 280px;
     height: auto; }
-  .instagram-container .sbi_photo_wrap:last-child {
-    display: none; }
 
 .follow-box {
   display: none; }
