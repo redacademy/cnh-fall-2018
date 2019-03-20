@@ -1953,9 +1953,7 @@ footer {
 @media screen and (max-width: 480px) {
   .home-title {
     font-size: 14px;
-    top: 45px; }
-  .sbi_photo_wrap {
-    width: 280px; } }
+    top: 45px; } }
 
 @media screen and (max-width: 600px) {
   .sbi_item {
@@ -1965,7 +1963,9 @@ footer {
     display: flex !important;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; } }
+            justify-content: center; }
+  .sbi_photo_wrap {
+    width: 280px; } }
 
 @media screen and (min-width: 600px) {
   .sbi_item {
