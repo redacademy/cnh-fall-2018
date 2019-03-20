@@ -1801,7 +1801,7 @@ footer {
     margin-top: 3.125rem; }
     .instagram-container .sbi_photo {
       width: 456px;
-      height: 456px; }
+      height: 456px !important; }
     .instagram-container .sbi_photo_wrap:last-child {
       display: initial;
       margin-left: 2rem; }
