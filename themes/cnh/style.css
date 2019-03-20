@@ -1512,8 +1512,6 @@ footer {
     height: auto; }
   .instagram-container img:last-of-type {
     display: none; }
-  .instagram-container .sbi_item {
-    width: 100%; }
 
 .follow-box {
   display: none; }
@@ -1958,6 +1956,9 @@ footer {
   .home-title {
     font-size: 14px;
     top: 45px; } }
+
+.sbi_item {
+  width: 100%; }
 
 .center-page {
   text-align: center; }
