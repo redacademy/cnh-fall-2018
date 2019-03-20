@@ -1953,7 +1953,9 @@ footer {
 @media screen and (max-width: 480px) {
   .home-title {
     font-size: 14px;
-    top: 45px; } }
+    top: 45px; }
+  .page-id-14 .frontpage-content {
+    width: 100vw; } }
 
 @media screen and (max-width: 600px) {
   .sbi_item {
