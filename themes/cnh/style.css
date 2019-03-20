@@ -1673,6 +1673,8 @@ footer {
             flex-direction: column; } }
 
 @media all and (min-width: 800px) {
+  .sbi_item {
+    width: 50%; }
   .home-title {
     top: 40px;
     left: 50%;
@@ -1702,8 +1704,6 @@ footer {
     display: initial;
     margin-left: 1rem;
     border-radius: 10px; }
-  .sbi_item {
-    width: 50% !important; }
   .wp-block-image {
     width: 600px; } }
 
