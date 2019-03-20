@@ -1968,7 +1968,7 @@ footer {
   .sbi_photo_wrap {
     width: 280px; } }
 
-@media screen and (min-width: 599px) {
+@media screen and (min-width: 599.9px) {
   .sbi_item {
     display: inline-block; }
   .sbi_photo_wrap {
