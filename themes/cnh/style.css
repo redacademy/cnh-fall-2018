@@ -1632,11 +1632,9 @@ footer {
   width: 355px;
   margin: auto; }
 
-.frontpage-buttons {
-  margin: 3rem; }
-  .frontpage-buttons .senior-programs-button {
-    margin-top: 2rem;
-    margin-bottom: 2rem; }
+.frontpage-buttons .senior-programs-button {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
 
 .childcare-button,
 .senior-programs-button,
