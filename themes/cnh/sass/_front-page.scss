@@ -73,6 +73,9 @@
     img:last-of-type {
       display: none;
     }
+    .sbi_item {
+      width: 100%;
+    }
   }
 
   .follow-box {
@@ -278,7 +281,9 @@
         margin-left: 1rem;
         border-radius: 10px;
       }
-
+      .sbi_item {
+        width: 50%;
+      }
     .wp-block-image {
       width: 600px;
     }

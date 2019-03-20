@@ -1512,6 +1512,8 @@ footer {
     height: auto; }
   .instagram-container img:last-of-type {
     display: none; }
+  .instagram-container .sbi_item {
+    width: 100%; }
 
 .follow-box {
   display: none; }
@@ -1702,6 +1704,8 @@ footer {
     display: initial;
     margin-left: 1rem;
     border-radius: 10px; }
+  .sbi_item {
+    width: 50%; }
   .wp-block-image {
     width: 600px; } }
 
