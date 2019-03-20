@@ -594,6 +594,9 @@
       font-size: 14px;
       top: 45px;
     }
+    .sbi_photo_wrap {
+      width: 280px;
+    }
   }
   @media screen and (max-width: 600px) {
     .sbi_item {
@@ -605,5 +608,8 @@
   @media screen and (min-width: 600px) {
     .sbi_item {
       display: inline-block;
+    }
+    .sbi_photo_wrap {
+      width: auto;
     }
   }
