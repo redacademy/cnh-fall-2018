@@ -1703,7 +1703,7 @@ footer {
     margin-left: 1rem;
     border-radius: 10px; }
   .sbi_item {
-    width: 50%; }
+    width: 50% !important; }
   .wp-block-image {
     width: 600px; } }
 
@@ -1958,7 +1958,7 @@ footer {
     top: 45px; } }
 
 .sbi_item {
-  width: 100%; }
+  width: 100% !important; }
 
 .center-page {
   text-align: center; }
