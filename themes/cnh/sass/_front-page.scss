@@ -244,9 +244,7 @@
   }
 
   @include mid-tablet {
-    .sbi_item {
-      width: 50%;
-    }
+
     .home-title {
       top: 40px;
       left: 50%;
@@ -599,4 +597,9 @@
   }
   .sbi_item {
     width: 100%!important;
+  }
+  @include mid-tablet {
+    .sbi_item {
+      width: 50%;
+    }
   }

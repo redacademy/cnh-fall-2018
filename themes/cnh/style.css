@@ -1673,8 +1673,6 @@ footer {
             flex-direction: column; } }
 
 @media all and (min-width: 800px) {
-  .sbi_item {
-    width: 50%; }
   .home-title {
     top: 40px;
     left: 50%;
@@ -1959,6 +1957,10 @@ footer {
 
 .sbi_item {
   width: 100% !important; }
+
+@media all and (min-width: 800px) {
+  .sbi_item {
+    width: 50%; } }
 
 .center-page {
   text-align: center; }
