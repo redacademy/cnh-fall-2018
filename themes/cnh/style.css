@@ -1817,7 +1817,7 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 1150px;
+    width: 1220px;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
