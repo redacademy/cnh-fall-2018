@@ -14,6 +14,23 @@ get_header(); ?>
     
     <?php get_template_part( 'template-parts/program', 'type' ); ?>
 
+    <?php 
+    /** 
+     * Get the program entries
+     */ 
+      $args = array( 'post_type' => 'program', 'order' => 'ASC', 'posts_per_page' => 666, 'program_type' => 'Adults');
+      
+      $program_posts = get_posts( $args ); ?>
+    <div class="program-wrapper">
+    <?php
+    foreach ($program_posts as $post):
+      setup_postdata($post);
+      get_template_part('template-parts/program', 'details');
+    endforeach;
+    wp_reset_postdata();
+    ?>
+    </div><!-- .program-wrapper -->
+
   </main><!-- #main -->
 </div><!-- #primary -->
 
