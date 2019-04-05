@@ -344,3 +344,23 @@ input[type='submit'] {
 .request-quote-btn {
   margin-left: 0px;
 }
+
+.careers-button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  border: 1px #282460 solid;
+  border-radius: .5rem;
+  background: $color__button;
+  font-family: $font__subtitle;
+  text-transform: uppercase;
+  @include font-size(0.75);
+  line-height: 1;
+  padding: $base__space-unit / 2.5;
+
+  &:hover,
+  &:active,
+  &:focus {
+    opacity: 0.75;
+  }
+}
