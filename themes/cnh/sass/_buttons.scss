@@ -346,14 +346,13 @@ input[type='submit'] {
 }
 
 .careers-button {
-border: #282460 solid 1px;
-border-radius: .5rem;
 text-transform: uppercase;
 line-height: 1;
 font-family: Lato-Bold;
-padding: .6rem;
   a {
     width: 140px;
     font-size: .75rem;
+    border: #282460 solid 1px;
+    border-radius: .5rem;
   }
 }
