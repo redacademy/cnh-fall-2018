@@ -2400,7 +2400,8 @@ input[type='submit'] {
   font-size: .75rem;
   line-height: 1;
   font-family: Lato-Bold;
-  width: 140px; }
+  width: 140px !important;
+  padding: .6rem; }
 
 /*--------------------------------------------------------------
 # Side Menu
