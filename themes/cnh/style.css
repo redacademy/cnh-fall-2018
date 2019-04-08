@@ -2403,9 +2403,10 @@ input[type='submit'] {
     border: #282460 solid 1px;
     border-radius: .5rem; }
 
-.events-calendar-btn {
+.events-calendar-btn a {
   width: 250px;
-  border: #282460 solid 2px; }
+  border: #282460 solid 2px;
+  border-radius: .5rem; }
 
 /*--------------------------------------------------------------
 # Side Menu
