@@ -38,7 +38,7 @@ get_header(); ?>
           </p>
         </div><!-- .opportunity-entry-info -->
 
-          <a class="readmore-button" href="<?php echo CFS()->get( 'view_posting' ); ?>">View Posting</a>
+          <!-- <a class="readmore-button" href="<?php echo CFS()->get( 'view_posting' ); ?>">View Posting</a> -->
 
       </article><!-- .opportunity-entry -->
     <?php endforeach; wp_reset_postdata();
