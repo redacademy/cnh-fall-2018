@@ -1979,21 +1979,21 @@ footer {
   .sbi_photo_wrap {
     width: auto !important; } }
 
-@media screen and (min-width: 1650px) {
+@media screen and (min-width: 320px) {
   .frontpage-content {
-    padding-top: 20%; } }
-
-@media screen and (min-width: 950px) {
-  .frontpage-content {
-    padding-top: 2rem; } }
+    padding-top: 0px; } }
 
 @media screen and (min-width: 600px) {
   .frontpage-content {
     padding-top: 10%; } }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 950px) {
   .frontpage-content {
-    padding-top: 0px; } }
+    padding-top: 2rem; } }
+
+@media screen and (min-width: 1650px) {
+  .frontpage-content {
+    padding-top: 20%; } }
 
 .center-page {
   text-align: center; }
