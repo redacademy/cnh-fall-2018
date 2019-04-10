@@ -1711,7 +1711,7 @@ footer {
   .home .entry-header {
     height: 600px; }
   .home-title {
-    top: 180px;
+    top: 125px;
     left: 50%;
     font-size: 65px;
     text-transform: none;
@@ -1723,7 +1723,7 @@ footer {
   .home-subtitle {
     display: initial;
     position: absolute;
-    top: 345px;
+    top: 295px;
     left: 50%;
     font-size: 30px;
     margin-top: .5rem;
@@ -1732,7 +1732,7 @@ footer {
             transform: translateX(-50%); }
   .frontpage-content {
     margin-top: 1rem;
-    padding-top: 22rem; }
+    padding-top: 10%; }
   .upcoming-events-title {
     padding-top: 6rem; }
   .upcoming-events-title,
@@ -1977,6 +1977,10 @@ footer {
     display: inline-block; }
   .sbi_photo_wrap {
     width: auto !important; } }
+
+@media screen and (min-width: 1650px) {
+  .frontpage-content {
+    padding-top: 20%; } }
 
 .center-page {
   text-align: center; }
