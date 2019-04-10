@@ -1711,7 +1711,7 @@ footer {
   .home .entry-header {
     height: 600px; }
   .home-title {
-    top: 80px;
+    top: 180px;
     left: 50%;
     font-size: 65px;
     text-transform: none;
@@ -1723,7 +1723,7 @@ footer {
   .home-subtitle {
     display: initial;
     position: absolute;
-    top: 245px;
+    top: 345px;
     left: 50%;
     font-size: 30px;
     margin-top: .5rem;
@@ -1732,7 +1732,7 @@ footer {
             transform: translateX(-50%); }
   .frontpage-content {
     margin-top: 1rem;
-    padding-top: 5rem; }
+    padding-top: 22rem; }
   .upcoming-events-title {
     padding-top: 6rem; }
   .upcoming-events-title,
