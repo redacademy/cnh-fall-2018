@@ -624,3 +624,9 @@
       padding-top: 20%
     }
   }
+
+  @media screen and (min-width: 950px) {
+    .frontpage-content {
+      padding-top: 2rem
+    }
+  }
